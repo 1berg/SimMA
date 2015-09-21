@@ -1,6 +1,8 @@
 import lejos.util.*;
 import lejos.nxt.*;
 
+import static lejos.nxt.Button.ENTER;
+
 /**
  * Musterlösung für den Linienfinder.
  * Hierbei kann entweder der Tastsensor oder der Ultraschallsensor zum Umfahren des Hindernisses
@@ -16,7 +18,7 @@ public class hinderniserkenner
 
     public static void main(String[] args)
     {
-        while(!Button.ENTER.isPressed()){
+        while(!ENTER.isPressed()){
             Motor.A.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
             Motor.B.setSpeed(200);
 
