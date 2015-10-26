@@ -1,0 +1,13 @@
+\select@language {german}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}
+\contentsline {chapter}{\numberline {2}Ausgangssituation}{2}
+\contentsline {section}{\numberline {2.1}Vergleich zu anderer Software}{2}
+\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{3}
+\contentsline {section}{\numberline {3.1}leJOS}{3}
+\contentsline {section}{\numberline {3.2}Sch\IeC {\"u}lerperspektive}{3}
+\contentsline {section}{\numberline {3.3}Lehrkraft}{3}
+\contentsline {section}{\numberline {3.4}Erweiterbarkeit}{4}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{5}
+\contentsline {section}{\numberline {4.1}Beschreibung der Software}{5}
+\contentsline {section}{\numberline {4.2}Softwarearchitektur}{5}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{6}
