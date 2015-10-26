@@ -7,10 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Code_SE1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../leJOS_NXJ_0.9.1beta-3_source/classes">
-      <sourceFolder url="file://$MODULE_DIR$/../../leJOS_NXJ_0.9.1beta-3_source/classes/src" isTestSource="false" />
+    <content url="file://$USER_HOME$/leJOS_NXJ_0.9.1beta-3_source/classes">
+      <sourceFolder url="file://$USER_HOME$/leJOS_NXJ_0.9.1beta-3_source/classes/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="leJOS_NXJ_0.9" level="project" />
   </component>
 </module>
