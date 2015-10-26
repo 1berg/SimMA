@@ -1,0 +1,907 @@
+ \documentclass[paper=a4, pagesize, DIV=calc, BCOR=12.5mm, twoside=on, onecolumn=on, open = any, titlepage =on, parskip =half-, headsepline = on, footsepline = on, chapterprefix = on, appendixprefix = off, fontsize = 12pt, numbers = noenddot, abstract = on]{scrbook}
+\input{preamble}
+\numberwithin{equation}{chapter}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[RO,LE]{\thepage}
+%\fancyhead[RE]{\thechapter }
+%\fancyhead[LO]{\thesection }
+%\fancyfoot{}
+%\fancyfoot[LE,RO]{Pamina M. Berg}  %Hier muss noch etwas geändert werden...
+\usepackage{blindtext}
+\usepackage{todonotes}
+
+%\usepackage[german]{babel}
+\usepackage[english]{babel}
+\usepackage{setspace}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{plain}
+\newtheorem{beispiel}{Example}
+\theoremstyle{plain}
+\newtheorem{satz}{Theorem}
+\theoremstyle{remark}
+\newtheorem{bemerkung}{Remark}
+\theoremstyle{plain}
+\newtheorem{cor}{Corollary}
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+
+\begin{document}
+\newpage
+\thispagestyle{plain}
+
+\pagenumbering{Roman}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+
+\include{titlepage}
+%\titlehead{{\Large Universität Hamburg\hfill SoSe 2014\\}
+%Fakultät für Mathematik, Informatik und Naturwissenschaften\\
+%Department Mathematik}
+%\subject{Bachelorarbeit}
+%\title{\huge \textsc{Optimale Steuerung zeitvarianter Systeme}}
+%\author{Pamina Maria Berg}
+%\date{\today}
+%\publishers{\emph{Erstgutachter}\\
+%Prof.\, Dr. Timo Reis\\
+%\emph{Zweitgutachter}\\
+%Dr. Thomas Berger}
+%\maketitle[-1]
+\thispagestyle{empty}
+\cleardoublepage
+
+
+\newpage
+\Huge
+\textbf{\textsc{Notation}}
+\normalsize
+\onehalfspacing
+\vspace{5ex}
+\begin{tabbing}
+\hspace{3cm}\=\kill
+ $\N$\> set of natural numbers \\ 
+ $\R$\> set of real numbers \\ 
+$\C$ \> set of complex numbers \\ 
+Re($z$) \> real part of a complex number $z$\\ 
+$\R^n$ \> vector space of vectors containing real values with $n$ components \\ 
+$\R^{m\times n}$ \> set of real $m \times n$-matrices\\ 
+$A^T$ \> the transpose of a matrix $A$ \\ 
+ $A^{-1}$ \> the inverse of a matrix $A$ \\
+$\mathcal{C}^2$ \> the class of functions whose first and second derivatives are continuous
+\end{tabbing} 
+\newpage
+\listoffigures
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\newpage
+\pagenumbering{arabic}
+\par \singlespacing
+\chapter{Introduction}
+\onehalfspacing
+The mathematical problem of finding an optimal control mostly begins with a transformation of a real-life issue into a mathematical model with a desired output, some given 'controls' to be considered and a performance or cost functional to measure the effectiveness (cf. \cite{athans:1966}). In a very simple way, economical calculations or an engineer trying to get the time of the energy-minimum can be transferred into minimizing or maximizing a mathematical function as the basic problem. 
+In a scenario more close to designing a mathematical model for a real-life problem, the engineer will have to describe a desirable physical behaviour and given constraints into mathematical terms. 
+Although the basics of mathematical optimization (finding a functional's minimum or maximum) have been found to be part of the oldest fundamental problems, the field of optimal control established only during and after World War II, starting with the basic theory of time-optimal control problems, developed by \textsc{Bellman, Gamkrelidze, Krasovskii} and \textsc{LaSalle} (cf. \cite{athans:1966}).\\
+In calculus of variations the focus is on minimizing a functional over a given family of curves, e.g. the $\mathcal{C}^2$ curves with fixed endpoint. Conversly, optimal control theory aims at finding an adequate corresponding control for a functional to reach an extremum (minimum or maximum) with respect to all admissible controls over a defined period of time.\\
+In this thesis, a special case of the nonlinear optimal control of time-varying systems, the \emph{Linear-Quadratic Regulator}, will be examined. It is a central topic in the field of system theory, that establishes the control of multidimensional systems.\\
+Linear Quadratic Optimal Control is a problem in concepts of controlling linear dynamic systems while minimizing the cost. It mostly consists of linear dynamics 
+\[ \dot{x} = f(x, u) = Ax + Bu\]
+and quadratic costs which will be considered in the next chapters.
+\[  c(x,u) = x^TQx + u^TRu, \qquad \phi(x_T) = x_T^TSx_T\]
+Note that $A, B, Q, R$ and $S$ are matrices with specific characteristics, which will be defined in the following chapter.\\
+In a more physical interpretation 'minimizing the cost' means, that 'we wish to keep the state near zero without excessive control-energy expenditure' \cite{athans:1966}.
+For this, many solution strategies have been obtained. Some of them will be introduced in chapter 3, including the methods of solving two types of \emph{Riccati Equations}. 
+Because of the variety of problems that can be determined by using linear-quadratic optimal control policies, nowadays the field of application has expanded in terms of using this method to assemble humanoid robots to imitate human locomotion (cf. \cite{kajita:2007}). The general idea of a model robot walking forwards and backwards will be introduced in chapter 4, including a computer simulation and its results as well as further results of research using the Linear-Quadratic Regulator for resembling three-dimensional models for the walking of two-legged humanoid robots. 
+
+\newpage
+\par\singlespacing
+\chapter{Optimal Control of Time Varying Linear Systems}
+%The following definitions and equations are adapted from \cite{li:2006}.
+\onehalfspacing
+Beginning to examine the linear quadratic optimal control problem, we first need to take a closer look at the general optimal control problem, given a finite and fixed horizon, where the concept of minimization by the \emph{Lagrange multiplier function} and the \emph{Hamiltonian function} will be introduced. At last, the idea of the \emph{variation} of a function will be used to obtain a general solution to the optimal control problem.
+\section{Finite Time Horizon LQ Regulator}
+\label{sec:FTHLQR}
+\onehalfspacing
+In this section the following continuous time system, containing the system state $x(t)$ and the system input $u(t)$ at time $t$ 
+\begin{equation}
+\dot{x}(t) = A(t)x(t) + B(t)u(t) \label{eq:6.1}
+\end{equation}
+with given initial condition $x(0) = x_0$ and matrices $A \in \R^{n\times n}$ and $B \in \R^{n \times m}$ will be considered. The general control goal will be to keep the state vector $x(t) \in \mathbb{R}^n$ as close to zero as possible, while using minimal control effort $u \in \mathbb{R}^m$ given a finite time horizon $\left[ t_0, t_f\right] $. For this, with given fixed values for $x_0$, $t_0$ and $t_f$, an open loop control $u(\tau)$, $\tau \in\left[ t_0, t_f\right] $ has to be found for minimizing the objective function
+\begin{equation}
+J(u, x_0, t_0, t_f) = \int_{t_0}^{t_f} \left[ x^T(t)Q(t)x(t) + u^T(t)R(t)u(t) \right] \diff t + x^T(t_f)Sx(t_f). \label{eq:6.2}
+\end{equation}
+with symmetric positive semi-definite $Q(t), S \in \mathbb{R}^{n \times n}$ where $x^T(t)Q(t)x(t)$ penalizes the temporary state deviation, $x^T(t_f)Sx(t_f)$ penalizes the finite state and a symmetric positive definite matrix $R(t) \in \mathbb{R}^{m \times m}$ penalizing the control effort. The matrizes $Q, S$ and $R$ are the so called weighing matrices, which need to be chosen before finding a solution to \eqref{eq:6.2}. We can make the effect of $Q$ more clear by having a look at the following system:\\
+Let \[
+Q(t) = \begin{pmatrix}
+q_1(t) & 0\\
+0 & q_2(t)
+\end{pmatrix}
+\] be a matrix to penalize the state vector $x(t) = \left( \mathbf{x}(t) \quad \dot{\mathbf{x}}(t) \right)^T$, where $\mathbf{x}$ defines a position and $\dot{\mathbf{x}}$ defines a velocity. Then, regarding the term $x^TQx$, which in this case will be defined as
+\[
+x^T(t)Q(t)x(t) = q_1\mathbf{x}^2(t) + q_2\dot{\mathbf{x}}^2(t)
+\] we can see, that the diagonal elements of $Q(t)$ penalize the system states in $x(t)$. More precisely, in this special case, where $Q$ is a diagonal matrix, we can clearly see which matrix entry will have an effect on which term of the system state: $q_1 \, \leadsto \, x$ and $q_2 \, \leadsto \, \dot{x}$. In case of the non-diagonal elements of $Q$ not being $0$ the equation becomes 
+\[
+x^T(t)Q(t)x(t) = q_1\mathbf{x}^2(t) + q_2\dot{\mathbf{x}}^2(t) + 2q_3\mathbf{x}(t)\dot{\mathbf{x}}(t)
+\] due to $Q$ being symmetric as a constraint of the choice of $Q$. The same principle applies to $u^TRu$. Note, that the entries of $Q$ and $R$ don't neccessarily have to have the same units of ranges. This means, that e.g. $q_1$ can measure a value in degrees, while $q_2$ penalizes in $m/s^2$.\\ Equation \eqref{eq:6.2} is often called the \emph{performance index}. With this system we want to regulate an output $y(t) = C^T(t)x(t) + D(t)u(t)\, \in \R^r$ at near $0$ for some matrices $C$ and $D$. 
+
+For better comprehension now a short and simple example.
+\begin{beispiel}
+Define \[
+Q = \begin{pmatrix}
+1 & 0\\
+0 & 10
+\end{pmatrix}
+ \qquad \qquad R=0,5
+\]
+Then, regarding our state vector $x(t) = \left( \mathbf{x}(t) \quad \dot{\mathbf{x}}(t) \right)^T$ from above we can see that the position will be penalized by factor $1$, while the velocity will be penalized by factor $10$. The control vector $u(t)$ will be measured by our $1 \times 1$-matrix $R$. If we now want the system to settle down faster to its terminate state, we want our control $u(t)$ to become a greater influence on the system, thus we need to decrease the value of $R$, e.g. by setting $R=0,25$. By simulating the behavior of our system, we are probably interested in increasing the velocity in our state vector. For this, we know that we only need to redefine one entry of our matrix $Q$, so that we get
+\[
+Q = \begin{pmatrix}
+1 & 0\\
+0 & 12
+\end{pmatrix}
+\qquad \qquad R= 0,25
+\]
+Using an iterative proceeding we can then find some sort of perfect choices for the values of $Q$ and $R$.
+\end{beispiel}
+Before having a much closer look at our time-varying finite horizon LQ regulator problem, it is useful to first analyze the associated typical optimal control problem for a finite horizon containing a continuous time system and a cost function that has to be minimized:
+\par\singlespacing
+\section{General finite, fixed horizon optimal control problem} 
+\label{sec:GFOCP}
+\onehalfspacing
+Let $x(t_0) = x_0$ be the fixed initial condition given a time horizon $\left[ t_0, t_f\right]$. For the system $\dot{x} = f(x, u, t)$ find a system control $u(t), t \in \left[ t_0, t_f\right]$ that minimizes
+\begin{equation}
+J(u(\cdot),x_0) = \phi(x(t_f)) + \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t \label{eq:6.2.2}
+\end{equation}
+where the cost function \eqref{eq:6.2.2} combines the \emph{ final cost} $\phi(x(t_f))$ and the \emph{running cost} or so called \emph{Lagrangian}.\\
+To find the solution to \eqref{eq:6.2.2} we will convert the restricted optimal control problem into an unconstrained optimal control problem. For this we make use of the \emph{first-order necessary condition for constrained optimality} and the so called \emph{Lagrange multiplier function}.
+\begin{definition}[cf.\cite{lib:2012}, p.54]
+If $x(\cdot)$ is an extremum for the constrained problem and is not an extremal of the constraint functional \[C(x, u) := \int_a^b M(x(t), u(t), t) \diff t \] then it is an extremal of the augmented cost functional \[ \int_a^b (L(x(t), u(t), t) + \lambda M(x(t), u(t), t)) \diff t\] with the \emph{Lagrange multiplier} $\lambda $.
+\end{definition}
+
+\begin{definition}
+Let $G(x(t), u(t), t)$ be some cost functional and $M(x(t), u(t), t) = 0$ a constraint, which must hold pointwise for all $t \in \left[a, b \right]$. Then, with a concept similar to the first-order necessary condition for constrained optimality in our Definition above, we can define a \emph{Lagrange multiplier function}, which will correspond with the Lagrange multiplier for each $t$, such that $ \lambda(t) = \lambda $. 
+\end{definition}
+\vspace*{-2.25cm}
+With the idea of using the Lagrange multiplier function $\lambda (t) \in \mathbb{R}^n$ for treating the constraint $\dot{x}(t) - f(x(t), u(t), t) = 0$ we can redefine the control problem in \eqref{eq:6.2.2} \cite{lib:2012}:
+\begin{equation}
+\overline{J}(u, x_0)  =  J(u(\cdot), x_0) + \int_{t_0}^{t_f} \lambda^T \left[ f(x, u, t)-\dot{x} \right] \diff t \label{eq:gocp}
+\end{equation}
+Let $H(x, u, t) := L(x,u,t) + \lambda^T(t)f(x, u, t) $ be definied as the \emph{Hamiltonian function}.  Using that $\frac{d}{dt}(\lambda^T(t)\dot{x}(t)) = \dot{\lambda}^T(t)x(t) + \lambda^T(t)\dot{x}$ the problem can be transformed into the following modified cost function:
+\renewcommand\arraystretch{2}
+\begin{align*}
+\overline{J}(u, x_0) & =  J(u(\cdot), x_0) + \int_{t_0}^{t_f} \lambda^T \left[ f(x, u, t)-\dot{x} \right] \diff t\\
+ & =  \phi(x(t_f)) + \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t + \int_{t_0}^{t_f} \lambda^T \left[f(x, u, t)- \dot{x} \right] \diff t\\
+  & =  \phi (x(t_f)) +  \int_{t_0}^{t_f} \lambda^T f(x, u, t) - \lambda^T \dot{x}  \diff t +  \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t\\
+   & =  \phi(x(t_f)) +  \int_{t_0}^{t_f} \lambda^T f(x, u, t) \diff t -  \int_{t_0}^{t_f}\lambda^T \dot{x} \diff t +  \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t\\
+    & =  \phi(x(t_f)) - \lambda^T (t_f )x(t_f) + \lambda^T(t_0) x(t_0) + \int_{t_0}^{t_f} \dot{\lambda}^T x \diff t + \int_{t_0}^{t_f} H(x(t), u(t), t) \diff t\\
+     & =  \phi(x(t_f)) - \lambda^T (t_f) x(t_f) + \lambda^T(t_0) x(t_0) + \int_{t_0}^{t_f} \left[ H(x(t), u(t), t) + \dot{\lambda} (t)x(t) \right] \diff t
+\end{align*}
+
+With the variation of $\overline{J}$ we can find a solution for \eqref{eq:6.2.2}: `The necessary condition for optimality ist that the variation $\delta \overline{J}$ of the modified cost with respect to all feasible variations $\delta x(t), \delta \lambda(t), \delta u(t)$ and $\delta \lambda(t_f)$ should vanish.' \cite{li:2006}.\\
+So using the linear term of the Taylor series of eq. \eqref{eq:gocp} we get the variation
+\begin{align*}
+\delta \overline{J} = \phi_x \delta x(t_f) & + \int_{t_0}^{t_f} \left[ L_x\delta x(t) + L_u\delta u(t) + \lambda^T f_x \delta x(t) + \lambda^T f_u \delta u(t) - \lambda^T \delta \dot{x} (t) \right] \, \diff t\\
+& + \int_{t_0}^{t_f} \delta \lambda^T (t) \left[ f - \dot{x} \right] \, \diff t\\
+= \phi_x \delta x(t_f) & + \int_{t_0}^{t_f} \left[ L_x\delta x(t) + L_u\delta u(t) + \lambda^T f_x \delta x(t) + \lambda^T f_u \delta u(t) \right]\, \diff t\\
+& - \lambda^T (t_f )\delta x(t_f) + \lambda^T(t_0)\delta x(t_0) + \int_{t_0}^{t_f} \dot{\lambda}^T\delta x \diff t + \int_{t_0}^{t_f} \delta \lambda^T (t) \left[ f - \dot{x} \right] \, \diff t
+\end{align*}
+\vspace*{0.5cm}
+where $L_x = \frac{\partial L}{\partial x}$, $L_u = \frac{\partial L}{\partial u}$, $f_x = \frac{\partial f}{\partial x}$, $f_u = \frac{\partial f}{\partial u}$ and $\phi_x = \frac{\partial \phi}{\partial x}$.
+Applying this equation to the modified cost function from above and regarding the equalities 
+\begin{equation*}
+H_x \delta x = L_x \delta x + \lambda^T f_x \delta x \qquad \text{and} \qquad
+H_u \delta u = L_u \delta u + \lambda^T f_u \delta u
+\end{equation*}
+we have
+\begin{align*}
+\delta \overline{J} =   \phi_x \delta x(t_f) & - \lambda^T(t_f) \delta x(t_f) + \lambda^T(t_0)\delta x(t_0) + \int_{t_0}^{t_f} \left[ \left( H_x + \dot{\lambda}^T \right) \delta x(t) + H_u \delta u(t) \right] \, \diff t\\
+& + \int_{t_0}^{t_f} \delta \lambda^T (t) \left[ f - \dot{x} \right] \, \diff t
+\end{align*}
+Knowing that the condition $x(t_0) = x_0$ must be fulfilled we set $\delta x(t_0) = 0$, so that the third term of $\delta \overline{J}$ vanishes. Thus a solution for minimizing \eqref{eq:gocp} is a set of $2n$ differential equations with different boundary conditions in $t_0$ and $t_f$:
+\begin{align}
+& \dot{x} = f(x, u, t)\\
+& \dot{\lambda} = -H_x = - \frac{\partial L}{\partial x} - \lambda^T \frac{\partial f}{\partial x}\\
+& H_u = - \frac{\partial L}{\partial u} - \lambda^T \frac{\partial f}{\partial u} = 0\\
+& \lambda^T(t_f) = \frac{\partial \phi}{\partial x} (x(t_f))\\
+& x(t_0) = x_0.
+\end{align}
+
+\par \singlespacing
+\chapter{Possible Solution Strategies}
+\onehalfspacing
+Now it is possible to convert the general optimal control problem in section \ref{sec:GFOCP} into a linear-quadratic problem. The optimal control of the time-varying linear-quadratic equation can be achieved using multiple strategies. Some of them will be presented in this chapter.
+
+\par \singlespacing
+\section{Open loop solution}
+\onehalfspacing
+We first want to try to keep the problem as simple as possible. With this in mind, it is apparent that we do not want our computational work on the system to depend on several further inputs. Hence, the first idea for solving our problem in Section \ref{sec:GFOCP} will be about using an \emph{open loop} szenario.
+\begin{definition} \cite[1.1]{astrom:2009} \newline
+A system is said to be \emph{closed loop} if the output of one system is used as the input of another, which output becomes the input of the first one, creating a closed loop. Removing the interconnection between the two seperate systems, thus the system becomes \emph{open loop}.
+\end{definition}
+An open loop system is an alternative to selecting the gains for state feedback controllers from the closed loop eigenvalue locations. The cost function \eqref{eq:6.2} represents a trade-off between the distance of the state from the origin and the cost of the control input \cite[p.202]{astrom:2009}.
+
+Using the same idea as in section \ref{sec:GFOCP} the equations \eqref{eq:6.1} and \eqref{eq:6.2} can be transformed into a problem similar to \eqref{eq:gocp}, namely
+\begin{align*}
+\tilde{J} & = J(u, x_0, t_0, t_f) + \int_{t_0}^{t_f} \lambda^T ((Ax + Bu) - \dot{x}) \,\diff t\\
+ & = x^TSx + \int_{t_0}^{t_f} x^TQx + u^TRu \,\diff t + \int_{t_0}^{t_f} \lambda^T((Ax +Bu) -\dot{x}) \,\diff t\\
+  & = x^TSx + \int_{t_0}^{t_f}x^TQx + u^TRu \diff t + \int_{t_0}^{t_f}\lambda^T (Ax + Bu) \diff t - \int_{t_0}^{t_f} \lambda^T \dot{x} \diff t\\
+   & = x^TSx + \int_{t_0}^{t_f} \left[ x^TQx + u^TRu+\lambda^T(Ax+Bu) \,\right] \diff t - \lambda^T(t_f) x(t_f) + \lambda^T(t_0) x(t_0) + \int_{t_0}^{t_f} \dot{\lambda}^T x \diff t\\
+    & = x^TSx - \lambda^T (t_f)x(t_f) + \lambda^T(t_0) x(t_0) + \int_{t_0}^{t_f} \left[ x^TQx + u^TRu+\lambda^T(Ax+Bu) + \dot{\lambda}^T x \right]\diff t \; .
+\end{align*}
+Adapting the solution of \eqref{eq:gocp}, the fixed initial condition $x(t_0) = x_0$ and the equation $\dot{x} = f(x, u, t)$ we get the following equations:
+\begin{align}
+& \dot{x} = Ax + Bu\\
+& \dot{\lambda} = -H_x = - \frac{\partial \left(x^TQx + u^TRu \right)}{\partial x} - \lambda^T \frac{\partial \left(Ax+Bu\right)}{\partial x} = - Q(t)x - A^T(t)\lambda\\
+& H_u = \frac{\partial \left(x^TQx + u^TRu \right)}{\partial u} + \lambda^T \frac{\partial \left(Ax+Bu\right)}{\partial u} = R(t)u + \lambda^T B(t) = 0\\
+& \lambda^T(t_f) = \frac{\partial \left( x^T(t_f)Sx(t_f) \right)}{\partial x} = Sx(t_f)\\
+& x(t_0) = x_0
+\end{align}
+Eq. (2.7) is the necessary condition for an extremum of the function $H$ with respect to the control $u(t)$. Due to basic analysis we know, that, if the extremum of $H$ has to be a minimum with respect to $u(t)$, the $m \times m$ matrix $\frac{\partial^2 H}{\partial u^2(t)}$ must be positive definite. Since \begin{equation*}
+\frac{\partial^2 H}{\partial u^2(t)}(x, u, t) = R(t)
+\end{equation*} and we already assumed $R(t)$ to be positive definite, the control $u(t)$ minimizes our cost.
+Notice that in (2.8) and (3.4) we specified a boundary condition at the final time $t_f$ as well as at the initial time $t_0$ in (2.9) and (3.5) which leads to a so called \emph{two point boundary value problem}.\\
+Using the equations (3.1) - (3.5) we define the so called \emph{Hamilton-Jacobi equation} that contains the Hamiltonian Matrix $H(t)$
+\renewcommand\arraystretch{1}
+\begin{align}
+\begin{pmatrix}
+\dot{x}\\
+\dot{\lambda}
+\end{pmatrix} &= 
+\underbrace{\begin{bmatrix}
+A(t) & -B(t)R^{-1}B^T(t)\\
+-Q(t) & -A^T(t)
+\end{bmatrix}}_{=: \; H(t)}
+\begin{pmatrix}
+x\\
+\lambda
+\end{pmatrix}
+\end{align} \label{eq:HJE}
+with boundary conditions $ (3.5)$ and $(3.4)$ where the term $-B(t)R^{-1}B^T(t)$ already contains the optimal control $u^o(t) = -R^{-1}B^T(t)\lambda(t)$ as a consequence to Eq.(3.3). This optimal control doesn't use any additional input, thus it is open loop, and is computed by first computing $\lambda(t)$ for all $t \in \left[ t_0, t_f \right]$ and then applying $u^o(t)$. The disadvantage to this open loop control is, that it is not robust to disturbances or uncertainties (cf. \cite{li:2006}).
+%Notice that there are specified boundary conditions at initial and final time $t_0$ and $t_f$, which makes this a two point boundary value problem.
+
+\par \singlespacing
+\section{Solution by Riccati Equation}
+\onehalfspacing
+A more stable solution can be found by implementing $u^o(t)$ as a feedback control, because it is closed loop.\\
+First we will transfer the \emph{Hamilton-Jacobi equation} \eqref{eq:HJE} into a matrix differential equation with $X_1(t), X_2(t) \in \mathbb{R}^{n \times n}$
+\renewcommand\arraystretch{1}
+\begin{align}
+\begin{pmatrix}
+\dot{X}_1(t)\\
+\dot{X}_2(t)
+\end{pmatrix} &= 
+\begin{bmatrix}
+A(t) & -B(t)R^{-1}B^T(t)\\
+-Q(t) & -A^T(t)
+\end{bmatrix}
+\begin{pmatrix}
+X_1(t)\\
+X_2(t)
+\end{pmatrix}
+\end{align}
+as well as the boundary conditions
+\begin{align*}
+& X_1(t_f) \in \mathbb{R}^{n \times n} \quad \text{invertible}\\
+& X_2(t_f) = SX_1(t_f).
+\end{align*}
+In consideration of the linearity we can define a transition matrix, partitioned in $n \times n$ blocks \[\mathcal{T}(t, t_f) = \begin{bmatrix}
+\mathcal{T}_{11}(t, t_f) &\mathcal{T}_{12}(t, t_f)\\
+\mathcal{T}_{21}(t, t_f) & \mathcal{T}_{22}(t, t_f)
+\end{bmatrix}\]
+which propagates the solutions backwards in time from $t_f$ to $t$ (cf. \cite{lib:2012}) such that 
+\[
+\begin{pmatrix}
+x(t)\\
+\lambda(t)
+\end{pmatrix}
+ = \mathcal{T}(t, t_f) \cdot \begin{pmatrix}
+ x(t_f)\\
+ \lambda(t_f)
+ \end{pmatrix}.
+\]
+This means, that given a state vector $(x(t_f) \quad \lambda (t_f))^T$ at time $t_f$, the product of this vector and the transition matrix gives the state vector at the prior time $t$.
+The derivation of the equation above leads to
+\[
+\begin{pmatrix}
+\dot{x}(t)\\
+\dot{\lambda}(t)
+\end{pmatrix}
+ = \dot{\mathcal{T}}(t, t_f) \cdot 
+ \begin{pmatrix}
+ x(t_f)\\
+ \lambda(t_f)
+ \end{pmatrix}
+\]
+Using equation \eqref{eq:HJE} we get
+\[
+\dot{\mathcal{T}}(t, t_f)
+\begin{pmatrix}
+x(t_f)\\
+\lambda(t_f)
+\end{pmatrix}
+= H(t) \cdot \mathcal{T}(t, t_f) \cdot 
+\begin{pmatrix}
+x(t_f)\\
+\lambda(t_f)
+\end{pmatrix}
+\]
+Considering the boundary condition (3.4) and the equations
+\begin{align*}
+x(t) &= \mathcal{T}_{11}(t, t_f)x(t_f) + \mathcal{T}_{12}(t, t_f)\lambda(t_f) = \mathcal{T}_{11}(t, t_f)x(t_f) + \mathcal{T}_{12}(t, t_f)Sx(t_f)\\
+&= \left( \mathcal{T}_{11}(t, t_f) + \mathcal{T}_{12}(t, t_f)S \right) x(t_f)\\
+\Leftrightarrow \quad x(t_f) &= \left( \mathcal{T}_{11}(t, t_f) + \mathcal{T}_{12}(t, t_f)S \right)^{-1} x(t)
+\end{align*}
+and
+\begin{align*}
+\lambda(t) &= \mathcal{T}_{21}(t, t_f) x(t_f) + \mathcal{T}_{22}(t, t_f)\lambda(t_f) =  \mathcal{T}_{21}(t, t_f) x(t_f) + \mathcal{T}_{22}(t, t_f)Sx(t_f)\\
+\Leftrightarrow \quad \lambda(t) &= \underbrace{\left( \mathcal{T}_{21}(t, t_f) + \mathcal{T}_{22}(t, t_f)S \right)}_{=: \; X_2(t)}\underbrace{\left( \mathcal{T}_{11}(t, t_f) + \mathcal{T}_{12}(t, t_f)S \right)^{-1}}_{=: \; X_1^{-1}(t)} x(t)
+\end{align*}
+we can define \begin{equation}
+P(t) = X_2(t)X_1^{-1}(t)
+\end{equation}
+ and thus $\lambda(t) = P(t)x(t)$.
+%\todo{Proof of invertability of $X_1$???}
+%Let $v$ be a constant vector. Thus, we can define a solution to the Hamilton-Jacobi equation by:
+%\begin{equation}
+%\begin{pmatrix}
+%x(t)\\
+%\lambda(t)
+%\end{pmatrix} =
+%\begin{pmatrix}
+%X_1(t)\\
+%X_2(t)
+%\end{pmatrix} v
+%\end{equation}
+%where $x(t)$ and $\lambda (t)$ satisfy \eqref{eq:HJE} and (3.4). For satisfying the initial condition %we choose $v$ as followed:
+%\[
+%x(t_0) = X_1(t_0)\, v \qquad \rightsquigarrow \qquad v = X_1^{-1} (t_0) x_0
+%\]
+ Using $X_1$ and $X_2$ as substitutes, we get equation (3.7). Finding the optimal control of (3.7) now is a problem similar to finding the solution $P(t)$ to the CTRDE (cf. \cite{bellon:2008}):
+\begin{definition}
+Let $A, B, Q, R$ be matrizes as preceded, $P(t) \in \mathbb{R}^{n \times n}$. The \emph{Continuous Time Riccati Differential Equation (CTRDE)} is defined by
+\begin{equation}
+-\dot{P} (t) = A^T(t)P(t) + P(t)A(t) - P(t)B(t)R^{-1}(t)B^T(t)P(t) + Q(t); \quad P(t_f) = S \label{eq:CTRDE}
+\end{equation}
+\end{definition}
+In view of equation (3.8) a solution can be found as followed:\\
+By differentiating (3.8) we get
+\begin{equation}
+\dot{P}(t) = \frac{\diff P(t)}{\diff t} = \frac{\diff X_2(t)}{\diff t}X_1^{-1}(t) + X_2(t)\frac{\diff (X_1(t))^{-1}}{\diff t}
+\end{equation}
+Considering that $X_1(t)$ is invertible
+\begin{equation}
+\frac{\diff I}{\diff t} = 0 = X_1(t) \frac{\diff (X_1(t))^{-1}}{\diff t} + \frac{\diff (X_1(t))}{\diff t}(X_1(t))^{-1}
+\end{equation}
+thus
+\begin{equation}
+\frac{\diff(X_1(t))^{-1}}{\diff t} = -(X_1(t))^{-1} \frac{\diff(X_1(t))}{\diff t}(X_1(t))^{-1}
+\end{equation}
+By substituting (3.7) into (3.10) and using (3.8) we get the CTRDE for (3.7)
+\begin{align*}
+\frac{\diff P(t)}{\diff t} &= \left( -Q(t)X_1(t)-A^T(t)X_2(t) \right) X_1^{-1}(t) - X_2(t)(X-1(t))^{-1}\left(A X_1 -BR^{-1}B^TX_2 \right) X_1^{-1}(t)\\
+ &= -Q(t) - A^TP(t) - P(t)A + P(t)BR^{-1}B^TP(t)
+\end{align*}
+which leads us to the following theorem:
+\begin{satz}
+(cf. \cite{li:2006} Theorem 6.2.2) \newline
+The cost function \eqref{eq:6.2} is minimized using the control 
+\begin{equation}
+u^*(t) = -R^T(t)B^T(t)P(t)x(t)
+\end{equation}
+with the minimum cost achieved
+\begin{equation}
+J^*(x_0,t_0,t_f) := min_{u(\cdot)}J(u, x_0) = x_0^TP(t_0)x_0
+\end{equation}
+\end{satz}
+\begin{proof}
+Transforming Eq.(3.9) we get 
+\begin{equation}
+-Q(t) = \dot{P}(t) + A^TP(t) + P(t)A - P(t)BR^{-1}B^TP(t)
+\end{equation}
+which can be added to out cost function by adding zero:
+\begin{align*}
+J &= x^TSx + \int_{t_0}^{t_f} \left[x^TQ(t)x + u^TR(t)u \right] \diff t\\
+  & \qquad \quad \, - \int_{t_0}^{t_f} x^T \underbrace{\left( \dot{P}(t) + A^TP(t) + P(t)A - P(t)BR^{-1}B^TP(t) + Q(t) \right)}_{= 0}x \diff t\\
+  &= x^TSx - \int_{t_0}^{t_f} \underbrace{\left[ \left(Ax +Bu\right)^TPx + x^T\dot{P}x + x^TP\left(Ax + Bu\right)\right]}_{\text{\emph{total derivative of} } x^TPx} \diff t\\
+  & \qquad \quad \, + \int_{t_0}^{t_f}\left[u^TRu + u^TB^TPx + x^TPBu + x^TPBR^{-1}B^TPx \right] \diff t\\
+  &= x^TSx - \underbrace{x^T(t_f)P(t_f)x(t_f)}_{= x^TSx} + x^T(t_0)P(t_0)x(t_0)\\
+  & \qquad \quad \, + \int_{t_0}^{t_f}\left[u^TRu + u^TB^TPx + x^TPBu + x^TPBR^{-1}B^TPx \right] \diff t\\
+  &= x_0^TP(t_0)x_0 + \int_{t_0}^{t_f} \left(u(t) + R^{-1}B^TP(t)x \right)^T R(t) \left(u(t) + R^{-1}B^TP(t)x \right) \diff t
+\end{align*}
+The minimum of the integral is achieved by defining the control $u(t)$ as
+\[
+u^*(t) := u(t) = -R^{-1}(t)B^T(t)P(t)x(t).
+\]
+Thus, the overall minimum is
+\[
+J^*(x_0,t_0,t_f) := min_{u(\cdot)}J(u, x_0) = x_0^TP(t_0)x_0
+\]
+\end{proof}
+\vspace*{4ex}
+\begin{bemerkung}{\cite{li:2006}} \newline
+The solution $P(t)$ of the CTRDE can be solved backwards in time (from $t_f$ to $t_0$) and needs to be stored. 
+\end{bemerkung}
+\newpage
+\begin{bemerkung}{\cite{li:2006}} \newline
+The optimal control law is in the form of a time varying linear state feedback \begin{equation}u(t) = -K(t)x(t) \label{eq:u(t) optimal control law} \end{equation} with feedback gain \begin{equation}K(t) := R^T(t)B^T(t)P(t), \quad K:\left[t_0, t_f\right] \rightarrow \R^{m\times n}\end{equation}
+\end{bemerkung}
+\vspace*{1.5cm}
+With the knowledge of the previous sections we can now regard two simple examples of a finite-horizon LQR problem.
+\begin{beispiel}
+\label{ex:x=u without r}
+Let \[\dot{x} = A(t)x(t) + B(t)u(t) = u(t)\] be our continuous time system, and the cost function be denoted by \[
+J(u) = \int_{t_0}^{t_1} x^2(t) + u^2(t) \diff t.
+\]
+Note that our matrices $A, B, Q, R, S$ are now scalars, which means, they simply consist of a value from $\R$. In our case, that is:
+\[
+A = A^T = 0 \qquad B = B^T =1 \qquad Q= 1 \qquad R = R^{-1}=1 \qquad S=0
+\]
+Now, we can set up our RDE for the system above:
+\begin{align*}
+\dot{P} &= -P(t)A(t) - A^T(t)P(t)-Q(t)+P(t)B(t)R^{-1}(t)B^T(t)P(t)\\
+&= -P(t) \cdot 0 - 0 \cdot P(t) - 1 + P(t)\cdot 1 \cdot 1 \cdot 1 \cdot P(t)\\
+&= \phantom{-}P^2(t) - 1
+\end{align*}
+with boundary condition $P(t_1) = S = 0$. The RDE can be solved by the technique of seperating the variables of ordinary differential equations. Using that
+\[
+\dot{P} = P^2(t) - 1 = (P^2(t) - 1) \cdot 1
+\]
+we have
+\begin{equation*}
+\frac{\diff P}{\diff s} = (P^2 - 1) \cdot 1 \quad \Leftrightarrow \quad \frac{1}{P^2-1} \diff P = 1 \cdot \diff s
+\end{equation*}
+considering the given time horizon we will now integrate both sides of the right equation 
+\renewcommand\arraystretch{2}
+\begin{equation*}
+\begin{array}{lrcc}
+& \displaystyle \int_{P(t)}^0 \frac{1}{P^2-1} \diff P &=& \displaystyle \int_t^{t_1} 1 \diff s\\
+\Leftrightarrow & -\tanh^{-1}(0) - (-\tanh^{-1}(P(t)) &=& (t_1 - t)\\
+\Leftrightarrow & \tanh^{-1}(P(t)) &=& (t_1 - t)\\
+\Leftrightarrow & P(t) &=& \tanh(t_1-t)
+\end{array}
+\end{equation*}
+Making use of Eq. (3.16) und (3.17) we can now define the optimal control
+\begin{equation*}
+u(t) = -R^{-1}(t)B^T(t)P(t)x(t) = - \tanh(t_1-t)x(t)
+\end{equation*}
+\end{beispiel}
+\begin{beispiel}
+\label{ex:x=u, R=1}
+Let \[\dot{x} = A(t)x(t) + B(t)u(t) = u(t)\] be the considered continuous time system, and the cost function be denoted by \[
+J(u) = \int_{t_0}^{t_1} x^2(t) + ru^2(t) \diff t.
+\]
+As in Example \ref{ex:x=u without r} we have $A,B,Q,R,S$ as scalars, but with a different value for $R$ and $S$, setting $R=r$ and $S=\infty$. We then know, that $P(t_1)=s = \infty$ and thus can proceed to integrate our RDE
+\[
+\dot{P} = \frac{P^2}{r} - 1
+\]
+which leads, by integrating both sides, to our solution
+\[
+P(t) = \sqrt{r} \cdot \cfrac{1+\exp \left(\cfrac{2(t+c)}{\sqrt{r}}\right)}{1- \exp \left(\cfrac{2(t+c)}{\sqrt{r}}\right)}
+\]
+Using our condition $P(t_1) = \infty$ we can set $c=-t_1$ such that the equation above becomes
+\[
+P(T) = \sqrt{r} \, \coth\left(\frac{t-t_1}{\sqrt{r}}\right)
+\]
+Hence, the feedback gain is
+\[
+K(t)=R^{-1}(t)B^T(t)P(t) = \frac{1}{r}\cdot \sqrt{r} \cdot \coth\left(\frac{t-t_1}{\sqrt{r}}\right) = \frac{1}{\sqrt{r}} \cdot \coth\left(\frac{t-t_1}{\sqrt{r}}\right)
+\]
+and we get the optimal control function
+\[
+u(t) = -K(t)x(t) = - \frac{1}{\sqrt{r}} \cdot \coth\left(\frac{t-t_1}{\sqrt{r}}\right)x(t)
+\]
+\end{beispiel}
+
+\par \singlespacing
+\section{Cost-to-go function \& Dynamic Programming Principle}
+\label{sec:CTG}
+\par \onehalfspacing
+Regarding the matrix function $P(t)$ it has been determined that for $t_1 \in \left[t_0, t_f\right]$ and $x(t_1)$ being the system state at time $t_1$, the control $u^*(t)$ results in a cost for the remaining time interval $\left[t_1, t_f \right]$ described by $J(u, x(t_1), t_1, t_f)$ (with substituted initial condition $t_0 \rightarrow t_1, x(t_0) \rightarrow x(t_1)$). So the problem will be solved for the sub-interval $\left[ t_1, t_f\right] \subset \left[ t_0, t_f \right]$ such that the optimal cost is
+\begin{equation}
+J^o(x(t), t, t_f) := \min_u J(u, x(t), t, t_f) = x^T(t)P(t)x(t)
+\end{equation}
+where $P(t)$ is associated with the so-called \emph{cost-to-go function}.
+As it has been shown in Theorem 1, the optimal control $u^o(t) = -R^{-1}(t)B^T(t)P(t)x(t) = -K(t)x(t)$ satisfies Eq. \eqref{eq:6.1}, thus we can define a transition matrix $\Phi(t, t_0)$ for the closed loop system 
+\[
+\dot{x}(t) = A(t)x(t) + B(t)u(t) = A(t)x(t) + B(t)(-K(t)x(t)) = \left[A(t)-B(t)K(t)\right]x(t)
+\]
+so that $x(t) = \Phi(t, t_0)x_0$. It will be proven, that the achieved minimal cost function must be of the form
+\[
+J^o(x_0,t_0) = x_o^T\overline{P}(t_0)x_0
+\]
+for some positive semi-definite matrix $\overline{P}(t_0)$.
+\par \singlespacing
+\subsection{Dynamic Programming Principle}
+\onehalfspacing 
+The general idea of the dynamic programming principle has been introduced by Richard Bellman and consists of the assumption that a problem can be solved more efficiently by dividing it into subproblems. In the case of the LQR, this means, that our cost function can be seperated into a sum of an arbitrary number of  "subintegrals", i.e. the time interval can be split into several smaller intervals, resulting in the problem of finding the optimal control, hence, the minimum of the cost function for the subproblems.\\ %By finding a solution for one of these parts, then trying to make this solution fit for a combination of parts so that by iteratively putting together a solution for the origin
+In the system \eqref{eq:6.2.2} with the cost index over $\left[ t_0, t_f \right]$
+\begin{equation}
+   J(u(\cdot), x_0, t_0, t_0) = \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t + \phi(x(t_f)) \label{eq:6.14}
+\end{equation} which will now be considered again, let the final time $t_f$ be fixed. Suppose that $u^o(t) = -K(t)x(t)$ minimizes \eqref{eq:6.14} subject to the state trajectory $x^o(t)$ where $x^o(t_0) = x_0$.
+
+\begin{satz} (\cite{li:2006} Theorem 6.2.3) \label{thm: 6.2.3} \newline
+Suppose that $u^o(t), t \in \left[ t_0, t_f \right]$ minimizes \eqref{eq:6.14} subject to $x^o(t_0) = x_0$ where $x^o(t)$ is the state trajectory. Let the (minimum) cost achieved using $u^o(t)$ be: 
+\[
+J^o(x_0, t_0) = \mathrm{arg} \min_{u(\tau), \tau \in \left[ t_0, t_f \right]} J(u(\cdot), x^o, t_0, t_f)
+\]
+Then, for any $t_1$ so that $t_0 \le t_1 \le t_f$, the restriction for the control $u^o(\tau)$ to $\tau  \in \left[ t_1, t_f \right]$ minimizes 
+\[
+J(u(\cdot), x^o(t_1), t_1) = \int_{t_1}^{t_f} L(x(t),u(t),t) \diff t + \phi(x(t_f))
+\]
+subject to the initial condition $x(t_1) = x^o(t_1)$; that is $u^o(\tau)$ is optimal over the sub-interval $\left[ t_1, t_f \right]$.
+\end{satz}
+
+Thus we know that we can reduce the optimal control problem to a smaller interval and are still able to define the optimal control to minimize the varied cost index. 
+Considering the optimal control problem over the interval $\left[ t_1, t_f \right] \subset \left[ t_0, t_f \right]$ we can obtain an optimal control for the larger interval by using the solution for the sub-interval with varied initial condition:
+\begin{prop} (\cite{li:2006} Corollary 6.2.4) \label{cor:6.2.4}
+Let $t_0 \le t_1 \le t_f$. Consider the optimal control problem for the sub-interval $\left[ t_1, t_f \right]$. If $J^o(x_0, t_1)$ is the optimal cost and the optimal control is given by $u(t) = u^o(x_0, t) $ for $t \in \left[ t_1, t_f \right]$. Then, the optimal control for the larger interval $ t \in \left[ t_0, t_f \right]$ with initial condition $x(t_0) = x_0$ is given by: 
+\begin{equation}
+u(t) = 
+\left\{
+\begin{array}{ll}
+	\mathrm{arg} \min_{u(\cdot )} \int_{t_0}^{t_1} L(x, u, t) \diff t + J^o(x(t_1),t_1)& t \in \left[t_0, t_1\right)\\
+	u^o(x(t_1),t) & t \in \left[ t_1, t_f \right]
+\end{array}
+\right.
+\end{equation}
+where $x(t_1)$ is the state attained via the control $u(t)$ above.
+\end{prop}
+Using this Proposition, we can prove Theorem \ref{thm: 6.2.3}.
+\begin{proof}
+Seeking for a contradiction, let us assume that $u^o(\tau)$ is not optimal over the subinterval $\left[t_1, t_f \right]$. Thus, we can define some other control $\tilde{u}(\tau)$ that minimizes $J(u(\cdot), x^o(t_1), t_1)$. Let \[ J(\tilde{u}(\cdot),x^o(t_1),t_1)\] be the minimum cost achieved using $\tilde{u}(\cdot)$ over $\left[t_1, t_f \right]$. We then know, that
+\begin{align*}
+J^o(x_0,t_0) &= \int_{t_0}^{t_f} L(x(t), u(t), t) \diff t + \phi(x(t_f))\\
+&= \int_{t_0}^{t_1} L(x(t),u(t),t) \diff t + \underbrace{\int_{t_1}^{t_f} L(x(t),u(t),t)\diff t + \phi(x(t_f))}_{\geq J(\tilde{u}(\cdot),x^o(t_1),t_1)}\\
+\end{align*}
+
+Hence, with Proposition \ref{cor:6.2.4} we can define another control policy 
+\begin{equation*}
+\tilde{u}^*(t) = 
+\left\{
+\begin{array}{ll}
+	\mathrm{arg} \min_{u^o(\cdot )} \int_{t_0}^{t_1} L(x, u, t) \diff t + J^o(x(t_1),t_1)& t \in \left[t_0, t_1\right)\\
+	\tilde{u}(x(t_1),t) & t \in \left[ t_1, t_f \right]
+\end{array}
+\right.
+\end{equation*}
+Hence, this control input will result in a lower cost, which leads to a contradiction, for $u^o(t)$ has been assumed to be the optimal control over $\left[t_0,t_f\right]$.
+\end{proof}
+\par \singlespacing
+ \subsection{$P(t)$ and the cost-to-go function in the LQ problem}
+ \onehalfspacing
+ Now we are able to apply the Dynamic Programming Principle to the original LQ optimal control problem (\eqref{eq:6.1} and \eqref{eq:6.2}).
+ \newline
+\begin{satz} (\cite{li:2006} Theorem 6.2.5) \newline
+The cost-to-go function for any $t \in \left[ t_0, t_f \right]$ is given by 
+\begin{equation}
+J^o(x, t) = x^T(t)\overline{P}(t)x(t) 
+\end{equation}
+where $\overline{P}(t) \equiv P(t)$ satisfies the CTRDE  \eqref{eq:CTRDE} with boundary condition $\overline{P}(t_f) = S$. $P(t)$ is positive semi-definite for all $t \le t_f$. 
+The optimal control policy is given by: 
+\[ u^o(t) = -R^{-1}B^T(t)\overline{P}(t_1)x(t)\]
+\end{satz}
+
+\begin{proof}
+We need to show that $\overline{P}(t) =P(t)$.\\
+At the finite state $t=t_f$ the cost-to-go function is given by:
+\[
+J^o(x, t_f) = x^TSx = x^T \overline{P}(t_f)x
+\]so that $\overline{P} (t_f) = S$ as desired.
+Since the solution is computed backwards in time, let $t_1 = t_f$ and $t = t_1 - \Delta t \, (\divideontimes)$ be an infinitesimally close approximation to $t_1$. Since $t \in \left[ t_0, t_f \right)$ Corollary 1 gives us the opportunity to find the optimal control at $t$ given the state $x(t)$ by minimizing \[ \min_{u(t)}\, L(x,u,t)\Delta t + J^o(x(t_1),t_1))\]
+Due to $(\divideontimes)$ we can estimate $x(t_1) \approx x(t) + \left[A(t)x(t) + B(t)u(t)\right] \Delta t$, thus we are going to minimize (with respect to $u(t)$)
+\begin{align*}
+& \int_t^{t_1} \left[ x^T(\tau)Q(\tau)x(\tau) + u^T(\tau)R(\tau)u(\tau)\right] \diff\tau + J^o(x(t_1),t_1))\\
+\approx & \left[ x^T(t)Q(t)x(t) + u^T(t)R(t)u(t) \right] \Delta t + J^o( x(t) + \left[A(t)x(t) + B(t)u(t)\right] \Delta t, t_1)\\
+\approx & \left[ x^T(t)Q(t)x(t) + u^T(t)R(t)u(t) \right] \Delta t + x(t)\overline{P}(t_1)x(t)\\
+& \quad + \left[ x^T(t)A^T(t) + u^T(t)B^T(t) \right] \overline{P}(t_1)x(t)\Delta t\\
+& \quad + x^T(t)\overline{P}(t_1)\left[ A(t)x(t) + B(t)u(t) \right] \Delta t
+\end{align*}
+Differentiating this equation with respect to $u(t)$ and aiming for the minimum, we set the differential equal to zero and retrieve the optimal control policy:
+\begin{equation*}
+u^{oT}R(t) + x^T(t)\overline{P}(t_1)B(t) = 0\quad
+\Rightarrow \quad u^o(t) = -R^{-1}(t)B^T(t)\overline{P}(t_1)x(t)
+\end{equation*}
+
+Thus, we can replace the term $u(t)$ in our cost-to-go function with the optimal control policy: 
+\begin{align*}
+J^o(x(t), t) \approx & \left[ x^T(t)Q(t)x(t) + u^{oT}(t)R(t)u^o(t) \right] \Delta t\\
+& +\left[ x^T(t)A^T(t) + u^{oT}(t)B^T(t) \right] \overline{P}(t_1)x(t)\Delta t\\
+ & +\, x^T(t)\overline{P}(t_1)\left[ A(t)x(t) + B(t)u^o(t) \right] \Delta t + x(t)\overline{P}(t_1)x(t)
+ \end{align*}
+ Now we can transform the equation by using $u^o$ and factoring out $x(t)$ and $\Delta t$ and define this as:
+ \begin{align*}
+ x^T(t)\overline{P}(t)x(t) :=  & x^T(t)\overline{P}(t_1)x(t) + x^T(t) \left[ A^T(t)\overline{P}(t_1) + \overline{P}(t_1)A(t) \right.\\
+ & \left. - \overline{P}(t_1)B(t)R^{-1}(t)B^T(t)\overline{P}(t_1)+Q(t)\right] x(t) \cdot \Delta t
+ \end{align*}
+ where 
+ \begin{equation}
+-\left(\overline{P}(t_1) - \overline{P}(t)\right) =  \left[ A^T(t)\overline{P}(t_1) + \overline{P}(t_1)A(t)- \overline{P}(t_1)B(t)R^{-1}(t)B^T(t)\overline{P}(t_1)+Q(t)\right] \Delta t  \label{eq:6.17}
+ \end{equation}
+ We can now perceive that at time $t$
+ \[
+J^o(x(t),t) \approx x^T(t)\overline{P}(t)x(t). 
+ \]
+ Repeating this process with $t \rightarrow t_1, t - \Delta t \rightarrow t$ at each time $t$, it can be shown that $J^o(x(t),t) = x^T(t)\overline{P}(t)x(t)$.\\
+ For $\Delta t \rightarrow 0$ we can now resolve, that \eqref{eq:6.17} becomes
+ \[
+-\dot{\overline{P}}(t) =  A^T(t)\overline{P}(t) + \overline{P}(t)A(t)- \overline{P}(t)B(t)R^{-1}(t)B^T(t)\overline{P}(t)+Q(t)
+ \]
+ which we can identify with the Riccati differential equation as in \eqref{eq:CTRDE}. Thus, we have shown, that $\overline{P}(t) = P(t)$.\\
+ Knowing that 
+ \begin{align*}
+x^T(t)P(t)x(t) &=  \int_t^{t_f} \left[ x^T(\tau)Q(\tau)x(\tau) + u^T(\tau)R(\tau)u(\tau)\right] \diff\tau + x^T(t_f)Sx(t_f)\\
+ & \geq 0
+ \end{align*}
+ for all states $x(t)$ at time $t$, $P(t)$ is positive semi-definite for all $t \le t_f$.
+\end{proof}
+\newpage
+\par \singlespacing
+\section{Side remark on the infinite time horizon case} \label{sec:remark ARE}
+\onehalfspacing
+In Section \ref{sec:CTG} it has been shown, that the time-varying LQ optimal control problem corresponds with the Continuous Time Riccati Differential Equation (CTRDE), but only in case of a finite interval in our cost function. Considering the case of an infinite interval there are two strategies for solving these kind of optimal control problems [cf.  \cite{willems:1991}]
+\begin{itemize}
+\item[(1)] For a receding horizon, solve the CTRDE of the time-invariant system and approximate a further control using the control obtained for a very large finite time horizon
+\item[(2)] Find the equilibrium solution of the CTRDE, which is considered the solution of the time-invariant system, by integrating the CTRDE until a steady state is found, thus we need criteria for the convergence of the CTRDE.
+\end{itemize}
+Now let $P(t, t_f)$ be the solution for the CTRDE over the interval $\left[ t, t_f \right]$ where $t \in \left[ t_0, t_f \right]$. We are then interested in finding an asymptotic solution of $P(t, t_f)$ for the cost function \begin{equation}
+J(u, x_0, t_0, t_f) = \int_{t_0}^{t_f} \left[ x^T(t)Qx(t) + u^T(t)Ru(t) \right] \diff t
+\end{equation} considering that the matrices $Q, R$ and $A, B$ of the continuous time system \eqref{eq:6.1} are constant. Regarding Remark 1 again, we know, that the solution of the CTRDE of $P(t, t_f)$  will be obtained by solving it backwards in time.  Thus, we need to find out whether $P(t \rightarrow - \infty, t_f)$ for a fixed  $t_f$ exists. Additionally we need to know if for an existing limit $\lim_{t \rightarrow - \infty} P(t, t_f) = \lim_{t_f \rightarrow \infty}P(t, t_f) =: P_\infty$ and a constant state feedback $K = R^{-1}B^TP_\infty$ the closed loop system \begin{equation} \dot{x} = (A-BK)x \label{eq:TIS} \end{equation} will be stable. Furthermore we can conclude, that $P_\infty$, if existent, must satisfy a modified version of the CTRDE
+\begin{equation}
+A^TP_\infty + P_\infty A - P_\infty BR^{-1}B^TP_\infty + Q = 0 \label{eq:ARE}
+\end{equation}
+the so called \emph{Algebraic Riccati Equation (ARE)}.
+
+
+%\chapter{Discrete Time LQ Problem}
+
+%\section{Theory}
+%The continuous time optimal control problem in Chapter 2 can be rewritten as an equivalent %discrete time system
+%\begin{equation}
+%x(k+1) = A(k)x(k) + B(k)u(k) \qquad x(0) = x_0
+%\end{equation}
+%with the performance criteria
+%%J = x^T(k_f)Sx(k_f) + \sum_{k=k_0}^{k_f-1} \left[ x^T(k)Q(k)x(k) + u^T(k)R(k)u(k)\right]
+%\end{equation}
+
+\section{Solution to the ARE} \label{sec:solution ARE}
+Now we will transform the optimal control problem of finding the solution to our LQ system within a finite time horizon by obtaining $P(t)$ into an infinite time-invariant problem using the ARE. But before discussing the solution to the ARE we need the following definitions:
+
+
+\begin{definition}[Equilibrium state]
+For a linear dynamic system \begin{equation}
+\dot{x}(t) = Ax(t) + Bu(t) = f(x, u, t) \label{eq:LIS}
+\end{equation} with initial condition $x(0) = x_0$ its state $x^*$ is called an \emph{equilibrium state}, if\[ f(x^*, u^*(t), t) = 0\] for some admissible control $u^*$.
+\end{definition}
+\begin{definition}[Asymptotical Stability]
+The system \eqref{eq:LIS} is \emph{asymptotically stable}, if for all initial states $x_0 \in \R^n$ there exists a control $u(t)$ such that \[\lim_{t \rightarrow \infty} x(t) = 0\]
+\end{definition}
+\begin{bemerkung}
+Adopting this, we can say, that if the system can be tranferred into the zero-state, starting at an arbitrary initial state, it is said to be \emph{stabilizable}.
+\end{bemerkung}
+\begin{prop}
+A time-invariant system such as \eqref{eq:TIS} is asymptotically stable if and only if the real parts of all eigenvalues of $(A-BK)$ are negative.
+\end{prop}
+\begin{definition}[Controllability]
+A system is said to be \emph{controllable}, if for arbitrary initial state $x_0$ the system can be steered to an arbitrary final state $x_f$ in finite time by using the admissible controls.
+\end{definition}
+We are interested in the conditions for the existence of $P_\infty$ as the solution to the ARE. Using the definitions above we can prove the following
+\begin{prop}[cf. \cite{li:2006}, Proposition 6.3.1]
+Let \eqref{eq:LIS} be controllable. Then, there exists a positive definite matrix $N$ such that for any $t < t_f$ and for all vectors $x \in \R^n$
+\[ x^TP(t,t_f)x < x^TNx.\]
+Due to the boundedness of $P(t, t_f)$ it can be said that $P(t \rightarrow - \infty, t_f) = P(t, t_f \rightarrow \infty)$ converges to a positive semi-definite matrix $P_\infty$.
+\end{prop}
+\begin{proof}
+For a time interval $\Delta t$, an initial time $t$, where $t < t_f - \Delta t$, an initial state $x_0 = x(t)$ and assuming that $S \neq 0$, let $u(\tau) \; \tau \in \left[ t, t + \Delta t \right]$ be a control such that $x(t + \Delta t) = 0$ and $u(\tau) = 0$ if $\tau \in \left( t+\Delta, t_f \right]$. Since  $u(\tau) = 0$ for $\tau > t + \delta t$, the cost $J_\Delta (x_0)$ associated with $u(\tau)$ is finite and independent of $t$, as long as $t_f - t \geq \Delta$. $P(t, t_f)$ being positive semi-definite (as shown in Theorem 3) implies that if $x^TPx$ is bounded, $P$ is bounded as well.\\
+Regarding different initial conditions $x_{0_i}, i \in \N$, we can define a positive definite matrix $N$ so that $x^TNx$ is greater than the cost
+\[
+x_0^TNx_0 \geq  J_\Delta(x_0)
+\]
+thus, it is upper bounded by a minimum cost $x^TNx$ for all $t < t_f - \Delta$.\\
+In case of $S =0$ let $J^*(t_1, t_2, x_0)$ be the optimal cost with initial time $t_1$, final time $t_2$ and initial state $x_0$. Then we know hat for any $\Delta >0$
+\begin{align*}
+J^*(t-\Delta, t_f, x_0) &= J^*(t, t_f + \Delta, x_0)\\
+& = \underbrace{\int_t^{t_f} \left[x^{*^T} Q x^* + u^{*^T}Ru^* \right] \diff \tau}_{(\divideontimes \divideontimes)} + \underbrace{\int_{t_f}^{t_f + \Delta} \left[x^{*^T} Q x^* + u^{*^T}Ru^* \right] \diff \tau}_{\geq 0}
+\end{align*}
+with $u^*, x^*$ optimal control and state trajectory for the chosen interval.\\
+Suppose that $J^*(t, t_f + \Delta, x_0) < J^*(t, t_f, x_0)$ , then ($\divideontimes \divideontimes$) has to be less than  $J^*(t, t_f, x_0)$, which is a contradiction that $ J^*(t, t_f, x_0)$ is the optimal cost\[
+\Rightarrow \;  J^*(t, t_f, x_0) \leq J^*(t, t_f + \Delta, x_0)
+\]
+Theorem 3 says that for $P(t_f, t_f) = S$
+\[
+J^*(t, t_f, x_0) = x^TP(t, t_f)x
+\]\\
+Hence, for any $\Delta$ and $x \in \R^n$
+\[
+x^TP(t, t_f)x \leq x^TP(t, t_f + \Delta)x = x^TP(t - \Delta, t_f)x \leq x^TNx
+\]
+We can now conclude that for all $\Delta > 0$
+\begin{itemize}
+\item[1)] $x^TP(t, t_f + \Delta)x$ is bounded by $x^TNx$
+\item[2)] $x^TP(t, t_f)x \leq x^TP(t, t_f + \Delta)x$
+\end{itemize}
+Thus with the knowledge from real analysis, that a non-decreasing, upper bounded function converges, we now see that by choosing various $x$, and therefore constructing a matrix $P_\infty$, for any $x$
+\[
+x^TP(t, t_f + \Delta)x \rightarrow x^TP_\infty x.
+\]
+\end{proof}
+It has been shown that $\lim_{t \rightarrow - \infty} P(t, t_f) = \lim_{t_f \rightarrow \infty}P(t, t_f) =: P_\infty$ exists. The next step would be to prove, that under certain conditions the optimal closed loop control system \[ \dot{x} = (A-BR^{-1}B^TP_\infty)x \] regarding $P_\infty$ and the ARE is stable, which can be found in \cite{li:2006}.\\
+In conclusion, $P_\infty$ can indeed be seen as the asymptotical solution of \eqref{eq:CTRDE}:
+\begin{satz}[cf. \cite{li:2006}, Theorem 6.3.3]
+Let the time-invariant system $\dot{x} = Ax +Bu$ with initial condition $x(0) = x_0$ be stabilizable, and the performance index denoted by
+\begin{equation*}
+J(u, x_0, t, t_f) = \int_t^{t_f} x^T(\tau)Qx(\tau) + u^T(\tau)Ru(\tau) \diff \tau
+\end{equation*}
+with $t_f \rightarrow \infty$, $Q=C^TC \geq 0$ positive semi-definite and $R>0$ positive definite. Let $P(t,t_f)$ be the solution to \eqref{eq:CTRDE} with $P(t_f, t_f) = 0$. Then,
+\[
+\lim_{t \rightarrow - \infty} P(t, t_f) = \lim_{t_f \rightarrow \infty}P(t, t_f) =: P_\infty
+\]
+exists and the optimal control to the system is
+\[
+u(t) = -R^{-1}B^TP_\infty x(t)
+\]
+\end{satz}
+In the work of \cite{kil:2010} it has been shown, that a necessary condition for the existence of the solution to the RDE \eqref{eq:CTRDE} is the existence of the solution of the corresponding ARE \eqref{eq:ARE}. Thus, in forsight of the next chapter, we can keep in mind, that if a solution to the ARE can be found (e.g. by using the \texttt{lqr} function in MATLAB), then, by choosing the corresponding matrices for the RDE, a solution for the time-varying system surely can be obtained.
+
+\chapter{Application of LQ Optimal Control}
+In this chapter, a relatively new field of application for the LQ optimal control problem, the humanoid robot locomotion, will be considered.  
+Robot locomotion in general, and biped walking of humanoid robots in particular has been established during the end of the 20th century, using a two-legged robot with twelve axes as the simulation model. Back then, the focus has been on the so called \emph{Preview Control}, thus computing a full trajectory of e.g. the walking pattern of the robot feet.\\
+Nowadays, there are several concepts of modeling the human walking motions. One of them will be considered in this thesis: the \emph{Three-Dimensional Inverted Pendulum}.\\
+The Inverted Pendulum strategy is based on the calcuation of the \emph{Zero-Moment-Point (ZMP)}, which can be defined as the point of contact on the ground in the stability region, on which the posture of the robot is based on, as well as the \emph{Centre of Pressure (CoP)}. The ZMP is also the point where the total sum of contact forces are added up to zero, as seen in Fig. \ref{ZMPK}. It is a vital part of the dynamic postural stability of legged locomotion (cf. \cite{kajita:2007}). \textsc{Sardain} and \textsc{Bessonnet} have captioned the basic information on the connection between robot locomotion, ZMP and CoP in their article \cite{sardain:2004}. \\
+The first section of this chapter will show the theory behind the Three-Dimensional Inverted Pendulum, as it will be scaled down to a two-dimensional model, which will simplify the dynamics of human walking to a strictly forward and backward motion.\\
+The second section will provide an overview of the recent work on the application of the time-varying LQ Regulator problem to the dynamic locomotion of humanoid robots.
+\begin{figure}[htbp]
+\centering
+	\begin{minipage}[c]{14cm}	
+	\centering
+	\includegraphics[scale=1]{images/ZMP_Kraefte.png} 
+	\caption{Zero Moment Point (ZMP) \cite[p.54]{kajita:2007}}
+	\label{ZMPK}
+	\end{minipage}
+\end{figure}
+
+
+\section{The Two-Dimensional Inverted Pendulum}
+Now, a general example of a LQR design of an inverted pendulum on a cart will be presented.
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[b]{7cm}
+\centering
+%\includegraphics[scale=0.7]{images/Inverted_Pendulum_on_Cart.png} 
+\includegraphics[scale=0.6]{images/Cart_Pole_Model.png}
+\caption{Inverted Pendulum on a Cart, \cite[p.2]{tou}}
+\label{fig:inverted pendulum}
+\end{minipage}
+\begin{minipage}[b]{7.2cm}
+\centering
+\includegraphics[scale=0.15]{images/Inverses_Pendel.png} 
+\caption{Robot Model, \cite[p.87]{kajita:2007}}
+\label{fig:inv robot mod}
+\end{minipage}
+\end{figure}
+
+
+ We will assume that the pendulum will be able to only move forward and backward, thus making the model two-dimensional as it is shown in Fig.\ref{fig:inverted pendulum}. The calculations have been solved using MATLAB. 
+ \vspace*{-0.75cm}
+\begin{beispiel} \label{ex:inverted pendulum}
+Regarding the linear system with quadratic criteria as presented in section 2.1, let our matrices $A, B, C$ and $D$ be defined as:
+\renewcommand\arraystretch{1}
+\[A= \left(\begin{array}{cccc}
+\phantom{-}0 & \phantom{-}1 & \phantom{-}0 & \phantom{-}0\\
+\phantom{-}0&\phantom{-}0&-1&\phantom{-}0\\
+\phantom{-}0&\phantom{-}0&\phantom{-}0&\phantom{-}2\\
+\phantom{-}0&\phantom{-}0&\phantom{-}8&\phantom{-}0
+\end{array}\right)
+\quad
+B= \begin{pmatrix}
+0\\
+0.2\\
+0\\
+-0.1
+\end{pmatrix}
+\quad
+C= \left(\begin{array}{cccc} 
+0 & 0 & 1 & 0
+\end{array}\right)
+\quad D=0
+\]
+and let 
+\[
+x = \left( \begin{array}{cccc}
+p&\dot{p} & \theta & \dot{\theta}
+\end{array} \right)^T
+\]
+be our state vector, whereas $p$ defines the cart position and $\theta$ defines the rod angle.
+First, we need to select our weighing matrices $R$ and $Q$. Set $R$ to an arbitrary value, e.g. $R=0,1$. Hence, with the knowledge of section \ref{sec:FTHLQR} we define $Q$ as a diagonal matrix where $q_1$ penalizes the cart position $p$, $q_2$ penalizes the cart velocity $\dot{p}$, $q_3$ the rod angle $\theta$ and $q_4$ the angle velocity $\dot{\theta}$.\\
+We can then presume, that it may take five times more effort to keep the angle of the rod small than keeping the cart position.
+\begin{align*}
+%\begin{split}
+Q&= \begin{pmatrix}
+q_1 & 0 & 0 & 0\\
+0& q_2 &0&0\\
+0&0&q_3&0\\
+0&0&0&q_4
+\end{pmatrix}
+%& 
+= \begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 5 & 0\\
+0 & 0 & 0 & 5
+\end{pmatrix}
+%\end{split}
+\end{align*}\\
+Using the fact, that $A$ and $B$ are constant matrices, thus they are time-invariant, we have to solve the ARE for our system. Using the MATLAB function $\mathtt{[K,P]= lqr(A,B,Q,R)}$ we then obtain the solution matrix of the ARE\\
+$\mathtt{>> [K,P]=lqr(A,B,Q,R)}$ 
+\begin{equation*}
+P = \begin{pmatrix}
+    2,5973  &  2,8731  & 17,2728 &   8,9084\\
+    2,8731  &  6,3108 &  40,4090 &  20,8351\\
+   17,2728  & 40,4090  &588,1267&  297,0998\\
+    8,9084 &  20,8351 & 297,0998 & 150,9130
+\end{pmatrix}
+\end{equation*}
+as well as the gain matrix $K$ for the optimal control policy $u(t)=-Kx(t)=-R^{-1}B^TPx(t)$:
+\begin{equation*}
+K= \begin{pmatrix}
+   -3,1623  & -8,2135& -216,2817& -109,2428
+   \end{pmatrix}
+\end{equation*}
+Assuming that the initial cart position is at $0,1 \,\mathrm{m}$, the rod angle to be about $6 \, \mathrm{deg} \, \approx 0,1 \, \mathrm{rad}$ and setting the velocities to $0$ we get our initial state vector
+\[
+x(0) = x0 = \begin{pmatrix} 0,1& 0 &0,1&0 \end{pmatrix}^T
+\]
+To visualize the time response of the dynamical system to the input signal we define a time frame $\mathtt{t=(0:0.05:20)}$, a vector $\mathtt{u = zeros(size(t))}$ and our new control system $Ac = (A-BK)x$. Then we can use $\mathtt{[y,x]=lsim(Ac,B,C,D,u,t,x0)}$ to calculate the simulation. The plot to this first iteration will then look like this:\\
+$\mathtt{>> plot(t,y)}$
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[c]{14cm}
+		\centering
+		\includegraphics[scale=0.43]{images/simulation_1.png} 
+		\caption{Inverted Pendulum on Cart - First Iteration}
+		\label{fig: first iteration}
+	\end{minipage}
+\end{figure}
+\par
+\end{beispiel}
+\subsection*{The Three-Dimensional Inverted Pendulum}
+On the basis of the two-dimensional inverted pendulum as a model for biped walking, the aim of the three-dimensional inverted pendulum model is to imitate the human locomotion based on a trajectory, which will be designed by using human footsteps. Figure \ref{fig: walking pattern} shows a walking pattern where you can see the floor trajectory of the feet, as well as the motions of the inverted pendulum.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[c]{14cm}
+		\centering
+		\includegraphics[scale=1]{images/Geradliniges_Laufmuster.png} 
+		\caption{Walking pattern, \cite[p.106]{kajita:2007}}
+		\label{fig: walking pattern}
+	\end{minipage}
+\end{figure}
+It has been shown, that the calculated ZMP trajectory of a three-dimensional inverted pendulum model will be very close to a ZMP curve of an existing humanoid robot whose joints behave similar to the model (cf. \cite[p.115]{kajita:2007}).
+
+\section{LQR in Dynamic Locomotion Processes}
+It has been only recently that the time-varying linear-quadratic optimal control problem has been adapted to dynamic locomotion processes. Based on prior experience on stabilizing the locotion of humanoid robots scientists like \textsc{Kajita, Kuindersma, Permenter} and \textsc{Tedrake} have come to the idea of using optimization-based techniques to get a grip on online computed walking stabilization (cf. \cite[p.121]{kajita:2007}, \cite{kui:2014}).\\
+Kajita presents an online walking pattern synthesis using a feedback control system in his book \cite{kajita:2007}. Exploiting the discrete time case of the LQR as described in \mbox{\cite[p.112]{li:2006}} his state vector consists of the position $x(t)$, the velocity of the robot $\dot{x}(t)$ and the acceleration $\ddot{x}(t)$. Besides the system not being time-varying, another adjustment made is the cost function, which will now consider the deviation between the ZMP of the system output and the desired ZMP. To redeem the optimal control $u(t)$, which can be assumed to be of similar structure as Eq. \eqref{eq:u(t) optimal control law}, one will need to solve the so called \emph{Discrete Time Riccati Differential Equation}.\\
+One of the latest achievements of stabilizing human-based locomotion using LQR design ist made by \cite{kui:2014}. It has been figured out, that a fully actuated robot body system can be set up as a set of linear dynamics as in Eq. \eqref{eq:6.1} with an output vector $\mathbf{y}$ which will describe the resulting ZMP. Considering the ZMP dynamics to be time-varying due to the assumption of the CoM height trajectory being a known function of time $\left(z_{com}(t), \dot{z}_{com}(t), \ddot{z}_{com}(t)\right)$, we obtain the system
+\begin{equation*}
+\dot{x} = Ax + Bu
+\end{equation*}
+\begin{equation*}
+\mathbf{y}(t) =  C(t)x(t) + D(t)u(t)
+\end{equation*}
+where $x=\left[ x_{com}, y_{com}, \dot{x}_{com}, \dot{y}_{com} \right]^T $, $u= \left[\ddot{x},_{com}, \ddot{y}_{com}\right]$ and $\mathbf{y} = \left[ x_{zmp}, y_{zmp}\right]$. Let $\mathbf{y}^d$ be our desired ZMP trajectory, then we can define $\overline{\mathbf{y}} (t) := \mathbf{y}(t) - \mathbf{y}^d(t)$ as the difference between the desired and the actual ZMP dynamics and $\overline{x}(t) := x - x^d$ as the discrepancy between the desired and the actual system state at time $t$. To then develop the stable solution one will have to choose the weighing matrizes as in we did in Example \ref{ex:inverted pendulum}, thus solving the RDE. With the idea of using the dynamic programming principle and the cost-to-go function as introduced in section \ref{sec:CTG}, the linear optimal controller can be obtained (cf. \cite{kui:2014}).
+
+\newpage
+\chapter{Conclusion}
+In the preceded chapters an introduction into the standard time-varying optimal control problem and its common solution strategies has been given. It has been shown, that the necessary control effort and the different priorities of which variable of our state vector needs to be penalized the most (or less), can be modified by specifically redefining the entries of our weighing matrices $R$ and $Q$. After obtaining a general solution for a fixed horizon optimal control problem by using the method of first variation, we developed the idea of an open loop solution. In cause of the disadvantages of open loop systems, a more stable feedback control using Riccatti Differential Equations has been advanced, thus leading to the dynamic programming principle and the cost-to-go function, considering the applicability on linear time-varying control systems. As these kind of systems gain more and more of importance in the present research covering the field of reinforcement learning in engineering and computer science, a short introduction to the infinite time horizon case of linear-quadratic optimal control has been given in section \ref{sec:remark ARE} and \ref{sec:solution ARE}. Proceeding in the idea of humanoid locomotion as a suitable realm of application, a short overview of the basic simplified model and the current state of research has been assembled.  %Beside this, a further note on the affinity of the RDE and the ARE, followed by an example in which the connection between the mathematical topic of optimal control in a framework, that is one of the most challenging in present research in engineering and computer science,  has been presented. 
+
+\newpage
+\input{bibliography}
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+"Hiermit versichere ich, dass ich die Arbeit selbstständig verfasst und keine anderen als die angegebenen Hilfsmittel – insbesondere keine im Quellenverzeichnis nicht benannten Internet-Quellen – benutzt habe, die Arbeit vorher nicht in einem anderen Prüfungsverfahren eingereicht habe und die eingereichte schriftliche Fassung der auf dem elektronischen Speichermedium entspricht."\\
+
+Hamburg, \today \hspace*{\fill} \dots \dots \dots \dots \dots \dots \dots\\
+\hspace*{\fill} Pamina Maria Berg $\,$
+\end{document}
