@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  3 NOV 2015 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  4 NOV 2015 10:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1247,23 +1247,27 @@ Kapitel 4.
 Kapitel 5.
 [8
 
-] (./bibliography.tex) [9
+] (./bibliography.tex [9
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+])
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[10] (./MA_Berg.aux (./titlepage.aux))
+[11] (./MA_Berg.aux (./titlepage.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17007 strings out of 493089
- 318604 string characters out of 6134841
- 441310 words of memory out of 5000000
- 20075 multiletter control sequences out of 15000+600000
+ 17020 strings out of 493089
+ 318846 string characters out of 6134841
+ 443438 words of memory out of 5000000
+ 20088 multiletter control sequences out of 15000+600000
  61432 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,27n,76p,812b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1272,10 +1276,10 @@ exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (14 pages, 82861 bytes).
+Output written on MA_Berg.pdf (15 pages, 89111 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
