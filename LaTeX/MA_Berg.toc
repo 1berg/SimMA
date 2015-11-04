@@ -2,18 +2,18 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {chapter}{\numberline {2}Ausgangssituation}{3}
 \contentsline {section}{\numberline {2.1}Das LEGO Mindstorms NXT System}{3}
-\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{3}
-\contentsline {subsection}{\numberline {2.2.1}Verankerung im Bildungsplan}{3}
-\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{3}
-\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{3}
-\contentsline {subsection}{\numberline {2.3.2}Enchanting}{3}
-\contentsline {subsection}{\numberline {2.3.3}BlueJ}{3}
-\contentsline {section}{\numberline {2.4}leJOS}{3}
-\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{4}
-\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{4}
-\contentsline {section}{\numberline {3.2}Lehrkraft}{4}
-\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{5}
-\contentsline {chapter}{\numberline {4}Entwickelte Software}{6}
-\contentsline {section}{\numberline {4.1}Beschreibung der Software}{6}
-\contentsline {section}{\numberline {4.2}Softwarearchitektur}{6}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{7}
+\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{4}
+\contentsline {subsection}{\numberline {2.2.1}Verankerung im Bildungsplan}{4}
+\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{4}
+\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{4}
+\contentsline {subsection}{\numberline {2.3.2}Enchanting}{4}
+\contentsline {subsection}{\numberline {2.3.3}BlueJ}{4}
+\contentsline {section}{\numberline {2.4}leJOS}{4}
+\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{5}
+\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{5}
+\contentsline {section}{\numberline {3.2}Lehrkraft}{5}
+\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{6}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{7}
+\contentsline {section}{\numberline {4.1}Beschreibung der Software}{7}
+\contentsline {section}{\numberline {4.2}Softwarearchitektur}{7}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{8}
