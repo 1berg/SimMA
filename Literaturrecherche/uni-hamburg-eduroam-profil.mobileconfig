@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EAPClientConfiguration</key>
+			<dict>
+				<key>AcceptEAPTypes</key>
+				<array>
+					<integer>21</integer>
+				</array>
+				<key>EAPFASTProvisionPAC</key>
+				<false/>
+				<key>EAPFASTProvisionPACAnonymously</key>
+				<false/>
+				<key>EAPFASTUsePAC</key>
+				<false/>
+				<key>OuterIdentity</key>
+				<string>anonymous@uni-hamburg.de</string>
+				<key>PayloadCertificateAnchorUUID</key>
+				<array>
+					<string>53134221-6B1F-45E0-A748-5BD36FBF17F1</string>
+				</array>
+				<key>TTLSInnerAuthentication</key>
+				<string>PAP</string>
+			</dict>
+			<key>EncryptionType</key>
+			<string>WPA</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>PayloadDescription</key>
+			<string>Configures wireless connectivity settings.</string>
+			<key>PayloadDisplayName</key>
+			<string>WiFi (eduroam)</string>
+			<key>PayloadIdentifier</key>
+			<string>uni-hamburg.uhh-eduroam.profil.wifi1</string>
+			<key>PayloadOrganization</key>
+			<string>Universität Hamburg</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>AF25E13A-E279-4266-8DD2-EABBFBEA039D</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>eduroam</string>
+		</dict>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>UHH CA - G02</string>
+			<key>PayloadContent</key>
+			<data>
+			MIIFkDCCBHigAwIBAgIHF6QkjHLeMDANBgkqhkiG9w0BAQsFADBa
+			MQswCQYDVQQGEwJERTETMBEGA1UEChMKREZOLVZlcmVpbjEQMA4G
+			A1UECxMHREZOLVBLSTEkMCIGA1UEAxMbREZOLVZlcmVpbiBQQ0Eg
+			R2xvYmFsIC0gRzAxMB4XDTE0MDUyNzE0NTM0OFoXDTE5MDcwOTIz
+			NTkwMFowgbAxCzAJBgNVBAYTAkRFMRAwDgYDVQQIEwdIYW1idXJn
+			MRAwDgYDVQQHEwdIYW1idXJnMR0wGwYDVQQKExRVbml2ZXJzaXRh
+			ZXQgSGFtYnVyZzEhMB8GA1UECxMYUmVnaW9uYWxlcyBSZWNoZW56
+			ZW50cnVtMRUwEwYDVQQDEwxVSEggQ0EgLSBHMDIxJDAiBgkqhkiG
+			9w0BCQEWFXVoaC1jYUB1bmktaGFtYnVyZy5kZTCCASIwDQYJKoZI
+			hvcNAQEBBQADggEPADCCAQoCggEBAL1wmqAvwDxKiB/u7sSNszao
+			R03dLgkTtwd7su4FtYThzT+sHGPEKFgEpQ2VLOaXHgy6WuRO0iOq
+			Y9j61fgj/a8kaHE/gSSxb6syaOb/zHPU1qcKThDsSEP1u2IYeCwR
+			lzRJDiJZYKxX/NGGm2+U29qzrsgPPt93JTeWnWdmYyA7XLmWJDEw
+			yEG1nc/EtAFqla85nm3pw5qC+N8CaJUALhWJZNA/DLmfsG/C2qtn
+			k0SJf4FtEL5qSfYN6lJYTYPFpk1C1fX8nbIA6GpkYzzcprOqUTfJ
+			wvSjkAqEmM63tHn/luCCAdVXGMjqobHtjo0n8w0klo7yv8fc6qUt
+			FUsc0u8CAwEAAaOCAgIwggH+MBIGA1UdEwEB/wQIMAYBAf8CAQEw
+			DgYDVR0PAQH/BAQDAgEGMBEGA1UdIAQKMAgwBgYEVR0gADAdBgNV
+			HQ4EFgQUJqBqAaj//BLr9xSJ48UwNtEuObIwHwYDVR0jBBgwFoAU
+			SbfGz+g9H3/qRHsTKffxCnA+3mQwIAYDVR0RBBkwF4EVdWhoLWNh
+			QHVuaS1oYW1idXJnLmRlMIGIBgNVHR8EgYAwfjA9oDugOYY3aHR0
+			cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9vdC1jYS9wdWIv
+			Y3JsL2NhY3JsLmNybDA9oDugOYY3aHR0cDovL2NkcDIucGNhLmRm
+			bi5kZS9nbG9iYWwtcm9vdC1jYS9wdWIvY3JsL2NhY3JsLmNybDCB
+			1wYIKwYBBQUHAQEEgcowgccwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9v
+			Y3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBHBggrBgEF
+			BQcwAoY7aHR0cDovL2NkcDEucGNhLmRmbi5kZS9nbG9iYWwtcm9v
+			dC1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwRwYIKwYBBQUHMAKG
+			O2h0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJvb3QtY2Ev
+			cHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IB
+			AQBE8D2265e7n6BP3j0XOdQMLh3yhfufLKOS9k/2Ie5EpFmTMFTv
+			Pdkwxel48glIwO020UjaQ1MCxY5NkW78rmiVTZMSH5wFbLDrLWRT
+			hvzPWNNwArStmmWkx0FCQGR4orVDGI3oaq9TJU8eAz8QnBouiWmq
+			Ro99KjdqfS31v2sBQHL+d7UxJD/o79syjtY2+3aMBaMpHJN2W8HQ
+			1lROvwTFgGgfHrwE2Yju3VaEkdh5THSBXRDGVA9sbJYvYhCgrjHs
+			sODrvSTnrikWWXN+rUgJm+r9QDKhqd/Aht5HmYS4JVDAYQE9buD0
+			D0WcpPuRbxsJqICs7qVmkB0v478sYWED
+			</data>
+			<key>PayloadDescription</key>
+			<string>Provides device authentication (certificate or identity).</string>
+			<key>PayloadDisplayName</key>
+			<string>UHH CA - G02</string>
+			<key>PayloadIdentifier</key>
+			<string>uni-hamburg.uhh-eduroam.profil.credential2</string>
+			<key>PayloadOrganization</key>
+			<string>Universität Hamburg</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.pkcs1</string>
+			<key>PayloadUUID</key>
+			<string>53134221-6B1F-45E0-A748-5BD36FBF17F1</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Mac OS X, iPhone, iPad und iPod Touch Konfigurationsprofil für den eduroam WLAN-Zugang für Mitglieder der Universität Hamburg.</string>
+	<key>PayloadDisplayName</key>
+	<string>UHH eduroam</string>
+	<key>PayloadIdentifier</key>
+	<string>uni-hamburg.uhh-eduroam.profil</string>
+	<key>PayloadOrganization</key>
+	<string>Universität Hamburg</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>17EF92FD-EF29-447A-BF58-A80CC9DE3D3C</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
