@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="764c93b7-b7e4-4381-b8f7-2feced6c883f" name="Default" comment="">
+    <list default="true" id="764c93b7-b7e4-4381-b8f7-2feced6c883f" name="Default" comment="Fügt MotorPort, SensorPort, Farbsensor, Lichtsensor, Berührungssensor, Ultraschallsensor und zwei Motorenarten hinzu.">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sensoren/ColorSensor.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sensoren/LightSensor.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Motor.java" />
@@ -445,6 +445,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fügt MotorPort, SensorPort, Farbsensor, Lichtsensor, Berührungssensor, Ultraschallsensor und zwei Motorenarten hinzu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fügt MotorPort, SensorPort, Farbsensor, Lichtsensor, Berührungssensor, Ultraschallsensor und zwei Motorenarten hinzu." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
