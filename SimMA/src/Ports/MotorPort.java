@@ -3,7 +3,17 @@
  *
  */
 
-public static MotorPort getInstance(int id)
-        {
+public class MotorPort {
+
+    static MotorPort A;
+    static MotorPort B;
+    static MotorPort C;
+
+    public MotorPort(){
+
+    }
+
+        public void getInstance(int id) {
 
         }
+}
