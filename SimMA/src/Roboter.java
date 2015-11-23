@@ -11,14 +11,18 @@ class Roboter {
     private int _yPos;
     private int _breite = 20;
     private int _hoehe = 40;
+    private String _farbe = "blau";
 
     public Roboter(){
+        
+        _xPos = 0;
+        _yPos = 0;
 
     }
     public Roboter(int xPos, int yPos)
     {
-
-
+        _xPos = xPos;
+        _yPos = yPos;
     }
 
     /**
