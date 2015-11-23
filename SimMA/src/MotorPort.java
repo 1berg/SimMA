@@ -11,9 +11,10 @@ public class MotorPort {
 
     public MotorPort(){
 
+        A = new MotorPort();
+        B = new MotorPort();
+        C = new MotorPort();
+
     }
 
-        public void getInstance(int id) {
-
-        }
 }

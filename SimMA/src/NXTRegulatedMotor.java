@@ -18,6 +18,10 @@ public class NXTRegulatedMotor extends Object {
         _port = port;
         }
 
+    /**
+     * Setzen der Geschwindigkeit
+     * @param speed
+     */
         public void setSpeed(int speed)
         {
                 _speed = speed;

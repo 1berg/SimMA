@@ -1,135 +1,241 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
- * Die Klasse Leinwand erlaubt einfache grafische Operationen auf einer Leinwand.
- * 
- * @author Bruce Quig, Michael Koelling, Axel Schmolitzky
- * 
- * @version 2008-12
+ * Leinwand ist eine Klasse, die einfache Zeichenoperationen auf einer
+ * leinwandartigen Zeichenflaeche ermoeglicht. Sie ist eine vereinfachte Version
+ * der Klasse Canvas (englisch fuer Leinwand) des JDK und wurde speziell fuer
+ * das Projekt "Figuren" geschrieben.
+ *
+ * @author: Bruce Quig
+ * @author: Michael Kolling (mik)
+ * @author: Axel Schmolitzky
+ * @author: Fredrik Winkler
+ *
+ * @version: 2.2
  */
-class Leinwand
+public class Leinwand extends JPanel
 {
-    private JFrame _frame;
-    public CanvasPane _canvas;
-    private Graphics2D _graphic;
-    private Color _backgroundColour;
-    private Image _canvasImage;
+    private static final Leinwand leinwand;
+    private static final Map<String, Color> farben;
+
+    static
+    {
+        leinwand = new Leinwand("Leinwand", 400, 300, Color.white);
+
+        farben = new HashMap<String, Color>();
+        farben.put("rot", Color.red);
+        farben.put("blau", Color.blue);
+        farben.put("gelb", Color.yellow);
+        farben.put("gruen", Color.green);
+        farben.put("lila", Color.magenta);
+        farben.put("weiss", Color.white);
+    }
 
     /**
-     * Erzeuge eine Leinwand mit einem (weissen) Standardhintergrund.
-     * 
-     * @param title
-     *            title to appear in Canvas Frame
-     * @param width
-     *            the desired width for the canvas
-     * @param height
-     *            the desired height for the canvas
+     * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.
+     *
+     * @return Leinwand
      */
-    public Leinwand(String title, int width, int height)
+    public static Leinwand gibLeinwand()
     {
-        this(title, width, height, Color.white);
+        return leinwand;
     }
+
+    private final Map<Object, ShapeMitFarbe> figuren;
+
+    private final JFrame frame;
+    private final Color hintergrundfarbe;
+    private Image image;
+    private Graphics2D graphics;
 
     /**
      * Erzeuge eine Leinwand.
-     * 
-     * @param title
-     *            title to appear in Canvas Frame
-     * @param width
-     *            the desired width for the canvas
-     * @param height
-     *            the desired height for the canvas
-     * @param bgClour
-     *            the desired background colour of the canvas
+     *
+     * @param titel
+     *            Titel, der im Rahmen der Leinwand angezeigt wird
+     * @param breite
+     *            die gewuenschte Breite der Leinwand
+     * @param hoehe
+     *            die gewuenschte Hoehe der Leinwand
+     * @param grundfarbe
+     *            die Hintergrundfarbe der Leinwand
      */
-    public Leinwand(String title, int width, int height, Color bgColour)
+    private Leinwand(String titel, int breite, int hoehe, Color grundfarbe)
     {
-        _frame = new JFrame();
-        _canvas = new CanvasPane();
-        _frame.setContentPane(_canvas);
-        _frame.setTitle(title);
-        _canvas.setPreferredSize(new Dimension(width, height));
-        _backgroundColour = bgColour;
-        _frame.pack();
-    }
+        figuren = new LinkedHashMap<Object, ShapeMitFarbe>();
 
-    /**
-     * Diese Leinwand sichtbar machen. Diese Methode kann auch benutzt werden, um eine sichtbare
-     * Leinwand wieder vor andere Fenster zu holen.
-     */
-    public void sichtbarMachen()
-    {
-        if (_graphic == null)
+        frame = new JFrame();
+        frame.setContentPane(this);
+        frame.setTitle(titel);
+        setPreferredSize(new Dimension(breite, hoehe));
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        hintergrundfarbe = grundfarbe;
+        calculateGraphics();
+        setzeSichtbarkeit(true);
+
+        addComponentListener(new ComponentAdapter()
         {
-            // first time: instantiate the offscreen image and fill it with
-            // the background colour
-            Dimension size = _canvas.getSize();
-            _canvasImage = _canvas.createImage(size.width, size.height);
-            _graphic = (Graphics2D) _canvasImage.getGraphics();
-            _graphic.setColor(_backgroundColour);
-            _graphic.fillRect(0, 0, size.width, size.height);
-            _graphic.setColor(Color.black);
-        }
-        _frame.setVisible(true);
-    }
-
-    /**
-     * Zeichne ein Bild, das in unserem internen Format angegeben ist (ein zweidimensionales Array
-     * von Grauwerten als short-Werte).
-     */
-    public void zeichneBild(short[][] bild)
-    {
-        int height = bild.length;
-        int width = bild[0].length;
-
-        BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-        WritableRaster raster = (WritableRaster) bufferedImage.getData();
-
-        int[] rgb = new int[3];
-
-        for (int y = 0; y < height; y++)
-        {
-            for (int x = 0; x < width; x++)
+            public void componentResized(ComponentEvent evt)
             {
-                rgb[0] = bild[y][x];
-                rgb[1] = bild[y][x];
-                rgb[2] = bild[y][x];
-                raster.setPixel(x, y, rgb);
+                neuZeichnen();
             }
+        });
+    }
+
+    private void calculateGraphics()
+    {
+        Dimension size = getSize();
+        image = createImage(size.width, size.height);
+
+        graphics = (Graphics2D) image.getGraphics();
+        graphics.setColor(hintergrundfarbe);
+        graphics.fillRect(0, 0, size.width, size.height);
+    }
+
+    private void neuZeichnen()
+    {
+        calculateGraphics();
+
+        synchronized (figuren)
+        {
+            for (ShapeMitFarbe shape: figuren.values())
+                shape.draw(graphics);
         }
-        bufferedImage.setData(raster);
-        drawImage(bufferedImage, 0, 0);
+
+        repaint();
+    }
+
+    public void paint(Graphics g)
+    {
+        g.drawImage(image, 0, 0, null);
     }
 
     /**
-     * Draws an image onto the canvas.
-     * 
-     * @param image
-     *            the Image object to be displayed
-     * @param x
-     *            x co-ordinate for Image placement
-     * @param y
-     *            y co-ordinate for Image placement
-     * @return returns boolean value representing whether the image was completely loaded
+     * Setze, ob diese Leinwand sichtbar sein soll oder nicht. Wenn die Leinwand
+     * sichtbar gemacht wird, wird ihr Fenster in den Vordergrund geholt. Diese
+     * Operation kann auch benutzt werden, um ein bereits sichtbares
+     * Leinwandfenster in den Vordergrund (vor andere Fenster) zu holen.
+     *
+     * @param sichtbar
+     *            boolean fuer die gewuenschte Sichtbarkeit: true fuer sichtbar,
+     *            false fuer nicht sichtbar.
      */
-    private boolean drawImage(Image image, int x, int y)
+    public void setzeSichtbarkeit(boolean sichtbar)
     {
-        boolean result = _graphic.drawImage(image, x, y, null);
-        _canvas.repaint();
-        return result;
+        frame.setVisible(sichtbar);
     }
 
-    /************************************************************************
-     * Nested class CanvasPane - the actual canvas component contained in the Canvas frame. This is
-     * essentially a JPanel with added capability to refresh the image drawn on it.
+    /**
+     * Zeichne fuer das gegebene Figur-Objekt eine Java-Figur (einen Shape) auf
+     * die Leinwand.
+     *
+     * @param figur
+     *            das Figur-Objekt, fuer das ein Shape gezeichnet werden soll
+     * @param farbe
+     *            die Farbe der Figur
+     * @param shape
+     *            ein Objekt der Klasse Shape, das tatsaechlich gezeichnet wird
      */
-    private class CanvasPane extends JPanel
+    public void zeichne(Object figur, String farbe, Shape shape)
     {
-        public void paint(Graphics g)
+        ShapeMitFarbe shapeMitFarbe = new ShapeMitFarbe(shape, farbe);
+
+        boolean geloescht;
+        synchronized (figuren)
         {
-            g.drawImage(_canvasImage, 0, 0, null);
+            if (geloescht = figuren.containsKey(figur))
+            {
+                figuren.remove(figur);
+            }
+            figuren.put(figur, shapeMitFarbe);
+        }
+
+        if (geloescht)
+        {
+            neuZeichnen();
+        }
+        else
+        {
+            shapeMitFarbe.draw(graphics);
+            repaint(shape.getBounds());
+        }
+    }
+
+    /**
+     * Entferne die gegebene Figur von der Leinwand.
+     *
+     * @param figur
+     *            die Figur, deren Shape entfernt werden soll
+     */
+    public void entferne(Object figur)
+    {
+        synchronized (figuren)
+        {
+            figuren.remove(figur);
+        }
+        neuZeichnen();
+    }
+
+    /**
+     * Setze die Zeichenfarbe der Leinwand.
+     *
+     * @param farbname
+     *            der Name der neuen Zeichenfarbe.
+     */
+    public void setzeZeichenfarbe(String farbname)
+    {
+        Color farbe = farben.get(farbname);
+        graphics.setColor(farbe != null ? farbe : Color.black);
+    }
+
+    /**
+     * Warte fuer die angegebenen Millisekunden. Mit dieser Operation wird eine
+     * Verzoegerung definiert, die fuer animierte Zeichnungen benutzt werden
+     * kann.
+     *
+     * @param millisekunden
+     *            die zu wartenden Millisekunden
+     */
+    public void warte(int millisekunden)
+    {
+        try
+        {
+            Thread.sleep(millisekunden);
+        }
+        catch (Exception e)
+        {
+            // Exception ignorieren
+        }
+    }
+
+    /**
+     * Interne Klasse ShapeMitFarbe - Da die Klasse Shape des JDK nicht auch
+     * eine Farbe mitverwalten kann, muss mit dieser Klasse die Verknuepfung
+     * modelliert werden.
+     */
+    private class ShapeMitFarbe
+    {
+        private Shape shape;
+        private String farbe;
+
+        public ShapeMitFarbe(Shape shape, String farbe)
+        {
+            this.shape = shape;
+            this.farbe = farbe;
+        }
+
+        public void draw(Graphics2D graphic)
+        {
+            setzeZeichenfarbe(farbe);
+            graphic.fill(shape);
         }
     }
 }
