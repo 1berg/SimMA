@@ -7,14 +7,15 @@ import java.awt.Polygon;
  */
 class Roboter {
 
-    private int _xPos;
-    private int _yPos;
+    private double _xPos;
+    private double _yPos;
     private int _breite = 20;
     private int _hoehe = 40;
     private String _farbe = "blau";
+    private double _ausrichtung = 0;
 
     public Roboter(){
-        
+
         _xPos = 0;
         _yPos = 0;
 
@@ -31,22 +32,14 @@ class Roboter {
      */
     public void forward()
     {
-        int delta;
+        int delta = 1;
         int entfernung = 500;
-
-        if (entfernung < 0)
-        {
-            delta = -1;
-            entfernung = -entfernung;
-        }
-        else
-        {
-            delta = 1;
-        }
+        double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++)
         {
             _yPos += delta;
+            _xPos += b/entfernung;
             zeichnen();
         }
 
@@ -57,22 +50,14 @@ class Roboter {
      */
     public void backward()
     {
-        int delta;
-        int entfernung = -500;
-
-        if (entfernung < 0)
-        {
-            delta = -1;
-            entfernung = -entfernung;
-        }
-        else
-        {
-            delta = 1;
-        }
+        int delta = -1;
+        int entfernung = 500;
+        double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++)
         {
             _yPos += delta;
+            _xPos -= b/entfernung;
             zeichnen();
         }
 

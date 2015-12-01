@@ -23,7 +23,7 @@
 \pagenumbering{Roman}
 
 \title{Entwicklung einer Java Simulationsumgebung für Lego Mindstorms NXT Roboter}
-\subtitle{Exposé - Version 1}
+\subtitle{Exposé - Version 2}
 \author{\emph{Pamina Maria Berg}\\
 \emph{Matr.Nr. 6087438}}
 
@@ -33,9 +33,9 @@
 \par \singlespacing
 \section*{Motivation}
 \onehalfspacing
-Die Arbeit mit Robotern bereichert den Informatikunterricht und das Nachmittagsprogramm vieler Schulen seit Jahren. Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool, oder auch Enchanting. Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Robotern arbeitet.\\
-Doch immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel das Fehlen von einer ausreichenden Anzahl an Robotern im Unterricht oder auch fehlende Firmwareupdates oder defekte Sensoren.\\
-Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet sind. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
+Die Arbeit mit Robotern bereichert den Informatikunterricht und das Nachmittagsprogramm vieler Schulen seit Jahren. Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten, wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool oder auch Enchanting. Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Robotern arbeitet.\\
+Doch immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel das Fehlen von einer ausreichenden Anzahl an Robotern im Unterricht, fehlende Firmwareupdates oder defekte Sensoren.\\
+Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet sind. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten auf einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
 Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von LEGO Mindstorm Robotern zu ermöglichen, soll im Rahmen dieser Masterarbeit eine Simulationsumgebung für die Arbeit mit LEGO Mindstorms NXT Roboter entstehen.
 
 \par \singlespacing
@@ -44,26 +44,27 @@ Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmi
 Die ersten computergesteuerten LEGO Produkte wurden bereits 1986 veröffentlicht. In einer Zusammenarbeit von LEGO Education und dem Massachussettes Institute of Technology (MIT) wurde LEGO TC LOGO entwickelt. Dies war eine spezielle Abwandlung der Programmiersprache LOGO, mit der zusammengesetzte LEGO-Modelle gesteuert werden konnten \cite{rolling:14}.\\
 Die Entwicklung eines programmierbaren LEGO-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten MINDSTORMS Systems im Januar 1998, bei der der LEGO MINDSTORMS RCX Intelligent Brick, ein Microcomputer und somit das Kernstück des RCX-Systems, und das Robotics Invention System im Museum of Modern Art in London vorgestellt wurden.\\
 Bereits zwei Monate nach Verkaufsstart wurde die FIRST LEGO League (FLL) gegründet -- eine Zusammenarbeit zwischen LEGO und FIRST (For Inspiration and Recognition of Science and Technology), die den Grundstein für die heute noch bestehende Wettbewerbsliga legte \cite{rolling:14}.\\
-Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO MINDSTORMS NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen. \cite{lego}.
+Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO MINDSTORMS NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.
 
 \par \singlespacing
 \section*{Fragestellung}
 \onehalfspacing
-Die Masterarbeit soll die Frage klären, ob es möglich ist, eine geeignete Simulationsumgebung für SuS zu entwickeln. Diese soll auf Basis der von leJOS NXJ angebotenen API den SuS eine Möglichkeit zur schnellen Überprüfung ihrer Lösungen einfacher Aufgaben in einer Simulation am Computer geben.\\
-Des Weiteren wird die Arbeit einen kleinen Anteil an didaktischen Inhalten umfassen. Dies soll das Forschungsthema in einen schulischen Kontext einordnen und somit können die Anforderungen, die an eine solche Simulationsumgebung gestellt werden, aus zwei Perspektiven dargestellt werden.
+In dieser Masterarbeit soll der Prototyp einer Simulationsumgebung entwickelt werden. Diese Simulationsumgebung soll auf Basis der von leJOS NXJ angebotenen API den SuS eine Möglichkeit zur schnellen Überprüfung ihrer Lösungen durch eine Simulation am Computer geben.\\
+Des Weiteren soll im Laufe der Implementation festgestellt werde, inwiefern eine Integration der Simulationsumgebung in BlueJ mithilfe einer Extension sinnvoll und realisierbar ist.\\
+Abschließend wird die Arbeit einen kleinen Anteil an didaktischen Inhalten umfassen. Dieser soll das Forschungsthema in einen schulischen Kontext einordnen und somit die Anforderungen, die an eine solche Simulationsumgebung gestellt werden, aus zwei Perspektiven dargestellen.
 
 \par \singlespacing
 \section*{Lösungsidee}
 \onehalfspacing
-Die generelle Idee ist ist, eine eigene API für den Simulator zu programmieren, die exakt die gleichen Methoden anbietet, die wie leJOS NXJ API. Somit wäre gewährleistet, dass die SuS eine einheitliche Syntax lernen und nicht zwischen Methoden wechseln müssen, um z.B. die beiden Motoren zu starten oder die Sensoren anzusteuern.\\
-Hierbei soll ein Roboter als Objekt auf einer Bitmap, die aus einer Pixelgrafik erzeugt wird und einen Parcours darstellt, auf dem Bildschirm fahren und die programmierte Lösung der SuS zu diesem Parcours simulieren.\\
-Die Ausrichtung des Roboter-Objekts spielt eine zentrale Rolle in der Programmierung der Simulationsumgebung, denn es sollte eine interne Konsistenz in den Bewegungsrichtungen der Methoden \texttt{forward()} und \texttt{backward()} gewährleistet werden, damit es keine vom Parcours abhängige Implementation der beiden genannten Methoden, und somit eine Überlagerung geben muss.
+Die generelle Idee ist es, eine eigene API für den Simulator zu programmieren, die exakt die gleichen Methoden anbietet, wie die leJOS NXJ API. Somit wäre gewährleistet, dass die SuS eine einheitliche Syntax lernen und nicht zwischen Methoden wechseln müssen, um zum Beispiel die beiden Motoren zu starten oder die Sensoren anzusteuern.\\
+Hierbei soll ein Roboter als Objekt in einer Bitmap, die aus einer Pixelgrafik erzeugt wird und einen Parcours darstellt, auf dem Bildschirm angezeigt werden und die programmierte Lösung der SuS auf diesem Parcours simulieren.\\
+
 
 \par \singlespacing
 \section*{Geplante Aktivitäten}
 \onehalfspacing
-Zunächst verschaffe ich mir einen Überblick darüber, welche Klassen implementiert werden müssen, um ein Mindestmaß an Funktionen der Simulationsumgebung sicherzustellen. Hierzu gehören die Klassen der Motor- und Sensor-Ports, zwei Klassen für die Motoren, jeweils eine Klasse für die Licht-, Ultraschall- und Tastsensoren.\\
-Ich werde zunächst drei Szenarien als Pixelgrafiken erstellen, die dann von einer Bildeinleserklasse als Parcours integriert werden können. Um nun die Visualisierung des Roboters als Akteur in dem Problem-Szenario zu verwirklichen, werde ich versuchen, diesen mithilfe von Java Swing als Objekt mit einem Bildimport für ein realitätsnahes Aussehen zu implementieren. \\
+Zunächst verschaffe ich mir einen Überblick darüber, welche Klassen implementiert werden müssen, um ein Mindestmaß an Funktionen der in Simulationsumgebung sicherzustellen. Hierzu gehören die Klassen der Motor- und Sensor-Ports, eine Klasse für die Motoren und jeweils eine Klasse für die Licht-, Ultraschall- und Tastsensoren.\\
+Ich werde zunächst drei Szenarien als Pixelgrafiken erstellen, die dann von einer Bildeinleserklasse als Parcours generiert werden können. Um nun die Visualisierung des Roboters als Akteur in dem Problem-Szenario zu verwirklichen, werde ich diesen zunächst als einfaches Dreieck implementieren.\\
 Ein Problem wird darin bestehen, dass der Roboter an sich bei der leJOS NXJ API nicht als eigenständiges Objekt gesehen wird, sondern die beiden Motoren A und B zur Steuerung des Roboters direkt angesprochen werden. Das Roboter-Objekt der Simulation muss also so mit den beiden Motoren verbunden werden, dass dieses ein visuelles Feedback geben kann. Sobald der rechte Motor des Roboters angesprochen wird, sollte die visuelle Repräsentation auf dem Parcour direkt darauf reagieren. 
 
 \par \singlespacing
