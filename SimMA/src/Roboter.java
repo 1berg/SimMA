@@ -30,10 +30,10 @@ class Roboter {
      * Bewegung im Koordinatensystem nach oben
      *
      */
-    public void forward()
+    public void forward(int entfernung)
     {
         int delta = 1;
-        int entfernung = 500;
+        //int entfernung = 500;
         double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++)
@@ -48,10 +48,10 @@ class Roboter {
     /**
      * Bewegung im Koordinatensystem nach unten
      */
-    public void backward()
+    public void backward(int entfernung)
     {
         int delta = -1;
-        int entfernung = 500;
+        //int entfernung = 500;
         double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++)
@@ -128,6 +128,16 @@ class Roboter {
             leinwand.warte(10);
 
     }
+}
+
+/**
+ * Die Ausrichtung des Roboters verändern
+ *
+ */
+
+public void aendereAusrichtung(int winkel)
+{
+    _ausrichtung += winkel;
 }
 
 //import java.awt.Polygon;
