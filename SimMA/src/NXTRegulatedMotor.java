@@ -36,7 +36,7 @@ public class NXTRegulatedMotor extends Object {
                 {
                     for(int i=0;i < 36;i++)
                     {
-                        _robot.aendereAusrichtung(10);
+                        _robot.aendereAusrichtung(10); //eventuell andersrum
                         _robot.forward(1);
                     }
 
@@ -46,7 +46,7 @@ public class NXTRegulatedMotor extends Object {
                     for(int i=0; i<36;i++)
                     {
                         _robot.aendereAusrichtung(-10);
-                        _robot:forward(1);
+                        _robot.forward(1);
                     }
                 }
 
@@ -54,6 +54,23 @@ public class NXTRegulatedMotor extends Object {
 
         public void backward()
         {
+            if (_port.equals('C')) //linker Motor wird angesteuert
+            {
+                for(int i=0;i < 36;i++)
+                {
+                    _robot.aendereAusrichtung(-10); //eventuell andersrum
+                    _robot.backward(1);
+                }
+
+            }
+            else if(_port.equals('B')) //rechter Motor wird angesteuert
+            {
+                for(int i=0; i<36;i++)
+                {
+                    _robot.aendereAusrichtung(10);
+                    _robot.backward(1);
+                }
+            }
 
         }
 

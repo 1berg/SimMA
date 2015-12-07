@@ -1,4 +1,4 @@
-import java.awt.Polygon;
+import java.awt.*;
 
 /**
  * Created by Pamina on 21.09.15.
@@ -7,39 +7,42 @@ import java.awt.Polygon;
  */
 class Roboter {
 
-    private double _xPos;
-    private double _yPos;
+
+    private int _xPos;
+    private int _yPos;
     private int _breite = 20;
     private int _hoehe = 40;
-    private String _farbe = "blau";
     private double _ausrichtung = 0;
 
-    public Roboter(){
+    public Roboter() {
 
         _xPos = 0;
         _yPos = 0;
+        _hoehe = 30;
+        _breite = 40;
+        zeichnen();
 
     }
-    public Roboter(int xPos, int yPos)
-    {
+
+    public Roboter(int xPos, int yPos) {
         _xPos = xPos;
         _yPos = yPos;
+        _hoehe = 30;
+        _breite = 40;
+        zeichnen();
     }
 
     /**
      * Bewegung im Koordinatensystem nach oben
-     *
      */
-    public void forward(int entfernung)
-    {
+    public void forward(int entfernung) {
         int delta = 1;
         //int entfernung = 500;
         double b = entfernung * Math.cos(_ausrichtung);
 
-        for (int i = 0; i < entfernung; i++)
-        {
+        for (int i = 0; i < entfernung; i++) {
             _yPos += delta;
-            _xPos += b/entfernung;
+            _xPos += (int) b / entfernung;
             zeichnen();
         }
 
@@ -48,16 +51,14 @@ class Roboter {
     /**
      * Bewegung im Koordinatensystem nach unten
      */
-    public void backward(int entfernung)
-    {
+    public void backward(int entfernung) {
         int delta = -1;
         //int entfernung = 500;
         double b = entfernung * Math.cos(_ausrichtung);
 
-        for (int i = 0; i < entfernung; i++)
-        {
+        for (int i = 0; i < entfernung; i++) {
             _yPos += delta;
-            _xPos -= b/entfernung;
+            _xPos -= (int) b / entfernung;
             zeichnen();
         }
 
@@ -66,23 +67,18 @@ class Roboter {
     /**
      * Bewegung im Koordinatenkreuz nach rechts
      */
-    public void right()
-    {
+    public void right() {
         int delta;
         int entfernung = 500;
 
-        if (entfernung < 0)
-        {
+        if (entfernung < 0) {
             delta = -1;
             entfernung = -entfernung;
-        }
-        else
-        {
+        } else {
             delta = 1;
         }
 
-        for (int i = 0; i < entfernung; i++)
-        {
+        for (int i = 0; i < entfernung; i++) {
             _xPos += delta;
             zeichnen();
         }
@@ -92,52 +88,46 @@ class Roboter {
     /**
      * Bewegung im Koordinatenkreuz nach links
      */
-    public void left()
-    {
+    public void left() {
         int delta;
         int entfernung = -500;
 
-        if (entfernung < 0)
-        {
+        if (entfernung < 0) {
             delta = -1;
             entfernung = -entfernung;
-        }
-        else
-        {
+        } else {
             delta = 1;
         }
 
-        for (int i = 0; i < entfernung; i++)
-        {
+        for (int i = 0; i < entfernung; i++) {
             _xPos += delta;
             zeichnen();
         }
 
     }
 
+
+
     /*
  * Zeichne dieses Dreieck mit seinen aktuellen Werten auf den Bildschirm.
  */
-    private void zeichnen()
-    {
-            Leinwand leinwand = Leinwand.gibLeinwand();
-            int[] xpoints =
-                    { _xPos, _xPos + (_breite / 2), _xPos - (_breite / 2)};
-            int[] ypoints = { _yPos, _yPos + _hoehe, _yPos + _hoehe };
-            leinwand.zeichne(this, _farbe, new Polygon(xpoints, ypoints, 3));
-            leinwand.warte(10);
+    private void zeichnen() {
+        Leinwand leinwand = Leinwand.gibLeinwand();
+        int[] xpoints =
+                {_xPos, _xPos + (_breite / 2), _xPos - (_breite / 2)};
+        int[] ypoints = {_yPos, _yPos + _hoehe, _yPos + _hoehe};
+        leinwand.zeichne(this, "blau", new Polygon(xpoints, ypoints, 3));
 
     }
-}
 
-/**
- * Die Ausrichtung des Roboters verändern
- *
- */
 
-public void aendereAusrichtung(int winkel)
-{
-    _ausrichtung += winkel;
+    /**
+     * Die Ausrichtung des Roboters verändern
+     */
+
+    public void aendereAusrichtung(int winkel) {
+        _ausrichtung += winkel;
+    }
 }
 
 //import java.awt.Polygon;
