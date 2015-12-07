@@ -2,16 +2,18 @@
  * Ein Berührungssensor.
  */
 
+public class TouchSensor
+{
+    public TouchSensor(SensorPort port)
+    {
 
-public TouchSensor(ADSensorPort port)
-        {
+    }
 
-        }
-
-/**
- * Gibt Rückmeldung zum Zustand des Sensors (gedrückt/nicht gedrück).
- */
-public boolean isPressed()
-        {
-
-        }
+    /**
+     * Gibt Rückmeldung zum Zustand des Sensors (gedrückt/nicht gedrück).
+     */
+    public boolean isPressed()
+    {
+        return false;
+    }
+}

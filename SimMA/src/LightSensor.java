@@ -1,23 +1,22 @@
-import lejos.nxt.ADSensorPort;
-
 /**
  * Ein Lichtsensor, der Helligkeitswerte liest.
+ * Diese soll die Farbe der Pixel im Bildarray abtasten und die "Lichtwert" zurückgeben.
  */
 public class LightSensor
-        {
-public LightSensor(ADSensorPort port){
+{
+    public LightSensor(SensorPort port)
+    {
 
-        }
+    }
 
-public void getLightValue()
-        {
+    public int getLightValue()
+    {
+        return 0;
 
-
-        }
-
-public void readValue()
-        {
-
-        }
-        }
+    }
+    public int readValue()
+    {
+        return 0;
+    }
+}
 

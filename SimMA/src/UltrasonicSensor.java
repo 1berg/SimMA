@@ -1,17 +1,26 @@
 /**
  * Ein Ultraschallsensor.
  */
-public UltrasonicSensor(I2CPort port)
+
+public class UltrasonicSensor
+{
+
+
+        public UltrasonicSensor(SensorPort port)
         {
 
         }
 
-public int getDistance()
+        public int getDistance()
         {
+                return 0;
 
         }
 
-public float getRange()
+        public float getRange()
         {
+                return 0;
 
         }
+
+}
