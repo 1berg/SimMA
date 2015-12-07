@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=title\ width\ height
+comment0.target=Leinwand(java.lang.String,\ int,\ int)
+comment0.text=\n\ Erzeuge\ eine\ Leinwand\ mit\ einem\ (weissen)\ Standardhintergrund.\n\n\ @param\ title\n\ \ \ \ \ \ \ \ \ \ \ \ title\ to\ appear\ in\ Canvas\ Frame\n\ @param\ width\n\ \ \ \ \ \ \ \ \ \ \ \ the\ desired\ width\ for\ the\ canvas\n\ @param\ height\n\ \ \ \ \ \ \ \ \ \ \ \ the\ desired\ height\ for\ the\ canvas\n
+comment1.params=title\ width\ height\ bgColour
+comment1.target=Leinwand(java.lang.String,\ int,\ int,\ java.awt.Color)
+comment1.text=\n\ Erzeuge\ eine\ Leinwand.\n\n\ @param\ title\n\ \ \ \ \ \ \ \ \ \ \ \ title\ to\ appear\ in\ Canvas\ Frame\n\ @param\ width\n\ \ \ \ \ \ \ \ \ \ \ \ the\ desired\ width\ for\ the\ canvas\n\ @param\ height\n\ \ \ \ \ \ \ \ \ \ \ \ the\ desired\ height\ for\ the\ canvas\n\ @param\ bgColour\n\ \ \ \ \ \ \ \ \ \ \ \ the\ desired\ background\ colour\ of\ the\ canvas\n
+comment2.params=
+comment2.target=Leinwand\ gibLeinwand()
+comment2.text=\n\ Liefert\ eine\ Referenz\ auf\ das\ einzige\ Exemplar\ dieser\ Klasse.\n\n\ @return\ Leinwand\n
+comment3.params=
+comment3.target=void\ sichtbarMachen()
+comment3.text=\n\ Diese\ Leinwand\ sichtbar\ machen.\ Diese\ Methode\ kann\ auch\ benutzt\ werden,\ um\ eine\ sichtbare\n\ Leinwand\ wieder\ vor\ andere\ Fenster\ zu\ holen.\n
+comment4.params=bild
+comment4.target=void\ zeichneBild(short[][])
+comment4.text=\n\ Zeichne\ ein\ Bild,\ das\ in\ unserem\ internen\ Format\ angegeben\ ist\ (ein\ zweidimensionales\ Array\n\ von\ Grauwerten\ als\ short-Werte).\n
+comment5.params=image\ x\ y
+comment5.target=boolean\ drawImage(java.awt.Image,\ int,\ int)
+comment5.text=\n\ Draws\ an\ image\ onto\ the\ canvas.\n\n\ @param\ image\n\ \ \ \ \ \ \ \ \ \ \ \ the\ Image\ object\ to\ be\ displayed\n\ @param\ x\n\ \ \ \ \ \ \ \ \ \ \ \ x\ co-ordinate\ for\ Image\ placement\n\ @param\ y\n\ \ \ \ \ \ \ \ \ \ \ \ y\ co-ordinate\ for\ Image\ placement\n\ @return\ returns\ boolean\ value\ representing\ whether\ the\ image\ was\ completely\ loaded\n
+comment6.params=figur\ farbe\ shape
+comment6.target=void\ zeichne(java.lang.Object,\ java.lang.String,\ java.awt.Shape)
+comment6.text=\n\ Zeichne\ fuer\ das\ gegebene\ Figur-Objekt\ eine\ Java-Figur\ (einen\ Shape)\ auf\n\ die\ Leinwand.\n\n\ @param\ figur\n\ \ \ \ \ \ \ \ \ \ \ \ das\ Figur-Objekt,\ fuer\ das\ ein\ Shape\ gezeichnet\ werden\ soll\n\ @param\ farbe\n\ \ \ \ \ \ \ \ \ \ \ \ die\ Farbe\ der\ Figur\n\ @param\ shape\n\ \ \ \ \ \ \ \ \ \ \ \ ein\ Objekt\ der\ Klasse\ Shape,\ das\ tatsaechlich\ gezeichnet\ wird\n
+numComments=7

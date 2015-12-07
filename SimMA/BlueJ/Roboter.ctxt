@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Roboter()
+comment1.params=xPos\ yPos
+comment1.target=Roboter(int,\ int)
+comment2.params=entfernung
+comment2.target=void\ forward(int)
+comment2.text=\n\ Bewegung\ im\ Koordinatensystem\ nach\ oben\n
+comment3.params=entfernung
+comment3.target=void\ backward(int)
+comment3.text=\n\ Bewegung\ im\ Koordinatensystem\ nach\ unten\n
+comment4.params=
+comment4.target=void\ right()
+comment4.text=\n\ Bewegung\ im\ Koordinatenkreuz\ nach\ rechts\n
+comment5.params=
+comment5.target=void\ left()
+comment5.text=\n\ Bewegung\ im\ Koordinatenkreuz\ nach\ links\n
+comment6.params=
+comment6.target=void\ zeichnen()
+comment6.text=\n\ Zeichne\ dieses\ Dreieck\ mit\ seinen\ aktuellen\ Werten\ auf\ den\ Bildschirm.\n
+comment7.params=winkel
+comment7.target=void\ aendereAusrichtung(int)
+comment7.text=\n\ Die\ Ausrichtung\ des\ Roboters\ ver\u00E4ndern\n
+numComments=8

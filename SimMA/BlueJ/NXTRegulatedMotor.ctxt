@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=port
+comment0.target=NXTRegulatedMotor(MotorPort)
+comment1.params=speed
+comment1.target=void\ setSpeed(int)
+comment1.text=\n\ Setzen\ der\ Geschwindigkeit\n\ @param\ speed\n
+comment2.params=
+comment2.target=void\ forward()
+comment2.text=\n\ Vorw\u00E4rtsbewegung\ f\u00FCr\ den\ jeweiligen\ Motor.\n
+comment3.params=
+comment3.target=void\ backward()
+comment4.params=
+comment4.target=void\ stop()
+comment5.params=acceleration
+comment5.target=void\ setAcceleration(int)
+comment6.params=
+comment6.target=void\ getAcceleration()
+numComments=7
