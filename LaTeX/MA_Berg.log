@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  11 NOV 2015 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  8 DEC 2015 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,6 +865,10 @@ LaTeX Info: Redefining \hbar on input line 50.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfsync/pdfsync.sty
 Package: pdfsync 2008/01/26 v1.1
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -899,7 +903,7 @@ Class scrbook Warning: Usage of package `titlesec' together
 (scrbook)              the extended optional argument of the section
 (scrbook)              commands.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `titlesec' on input line 24.
+(scrbook)              package `titlesec' on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
@@ -936,7 +940,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Package scrbook Warning: Activating an ugly workaround for a missing
-(scrbook)                feature of package `titlesec` on input line 24.
+(scrbook)                feature of package `titlesec` on input line 26.
 
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -1177,7 +1181,7 @@ s/logo_uhh.jpg> <./images/greypixel.png (PNG copy)>]) [2
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
-LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
@@ -1222,9 +1226,6 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 [2]
 Kapitel 2.
 
-LaTeX Warning: Citation `lego' on page 3 undefined on input line 71.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
@@ -1247,7 +1248,12 @@ Kapitel 4.
 Kapitel 5.
 [8
 
-] (./bibliography.tex [9
+] (./bibliography.tex
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [9
 
 ])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
@@ -1258,28 +1264,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[11] (./MA_Berg.aux (./titlepage.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[11] (./MA_Berg.aux (./titlepage.aux)) ) 
 Here is how much of TeX's memory you used:
- 17020 strings out of 493089
- 318846 string characters out of 6134841
- 443438 words of memory out of 5000000
- 20088 multiletter control sequences out of 15000+600000
- 61432 words of font info for 65 fonts, out of 8000000 for 9000
+ 17119 strings out of 493089
+ 320497 string characters out of 6134841
+ 444541 words of memory out of 5000000
+ 20180 multiletter control sequences out of 15000+600000
+ 60638 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,27n,76p,812b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (15 pages, 89142 bytes).
+ 67i,27n,76p,812b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fon
+ts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts
+/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/c
+m-super/sftt1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MA_Berg.pdf (15 pages, 115379 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
