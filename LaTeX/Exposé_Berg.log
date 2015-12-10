@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  1 DEC 2015 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  8 DEC 2015 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1150,24 +1150,31 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
 
-Underfull \vbox (badness 1342) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
 
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 75.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 58.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
@@ -1218,7 +1225,7 @@ sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt12
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Exposé_Berg.pdf (8 pages, 99727 bytes).
+Output written on Exposé_Berg.pdf (8 pages, 100141 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
