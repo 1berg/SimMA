@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimMA/src/Parcour.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/Code_SE1/BildEinleser.java" afterPath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/ColorSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/ColorSensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Leinwand.java" afterPath="$PROJECT_DIR$/SimMA/src/Leinwand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/LightSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/LightSensor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" afterPath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Roboter.java" afterPath="$PROJECT_DIR$/SimMA/src/Roboter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/SensorPort.java" afterPath="$PROJECT_DIR$/SimMA/src/SensorPort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/Simulator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/TouchSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/TouchSensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/UltrasonicSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/UltrasonicSensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimMA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -517,7 +505,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="993" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
