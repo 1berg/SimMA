@@ -10,10 +10,10 @@
 \contentsline {subsection}{\numberline {2.3.3}BlueJ}{4}
 \contentsline {section}{\numberline {2.4}leJOS}{4}
 \contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{5}
-\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{5}
-\contentsline {section}{\numberline {3.2}Lehrkraft}{5}
-\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{6}
-\contentsline {chapter}{\numberline {4}Entwickelte Software}{7}
-\contentsline {section}{\numberline {4.1}Beschreibung der Software}{7}
-\contentsline {section}{\numberline {4.2}Softwarearchitektur}{7}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{8}
+\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{6}
+\contentsline {section}{\numberline {3.2}Lehrkraft}{6}
+\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{7}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{8}
+\contentsline {section}{\numberline {4.1}Beschreibung der Software}{8}
+\contentsline {section}{\numberline {4.2}Softwarearchitektur}{8}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{9}
