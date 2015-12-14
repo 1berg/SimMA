@@ -4,14 +4,14 @@
 
 public class Simulator
 {
-    public Parcour _parcour;
+    public Parcours _parcours;
     public BildEinleser _bildEinleser;
     public Leinwand _leinwand;
     public Roboter _roboter;
 
     public Simulator()
     {
-        _parcour = new Parcour();
+        _parcours = new Parcours();
         _roboter = new Roboter();
     }
 }
