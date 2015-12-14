@@ -3,7 +3,7 @@
  *
  * Created by Pamina on 07.12.15.
  */
-public class Parcour {
+public class Parcours {
 
 
         // die Bilddaten dieses Bildes
@@ -22,7 +22,7 @@ public class Parcour {
          * Initialisiert ein Bild mit einer Bilddatei. Der Benutzer kann interaktiv mit Hilfe eines
          * Dateidialogs die zu ladende Datei auswaehlen.
          */
-        public Parcour()
+        public Parcours()
         {
             _bilddaten = BildEinleser.liesBilddaten();
             if (_bilddaten != null)
@@ -39,7 +39,7 @@ public class Parcour {
          * @param bilddateiName
          *            der Name der Bilddatei
          */
-        public Parcour(String bilddateiName)
+        public Parcours(String bilddateiName)
         {
             _bilddaten = BildEinleser.liesBilddaten(bilddateiName);
             aktualisiereBildgroesse(_bilddaten);
