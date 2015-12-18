@@ -74,27 +74,87 @@ Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den
 \par \singlespacing
 \section{Die Arbeit mit LEGO-Robotern im Unterricht}
 \onehalfspacing
-Die Arbeit mit Robotern im Unterricht bringt ein hohes Motivationspotential mit sich \cite[S.5]{stolt:01}. 
-\subsection{Verankerung im Bildungsplan}
+Es erfolgt nun zunächst die curriculare Einordnung des Themas Roboter im Unterricht in die Bildungspläne aus Hamburg. Danach werden verschiedene Arbeitsmethoden im Zusammenhang mit dieser Art von Unterricht vorgestellt.
 
+\subsection{Curriculare Einordnung}
+Die fachlichen Inhalte, die mithilfe des Einsatzes von Robotern im Unterricht vermittelt werden können, sind sowohl im Bildungsplan der Sekundarstufe I für das Gymnasium (Klasse 7 -- 10) und die Stadtteilschule (Klasse 7 -- 11), als auch im Bildungs- bzw. Rahmenplan für die Gymnasiale Oberstufe, der Sekundarstufe II, verankert.
+
+\subsubsection{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}
+Der Einsatz von Robotern kann auf die Module 2 und 3 des Bildungsplanes für die Sekundarstufe I des Gymnasiums bezogen werden. Hier heißt es\\
+
+\emph{Modul 2}
+\begin{itemize}
+\item \emph{Abläufe analysieren und umgangssprachlich beschreiben, zu Algorithmen formalisieren und mit einer formalen Sprache implementieren}
+\item \emph{Umgang mit einer einfachen Entwicklungsumgebung}
+\item \emph{Testen, Ergebnisse interpretieren und bewerten}
+\item \emph{Grundlagen der prozeduralen Programmierung: Sequenz, Alternative, Wiederholung, Prozedur bzw. Funktion}
+\end{itemize}
+
+\emph{Modul 3 -- Kontext Daten und Prozesse}
+\begin{itemize}
+\item \emph{Grundlagen der prozeduralen Programmierung}
+\item \emph{Abläufe formalisieren}
+\item \emph{Algorithmen mit einer formalen Sprache implementieren}
+\item \emph{Testen, Ergebnisse interpretieren und bewerten}
+\end{itemize}
+
+\todo{Zitat Bildungsplan}
+
+\subsubsection{STS Sekundarstufe I (7 --11) Informatik}
+Ähnlich ist es im Bildungsplan für die Stadtteilschulen. Hierbei werden allerdings innerhalb der Module verbindliche Inhalte formuliert.\\
+So sind im Modul 2 die Inhalte \emph{Algorithmen} und \emph{prozedurale Programmierung: Sequenz, Alternative, Wiederholung, Funktion} zu finden, die, wie der Bildungsplan vorschlägt, in das Unterrichtsvorhaben \emph{"Wir lassen Roboter arbeiten"} integriert werden können.\\
+Im Modul 3 sollen im zweiten Halbjahr die verbindlichen Inhalte
+\begin{itemize}
+\item \emph{Grundlagen der prozeduralen Programmierung}
+\item \emph{Abläufe formalisieren}
+\item \emph{Algorithmen mit einer formalen Sprache implementieren}
+\item \emph{Testen, Ergebnisse interpretieren und bewerten}
+\end{itemize}
+unterrichtet werden. 
+\todo{Quelle}
+
+\subsubsection{Gymnasiale Oberstufe -- Vorstufe}
+
+In der Vorstufe sollen sich die SuS mit den Inhalten des Moduls \emph{Daten und Prozesse} beschäftigen. Diese beinhalten das Analysieren und umgangssprachliche Bescheiben von Abläufen, das Strukturieren von Daten sowie die Verwendung von Variablen und Parametern, das Formalisieren von Abläufen, die Grundlagen der prozeduralen Programmierung, die Implementation von Algorithmen mit einer formalen Sprache, das Testen und das Interpretieren und Bewerten von Ergebnissen. \todo{Quelle}
+
+\subsubsection{Gymnasiale Oberstufe -- Studienstufe}
+
+In der Studienstufe gibt es den verbindlichen Inhalt \emph{Objektorientierte Modellierung}, der die folgenden Punkte umfasst:\\
+\begin{itemize}
+\item \emph{Idee des OO-Konzepts mit Objekten und ihrer Kommunikation, Vererbung und Nutzerbeziehung}
+\item \emph{Erarbeitung der Sprachelemente der verwendeten objektorientierten Programmiersprache, Berücksichtigung von Programmierkonventionen, Nutzen von Bausteinen/Libraries}
+\item \emph{Nutzung einer IDE mit UML-Diagrammen und Quellcode zur schrittweisen Implementierung eines Informatiksystems.}
+\end{itemize}
+\todo{Zitat}
+
+\subsubsection{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}
+Da laut Bildungsplan die projektorientierte Arbeit in Informatik in der Studienstufe einen bedeutenden Stellenwert hat, bietet es sich natürlich an, eine Projektarbeit zum Thema \emph{Einsatz von Robotern} mit Bezug auf verschiedene Ligen (schulisch und universitär) zu gestalten, bei der als Produkt eine bestimmte Aufgabe mit den Robotern erledigt werden soll. 
 
 \section{Bisher verfügbare Softwarelösungen}
+\label{sec:software bisher}
 In diesem Kapitel wird nun eine Auswahl von verfügbaren und im Unterricht getesteten Softwarelösungen zur Programmierung der NXT Roboter vorgestellt.
 
 \subsection{LEGO Mindstorms NXT}
+\label{sec:LMNXT}
+
+Das LEGO Mindstorms NXT-Programm 
 
 \subsection{Enchanting}
+\label{sec:enchanting}
 
 \subsection{BlueJ}
+\label{sec:bluej}
 
 \par \singlespacing
 \section{leJOS}
+\label{sec:lejos}
 \onehalfspacing
 leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer Lego Mindstorms NXT Roboter in Java programmiert werden können \cite{lejos}.
 
 
 \par \singlespacing
 \chapter{Anforderungen an die Neuimplementierung}
+\label{chap:anforderungen}
 \onehalfspacing
 Nicht nur in der Schule, sondern insbesondere in der Wissenschaft spielt Simulation in der Robotik eine wichtige Rolle \cite[S.13]{hertzberg:12}. Die Anforderungen, die an die wissenschaftlichen Simulationsumgebungen der Robotik gestellt werden, fassen \textsc{Hertzberg, Lingemann} und \textsc{Nüchter} wie folgt zusammen:
 \begin{itemize}
@@ -110,7 +170,8 @@ In den folgenden beiden Unterkapiteln werden nun die Anforderungen an die Neuimp
 \section{Schülerperspektive}
 \label{sec:schüler}
 \onehalfspacing
-Da es sich bei der Simulationsumgebung um einen Prototypen handelt, der möglicherweise schon ab der fünften, regelmäßig aber ab der siebten Klasse eingesetzt werden soll, steht ein Augenmerk ganz besonders im Fokus: die Einfachheit. Sowohl in der Bedienung des Simulators als auch im Aussehen sollten klare und leicht erkennbare Strukturen vorherrschen.
+Da es sich bei der Simulationsumgebung um einen Prototypen handelt, der möglicherweise schon ab der fünften, regelmäßig aber ab der siebten Klasse eingesetzt werden soll, steht ein Augenmerk ganz besonders im Fokus: die Einfachheit. Sowohl in der Bedienung des Simulators als auch im Aussehen sollten klare und leicht erkennbare Strukturen vorherrschen.\\
+Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen.
 \par \singlespacing
 \section{Lehrkraft}
 \label{sec:lehrkraft}

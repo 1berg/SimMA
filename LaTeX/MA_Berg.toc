@@ -3,17 +3,22 @@
 \contentsline {chapter}{\numberline {2}Ausgangssituation}{3}
 \contentsline {section}{\numberline {2.1}Das LEGO Mindstorms NXT System}{3}
 \contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{4}
-\contentsline {subsection}{\numberline {2.2.1}Verankerung im Bildungsplan}{4}
-\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{4}
-\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{4}
-\contentsline {subsection}{\numberline {2.3.2}Enchanting}{4}
-\contentsline {subsection}{\numberline {2.3.3}BlueJ}{4}
-\contentsline {section}{\numberline {2.4}leJOS}{4}
-\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{5}
-\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{6}
-\contentsline {section}{\numberline {3.2}Lehrkraft}{6}
-\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{7}
-\contentsline {chapter}{\numberline {4}Entwickelte Software}{8}
-\contentsline {section}{\numberline {4.1}Beschreibung der Software}{8}
-\contentsline {section}{\numberline {4.2}Softwarearchitektur}{8}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{9}
+\contentsline {subsection}{\numberline {2.2.1}Curriculare Einordnung}{4}
+\contentsline {subsubsection}{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}{4}
+\contentsline {subsubsection}{STS Sekundarstufe I (7 --11) Informatik}{5}
+\contentsline {subsubsection}{Gymnasiale Oberstufe -- Vorstufe}{5}
+\contentsline {subsubsection}{Gymnasiale Oberstufe -- Studienstufe}{6}
+\contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{6}
+\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{7}
+\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{7}
+\contentsline {subsection}{\numberline {2.3.2}Enchanting}{7}
+\contentsline {subsection}{\numberline {2.3.3}BlueJ}{7}
+\contentsline {section}{\numberline {2.4}leJOS}{7}
+\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{8}
+\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{9}
+\contentsline {section}{\numberline {3.2}Lehrkraft}{9}
+\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{10}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{11}
+\contentsline {section}{\numberline {4.1}Beschreibung der Software}{11}
+\contentsline {section}{\numberline {4.2}Softwarearchitektur}{11}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{12}
