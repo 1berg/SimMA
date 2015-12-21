@@ -25,13 +25,12 @@ public class linienfinder
 			Delay.msDelay(150);
 			
 			
-			if(SeherL.readNormalizedValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
-			{
+			if(SeherL.readValue()<400)
 				Motor.A.stop();
 				Motor.B.stop(); //Beide Motoren werden gestoppt.
 			}
 			
-			if(SeherR.readNormalizedValue()<400) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
+			if(SeherR.readValue()<400) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
 			{
 				Motor.A.stop();
 				Motor.B.stop(); //Beide Motoren werden gestoppt.

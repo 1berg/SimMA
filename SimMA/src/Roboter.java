@@ -64,49 +64,6 @@ class Roboter {
 
     }
 
-    /**
-     * Bewegung im Koordinatenkreuz nach rechts
-     */
-    public void right() {
-        int delta;
-        int entfernung = 500;
-
-        if (entfernung < 0) {
-            delta = -1;
-            entfernung = -entfernung;
-        } else {
-            delta = 1;
-        }
-
-        for (int i = 0; i < entfernung; i++) {
-            _xPos += delta;
-            zeichnen();
-        }
-
-    }
-
-    /**
-     * Bewegung im Koordinatenkreuz nach links
-     */
-    public void left() {
-        int delta;
-        int entfernung = -500;
-
-        if (entfernung < 0) {
-            delta = -1;
-            entfernung = -entfernung;
-        } else {
-            delta = 1;
-        }
-
-        for (int i = 0; i < entfernung; i++) {
-            _xPos += delta;
-            zeichnen();
-        }
-
-    }
-
-
 
     /*
  * Zeichne dieses Dreieck mit seinen aktuellen Werten auf den Bildschirm.
@@ -125,7 +82,8 @@ class Roboter {
      * Die Ausrichtung des Roboters verändern
      */
 
-    public void aendereAusrichtung(int winkel) {
+    public void aendereAusrichtung(int winkel)
+    {
         _ausrichtung += winkel;
     }
 }
