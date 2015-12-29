@@ -222,7 +222,9 @@ Des weiteren ist es wichtig, dass sich Lehrerinnen und Lehrer schnell in die Sim
 
 \section{Beschreibung der Software}
 
-
+\subsection{Lichtsensoren}
+Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse LightSensor. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
+Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()}, \texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen.
 
 \section{Softwarearchitektur}
 

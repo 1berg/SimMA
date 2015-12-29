@@ -20,5 +20,6 @@
 \contentsline {section}{\numberline {3.3}Erweiterbarkeit}{14}
 \contentsline {chapter}{\numberline {4}Entwickelte Software}{15}
 \contentsline {section}{\numberline {4.1}Beschreibung der Software}{15}
+\contentsline {subsection}{\numberline {4.1.1}Lichtsensoren}{15}
 \contentsline {section}{\numberline {4.2}Softwarearchitektur}{15}
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{16}

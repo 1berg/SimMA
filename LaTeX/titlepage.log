@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  30 OCT 2015 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  29 DEC 2015 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -348,7 +348,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 23--23
 <recently read> \Large 
                        
 l.27 \Large
-            \textsc{Entwicklung einer Simulationsumgebung}\\
+            \textsc{Entwicklung einer Java Simulationsumgebung}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -528,7 +528,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (210.20444pt too wide) in paragraph at lines 25--38
+Overfull \hbox (236.27095pt too wide) in paragraph at lines 25--38
  [] 
  []
 
@@ -590,8 +590,16 @@ Missing character: There is no k in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
 
-Overfull \hbox (85.09258pt too wide) in paragraph at lines 42--50
+Overfull \hbox (85.09258pt too wide) in paragraph at lines 42--51
 [][] 
  []
 
@@ -602,7 +610,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \end{titlepage}
+l.52 \end{titlepage}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -618,7 +626,7 @@ or  <return>  to continue without it.
 Here is how much of TeX's memory you used:
  20 strings out of 493089
  277 string characters out of 6134841
- 54199 words of memory out of 5000000
+ 55199 words of memory out of 5000000
  3602 multiletter control sequences out of 15000+600000
  4595 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
