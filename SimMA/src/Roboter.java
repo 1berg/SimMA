@@ -13,6 +13,7 @@ class Roboter {
     private int _breite = 20;
     private int _hoehe = 40;
     private double _ausrichtung = 0;
+    private static Roboter roboter;
 
     public Roboter() {
 
@@ -31,6 +32,12 @@ class Roboter {
         _breite = 40;
         zeichnen();
     }
+
+    public static Roboter gibRoboter()
+    {
+        return roboter;
+    }
+
 
     /**
      * Bewegung im Koordinatensystem nach oben
@@ -86,6 +93,67 @@ class Roboter {
     {
         _ausrichtung += winkel;
     }
+
+    /**
+     * Die Position des Roboters auf der x-Achse ausgeben
+     */
+    public int gibXPosition()
+    {
+        return _xPos;
+    }
+
+    /**
+     * Die Position des Roboters auf der y-Achse ausgeben
+     */
+    public int gibYPosition()
+    {
+        return _yPos;
+    }
+
+    /**
+     * Die x-Position des rechten Lichtsensors
+     */
+    public double gibXLichtRechts()
+    {
+        double beta = 1/ Math.tan(0.25);
+        double epsilon = 90 - (_ausrichtung + beta);
+        double c = 5 / Math.sin(beta);
+        return _xPos + (c * Math.sin(epsilon));
+    }
+
+    /**
+     * Die y-Position des rechten Lichtsensors
+     */
+    public double gibYLichtRechts()
+    {
+        double beta = 1/ Math.tan(0.25);
+        double epsilon = 90 - (_ausrichtung + beta);
+        double c = 5 / Math.sin(beta);
+        return _yPos + (c * Math.cos(epsilon));
+    }
+
+    /**
+     * Die x-Position des linken Lichtsensors
+     */
+    public double gibXLichtLinks()
+    {
+        double beta = 1/ Math.tan(0.25);
+        double gamma = _ausrichtung - beta;
+        double c = 5 / Math.sin(beta);
+        return _xPos + (c * Math.cos(gamma));
+    }
+
+    /**
+     * Die y-Position des linken Lichtsensors
+     */
+    public double gibYLichtLinks()
+    {
+        double beta = 1/ Math.tan(0.25);
+        double gamma = _ausrichtung - beta;
+        double c = 5 / Math.sin(beta);
+        return _yPos + (c * Math.sin(gamma));
+    }
+
 }
 
 //import java.awt.Polygon;

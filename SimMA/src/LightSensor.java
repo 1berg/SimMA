@@ -4,6 +4,7 @@
  */
 public class LightSensor
 {
+
     public LightSensor(SensorPort port)
     {
 
@@ -16,7 +17,9 @@ public class LightSensor
     }
     public int readValue()
     {
-        return 0;
+        Parcours parcours = Parcours.gibParcours();
+        Roboter roboter = Roboter.gibRoboter();
+        return parcours.gibHelligkeitswert(roboter.gibXPosition(), roboter.gibYPosition()); //Hier muss noch die Verschiebung der Positionswerte für die Sensoren einbezogen werden.
     }
 }
 

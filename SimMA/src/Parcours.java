@@ -18,6 +18,8 @@ public class Parcours {
         // Leinwand zur Anzeige
         private Leinwand _leinwand;
 
+        private static Parcours parcours;
+
         /**
          * Initialisiert ein Bild mit einer Bilddatei. Der Benutzer kann interaktiv mit Hilfe eines
          * Dateidialogs die zu ladende Datei auswaehlen.
@@ -31,6 +33,15 @@ public class Parcours {
                 erzeugeLeinwand();
             }
         }
+    /**
+     * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.
+     *
+     * @return Parcours
+     */
+    public static Parcours gibParcours()
+    {
+        return parcours;
+    }
 
         /**
          * Initialisiert ein Bild mit einer Bilddatei. Der Dateiname kann als absoluter oder relativer
@@ -44,6 +55,11 @@ public class Parcours {
             _bilddaten = BildEinleser.liesBilddaten(bilddateiName);
             aktualisiereBildgroesse(_bilddaten);
             erzeugeLeinwand();
+        }
+
+        public int gibHelligkeitswert(int x, int y)
+        {
+            return _bilddaten[x][y];
         }
 
         // ==== private Hilfsmethoden ====
