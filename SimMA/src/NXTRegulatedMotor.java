@@ -8,13 +8,13 @@ import lejos.nxt.MotorPort;
 public class NXTRegulatedMotor extends Object {
 
     private Roboter _robot;
-    protected float _speed;
+    protected int _speed;
     MotorPort _port;
 
     public NXTRegulatedMotor(MotorPort port){
 
         _robot = new Roboter();
-        _speed = 10;
+        _speed = 1;
         _port = port;
         }
 
@@ -32,21 +32,21 @@ public class NXTRegulatedMotor extends Object {
      */
         public void forward()
         {
-                if (_port.equals('C')) //linker Motor wird angesteuert
+                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
                 {
                     for(int i=0;i < 36;i++)
                     {
                         _robot.aendereAusrichtung(10); //eventuell andersrum
-                        _robot.forward(1);
+                        _robot.forward(_speed);
                     }
 
                 }
-                else if(_port.equals('B')) //rechter Motor wird angesteuert
+                else if(_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
                  {
                     for(int i=0; i<36;i++)
                     {
                         _robot.aendereAusrichtung(-10);
-                        _robot.forward(1);
+                        _robot.forward(_speed);
                     }
                 }
 
@@ -54,27 +54,27 @@ public class NXTRegulatedMotor extends Object {
 
         public void backward()
         {
-            if (_port.equals('C')) //linker Motor wird angesteuert
+            if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
             {
                 for(int i=0;i < 36;i++)
                 {
                     _robot.aendereAusrichtung(-10); //eventuell andersrum
-                    _robot.backward(1);
+                    _robot.backward(_speed);
                 }
 
             }
-            else if(_port.equals('B')) //rechter Motor wird angesteuert
+            else if(_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
             {
                 for(int i=0; i<36;i++)
                 {
                     _robot.aendereAusrichtung(10);
-                    _robot.backward(1);
+                    _robot.backward(_speed);
                 }
             }
 
         }
 
-        public void stop()
+        public void stop() //TODO Stop implementieren
         {
 
         }
