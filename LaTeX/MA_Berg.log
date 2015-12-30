@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  29 DEC 2015 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  30 DEC 2015 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1321,6 +1321,14 @@ Kapitel 3.
 [12
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
+
+ []
+
+
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -1330,18 +1338,11 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 [14]
 Kapitel 4.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 227.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 228.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (46.62769pt too wide) in paragraph at lines 226--228
-\T1/ptm/m/n/12 Be-zug auf die x- und y-Achse: \T1/cmtt/m/n/12 gibXLichtRechts()
-\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 gibYLichtRechts()\T1/ptm/m/n/12 , \T1/cmtt/m/n
-/12 gibXLichtLinks()
- []
-
-[15
+) [15
 
 ]
 Kapitel 5.
@@ -1354,7 +1355,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
@@ -1362,11 +1363,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
 Here is how much of TeX's memory you used:
  17201 strings out of 493089
  322435 string characters out of 6134841
- 451623 words of memory out of 5000000
+ 450623 words of memory out of 5000000
  20254 multiletter control sequences out of 15000+600000
  61973 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,27n,76p,812b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,27n,76p,811b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fon
 ts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts
 /enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
@@ -1375,7 +1376,7 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm
 tmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (23 pages, 1192733 bytes).
+Output written on MA_Berg.pdf (23 pages, 1192955 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

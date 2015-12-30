@@ -53,12 +53,12 @@
 \par \singlespacing
 \chapter{Einleitung}
 \onehalfspacing
-Die Arbeit mit Robotern bereichert den Informatikunterricht und das Nachmittagsprogramm vieler Schulen seit Jahren. Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Robotern arbeitet.\\
+Die Arbeit mit Robotern bereichert den Informatikunterricht und das Nachmittagsprogramm vieler Schulen seit Jahren. Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Roboter arbeitet.\\
 
 Doch immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel das Fehlen von einer ausreichenden Anzahl an Robotern im Unterricht oder auch fehlende Firmwareupdates oder defekte Sensoren.\\
-Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet sind. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
+Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet ist. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten auf einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
 
-Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von LEGO Mindstorm Robotern zu ermöglichen, soll im Rahmen dieser Masterarbeit eine Simulationsumgebung für die Arbeit mit LEGO Mindstorms NXT Roboter entstehen.\todo{Referenz}
+Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von LEGO Mindstorms Robotern zu ermöglichen, soll im Rahmen dieser Masterarbeit eine Simulationsumgebung für die Arbeit mit LEGO Mindstorms NXT Roboter entstehen.\todo{Referenz}
 \newpage
 \par\singlespacing
 \chapter{Ausgangssituation}
@@ -190,7 +190,7 @@ Nicht nur in der Schule, sondern insbesondere in der Wissenschaft spielt Simulat
 \begin{itemize}
 \item \emph{"`Die Umgebung muss hinreichend gut simuliert sein. Die Simulation einer Flughafenterminalhalle muss zum Beispiel "`zufällig"' umherlaufende Fluggäste mit Gepäck und Transportkarren umfassen.}
 \item \emph{Der Roboter in seiner Funktionalität muss hinreichend gut simuliert sein. Das betrifft seine Aktionen wie auch seine Sensorik.}
-\item\emph{ Relevante Ungenauigkeit technischer Sensoren und Effektoren muss abgebildet werden. Kann zum Beispiel im realen Bild einer Kamera auf dem Roboter ein Orientierungspunkt im Gegenlicht der Fensterfront unsichtbar werden, muss die Simulation diesen Effekt reproduzieren.}
+\item\emph{Relevante Ungenauigkeit technischer Sensoren und Effektoren muss abgebildet werden. Kann zum Beispiel im realen Bild einer Kamera auf dem Roboter ein Orientierungspunkt im Gegenlicht der Fensterfront unsichtbar werden, muss die Simulation diesen Effekt reproduzieren.}
 \item \emph{Die "`Wahrheit"' im Simulator ist tabu! Natürlich ist im Simulator der Zustand jedes simulierten Objekts präzise bekannt, einschließlich der Position, Richtung und Geschwindigkeit des Roboters. Die Roboterkontrollsoftware darf hierauf nicht zugreifen, um Information über die Umgebung zu erhalten -- das geht nur über die simulierten Sensoren. (Für die externe Bewertung des Roboterverhaltens ist der Vergleich zwischen der Wahrheit im Simulator und der Information in der Roboterkontrollsoftware aber erlaubt.)}
 \item \emph{Der Simulator sollte für den simulierten Roboter die identische Schnittstelle wie der reale Roboter zwischen Roboterkontrollsoftware einerseits und Robotersensorik und -aktuatorik andererseits verwenden; die Roboterkontrollsoftware soll also code-identisch für den realen oder den simulierten Roboter verwendet werden."'} \cite[S.14]{hertzberg:12}
 \end{itemize}
@@ -201,7 +201,8 @@ In den folgenden beiden Unterkapiteln werden nun die Anforderungen an die Neuimp
 \label{sec:schüler}
 \onehalfspacing
 Da es sich bei der Simulationsumgebung um einen Prototypen handelt, der möglicherweise schon ab der fünften, regelmäßig aber ab der siebten Klasse eingesetzt werden soll, steht ein Augenmerk ganz besonders im Fokus: die Einfachheit. Sowohl in der Bedienung des Simulators als auch im Aussehen sollten klare und leicht erkennbare Strukturen vorherrschen.\\
-Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen.
+Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen. Dies entspricht dem zweiten Aspekt nach \textsc{Hertzberg et al.}, da der simulierte Roboter alle für die Arbeit mit SuS zentralen Funktionen anbieten und sich hinreichend ähnlich wie ein Roboter in der Realwelt verhalten soll.\\
+%Ein weiterer Aspekt sind die Parcours selbst. Diese sollten möglichst realitätsgetreu umgesetzt werden. 
 \par \singlespacing
 \section{Lehrkraft}
 \label{sec:lehrkraft}
@@ -224,7 +225,8 @@ Des weiteren ist es wichtig, dass sich Lehrerinnen und Lehrer schnell in die Sim
 
 \subsection{Lichtsensoren}
 Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse LightSensor. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
-Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()}, \texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen.
+Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
+\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen.
 
 \section{Softwarearchitektur}
 
