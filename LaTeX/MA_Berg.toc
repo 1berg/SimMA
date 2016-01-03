@@ -6,14 +6,14 @@
 \contentsline {subsection}{\numberline {2.2.1}Curriculare Einordnung}{4}
 \contentsline {subsubsection}{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}{4}
 \contentsline {subsubsection}{STS Sekundarstufe I (7 --11) Informatik}{5}
-\contentsline {subsubsection}{Gymnasiale Oberstufe -- Vorstufe}{5}
+\contentsline {subsubsection}{Gymnasiale Oberstufe -- Vorstufe}{6}
 \contentsline {subsubsection}{Gymnasiale Oberstufe -- Studienstufe}{6}
-\contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{6}
+\contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{7}
 \contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{7}
 \contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{7}
-\contentsline {subsection}{\numberline {2.3.2}Enchanting}{8}
-\contentsline {subsection}{\numberline {2.3.3}BlueJ}{11}
-\contentsline {section}{\numberline {2.4}leJOS}{11}
+\contentsline {subsection}{\numberline {2.3.2}Enchanting}{10}
+\contentsline {subsection}{\numberline {2.3.3}BlueJ}{10}
+\contentsline {section}{\numberline {2.4}leJOS}{10}
 \contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{12}
 \contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{13}
 \contentsline {section}{\numberline {3.2}Lehrkraft}{14}
