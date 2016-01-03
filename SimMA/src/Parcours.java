@@ -93,7 +93,7 @@ public class Parcours {
          */
         private void erzeugeLeinwand()
         {
-            _leinwand = new Leinwand("Bildbetrachter", _breite, _hoehe);
+            _leinwand = new Leinwand("Parcours", _breite, _hoehe);
             _leinwand.sichtbarMachen();
 
             zeichneBild();

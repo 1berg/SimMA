@@ -1,3 +1,4 @@
+/*
 import bluej.extensions.*;
 import bluej.extensions.event.*;
 
@@ -5,13 +6,17 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 
+*/
 /*
  * This is the starting point of a BlueJ Extension
- */
+ *//*
+
 public class SimpleExtension extends Extension implements PackageListener {
-    /*
+    */
+/*
      * When this method is called, the extension may start its work.
-     */
+     *//*
+
     public void startup (BlueJ bluej) {
         // Register a generator for menu items
         bluej.setMenuGenerator(new MenuBuilder());
@@ -24,11 +29,13 @@ public class SimpleExtension extends Extension implements PackageListener {
         bluej.addPackageListener(this);
     }
 
-    /*
+    */
+/*
      * A package has been opened. Print the name of the project it is part of.
      * System.out is redirected to the BlueJ debug log file.
      * The location of this file is given in the Help/About BlueJ dialog box.
-     */
+     *//*
+
     public void packageOpened ( PackageEvent ev ) {
         try {
             System.out.println ("Project " + ev.getPackage().getProject().getName() + " opened.");
@@ -37,30 +44,38 @@ public class SimpleExtension extends Extension implements PackageListener {
         }
     }
 
-    /*
+    */
+/*
      * A package is closing.
-     */
+     *//*
+
     public void packageClosing ( PackageEvent ev ) {
     }
 
-    /*
+    */
+/*
      * This method must decide if this Extension is compatible with the 
      * current release of the BlueJ Extensions API
-     */
+     *//*
+
     public boolean isCompatible () {
         return true;
     }
 
-    /*
+    */
+/*
      * Returns the version number of this extension
-     */
+     *//*
+
     public String  getVersion () {
         return ("2004.09");
     }
 
-    /*
+    */
+/*
      * Returns the user-visible name of this extension
-     */
+     *//*
+
     public String  getName () {
         return ("Simple Extension");
     }
@@ -73,10 +88,12 @@ public class SimpleExtension extends Extension implements PackageListener {
         return ("A simple extension");
     }
 
-    /*
+    */
+/*
      * Returns a URL where you can find info on this extension.
      * The real problem is making sure that the link will still be alive in three years...
-     */
+     *//*
+
     public URL getURL () {
         try {
             return new URL("http://www.bluej.org/doc/writingextensions.html");
@@ -88,9 +105,11 @@ public class SimpleExtension extends Extension implements PackageListener {
     }
 }
 
+*/
 /*
  * This class implements the preference panel behaviour for a BlueJ extension
- */
+ *//*
+
 class Preferences implements PreferenceGenerator {
     private JPanel myPanel;
     private JTextField color;
@@ -121,13 +140,15 @@ class Preferences implements PreferenceGenerator {
     }
 }
 
+*/
 /* This class shows how you can bind different menus to different parts of BlueJ
  * Remember:
  * - getToolsMenuItem, getClassMenuItem and getObjectMenuItem may be called by BlueJ at any time.
  * - They must generate a new JMenuItem each time they are called.
  * - No reference to the JMenuItem should be stored in the extension.
  * - You must be quick in generating your menu.
- */
+ *//*
+
 class MenuBuilder extends MenuGenerator {
     private BPackage curPackage;
     private BClass curClass;
@@ -226,4 +247,4 @@ class MenuBuilder extends MenuGenerator {
             addComment();
         }
     }
-}
+}*/

@@ -16,12 +16,13 @@ public class Simulator
 
     public static void main(String[] args)
     {
-        _bildEinleser = new BildEinleser();
-        _leinwand = new Leinwand("Parcours 1", 400, 680);
-        _parcours = new Parcours();
-        _roboter = new Roboter();
+        _bildEinleser = new BildEinleser(); //Öffnet Dialog zur Auswahl des Parcours
+        _parcours = new Parcours(); //Macht die Leinwand sichtbar
+        _roboter = new Roboter(); //Erzeugt einen neuen Roboter
 
-        _bildEinleser.liesBilddaten();
+        _roboter.gibRoboter().zeichnen(); //TODO Roboter auf den Parcours bekommen.
+        
+
 
     }
 }

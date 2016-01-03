@@ -21,7 +21,6 @@ class Roboter {
         _yPos = 0;
         _hoehe = 30;
         _breite = 40;
-        zeichnen();
 
     }
 
@@ -30,7 +29,6 @@ class Roboter {
         _yPos = yPos;
         _hoehe = 30;
         _breite = 40;
-        zeichnen();
     }
 
     public static Roboter gibRoboter()
@@ -75,7 +73,7 @@ class Roboter {
     /*
  * Zeichne dieses Dreieck mit seinen aktuellen Werten auf den Bildschirm.
  */
-    private void zeichnen() {
+    public void zeichnen() {
         Leinwand leinwand = Leinwand.gibLeinwand();
         int[] xpoints =
                 {_xPos, _xPos + (_breite / 2), _xPos - (_breite / 2)};

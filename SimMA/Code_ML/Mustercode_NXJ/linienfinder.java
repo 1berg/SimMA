@@ -39,6 +39,5 @@ public class linienfinder
 			// Das Problem kann natürlich auch mit einer Boolschen Anweisung in einer einzigen
 			// if-Anweisung behandelt werden. Hier bietet sich Spielraum für fortgeschrittene
 			// Schüler.
-		}
 	}
 }
