@@ -11,15 +11,15 @@
 \contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{7}
 \contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{7}
 \contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{7}
-\contentsline {subsection}{\numberline {2.3.2}Enchanting}{10}
-\contentsline {subsection}{\numberline {2.3.3}BlueJ}{10}
-\contentsline {section}{\numberline {2.4}leJOS}{10}
-\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{12}
-\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{13}
-\contentsline {section}{\numberline {3.2}Lehrkraft}{14}
-\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{14}
-\contentsline {chapter}{\numberline {4}Entwickelte Software}{15}
-\contentsline {section}{\numberline {4.1}Beschreibung der Software}{15}
-\contentsline {subsection}{\numberline {4.1.1}Lichtsensoren}{15}
-\contentsline {section}{\numberline {4.2}Softwarearchitektur}{15}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{16}
+\contentsline {subsection}{\numberline {2.3.2}Enchanting}{9}
+\contentsline {subsection}{\numberline {2.3.3}BlueJ}{12}
+\contentsline {section}{\numberline {2.4}leJOS}{12}
+\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{13}
+\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{14}
+\contentsline {section}{\numberline {3.2}Lehrkraft}{15}
+\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{15}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{16}
+\contentsline {section}{\numberline {4.1}Beschreibung der Software}{16}
+\contentsline {subsection}{\numberline {4.1.1}Lichtsensoren}{16}
+\contentsline {section}{\numberline {4.2}Softwarearchitektur}{16}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{17}
