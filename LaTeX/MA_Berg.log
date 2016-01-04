@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  3 JAN 2016 22:04
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  4 JAN 2016 00:42
+>>>>>>> 13375e4c91fb9282845f4dad4c6da18527fec521
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1261,6 +1265,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -1268,29 +1277,9 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 File: images/Startbildschirm_NXT.png Graphic file (type png)
 
 <use images/Startbildschirm_NXT.png>
-Package pdftex.def Info: images/Startbildschirm_NXT.png used on input line 145.
+Package pdftex.def Info: images/Startbildschirm_NXT.png used on input line 148.
 
 (pdftex.def)             Requested size: 418.70808pt x 298.38031pt.
-
-<images/Beispielprogramm_NXT.png, id=47, 1444.64719pt x 789.70032pt>
-File: images/Beispielprogramm_NXT.png Graphic file (type png)
-
-<use images/Beispielprogramm_NXT.png>
-Package pdftex.def Info: images/Beispielprogramm_NXT.png used on input line 154
-.
-(pdftex.def)             Requested size: 405.95332pt x 221.90987pt.
-
-<images/Enchanting_Start.png, id=48, 849.92531pt x 651.18282pt>
-File: images/Enchanting_Start.png Graphic file (type png)
-
-<use images/Enchanting_Start.png>
-Package pdftex.def Info: images/Enchanting_Start.png used on input line 165.
-(pdftex.def)             Requested size: 424.96161pt x 325.5906pt.
-
-Overfull \hbox (6.70789pt too wide) in paragraph at lines 165--166
-[][] 
- []
-
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
@@ -1299,69 +1288,96 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[8 <./images/Startbildschirm_NXT.png> <./images/Beispielprogramm_NXT.png>]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+[8 <./images/Startbildschirm_NXT.png>]
+<images/Beispielprogramm_NXT.png, id=53, 1444.64719pt x 789.70032pt>
+File: images/Beispielprogramm_NXT.png Graphic file (type png)
 
+<use images/Beispielprogramm_NXT.png>
+Package pdftex.def Info: images/Beispielprogramm_NXT.png used on input line 157
+.
+(pdftex.def)             Requested size: 405.95332pt x 221.90987pt.
 
-[9 <./images/Enchanting_Start.png>]
-<images/Beispielprogramm_Enchanting.png, id=59, 935.74594pt x 680.5425pt>
+<images/Enchanting_Start.png, id=54, 849.92531pt x 651.18282pt>
+File: images/Enchanting_Start.png Graphic file (type png)
+
+<use images/Enchanting_Start.png>
+Package pdftex.def Info: images/Enchanting_Start.png used on input line 168.
+(pdftex.def)             Requested size: 424.96161pt x 325.5906pt.
+
+Overfull \hbox (6.70789pt too wide) in paragraph at lines 168--169
+[][] 
+ []
+
+<images/Beispielprogramm_Enchanting.png, id=55, 935.74594pt x 680.5425pt>
 File: images/Beispielprogramm_Enchanting.png Graphic file (type png)
 
 <use images/Beispielprogramm_Enchanting.png>
 Package pdftex.def Info: images/Beispielprogramm_Enchanting.png used on input l
-ine 171.
+ine 174.
 (pdftex.def)             Requested size: 421.08179pt x 306.24129pt.
 
-Overfull \hbox (2.82806pt too wide) in paragraph at lines 171--172
+Overfull \hbox (2.82806pt too wide) in paragraph at lines 174--175
 [][] 
- []
-
-[10 <./images/Beispielprogramm_Enchanting.png>] [11]
-Kapitel 3.
-[12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
-
  []
 
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[13]
+[9 <./images/Beispielprogramm_NXT.png>]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[10 <./images/Enchanting_Start.png>]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[11 <./images/Beispielprogramm_Enchanting.png>] [12]
+Kapitel 3.
+[13
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [14]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[15]
 Kapitel 4.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 230.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 233.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [15
+) [16
 
 ]
 Kapitel 5.
-[16
+[17
 
-] (./bibliography.tex [17
+] (./bibliography.tex [18
 
 ])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
-[19] (./MA_Berg.aux (./titlepage.aux)) ) 
+[20] (./MA_Berg.aux (./titlepage.aux)) ) 
 Here is how much of TeX's memory you used:
- 17202 strings out of 493089
- 322445 string characters out of 6134841
- 446959 words of memory out of 5000000
- 20255 multiletter control sequences out of 15000+600000
+ 17217 strings out of 493089
+ 322865 string characters out of 6134841
+ 452980 words of memory out of 5000000
+ 20270 multiletter control sequences out of 15000+600000
  61973 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,27n,76p,811b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1373,10 +1389,14 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm
 tmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+<<<<<<< HEAD
 Output written on MA_Berg.pdf (23 pages, 1194078 bytes).
+=======
+Output written on MA_Berg.pdf (24 pages, 1196106 bytes).
+>>>>>>> 13375e4c91fb9282845f4dad4c6da18527fec521
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -126,7 +126,7 @@ class Leinwand
      *            y co-ordinate for Image placement
      * @return returns boolean value representing whether the image was completely loaded
      */
-    private boolean drawImage(Image image, int x, int y)
+    public boolean drawImage(Object image, int x, int y) //Image in Obejct geändert, public statt private
     {
         boolean result = _graphic.drawImage(image, x, y, null);
         _canvas.repaint();
