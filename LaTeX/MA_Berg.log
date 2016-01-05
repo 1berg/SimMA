@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  4 JAN 2016 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  5 JAN 2016 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1419,25 +1419,42 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 [18 <./images/mockup_linienfolger.png> <./images/mockup_hinderniserkenner.png>]
 
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [19]
-Kapitel 5.
-[20
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
-] (./bibliography.tex [21
+
+[20]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[21]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[22]
+Kapitel 5.
+[23
+
+] (./bibliography.tex [24
 
 ])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-[23] (./MA_Berg.aux (./titlepage.aux)) ) 
+[26] (./MA_Berg.aux (./titlepage.aux)) ) 
 Here is how much of TeX's memory you used:
  17279 strings out of 493089
  323907 string characters out of 6134841
@@ -1454,10 +1471,10 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm
 tmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (27 pages, 1362231 bytes).
+Output written on MA_Berg.pdf (30 pages, 1369771 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
