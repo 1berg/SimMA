@@ -43,19 +43,19 @@ public class Parcours {
         return parcours;
     }
 
-        /**
+       /* *//**
          * Initialisiert ein Bild mit einer Bilddatei. Der Dateiname kann als absoluter oder relativer
          * Pfad uebergeben werden.
          *
          * @param bilddateiName
          *            der Name der Bilddatei
-         */
+         *//*
         public Parcours(String bilddateiName)
         {
             _bilddaten = BildEinleser.liesBilddaten(bilddateiName);
             aktualisiereBildgroesse(_bilddaten);
             erzeugeLeinwand();
-        }
+        }*/
 
         public int gibHelligkeitswert(int x, int y)
         {

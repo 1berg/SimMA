@@ -1,11 +1,10 @@
-import lejos.nxt.MotorPort;
 
 
 /**
  * Ein NXT-Motor. Wird von der Motor-Klasse benutzt.
  */
 
-public class NXTRegulatedMotor extends Object {
+public class NXTRegulatedMotor{
 
     private Roboter _robot;
     protected int _speed;
@@ -74,19 +73,10 @@ public class NXTRegulatedMotor extends Object {
 
         }
 
-        public void stop() //TODO Stop implementieren
+        public void stop()
         {
 
-        }
+        }//TODO Stop implementieren
 
-        public void setAcceleration(int acceleration)
-        {
-
-        }
-
-        public void getAcceleration()
-        {
-
-        }
 
         }

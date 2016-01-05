@@ -6,9 +6,6 @@ import java.net.URL;
 
 /**
  * Eine Klasse zum Einlesen von Bilddaten.
- * 
- * @author Bruce Quig, Michael Koelling, Axel Schmolitzky
- * @version 2008-12
  */
 class BildEinleser
 {
