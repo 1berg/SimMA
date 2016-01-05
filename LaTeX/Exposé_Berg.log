@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  10 DEC 2015 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  5 JAN 2016 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,6 +869,14 @@ Package: pdfsync 2008/01/26 v1.1
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count140
+\float@exts=\toks44
+\float@box=\box46
+\@float@everytoks=\toks45
+\@floatcapt=\box47
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -878,21 +886,21 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cutwin/cutwin.sty
 Package: cutwin 2010/09/29 v0.1 cutout windows
-\c@twwinlines=\count140
-\c@twtoplines=\count141
-\c@twcnt=\count142
+\c@twwinlines=\count141
+\c@twtoplines=\count142
+\c@twcnt=\count143
 \c@twlftside=\dimen179
 \c@twrtside=\dimen180
 \c@twtopht=\dimen181
 \c@twvsilg=\dimen182
-\c@twtoka=\toks44
-\c@twtokb=\toks45
-\c@twrawtext=\box46
-\c@twholdwin=\box47
-\c@twwindow=\box48
-\c@twfinaltext=\box49
-\c@twslicea=\box50
-\c@twsliceb=\box51
+\c@twtoka=\toks46
+\c@twtokb=\toks47
+\c@twrawtext=\box48
+\c@twholdwin=\box49
+\c@twwindow=\box50
+\c@twfinaltext=\box51
+\c@twslicea=\box52
+\c@twsliceb=\box53
 )
 
 Class scrbook Warning: Usage of package `titlesec' together
@@ -903,16 +911,16 @@ Class scrbook Warning: Usage of package `titlesec' together
 (scrbook)              the extended optional argument of the section
 (scrbook)              commands.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `titlesec' on input line 26.
+(scrbook)              package `titlesec' on input line 27.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box52
+\ttl@box=\box54
 \beforetitleunit=\skip57
 \aftertitleunit=\skip58
 \ttl@plus=\dimen183
 \ttl@minus=\dimen184
-\ttl@toksa=\toks46
+\ttl@toksa=\toks48
 \titlewidth=\dimen185
 \titlewidthlast=\dimen186
 \titlewidthfirst=\dimen187
@@ -940,7 +948,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Package scrbook Warning: Activating an ugly workaround for a missing
-(scrbook)                feature of package `titlesec` on input line 26.
+(scrbook)                feature of package `titlesec` on input line 27.
 
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -948,24 +956,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count143
-\c@Blindtext=\count144
-\c@blind@countparstart=\count145
-\blind@countxx=\count146
-\blindtext@numBlindtext=\count147
-\blind@countyy=\count148
-\c@blindlist=\count149
-\c@blindlistlevel=\count150
-\c@blindlist@level=\count151
-\blind@listitem=\count152
-\c@blind@listcount=\count153
-\c@blind@levelcount=\count154
-\blind@mathformula=\count155
-\blind@Mathformula=\count156
-\c@blind@randomcount=\count157
-\c@blind@randommax=\count158
-\c@blind@pangramcount=\count159
-\c@blind@pangrammax=\count160
+\c@blindtext=\count144
+\c@Blindtext=\count145
+\c@blind@countparstart=\count146
+\blind@countxx=\count147
+\blindtext@numBlindtext=\count148
+\blind@countyy=\count149
+\c@blindlist=\count150
+\c@blindlistlevel=\count151
+\c@blindlist@level=\count152
+\blind@listitem=\count153
+\c@blind@listcount=\count154
+\c@blind@levelcount=\count155
+\blind@mathformula=\count156
+\blind@Mathformula=\count157
+\c@blind@randomcount=\count158
+\c@blind@randommax=\count159
+\c@blind@pangramcount=\count160
+\c@blind@pangrammax=\count161
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -996,17 +1004,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count161
+\scratchcounter=\count162
 \scratchdimen=\dimen188
-\scratchbox=\box53
-\nofMPsegments=\count162
-\nofMParguments=\count163
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count164
+\scratchbox=\box55
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count165
 \MPscratchDim=\dimen189
-\MPnumerator=\count165
-\makeMPintoPDFobject=\count166
-\everyMPtoPDFconversion=\toks48
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1090,16 +1098,16 @@ Configuring pdfsync
 \PDFSYNC@ut=\write4
 \openout4 = `Exposé_Berg.pdfsync'.
 
-\PDFSYNCf@li@=\count167
-\PDFSYNC@rder=\count168
+\PDFSYNCf@li@=\count168
+\PDFSYNC@rder=\count169
 **** pdfsync.sty: Synchronizing at \everypar
-\PDFSYNCeveryp@r=\toks49
+\PDFSYNCeveryp@r=\toks51
 **** pdfsync.sty: Synchronizing at \everymath
-\PDFSYNCeverym@th=\toks50
+\PDFSYNCeverym@th=\toks52
 **** pdfsync.sty: Synchronizing at \everyhbox
-\PDFSYNCeveryhb@x=\toks51
+\PDFSYNCeveryhb@x=\toks53
 **** pdfsync.sty: Synchronizing at \everyvbox
-\PDFSYNCeveryvb@x=\toks52
+\PDFSYNCeveryvb@x=\toks54
 **** pdfsync.sty: started
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
@@ -1194,38 +1202,42 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 18.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
  [6
 
 ])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[7] (./Exposé_Berg.aux) ) 
+[7] (./Exposé_Berg.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16973 strings out of 493089
- 317742 string characters out of 6134841
- 436316 words of memory out of 5000000
- 20050 multiletter control sequences out of 15000+600000
+ 17027 strings out of 493089
+ 318502 string characters out of 6134841
+ 437599 words of memory out of 5000000
+ 20100 multiletter control sequences out of 15000+600000
  60986 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,24n,61p,725b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/
-base/8r.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
-er-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt12
-00.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Exposé_Berg.pdf (8 pages, 100296 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on Exposé_Berg.pdf (8 pages, 102000 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream

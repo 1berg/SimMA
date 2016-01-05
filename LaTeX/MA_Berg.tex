@@ -287,10 +287,39 @@ Nach dem Erstellen der Mock-Ups musste nun überlegt werden, inwiefern die Über
 \par \singlespacing
 \section{Softwarearchitektur}
 \onehalfspacing 
-\subsection{Lichtsensoren}
-Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse LightSensor. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
+Die entwickelte Software besteht im derzeitigen Zustand als Prototyp aus insgesamt dreizehn Klassen. Diese lassen sich in zwei Kategorien aufteilen. Zum einen die Klassen, die die API für den Simulator zur Verfügung stellen und die zentralen von leJOS angebotenen Klassen für die NXT-Roboter umfassen, zum anderen die Klassen, die für die Repräsentation der Simulation auf dem Bildschirm zuständig sind.\\
+
+\par \singlespacing
+\subsection{Klassen der API}
+\onehalfspacing
+In diesem Abschnitt werden nun die von leJOS vorgegebenen und an die Implementation des Simulators angepassten Klassen vorgestellt. Hierbei handelt es sich um eine kleine Auswahl der essentiell für den Unterricht erforderlichen Klassen, die im Rahmen dieser Arbeit für den Prototyp angepasst wurden. 
+\subsubsection{Motoren}
+Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare von der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Diese Klasse bietet die Methoden \texttt{forward(), backward()} und \texttt{stop()} an, die die essentiellen Methoden für die Bewegung des Roboters darstellen. Ein an einen Motorport angeschlossener Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichen Klasse aus der leJOS API.
+\subsubsection{Licht- und Farbsensoren}
+Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
 Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
-\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen.
+\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In diesem steht die Methode \texttt{gibHelligkeitswert(int x, int y)} zu Verfügung, die auf das Bilddaten-Array zugreift.\\
+Die Implementation der Farbsensoren ist im Simulator code-identisch, daher kann in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet werden.
+\subsubsection{Ultraschall- und Berührungssensor}
+Der Berührungssensor, oder wie von leJOS TouchSensor genannt, ist im Simulator an der vordersten Spitze des Roboter-Objekts platziert. Da Hindernisse im Simulator schwerlich als mehrdimensionale Objekte dargestellt werden können, wird in diesem Prototyp zunächst mit einer Farbunterscheidung gearbeitet. Dies funktioniert wiederum über den Helligkeitswert des Pixels, der sich gerade unter der Spitze des Roboter-Objekts befindet.\\
+Für die Implementation des Ultraschallsensors wird eine Implementation des Hindernisses als Objekt auf dem Parcours benötigt. Dies ist nicht essentiell für die Implementation eine ersten Prototypen des Simulators, da die für SuS relevanten Aufgaben auch mit einem Berührungssensor gelöst werden können. Daher verzichtet dieser Prototyp zunächst auf die Implementation eines Ultraschallsensors.
+\subsubsection{Sensorports}
+Jeder der eben genannten Sensoren ist an einen so genannten Sensorport angeschlossen. Die Klasse \texttt{SensorPort} enthält Felder, die die einzelnen Ports darstellen. Ein Exemplar einer Sensoren-Klasse wird bei der Initialisierung stets an einen Sensorport gekoppelt. 
+
+\par \singlespacing
+\subsection{Die Simulationsumgebung}
+\onehalfspacing
+Nun zu einer Beschreibung der Struktur der Simulationsumgebung selbst. Hierzu gehört die grafische Repräsentation des Parcours, des Roboters, der Auswahldialog für den Parcours, sowie die Leinwand, auf der der simulierte Roboter fahren soll.
+\subsubsection{Simulator}
+Der Simulator erzeugt beim Ausführen zunächst einen \texttt{BildEinleser}. Dieser lässt den Benutzer in einem Dialogfenster eine .gif-Datei als Parcours auswählen. Das ausgewählte Bild wird dann "`eingelesen"' und die einzelnen Bildpunkte in einem short-Array gespeichert.
+\subsubsection{Bildeinleser}
+Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hilfsklasse bestimmte Methoden zur Verfügung stellen muss. Durch den Aufruf der Methode\\
+\texttt{liesBilddaten()} eines Bildeinlesers wird ein JFileChooser erzeugt, mithilfe dessen der Benutzer eine Bilddatei auswählen kann, auf der der Roboter simuliert werden soll. Danach wird das Bild so umgewandelt, dass ein Array aus Bildpunkten entsteht.
+%In dem dieser Arbeit vorangegangenen Studium wurde bereits mit Projekten gearbeitet, in denen Bilddateien eingelesen und benutzt wurden, daher wurde diese Klasse aus einem alten Projekt importiert.\\
+\subsubsection{Parcours}
+Die Klasse Parcours ist dafür zuständig, dass eine Leinwand erzeugt und dann das Bild des Parcours angezeigt wird. Dies geschieht durch die Speicherung der Bilddaten des Bildes in der Feldvariable \texttt{{\_}bilddaten}, die dann an die Leinwand weitergegeben werden.\\
+Gleichzeitig ist sie die Schnittstelle zwischen Simulator und den API-Klassen, da sie dafür zuständig ist, Informationen über den Parcours an die Sensoren weiterzuleiten. Insbesondere die Abfrage des Helligkeitswerts eines Pixels aus dem Array ist in dieser Klasse implementiert.
+\subsubsection{Leinwand}
 
 \newpage
 \chapter{Zusammenfassung und Ausblick}

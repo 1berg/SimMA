@@ -5,9 +5,6 @@ import java.awt.image.*;
 /**
  * Die Klasse Leinwand erlaubt einfache grafische Operationen auf einer Leinwand.
  *
- * @author Bruce Quig, Michael Koelling, Axel Schmolitzky
- *
- * @version 2008-12
  */
 class Leinwand
 {
