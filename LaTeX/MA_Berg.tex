@@ -53,12 +53,15 @@
 \par \singlespacing
 \chapter{Einleitung}
 \onehalfspacing
-Die Arbeit mit Robotern bereichert den Informatikunterricht und das Nachmittagsprogramm vieler Schulen seit Jahren. Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Roboter arbeitet.\\
+Informatik in der Schule ist eines der bildungspolitisch umfassend diskutierten Themen der letzten Jahre. Gerade die Fragen, ob es sinnvoll sei, ein Unterrichtsfach \emph{Programmieren} ab der Grundschule einzuführen, oder aber ob es reicht, dass die Schülerinnen und Schüler dazu ausgebildet werden, einen Computer bedienen zu können, spielen eine zentrale Rolle. Dabei klaffen die Grundgedanken der beiden Extreme, nämlich die Schülerinnen und Schüler als kompetente Computer-Nutzer mit einem Verständnis der logischen Strukturen hinter der Benutzeroberfläche auf der einen und das Heranziehen einer Generation von Schülerinnen und Schülern, die auf die Verwendung der gängigen Office-Anwendungen geschult wurde auf der anderen Seite.\\
+
+Zumindest in der Oberstufe ist das Erlernen einer Programmiersprache derzeit schon vorgesehen. Doch auch ab der fünften Klasse kann bereits mit dem Erlernen von objektorientierten Programmierparadigmen begonnen werden. Eine wertvolle Ergänzung des klassischen Unterrichts hat sich in den letzten Jahren aus der Entwicklung der Ganztagsschulprogramme herauskristallisiert -- im Nachmittagsbereich wurden nun neben sportlichen und musisch-künstlerischen Angeboten sowie klassischer Nachhilfe Roboter-AGs gegründet, in denen Schülerinnen und Schüler an die Technik von verschiedensten programmierbaren Robotern herangeführt werden.\\
+Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Roboter arbeitet.\\
 
 Doch immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel das Fehlen von einer ausreichenden Anzahl an Robotern im Unterricht oder auch fehlende Firmwareupdates oder defekte Sensoren.\\
 Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet ist. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten auf einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
 
-Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von LEGO Mindstorms Robotern zu ermöglichen, soll im Rahmen dieser Masterarbeit eine Simulationsumgebung für die Arbeit mit LEGO Mindstorms NXT Roboter entstehen.\todo{Referenz}
+Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von LEGO Mindstorms Robotern zu optimieren, soll im Rahmen dieser Masterarbeit eine Simulationsumgebung für die Arbeit mit LEGO Mindstorms NXT Roboter entstehen.\todo{Referenz}
 \newpage
 \par\singlespacing
 \chapter{Ausgangssituation}
@@ -74,7 +77,11 @@ Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den
 \par \singlespacing
 \section{Die Arbeit mit LEGO-Robotern im Unterricht}
 \onehalfspacing
-Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem LEGO MINDSTORMS System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.\todo{An dieser Stelle kann noch auf die Kooperation \cite{wagner:05} eingegangen werden}\\
+Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO MINDSTORMS} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird. In diesem Zusammenhang kann auch, wie bei \cite{wagner:05} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (Vgl. \cite[S.6f.]{wagner:05}).\\
+\textsc{Schreiber} fasst in seiner Examensarbeit den Einsatz von LEGO MINDSTORM Robotern wir folgt zusammen
+\begin{quote}
+Als herausragende Qualität des Materials LEGO-Mindstorms erwies sich die damit erzielbare \textbf{Motivation}, welche ein hohes Maß an Selbsttätigkeit auch über einen längeren Zeitraum möglich machte. Diese Selbsttätigkeit ist die Form des idealen Lernen im Sinne der Handlungsorientierung und hat sich auch in dem durchgeführten Unterricht bewährt. [...] Die \textbf{Sozialform} der Partnerarbeit erwies sich als weit gehend produktiv, zum einen, weil inhaltlich miteinander beraten werden konnte und wurde [...], zum anderen, weil ein LEGO-Mindstorms-Roboter auch für zwei gleichzeitig tätige Personen genug Handlungsmöglichkeiten bietet \cite[S.47f.]{schreiber:04}
+\end{quote}
 
 Es erfolgt nun zunächst die curriculare Einordnung des Themas Roboter im Unterricht in die Bildungspläne aus Hamburg. Danach werden verschiedene Arbeitsmethoden im Zusammenhang mit dieser Art von Unterricht vorgestellt.
 
@@ -132,7 +139,7 @@ In der Studienstufe gibt es den verbindlichen Inhalt \emph{Objektorientierte Mod
 \subsubsection{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}
 Da laut Bildungsplan die projektorientierte Arbeit in Informatik in der Studienstufe einen bedeutenden Stellenwert hat, bietet es sich natürlich an, eine Projektarbeit zum Thema \emph{Einsatz von Robotern} mit Bezug auf verschiedene Ligen (schulisch und universitär) zu gestalten, bei der als Produkt eine bestimmte Aufgabe mit den Robotern erledigt werden soll. \todo{Quelle?}\\
 
-Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von so genannten \emph{Use Cases}. Hierbei handelt es sich um aus der Realwelt gegriffene \todo{anderes Wort} Situationen, die in unserem Fall mithilfe des Roboters bewältigt werden sollen. Ein klassischer Use Case für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.
+Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von so genannten \emph{Use Cases}. Hierbei handelt es sich um aus der Realwelt gegriffene Umgebungen, die in unserem Fall mithilfe des Roboters erkundet werden sollen. Ein klassischer Use Case für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.
 Ein weitaus komplexerer Use Case bietet sich im Zusammenhang mit der RoboCup Wettbewerbsliga \emph{Rescue} an, in der ein in einem Labyrinth verstecktes Opfer gerettet werden soll. Hierbei würden sich nun die SuS damit beschäftigen, wie sie durch das Labyrinth navigieren, wie sie Hindernissen ausweichen, und welche bautechnischen Spezifikationen ihr Roboter haben muss, um das Opfer an einen sicheren Ort zu transportieren.
 
 \section{Bisher verfügbare Softwarelösungen}
@@ -142,40 +149,41 @@ In diesem Kapitel wird nun eine Auswahl von verfügbaren und im Unterricht getes
 \subsection{LEGO Mindstorms NXT}
 \label{sec:LMNXT}
 
-Das LEGO Mindstorms NXT-Programm ist eine von der Firma LEGO zur Verfügung gestellte Programmieroberfläche für NXT-Roboter. 
-
+Das LEGO Mindstorms NXT-Programm ist eine von der Firma LEGO zur Verfügung gestellte Programmieroberfläche für NXT-Roboter.\\
 \begin{figure}[htbp]
+\centering
 \includegraphics[scale=0.54]{images/Startbildschirm_NXT.png} 
 \caption{Der Startbildschirm des LEGO Mindstorms NXT-Programms}
 \label{fig:NXT Start}
 \end{figure}
-
-Die Abbildung \ref{fig:NXT Start} zeigt den Startbildschirm der Entwicklungsumgebung. Dieser stellt neben zwei Videoanleitungen als Hilfe für Anfänger auch das \emph{Robo Center} zur Verfügung, in dem verschiedene von LEGO vorgeschlagene Roboter-Modelle, die mithilfe des Bausatzes des NXT zusammengesetzt werden können, vorgestellt werden \todo{Was passiert hier noch?}.\\
-Sobald eine neue oder bestehende Programmdatei geöffnet wird, können die SuS mithilfe von Blöcken, die unter anderem der Bewegung und Sensorik dienen und dabei einfache Steuerungsmechanismen sowie Elemente der Regelungstechnik zur Verfügung stellen, ihren Roboter programmieren.
-
+Die Abbildung \ref{fig:NXT Start} zeigt den Startbildschirm der Entwicklungsumgebung. Dieser stellt neben zwei Videoanleitungen als Hilfe für Anfänger auch das \emph{Robo Center} zur Verfügung, in dem verschiedene von LEGO vorgeschlagene Roboter-Modelle, die mithilfe des Bausatzes des NXT zusammengesetzt werden können, vorgestellt werden.\\
+Sobald eine neue oder bestehende Programmdatei geöffnet wird, können die SuS mithilfe von Blöcken, die unter anderem der Bewegung und Sensorik dienen und dabei einfache Steuerungsmechanismen sowie Elemente der Regelungstechnik zur Verfügung stellen, ihren Roboter programmieren. Hierbei werden Bausteine aus der linken Leiste per Drag-and-Drop auf die karierte Oberfläche gezogen. Es können ineinander geschachtelte Schleifen erstellt werden sowie if-Abfragen mit zwei Fallunterscheidungen. Nahezu beliebig viele Bausteine lassen sich so miteinander kombinieren (Vlg. Abb.\ref{fig:Bsp NXT}).\\
+Der Vorteil an dieser Entwicklungsumgebung besteht darin, dass sie von LEGO zur Verfügung gestellt wurde, und somit alle Funktionen von Haus aus mitbringt, die dem NXT-Baustein technisch zur Verfügung stehen. Zudem muss es keine Veränderungen an der Firmware des NXT-Bausteins geben, was eine Zeitersparnis bei der Vorarbeit der SuS mit sich bringt.
 \begin{figure}[htbp]
-\includegraphics[scale=0.281]{images/Beispielprogramm_NXT.png} 
+\centering
+\includegraphics[scale=0.282]{images/Beispielprogramm_NXT.png} 
 \caption{Fahren eines Roboters auf einer schwarzen Linie}
 \label{fig:Bsp NXT}
 \end{figure}
 
 \subsection{Enchanting}
 \label{sec:enchanting}
-
-Enchanting ist eine an \emph{Scratch} anknüpfende Entwicklungsumgebung. Wie das in \textbf{\ref{sec:LMNXT}} beschriebene Programm wird auch hier mithilfe von Drag-and-Drop gearbeitet. 
-
-\begin{figure}
+Enchanting ist eine an \emph{Scratch} anknüpfende Entwicklungsumgebung. Wie das in \textbf{\ref{sec:LMNXT}} beschriebene Programm wird auch hier mithilfe von Drag-and-Drop gearbeitet. Da Enchanting keine von LEGO nativ unterstützte Entwicklungsumgebung für NXT Roboter ist, muss hier eine Änderung an der Firmware vorgenommen werden. Hierbei wird die ausgelieferte Standardfirmware mit leJOS (s. \ref{sec:lejos}) ersetzt. Dies sorgt dafür, dass der NXT nun auf die Programmierung mit Java reagiert.\\
+\begin{figure}[H]
+\centering
 \includegraphics[scale=0.5]{images/Enchanting_Start.png} 
 \caption{Der Startbildschirm von Enchanting}
 \label{fig:Enchanting Start}
 \end{figure}
 
-\begin{figure}
+Wird Enchanting von den SuS geöffnet, erscheint zunächst der Startbildschirm wie in Abb. \ref{fig:Enchanting Start}. Nun kann entweder ein neues Programm erstellt oder ein bestehendes geöffnet werden. Die verschiedenen Programmierelemente werden nach Kategorien in den oberen linken Ecke sortiert aufgeführt. Essentiell dabei sind die Kategorien \emph{Steuerung}, \emph{Fühlen}, \emph{Motoren} und \emph{Formeln}. Die SuS lernen beim Programmieren mit Enchanting, dass sie ihre Motoren und Sensoren zunächst über die verschiedenen Ports referenzieren müssen. Dies geschieht ganz einfach, indem z.B. man einen Motor-Block an einen Port "`setzt"' und ihm einen aussagekräftigen Namen gibt. Auf diese Weise kann nun -- anders als beim LEGO MINDSTORMS NXT-Programm -- bei if-Abfragen und anderen Steuerungselementen mithilfe des Namens auf den Motor oder Sensor zugegriffen werden.\\
+\begin{figure}[htbp]
+\centering
 \includegraphics[scale=0.45]{images/Beispielprogramm_Enchanting.png} 
 \caption{Beispiel eines Enchanting Programms}
 \label{fig:Bsp Enchanting}
 \end{figure}
-
+In Abbildung \ref{fig:Bsp Enchanting} ist nun ein simples Programm zum Fahren entlang einer schwarzen Linie mithilfe von zwei Lichtsensoren dargestellt. Hierbei ist zu erkennen, dass die Sensoren in den \texttt{falls...sonst...}-Blöcken mit \texttt{rechts} und \texttt{links}, die Motoren in den türkisfarbenen Elementen mit \texttt{NXT rechts 1} sowie \texttt{NXT links 2} bezeichnet sind. Es kann somit von den SuS direkt gesagt werden, welcher Sensor angesprochen wird, und welcher Motor an welchem Port angeschlossen ist.
 
 \subsection{BlueJ}
 \label{sec:bluej}
@@ -202,6 +210,7 @@ Nicht nur in der Schule, sondern insbesondere in der Wissenschaft spielt Simulat
 
 In den folgenden beiden Unterkapiteln werden nun die Anforderungen an die Neuimplementierung des Simulator-Prototyps für LEGO Mindstorms NXT Roboter aus Sicht der Schüler und und der Lehrer dargestellt, sowie Parallelen und Unterschiede zu den oben dargestellten herausgearbeitet.
 
+\par \singlespacing
 \section{Schülerperspektive}
 \label{sec:schüler}
 \onehalfspacing
@@ -218,22 +227,70 @@ Des weiteren ist es wichtig, dass sich Lehrerinnen und Lehrer schnell in die Sim
 \par \singlespacing
 \section{Erweiterbarkeit} \label{sec:erweiterbarkeit}
 \onehalfspacing
+Die Software sollte ausreichend kommentiert werden, damit auch nach Fertigstellung dieser Masterarbeit weitere Module hinzugefügt werden können. Dies betrifft sowohl die Fähigkeiten der Sensoren, sowie Änderungen, die im Rahmen von Veränderungen der leJOS NXJ API stattfinden, als auch die Möglichkeit, die geschriebene API an die Technologie der LEGO MINDSTORMS EV3, den Nachfolge-Robotern der NXT, anzupassen.
 
 
-
-
+\par \singlespacing
 \chapter{Entwickelte Software}
+\onehalfspacing
+\par \singlespacing
+\section{Prozesse während der Implementation}
+\onehalfspacing
+Die Entwicklung des Prototyps der Simulationsumgebung umfasste mehrere Schritte, sowie einige Vorarbeit. Diese werden im folgenden Abschnitt nun kurz zusammengefasst.
+\par \singlespacing
+\subsection{Mock-Ups} 
+\onehalfspacing
+Um zunächst einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation der vollständigen Simulationssoftware zu erfassen, wurden interaktive Mock-Ups erstellt. Hierzu wurde die Software \emph{Axure RP Pro} benutzt, mit der sich sowohl einfache als auch komplex verschachtelte Mock-Ups erstellen lassen (s. Abb.\ref{fig:axure}).
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.2]{images/axure_mockup.png} 
+\caption{Die Bedieneroberfläche von Axure RP Pro}
+\label{fig:axure}
+\end{figure}
 
+Da die zu schreibende API auch mehrere Sensoren umfasst, sollten die in den Mock-Ups beschriebenen Szenarien den für den Schulkontext erforderlichen Funktionsumfang repräsentieren. Hierzu gehörte das Anhalten auf einer schwarzen Linie wie in Abbildung \ref{fig:linienfinder}, das Fahren entlang einer schwarzen Linie (s. Abb. \ref{fig:linienfolger}) und das Finden und Umfahren eines Hindernisses auf der Fahrbahn (s. Abb. \ref{fig:hinderniserkenner}).
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{images/mockup_linienfinder.png}
+\caption{Anhalten auf einer schwarzen Linie}
+\label{fig:linienfinder}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{images/mockup_linienfolger.png}
+\caption{Fahren einer S-Kurve}
+\label{fig:linienfolger}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{images/mockup_hinderniserkenner.png}
+\caption{Erkennen eines Hindernisses auf der Fahrbahn}
+\label{fig:hinderniserkenner}
+\end{figure}
+\par \singlespacing
+\subsection{Schritte während der Implementation}
+\onehalfspacing
+Nach dem Erstellen der Mock-Ups musste nun überlegt werden, inwiefern die Überlegungen umgesetzt werden konnten. Die erste Abstraktion, die während den ersten Implementationsschritten stattgefunden hat, war die Darstellung des Roboters in der Umgebung, so dass dieser einfach als Dreieck implementiert wurde. 
+
+\par \singlespacing
+\subsection{Integration in BlueJ}
+\onehalfspacing
+
+\par \singlespacing
 \section{Beschreibung der Software}
+\onehalfspacing
 
+\par \singlespacing
+\section{Softwarearchitektur}
+\onehalfspacing 
 \subsection{Lichtsensoren}
 Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse LightSensor. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
 Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
 \texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen.
-
-\section{Softwarearchitektur}
 
 \newpage
 \chapter{Zusammenfassung und Ausblick}

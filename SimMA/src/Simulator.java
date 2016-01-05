@@ -21,7 +21,7 @@ public class Simulator
         _roboter = new Roboter(); //Erzeugt einen neuen Roboter
 
         _roboter.gibRoboter().zeichnen(); //TODO Roboter auf den Parcours bekommen.
-        _leinwand.gibLeinwand().drawImage(_roboter, 30, 30); //Versuch 1
+        //_leinwand.gibLeinwand().drawImage(_roboter, 30, 30); //Versuch 1 gescheitert
 
 
     }

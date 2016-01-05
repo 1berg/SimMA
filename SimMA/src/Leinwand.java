@@ -12,6 +12,7 @@ import java.awt.image.*;
 class Leinwand
 {
     private JFrame _frame;
+    private JMenuBar _menu;
     public CanvasPane _canvas;
     private Graphics2D _graphic;
     private Color _backgroundColour;
@@ -126,7 +127,7 @@ class Leinwand
      *            y co-ordinate for Image placement
      * @return returns boolean value representing whether the image was completely loaded
      */
-    public boolean drawImage(Object image, int x, int y) //Image in Obejct geändert, public statt private
+    private boolean drawImage(Image image, int x, int y) //Image in Obejct geändert, public statt private
     {
         boolean result = _graphic.drawImage(image, x, y, null);
         _canvas.repaint();
