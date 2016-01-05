@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$CanvasPane.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand$CanvasPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$ShapeMitFarbe.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand$ShapeMitFarbe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Simulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.lof" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.lof" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/preamble.tex" afterPath="$PROJECT_DIR$/LaTeX/preamble.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/titlepage.aux" afterPath="$PROJECT_DIR$/LaTeX/titlepage.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Leinwand.java" afterPath="$PROJECT_DIR$/SimMA/src/Leinwand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/Simulator.java" />
-    </list>
+    <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien" />
     <ignored path="SimMA.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -86,8 +69,8 @@
       <file leaf-file-name="Leinwand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6042129">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.7039911">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -282,7 +265,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/University/Master/Informatik/Interaktionsdesign/Übung/Bibliothekssystem" />
@@ -597,7 +580,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="999" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1017,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6042129">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.7039911">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding />
         </state>
       </provider>
