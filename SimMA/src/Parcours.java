@@ -31,6 +31,7 @@ public class Parcours {
             {
                 aktualisiereBildgroesse(_bilddaten);
                 erzeugeLeinwand();
+
             }
         }
     /**
@@ -47,9 +48,7 @@ public class Parcours {
          * Initialisiert ein Bild mit einer Bilddatei. Der Dateiname kann als absoluter oder relativer
          * Pfad uebergeben werden.
          *
-         * @param bilddateiName
-         *            der Name der Bilddatei
-         *//*
+     *//*
         public Parcours(String bilddateiName)
         {
             _bilddaten = BildEinleser.liesBilddaten(bilddateiName);
@@ -97,6 +96,16 @@ public class Parcours {
             _leinwand.sichtbarMachen();
 
             zeichneBild();
+        }
+
+        public int gibBildhoehe()
+        {
+           return _bilddaten.length;
+        }
+
+        public int gibBildbreite()
+        {
+            return _bilddaten[0].length;
         }
     }
 

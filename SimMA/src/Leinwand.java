@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.WritableRaster;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Die Klasse Leinwand erlaubt einfache grafische Operationen auf einer Leinwand.
@@ -15,6 +18,17 @@ class Leinwand
     private Color _backgroundColour;
     private Image _canvasImage;
     private static Leinwand leinwand;
+    private static final Map<String, Color> farben;
+
+    static{
+        farben = new HashMap<String, Color>();
+        farben.put("rot", Color.red);
+        farben.put("blau", Color.blue);
+        farben.put("gelb", Color.yellow);
+        farben.put("gruen", Color.green);
+        farben.put("lila", Color.magenta);
+        farben.put("weiss", Color.white);
+    }
 
     /**
      * Erzeuge eine Leinwand mit einem (weissen) Standardhintergrund.
@@ -52,6 +66,7 @@ class Leinwand
         _canvas.setPreferredSize(new Dimension(width, height));
         _backgroundColour = bgColour;
         _frame.pack();
+        leinwand = this;
     }
 
     /**
@@ -146,7 +161,27 @@ class Leinwand
     {
         ShapeMitFarbe shapeMitFarbe = new ShapeMitFarbe(shape, farbe);
 
-            shapeMitFarbe.draw(_graphic);
+        shapeMitFarbe.draw(_graphic);
+    }
+
+    /**
+     * Warte fuer die angegebenen Millisekunden. Mit dieser Operation wird eine
+     * Verzoegerung definiert, die fuer animierte Zeichnungen benutzt werden
+     * kann.
+     *
+     * @param millisekunden
+     *            die zu wartenden Millisekunden
+     */
+    public void warte(int millisekunden)
+    {
+        try
+        {
+            Thread.sleep(millisekunden);
+        }
+        catch (Exception e)
+        {
+            // Exception ignorieren
+        }
     }
 
     /**
