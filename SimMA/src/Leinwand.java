@@ -19,6 +19,7 @@ class Leinwand
     private Image _canvasImage;
     private static Leinwand leinwand;
     private static final Map<String, Color> farben;
+    private BufferedImage bufferedImage;
 
     static{
         farben = new HashMap<String, Color>();
@@ -109,7 +110,7 @@ class Leinwand
         int height = bild.length;
         int width = bild[0].length;
 
-        BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         WritableRaster raster = (WritableRaster) bufferedImage.getData();
 
         int[] rgb = new int[3];
@@ -126,6 +127,11 @@ class Leinwand
         }
         bufferedImage.setData(raster);
         drawImage(bufferedImage, 0, 0);
+    }
+
+    public void rewdrawImage()
+    {
+        drawImage(bufferedImage,0,0);
     }
 
     /**

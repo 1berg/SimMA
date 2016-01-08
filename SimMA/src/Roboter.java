@@ -18,8 +18,11 @@ public class Roboter
     {
 
         try {
-            _roboter = ImageIO.read(new File("Roboter.gif"));
+            File file = new File("/Users/Pamina/SimMA/SimMA/src/images/Roboter.gif");
+            System.out.println(file.canRead());
+            _roboter = ImageIO.read(file);
         } catch (IOException e) {
+            System.out.println("Error im Einladen:" + e.toString());
         }
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.drawImage(_roboter, x, y);
@@ -66,6 +69,7 @@ public class Roboter
     public void zeichnen(int x, int y)
     {
         Leinwand leinwand = Leinwand.gibLeinwand();
+        leinwand.rewdrawImage();
         leinwand.drawImage(_roboter, x, y);
 
     }
