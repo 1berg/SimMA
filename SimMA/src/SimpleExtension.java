@@ -1,4 +1,4 @@
-/*
+/**
 import bluej.extensions.*;
 import bluej.extensions.event.*;
 

@@ -6,19 +6,15 @@
 public class Parcours {
 
 
+        private static Parcours parcours;
         // die Bilddaten dieses Bildes
         private short[][] _bilddaten;
-
         // die Breite dieses Bildes
         private int _breite;
-
         // die Hoehe dieses Bildes
         private int _hoehe;
-
         // Leinwand zur Anzeige
         private Leinwand _leinwand;
-
-        private static Parcours parcours;
 
         /**
          * Initialisiert ein Bild mit einer Bilddatei. Der Benutzer kann interaktiv mit Hilfe eines
@@ -44,18 +40,12 @@ public class Parcours {
         return parcours;
     }
 
-       /* *//**
-         * Initialisiert ein Bild mit einer Bilddatei. Der Dateiname kann als absoluter oder relativer
-         * Pfad uebergeben werden.
-         *
-     *//*
-        public Parcours(String bilddateiName)
-        {
-            _bilddaten = BildEinleser.liesBilddaten(bilddateiName);
-            aktualisiereBildgroesse(_bilddaten);
-            erzeugeLeinwand();
-        }*/
-
+    /**
+     * Gibt den Helligkeitswert des ausgewählten Pixels auf dem Bild wieder
+     * @param x
+     * @param y
+     * @return Die Bilddaten am Punkt (x|y)
+     */
         public int gibHelligkeitswert(int x, int y)
         {
             return _bilddaten[x][y];
@@ -98,11 +88,21 @@ public class Parcours {
             zeichneBild();
         }
 
+    /**
+     * Gibt die Breite des Bilds zurück
+     *
+     * @return _bilddaten.length
+     */
         public int gibBildhoehe()
         {
            return _bilddaten.length;
         }
 
+    /**
+     * Gibt die Breite des Bilds zurück
+     *
+     * @return _bilddaten[0].length
+     */
         public int gibBildbreite()
         {
             return _bilddaten[0].length;

@@ -1,35 +1,47 @@
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.awt.*;
 
 /**
- * Created by Pamina on 08.01.16.
+ * Created by Pamina on 21.09.15.
+ * Repräsentiert ein Roboter-Objekt (bisher als Dreieck)
+ *
  */
-public class Roboter
+class Roboter2
 {
+
+
     private int _xPos;
     private int _yPos;
+    private int _breite = 20;
+    private int _hoehe = 40;
     private double _ausrichtung = 0;
-    BufferedImage _roboter = null;
-    private static Roboter roboter;
+    private static Roboter2 roboter;
 
-    public Roboter(int x, int y)
+    public Roboter2()
     {
 
-        try {
-            _roboter = ImageIO.read(new File("Roboter.gif"));
-        } catch (IOException e) {
-        }
-        Leinwand leinwand = Leinwand.gibLeinwand();
-        leinwand.drawImage(_roboter, x, y);
+        _xPos = 0;
+        _yPos = 0;
+        _hoehe = 50;
+        _breite = 80;
+        roboter = this;
+
+    }
+
+    public Roboter2(int xPos, int yPos)
+    {
+        _xPos = xPos;
+        _yPos = yPos;
+        _hoehe = 50;
+        _breite = 80;
         roboter = this;
     }
 
-    public static Roboter gibRoboter()
+    public static Roboter2 gibRoboter()
     {
         return roboter;
     }
+
+
 
     /**
      * Bewegung im Koordinatensystem nach oben
@@ -40,9 +52,10 @@ public class Roboter
         double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++) {
+            loeschen();
             _yPos += delta;
             _xPos += (int) b / entfernung;
-            zeichnen(_xPos, _yPos);
+            zeichnen();
         }
 
     }
@@ -56,19 +69,36 @@ public class Roboter
         double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++) {
+            loeschen();
             _yPos += delta;
             _xPos -= (int) b / entfernung;
-            zeichnen(_xPos, _yPos);
+            zeichnen();
         }
 
     }
 
-    public void zeichnen(int x, int y)
-    {
-        Leinwand leinwand = Leinwand.gibLeinwand();
-        leinwand.drawImage(_roboter, x, y);
 
+    /*
+ * Zeichne dieses Dreieck mit seinen aktuellen Werten auf den Bildschirm.
+ */
+    public void zeichnen() {
+        Leinwand leinwand = Leinwand.gibLeinwand();
+        int[] xpoints =
+                {_xPos, _xPos + (_breite / 2), _xPos - (_breite / 2)};
+        int[] ypoints = {_yPos, _yPos + _hoehe, _yPos + _hoehe};
+        leinwand.zeichne(this, "blau", new Polygon(xpoints, ypoints, 3));
+        leinwand.warte(10);
     }
+
+    /*
+     * Loesche dieses Dreieck vom Bildschirm.
+     */
+    private void loeschen()
+    {
+            Leinwand leinwand = Leinwand.gibLeinwand();
+            //leinwand.entferne(this);
+    }
+
 
     /**
      * Die Ausrichtung des Roboters verändern
@@ -140,3 +170,4 @@ public class Roboter
     }
 
 }
+

@@ -6,13 +6,12 @@
 
 public class NXTRegulatedMotor{
 
-    private Roboter _robot;
+
     protected int _speed;
     MotorPort _port;
 
     public NXTRegulatedMotor(MotorPort port){
 
-        _robot = new Roboter();
         _speed = 1;
         _port = port;
         }
@@ -31,12 +30,13 @@ public class NXTRegulatedMotor{
      */
         public void forward()
         {
+            Roboter robot = Roboter.gibRoboter();
                 if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
                 {
                     for(int i=0;i < 36;i++)
                     {
-                        _robot.aendereAusrichtung(10); //eventuell andersrum
-                        _robot.forward(_speed);
+                        robot.aendereAusrichtung(10); //eventuell andersrum
+                        robot.forward(_speed);
                     }
 
                 }
@@ -44,8 +44,8 @@ public class NXTRegulatedMotor{
                  {
                     for(int i=0; i<36;i++)
                     {
-                        _robot.aendereAusrichtung(-10);
-                        _robot.forward(_speed);
+                        robot.aendereAusrichtung(-10);
+                        robot.forward(_speed);
                     }
                 }
 
@@ -53,12 +53,13 @@ public class NXTRegulatedMotor{
 
         public void backward()
         {
+            Roboter robot = Roboter.gibRoboter();
             if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
             {
                 for(int i=0;i < 36;i++)
                 {
-                    _robot.aendereAusrichtung(-10); //eventuell andersrum
-                    _robot.backward(_speed);
+                    robot.aendereAusrichtung(-10); //eventuell andersrum
+                    robot.backward(_speed);
                 }
 
             }
@@ -66,8 +67,8 @@ public class NXTRegulatedMotor{
             {
                 for(int i=0; i<36;i++)
                 {
-                    _robot.aendereAusrichtung(10);
-                    _robot.backward(_speed);
+                    robot.aendereAusrichtung(10);
+                    robot.backward(_speed);
                 }
             }
 

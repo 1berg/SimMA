@@ -17,10 +17,13 @@ public class Simulator
     {
         _bildEinleser = new BildEinleser();
         _parcours = new Parcours(); //Macht die Leinwand sichtbar
-        _roboter = new Roboter(20 ,_parcours.gibBildhoehe() -50); //Erzeugt einen neuen Roboter
-        _roboter.zeichnen();
-         //TODO Roboter auf den Parcours bekommen.
+        _roboter = new Roboter(110, 580); //Erzeugt einen neuen Roboter an der vorgegebenen Position auf dem Parcours
+        //_roboter.zeichnen(); //zeichnet das Roboter-Objekt auf die Leinwand
 
+        Motor.A.setSpeed(20); //Geschwindigkeit für beide Motoren festlegen.
+        Motor.B.setSpeed(20);
 
+        Motor.A.forward();//Beide Motoren starten.
+        Motor.B.forward();
     }
 }
