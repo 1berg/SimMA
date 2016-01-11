@@ -29,6 +29,7 @@ public class Parcours {
                 erzeugeLeinwand();
 
             }
+            parcours = this;
         }
     /**
      * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.

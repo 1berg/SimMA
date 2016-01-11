@@ -8,8 +8,8 @@ import java.io.IOException;
  */
 public class Roboter
 {
-    private int _xPos;
-    private int _yPos;
+    private double _xPos;
+    private double _yPos;
     private double _ausrichtung = 0;
     BufferedImage _roboter = null;
     private static Roboter roboter;
@@ -18,8 +18,7 @@ public class Roboter
     {
 
         try {
-            File file = new File("/Users/Pamina/SimMA/SimMA/src/images/Roboter.gif");
-            System.out.println(file.canRead());
+            File file = new File("SimMA/src/images/Roboter.gif");
             _roboter = ImageIO.read(file);
         } catch (IOException e) {
             System.out.println("Error im Einladen:" + e.toString());
@@ -44,8 +43,8 @@ public class Roboter
 
         for (int i = 0; i < entfernung; i++) {
             _yPos += delta;
-            _xPos += (int) b / entfernung;
-            zeichnen(_xPos, _yPos);
+            _xPos +=  b / entfernung;
+            zeichnen((int) _xPos, (int) _yPos);
         }
 
     }
@@ -60,8 +59,8 @@ public class Roboter
 
         for (int i = 0; i < entfernung; i++) {
             _yPos += delta;
-            _xPos -= (int) b / entfernung;
-            zeichnen(_xPos, _yPos);
+            _xPos -=  b / entfernung;
+            zeichnen( (int) _xPos, (int) _yPos);
         }
 
     }
@@ -86,7 +85,7 @@ public class Roboter
     /**
      * Die Position des Roboters auf der x-Achse ausgeben
      */
-    public int gibXPosition()
+    public double gibXPosition()
     {
         return _xPos;
     }
@@ -94,7 +93,7 @@ public class Roboter
     /**
      * Die Position des Roboters auf der y-Achse ausgeben
      */
-    public int gibYPosition()
+    public double gibYPosition()
     {
         return _yPos;
     }
