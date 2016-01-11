@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/Exposé_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/Exposé_Berg.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$CanvasPane.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand$CanvasPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$ShapeMitFarbe.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand$ShapeMitFarbe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Leinwand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Motor.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Motor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/MotorPort.class" afterPath="$PROJECT_DIR$/out/production/SimMA/MotorPort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/NXTRegulatedMotor.class" afterPath="$PROJECT_DIR$/out/production/SimMA/NXTRegulatedMotor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/Exposé_Berg.aux" afterPath="$PROJECT_DIR$/LaTeX/Exposé_Berg.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/Exposé_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/Exposé_Berg.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/Exposé_Berg.pdfsync" afterPath="$PROJECT_DIR$/LaTeX/Exposé_Berg.pdfsync" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/Exposé_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/Exposé_Berg.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SimMA/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/SimMA.iml" afterPath="$PROJECT_DIR$/SimMA/SimMA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" afterPath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Leinwand.java" afterPath="$PROJECT_DIR$/SimMA/src/Leinwand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Motor.java" afterPath="$PROJECT_DIR$/SimMA/src/Motor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/MotorPort.java" afterPath="$PROJECT_DIR$/SimMA/src/MotorPort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" afterPath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Parcours.java" afterPath="$PROJECT_DIR$/SimMA/src/Parcours.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/Simulator.java" />
-    </list>
+    <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien" />
     <ignored path="SimMA.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -117,8 +89,8 @@
       <file leaf-file-name="Leinwand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1674757">
-              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.70873785">
+              <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#772#773#0" expanded="true" />
@@ -819,7 +791,7 @@
       <created>1442827135800</created>
       <option name="number" value="Default" />
       <updated>1442827135800</updated>
-      <workItem from="1451998638006" duration="5416000" />
+      <workItem from="1451998638006" duration="5539000" />
     </task>
     <task id="LOCAL-00001" summary="Update Szenarien">
       <created>1445602243119</created>
@@ -837,11 +809,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5416000" />
+    <option name="totallyTimeSpent" value="5539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -850,7 +822,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1300,8 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1674757">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.70873785">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#772#773#0" expanded="true" />
