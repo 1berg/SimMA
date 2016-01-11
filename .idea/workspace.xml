@@ -74,6 +74,7 @@
       <file leaf-file-name="Roboter2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimMA/src/Roboter2.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding />
@@ -86,6 +87,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="1.7676767">
               <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+=======
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.70873785">
+              <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+=======
+            <state vertical-scroll-proportion="1.9095477">
+              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+>>>>>>> a5250a529e0bbcbd312f22c1013ef682fa645e2b
+>>>>>>> b1f74855f1405c49468fe1ed524f274da355aacd
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#789#790#0" expanded="true" />
@@ -567,7 +577,7 @@
       <created>1442827135800</created>
       <option name="number" value="Default" />
       <updated>1442827135800</updated>
-      <workItem from="1451998638006" duration="5416000" />
+      <workItem from="1451998638006" duration="5539000" />
     </task>
     <task id="LOCAL-00001" summary="Update Szenarien">
       <created>1445602243119</created>
@@ -585,10 +595,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5416000" />
+    <option name="totallyTimeSpent" value="5539000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="1920" height="996" extended-state="6" />
+=======
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
+=======
+    <frame x="0" y="23" width="1920" height="999" extended-state="6" />
+>>>>>>> a5250a529e0bbcbd312f22c1013ef682fa645e2b
+>>>>>>> b1f74855f1405c49468fe1ed524f274da355aacd
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -598,7 +616,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.50416666" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> a5250a529e0bbcbd312f22c1013ef682fa645e2b
+>>>>>>> b1f74855f1405c49468fe1ed524f274da355aacd
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1060,8 +1086,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimMA/src/Roboter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="1.7676767">
           <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+=======
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.70873785">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+=======
+        <state vertical-scroll-proportion="1.9095477">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+>>>>>>> a5250a529e0bbcbd312f22c1013ef682fa645e2b
+>>>>>>> b1f74855f1405c49468fe1ed524f274da355aacd
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#789#790#0" expanded="true" />
