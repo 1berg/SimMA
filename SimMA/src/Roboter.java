@@ -79,7 +79,7 @@ class Roboter {
                 {_xPos, _xPos + (_breite / 2), _xPos - (_breite / 2)};
         int[] ypoints = {_yPos, _yPos + _hoehe, _yPos + _hoehe};
         leinwand.zeichne(this, "blau", new Polygon(xpoints, ypoints, 3));
-
+        leinwand.warte(10);
     }
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  5 JAN 2016 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  5 JAN 2016 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1231,7 +1231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
@@ -1244,7 +1244,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--60
 LaTeX Warning: Marginpar on page 2 moved.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
@@ -1254,33 +1254,55 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 [2]
 Kapitel 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
+
+ []
+
 [3
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 96.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
-LaTeX Warning: Marginpar on page 6 moved.
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 108.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
@@ -1289,7 +1311,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
@@ -1297,60 +1319,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[7] <images/Startbildschirm_NXT.png, id=49, 775.39688pt x 552.56438pt>
+[7]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[8] <images/Startbildschirm_NXT.png, id=52, 775.39688pt x 552.56438pt>
 File: images/Startbildschirm_NXT.png Graphic file (type png)
 
 <use images/Startbildschirm_NXT.png>
-Package pdftex.def Info: images/Startbildschirm_NXT.png used on input line 155.
+Package pdftex.def Info: images/Startbildschirm_NXT.png used on input line 172.
 
 (pdftex.def)             Requested size: 418.70808pt x 298.38031pt.
 
-<images/Beispielprogramm_NXT.png, id=50, 1444.64719pt x 789.70032pt>
+Underfull \hbox (badness 10000) in paragraph at lines 169--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[9]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[10 <./images/Startbildschirm_NXT.png>]
+<images/Beispielprogramm_NXT.png, id=60, 1444.64719pt x 789.70032pt>
 File: images/Beispielprogramm_NXT.png Graphic file (type png)
 
 <use images/Beispielprogramm_NXT.png>
-Package pdftex.def Info: images/Beispielprogramm_NXT.png used on input line 164
+Package pdftex.def Info: images/Beispielprogramm_NXT.png used on input line 183
 .
 (pdftex.def)             Requested size: 407.38615pt x 222.69312pt.
 
-<images/Enchanting_Start.png, id=51, 849.92531pt x 651.18282pt>
+<images/Enchanting_Start.png, id=61, 849.92531pt x 651.18282pt>
 File: images/Enchanting_Start.png Graphic file (type png)
 
 <use images/Enchanting_Start.png>
-Package pdftex.def Info: images/Enchanting_Start.png used on input line 174.
+Package pdftex.def Info: images/Enchanting_Start.png used on input line 193.
 (pdftex.def)             Requested size: 424.96161pt x 325.5906pt.
 
-Overfull \hbox (6.70789pt too wide) in paragraph at lines 174--175
+Overfull \hbox (6.70789pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--177
+Underfull \hbox (badness 10000) in paragraph at lines 190--196
 
  []
 
 
+Underfull \vbox (badness 6775) has occurred while \output is active []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[8]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[9 <./images/Startbildschirm_NXT.png> <./images/Beispielprogramm_NXT.png>]
-<images/Beispielprogramm_Enchanting.png, id=59, 935.74594pt x 680.5425pt>
+[11 <./images/Beispielprogramm_NXT.png>]
+<images/Beispielprogramm_Enchanting.png, id=65, 935.74594pt x 680.5425pt>
 File: images/Beispielprogramm_Enchanting.png Graphic file (type png)
 
 <use images/Beispielprogramm_Enchanting.png>
 Package pdftex.def Info: images/Beispielprogramm_Enchanting.png used on input l
-ine 182.
+ine 201.
 (pdftex.def)             Requested size: 421.08179pt x 306.24129pt.
 
-Overfull \hbox (2.82806pt too wide) in paragraph at lines 182--183
+Overfull \hbox (2.82806pt too wide) in paragraph at lines 201--202
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 186.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 205.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1358,16 +1401,26 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[10 <./images/Enchanting_Start.png>]
+[12 <./images/Enchanting_Start.png>]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[11 <./images/Beispielprogramm_Enchanting.png>] [12]
+[13 <./images/Beispielprogramm_Enchanting.png>] [14]
 Kapitel 3.
-[13
+[15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
@@ -1375,51 +1428,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--220
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[14] [15]
+[16]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[17]
 Kapitel 4.
-<images/axure_mockup.png, id=80, 2039.62pt x 1115.16624pt>
+<images/axure_mockup.png, id=86, 2039.62pt x 1115.16624pt>
 File: images/axure_mockup.png Graphic file (type png)
 
 <use images/axure_mockup.png>
-Package pdftex.def Info: images/axure_mockup.png used on input line 247.
+Package pdftex.def Info: images/axure_mockup.png used on input line 269.
 (pdftex.def)             Requested size: 407.91678pt x 223.0293pt.
 
-<images/mockup_linienfinder.png, id=82, 552.0625pt x 584.1825pt>
+<images/mockup_linienfinder.png, id=88, 552.0625pt x 584.1825pt>
 File: images/mockup_linienfinder.png Graphic file (type png)
 
 <use images/mockup_linienfinder.png>
-Package pdftex.def Info: images/mockup_linienfinder.png used on input line 256.
+Package pdftex.def Info: images/mockup_linienfinder.png used on input line 278.
 
 (pdftex.def)             Requested size: 220.82108pt x 233.66885pt.
 
-<images/mockup_linienfolger.png, id=83, 558.085pt x 583.17876pt>
+<images/mockup_linienfolger.png, id=89, 558.085pt x 583.17876pt>
 File: images/mockup_linienfolger.png Graphic file (type png)
 
 <use images/mockup_linienfolger.png>
-Package pdftex.def Info: images/mockup_linienfolger.png used on input line 263.
+Package pdftex.def Info: images/mockup_linienfolger.png used on input line 285.
 
 (pdftex.def)             Requested size: 223.23004pt x 233.26736pt.
 
-<images/mockup_hinderniserkenner.png, id=84, 569.12625pt x 595.22375pt>
+<images/mockup_hinderniserkenner.png, id=90, 569.12625pt x 595.22375pt>
 File: images/mockup_hinderniserkenner.png Graphic file (type png)
 
 <use images/mockup_hinderniserkenner.png>
 Package pdftex.def Info: images/mockup_hinderniserkenner.png used on input line
- 270.
+ 292.
 (pdftex.def)             Requested size: 227.64647pt x 238.08528pt.
- [16
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+[18
 
 ]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[17 <./images/axure_mockup.png> <./images/mockup_linienfinder.png>]
+[19 <./images/axure_mockup.png> <./images/mockup_linienfinder.png>]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[18 <./images/mockup_linienfolger.png> <./images/mockup_hinderniserkenner.png>]
+[20 <./images/mockup_linienfolger.png> <./images/mockup_hinderniserkenner.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
@@ -1427,42 +1489,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--291
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[19]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[20]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
 [21]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [22]
-Kapitel 5.
-[23
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
-] (./bibliography.tex [24
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[24]
+Kapitel 5.
+[25
+
+] (./bibliography.tex [26
 
 ])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-[26] (./MA_Berg.aux (./titlepage.aux)) ) 
+[28] (./MA_Berg.aux (./titlepage.aux)) ) 
 Here is how much of TeX's memory you used:
- 17279 strings out of 493089
- 323907 string characters out of 6134841
- 445355 words of memory out of 5000000
- 20324 multiletter control sequences out of 15000+600000
+ 17290 strings out of 493089
+ 324196 string characters out of 6134841
+ 445528 words of memory out of 5000000
+ 20335 multiletter control sequences out of 15000+600000
  61973 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,27n,76p,1416b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,27n,76p,925b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fon
 ts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts
 /enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
@@ -1471,10 +1553,10 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm
 tmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (30 pages, 1369771 bytes).
+Output written on MA_Berg.pdf (32 pages, 1373946 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -56,7 +56,8 @@
 Informatik in der Schule ist eines der bildungspolitisch umfassend diskutierten Themen der letzten Jahre. Gerade die Fragen, ob es sinnvoll sei, ein Unterrichtsfach \emph{Programmieren} ab der Grundschule einzuführen, oder aber ob es reicht, dass die Schülerinnen und Schüler dazu ausgebildet werden, einen Computer bedienen zu können, spielen eine zentrale Rolle. Dabei klaffen die Grundgedanken der beiden Extreme, nämlich die Schülerinnen und Schüler als kompetente Computer-Nutzer mit einem Verständnis der logischen Strukturen hinter der Benutzeroberfläche auf der einen und das Heranziehen einer Generation von Schülerinnen und Schülern, die auf die Verwendung der gängigen Office-Anwendungen geschult wurde auf der anderen Seite.\\
 
 Zumindest in der Oberstufe ist das Erlernen einer Programmiersprache derzeit schon vorgesehen. Doch auch ab der fünften Klasse kann bereits mit dem Erlernen von objektorientierten Programmierparadigmen begonnen werden. Eine wertvolle Ergänzung des klassischen Unterrichts hat sich in den letzten Jahren aus der Entwicklung der Ganztagsschulprogramme herauskristallisiert -- im Nachmittagsbereich wurden nun neben sportlichen und musisch-künstlerischen Angeboten sowie klassischer Nachhilfe Roboter-AGs gegründet, in denen Schülerinnen und Schüler an die Technik von verschiedensten programmierbaren Robotern herangeführt werden.\\
-Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Dies geschieht zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Roboter arbeitet.\\
+Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Der Grundgedanke hinter diesem Konzept reicht bis in die Siebzigerjahre des letzten Jahrhunderts: Der Mathematiker, Informatiker und Psychologe Seymour Papert hat schon damals herausgefunden, dass das Ziel, Kinder zum Programmieren zu bringen, zu erreicht werden konnte, wenn dies als Spiel angeboten würde. Hierdurch entstand das bis heute bekannte Konzept der \emph{Turtle} \cite[S.365]{nievergelt:99}.\\
+Heutzutage geschieht dies im Zusammenhang mit LEGO Mindstorms Robotern zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte NXT Mindstorms Tool \todo{Referenz:NXT Software}, oder auch Enchanting. \todo{Referenz: Enchanting} Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine leJOS NXJ für NXT Roboter arbeitet.\\
 
 Doch immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel das Fehlen von einer ausreichenden Anzahl an Robotern im Unterricht oder auch fehlende Firmwareupdates oder defekte Sensoren.\\
 Auch ist das Zusammen- und wieder Auseinanderbauen der Roboter ein Aufwand, der nicht für den alltäglichen Unterricht geeignet ist. Um kleine Aufgaben mit Java zu lösen, wie zum Beispiel das Fahren einer S-Kurve oder das Anhalten auf einem bestimmten Punkt, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen und dieser dann zu einem geeigenete Parcours gebracht werden.\\
@@ -72,16 +73,27 @@ Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmi
 Die ersten computergesteuerten LEGO Produkte wurden bereits 1986 veröffentlicht. In einer Zusammenarbeit von LEGO Education und dem Massachussettes Institute of Technology (MIT) wurde LEGO TC LOGO entwickelt. Dies war eine spezielle Abwandlung der Programmiersprache LOGO, mit der zusammengesetzte LEGO-Modelle gesteuert werden konnten \cite{rolling:14}.\\
 Die Entwicklung eines programmierbaren LEGO-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten MINDSTORMS Systems im Januar 1998, bei der der LEGO MINDSTORMS RCX Intelligent Brick, ein Microcomputer und somit das Kernstück des RCX-Systems, und das Robotics Invention System im Museum of Modern Art in London vorgestellt wurden.\\
 Bereits zwei Monate nach Verkaufsstart wurde die FIRST LEGO League (FLL) gegründet -- eine Zusammenarbeit zwischen LEGO und FIRST (For Inspiration and Recognition of Science and Technology), die den Grundstein für die heute noch bestehende Wettbewerbsliga legte \cite{rolling:14}.\\
-Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO MINDSTORMS NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.
+Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO MINDSTORMS NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.\\
+
+\todo{Beschreibung der technischen Aspekte}
 
 \par \singlespacing
 \section{Die Arbeit mit LEGO-Robotern im Unterricht}
 \onehalfspacing
-Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO MINDSTORMS} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird. In diesem Zusammenhang kann auch, wie bei \cite{wagner:05} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (Vgl. \cite[S.6f.]{wagner:05}).\\
-\textsc{Schreiber} fasst in seiner Examensarbeit den Einsatz von LEGO MINDSTORM Robotern wir folgt zusammen
+Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO MINDSTORMS} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.\\
+
+In diesem Zusammenhang kann auch, wie bei \cite{wagner:05} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (Vgl. \cite[S.6f.]{wagner:05}).\\
+
+\textsc{Schreiber} fasst in seiner Examensarbeit den Einsatz von LEGO MINDSTORM Robotern wie folgt zusammen
 \begin{quote}
 Als herausragende Qualität des Materials LEGO-Mindstorms erwies sich die damit erzielbare \textbf{Motivation}, welche ein hohes Maß an Selbsttätigkeit auch über einen längeren Zeitraum möglich machte. Diese Selbsttätigkeit ist die Form des idealen Lernen im Sinne der Handlungsorientierung und hat sich auch in dem durchgeführten Unterricht bewährt. [...] Die \textbf{Sozialform} der Partnerarbeit erwies sich als weit gehend produktiv, zum einen, weil inhaltlich miteinander beraten werden konnte und wurde [...], zum anderen, weil ein LEGO-Mindstorms-Roboter auch für zwei gleichzeitig tätige Personen genug Handlungsmöglichkeiten bietet \cite[S.47f.]{schreiber:04}
 \end{quote}
+Ähnlich beschreibt es auch \textsc{Stolt} in seiner Ausarbeitung:
+\begin{quote}
+Ein großer Punkt, der für das Roboterlabor spricht, ist das starke Motivationspotential für die Teilnehmer sich mit Informatikthemenstellungen zu befassen. Die Entwicklung einer eigenen Lösung einer Aufgabe, mit anschliessendem Wettbewerb besitzt trotz – oder vielleicht gerade wegen – der möglichen Komplexität einen sehr großen Unterhaltungswert und stelle eine spannende Herausforderung dar. Pädagogisch ist das Roboterlabor durch seine teamorientierte Arbeitsweise und die Möglichkeit zum explorativen Lernen interessant. Didaktisch steht hier das Erlernen und Erfahren von Programmier- und Designmethoden im Vordergrund \cite[S.5f.]{stolt:01}
+\end{quote}
+
+Grundsätzlich ist also zu sagen, dass der Einsatz von Robotern im Unterricht als sowohl didaktisch sinnvoll gesehen wird, also auch die Motivation der SuS in diesem Zusammenhang einen starken Einfluss auf den Lernerfolg und die Selbstständigkeit haben können.\\
 
 Es erfolgt nun zunächst die curriculare Einordnung des Themas Roboter im Unterricht in die Bildungspläne aus Hamburg. Danach werden verschiedene Arbeitsmethoden im Zusammenhang mit dieser Art von Unterricht vorgestellt.
 
@@ -111,7 +123,9 @@ Der Einsatz von Robotern kann auf die Module 2 und 3 des Bildungsplanes für die
 
 \subsubsection{STS Sekundarstufe I (7 --11) Informatik}
 Ähnlich ist es im Bildungsplan für die Stadtteilschulen. Hierbei werden allerdings innerhalb der Module verbindliche Inhalte formuliert.\\
+
 So sind im Modul 2 die Inhalte \emph{Algorithmen} und \emph{prozedurale Programmierung: Sequenz, Alternative, Wiederholung, Funktion} zu finden, die, wie der Bildungsplan vorschlägt, in das Unterrichtsvorhaben \emph{"Wir lassen Roboter arbeiten"} integriert werden können.\\
+
 Im Modul 3 sollen im zweiten Halbjahr die verbindlichen Inhalte
 \begin{itemize}
 \item \emph{Grundlagen der prozeduralen Programmierung}
@@ -137,9 +151,12 @@ In der Studienstufe gibt es den verbindlichen Inhalt \emph{Objektorientierte Mod
 \todo{Zitat}
 
 \subsubsection{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}
-Da laut Bildungsplan die projektorientierte Arbeit in Informatik in der Studienstufe einen bedeutenden Stellenwert hat, bietet es sich natürlich an, eine Projektarbeit zum Thema \emph{Einsatz von Robotern} mit Bezug auf verschiedene Ligen (schulisch und universitär) zu gestalten, bei der als Produkt eine bestimmte Aufgabe mit den Robotern erledigt werden soll. \todo{Quelle?}\\
+Da laut Bildungsplan die projektorientierte Arbeit in Informatik in der Studienstufe einen bedeutenden Stellenwert hat, bietet es sich natürlich an, eine Projektarbeit zum Thema \emph{Einsatz von Robotern} mit Bezug auf verschiedene Ligen (schulisch und universitär) zu gestalten, bei der als Produkt eine bestimmte Aufgabe mit den Robotern erledigt werden soll. \todo{Quelle?} Diese projektorientierte Arbeit hat den Vorteil, dass sie an einen realen Kontext geknüpft oder in ihn eingebettet werden kann. Wie \textsc{Hubwieser} in seinem Werk \emph{Didaktik der Informatik} verdeutlicht, kann dies einen positiven Einfluss auf die innere Einstellung der SuS gegenüber diesem teilweise recht anspruchsvollen Thema haben.
+\begin{quote}
+Nach den Erfahrungen mit der Umsetzung abstrakter Konzepte [...] im Mathematikunterricht des Gymnasiums scheint eine Vermittlung der naturgemäß abstrakten informatischen Lerninhalte nur dann erfolgversprechend, wenn durch konkrete, anschauliche Problemstellungen eine erhöhte Aufnahmebereitschaft der Schüler geschaffen wird \cite[S.68]{hubwieser:07}
+\end{quote}
 
-Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von so genannten \emph{Use Cases}. Hierbei handelt es sich um aus der Realwelt gegriffene Umgebungen, die in unserem Fall mithilfe des Roboters erkundet werden sollen. Ein klassischer Use Case für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.
+Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von so genannten \emph{Use Cases}. Hierbei handelt es sich um aus der Realwelt gegriffene Umgebungen, die in unserem Fall mithilfe des Roboters erkundet werden sollen. Ein klassischer Use Case für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.\\
 Ein weitaus komplexerer Use Case bietet sich im Zusammenhang mit der RoboCup Wettbewerbsliga \emph{Rescue} an, in der ein in einem Labyrinth verstecktes Opfer gerettet werden soll. Hierbei würden sich nun die SuS damit beschäftigen, wie sie durch das Labyrinth navigieren, wie sie Hindernissen ausweichen, und welche bautechnischen Spezifikationen ihr Roboter haben muss, um das Opfer an einen sicheren Ort zu transportieren.
 
 \section{Bisher verfügbare Softwarelösungen}
@@ -157,7 +174,9 @@ Das LEGO Mindstorms NXT-Programm ist eine von der Firma LEGO zur Verfügung gest
 \label{fig:NXT Start}
 \end{figure}
 Die Abbildung \ref{fig:NXT Start} zeigt den Startbildschirm der Entwicklungsumgebung. Dieser stellt neben zwei Videoanleitungen als Hilfe für Anfänger auch das \emph{Robo Center} zur Verfügung, in dem verschiedene von LEGO vorgeschlagene Roboter-Modelle, die mithilfe des Bausatzes des NXT zusammengesetzt werden können, vorgestellt werden.\\
+
 Sobald eine neue oder bestehende Programmdatei geöffnet wird, können die SuS mithilfe von Blöcken, die unter anderem der Bewegung und Sensorik dienen und dabei einfache Steuerungsmechanismen sowie Elemente der Regelungstechnik zur Verfügung stellen, ihren Roboter programmieren. Hierbei werden Bausteine aus der linken Leiste per Drag-and-Drop auf die karierte Oberfläche gezogen. Es können ineinander geschachtelte Schleifen erstellt werden sowie if-Abfragen mit zwei Fallunterscheidungen. Nahezu beliebig viele Bausteine lassen sich so miteinander kombinieren (Vlg. Abb.\ref{fig:Bsp NXT}).\\
+
 Der Vorteil an dieser Entwicklungsumgebung besteht darin, dass sie von LEGO zur Verfügung gestellt wurde, und somit alle Funktionen von Haus aus mitbringt, die dem NXT-Baustein technisch zur Verfügung stehen. Zudem muss es keine Veränderungen an der Firmware des NXT-Bausteins geben, was eine Zeitersparnis bei der Vorarbeit der SuS mit sich bringt.
 \begin{figure}[htbp]
 \centering
@@ -215,7 +234,9 @@ In den folgenden beiden Unterkapiteln werden nun die Anforderungen an die Neuimp
 \label{sec:schüler}
 \onehalfspacing
 Da es sich bei der Simulationsumgebung um einen Prototypen handelt, der möglicherweise schon ab der fünften, regelmäßig aber ab der siebten Klasse eingesetzt werden soll, steht ein Augenmerk ganz besonders im Fokus: die Einfachheit. Sowohl in der Bedienung des Simulators als auch im Aussehen sollten klare und leicht erkennbare Strukturen vorherrschen.\\
+
 Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen. Dies entspricht dem zweiten Aspekt nach \textsc{Hertzberg et al.}, da der simulierte Roboter alle für die Arbeit mit SuS zentralen Funktionen anbieten und sich hinreichend ähnlich wie ein Roboter in der Realwelt verhalten soll. Des weiteren wird hiermit auch der Aspekt der code-identischen Roboterkontrollsoftware erfüllt, da die SuS das selbe Programm für den Simulator, wie auch für den Roboter selbst benutzen können sollten.\\
+
 Ein weiterer Aspekt, den \textsc{Hertzberg et al.} beschreiben sind die Parcours selbst. Diese sollten möglichst realitätsgetreu umgesetzt werden. Das heißt, dass Ausschnitte eines bestehenden realen Wettbewerbsparcours genutzt werden könnten, um für die SuS eine möglichst realitätsnahe Testumgebung anzubieten.\\
 \par \singlespacing
 \section{Lehrkraft}
@@ -228,7 +249,8 @@ Des weiteren ist es wichtig, dass sich Lehrerinnen und Lehrer schnell in die Sim
 \section{Erweiterbarkeit} \label{sec:erweiterbarkeit}
 \onehalfspacing
 Die Software sollte ausreichend kommentiert werden, damit auch nach Fertigstellung dieser Masterarbeit weitere Module hinzugefügt werden können. Dies betrifft sowohl die Fähigkeiten der Sensoren, sowie Änderungen, die im Rahmen von Veränderungen der leJOS NXJ API stattfinden, als auch die Möglichkeit, die geschriebene API an die Technologie der LEGO MINDSTORMS EV3, den Nachfolge-Robotern der NXT, anzupassen.
-
+\newpage
+\newpage
 
 \par \singlespacing
 \chapter{Entwickelte Software}
@@ -274,7 +296,9 @@ Da die zu schreibende API auch mehrere Sensoren umfasst, sollten die in den Mock
 \par \singlespacing
 \subsection{Schritte während der Implementation}
 \onehalfspacing
-Nach dem Erstellen der Mock-Ups musste nun überlegt werden, inwiefern die Überlegungen umgesetzt werden konnten. Die erste Abstraktion, die während den ersten Implementationsschritten stattgefunden hat, war die Darstellung des Roboters in der Umgebung, so dass dieser einfach als Dreieck implementiert wurde. 
+Nach dem Erstellen der Mock-Ups musste nun überlegt werden, inwiefern die Überlegungen umgesetzt werden konnten. Die erste Abstraktion, die während den ersten Implementationsschritten stattgefunden hat, war die Darstellung des Roboters in der Umgebung, so dass dieser einfach als Dreieck implementiert wurde.\\
+
+Außerdem konnte bestehender Code aus anderen Projekten in dieses Projekt importiert werden. So wurde die leJOS API, deren Klassen im Paket der Klassenbibliothek \todo{Kann man das so sagen?} frei verfügbar sind, genutzt, um die Neuimplementation der in \textbf{\ref{sec:API}} beschriebenen Klassen realitätsgetreu miteinander zu verzahnen und die korrekten Beziehungen untereinander zu implementieren.
 
 \par \singlespacing
 \subsection{Integration in BlueJ}
@@ -291,17 +315,21 @@ Die entwickelte Software besteht im derzeitigen Zustand als Prototyp aus insgesa
 
 \par \singlespacing
 \subsection{Klassen der API}
+\label{sec:API}
 \onehalfspacing
 In diesem Abschnitt werden nun die von leJOS vorgegebenen und an die Implementation des Simulators angepassten Klassen vorgestellt. Hierbei handelt es sich um eine kleine Auswahl der essentiell für den Unterricht erforderlichen Klassen, die im Rahmen dieser Arbeit für den Prototyp angepasst wurden. 
 \subsubsection{Motoren}
 Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare von der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Diese Klasse bietet die Methoden \texttt{forward(), backward()} und \texttt{stop()} an, die die essentiellen Methoden für die Bewegung des Roboters darstellen. Ein an einen Motorport angeschlossener Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichen Klasse aus der leJOS API.
 \subsubsection{Licht- und Farbsensoren}
 Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
+
 Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
 \texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In diesem steht die Methode \texttt{gibHelligkeitswert(int x, int y)} zu Verfügung, die auf das Bilddaten-Array zugreift.\\
+
 Die Implementation der Farbsensoren ist im Simulator code-identisch, daher kann in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet werden.
 \subsubsection{Ultraschall- und Berührungssensor}
 Der Berührungssensor, oder wie von leJOS TouchSensor genannt, ist im Simulator an der vordersten Spitze des Roboter-Objekts platziert. Da Hindernisse im Simulator schwerlich als mehrdimensionale Objekte dargestellt werden können, wird in diesem Prototyp zunächst mit einer Farbunterscheidung gearbeitet. Dies funktioniert wiederum über den Helligkeitswert des Pixels, der sich gerade unter der Spitze des Roboter-Objekts befindet.\\
+
 Für die Implementation des Ultraschallsensors wird eine Implementation des Hindernisses als Objekt auf dem Parcours benötigt. Dies ist nicht essentiell für die Implementation eine ersten Prototypen des Simulators, da die für SuS relevanten Aufgaben auch mit einem Berührungssensor gelöst werden können. Daher verzichtet dieser Prototyp zunächst auf die Implementation eines Ultraschallsensors.
 \subsubsection{Sensorports}
 Jeder der eben genannten Sensoren ist an einen so genannten Sensorport angeschlossen. Die Klasse \texttt{SensorPort} enthält Felder, die die einzelnen Ports darstellen. Ein Exemplar einer Sensoren-Klasse wird bei der Initialisierung stets an einen Sensorport gekoppelt. 
@@ -318,6 +346,7 @@ Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hi
 %In dem dieser Arbeit vorangegangenen Studium wurde bereits mit Projekten gearbeitet, in denen Bilddateien eingelesen und benutzt wurden, daher wurde diese Klasse aus einem alten Projekt importiert.\\
 \subsubsection{Parcours}
 Die Klasse Parcours ist dafür zuständig, dass eine Leinwand erzeugt und dann das Bild des Parcours angezeigt wird. Dies geschieht durch die Speicherung der Bilddaten des Bildes in der Feldvariable \texttt{{\_}bilddaten}, die dann an die Leinwand weitergegeben werden.\\
+
 Gleichzeitig ist sie die Schnittstelle zwischen Simulator und den API-Klassen, da sie dafür zuständig ist, Informationen über den Parcours an die Sensoren weiterzuleiten. Insbesondere die Abfrage des Helligkeitswerts eines Pixels aus dem Array ist in dieser Klasse implementiert.
 \subsubsection{Leinwand}
 
