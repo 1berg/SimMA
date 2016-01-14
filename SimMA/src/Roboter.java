@@ -3,6 +3,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+
 /**
  * Created by Pamina on 08.01.16.
  */
@@ -14,6 +15,11 @@ public class Roboter
     BufferedImage _roboter = null;
     private static Roboter roboter;
 
+    /**
+     * Kosntruktur für einen neuen Roboter an der Position (x, y)
+     * @param x
+     * @param y
+     */
     public Roboter(int x, int y)
     {
 
@@ -28,6 +34,10 @@ public class Roboter
         roboter = this;
     }
 
+    /**
+     * Gibt die Referenz auf das Roboterobjekt wieder
+     * @return
+     */
     public static Roboter gibRoboter()
     {
         return roboter;
@@ -57,18 +67,24 @@ public class Roboter
         //int entfernung = 500;
         double b = entfernung * Math.cos(_ausrichtung);
 
-        for (int i = 0; i < entfernung; i++) {
+        for (int i = 0; i < entfernung; i++)
+        {
             _yPos += delta;
             _xPos -=  b / entfernung;
-            zeichnen( (int) _xPos, (int) _yPos);
+            zeichnen((int) _xPos, (int) _yPos);
         }
 
     }
 
+    /**
+     * Zeichnet das Roboterobjekt an der Position (x, y) auf die Leinwand
+     * @param x
+     * @param y
+     */
     public void zeichnen(int x, int y)
     {
         Leinwand leinwand = Leinwand.gibLeinwand();
-        leinwand.rewdrawImage();
+        leinwand.redrawImage();
         leinwand.drawImage(_roboter, x, y);
 
     }
@@ -80,6 +96,7 @@ public class Roboter
     public void aendereAusrichtung(int winkel)
     {
         _ausrichtung += winkel;
+        //roboter.rotate(winkel); //TODO rotate aus der javaxt import klären
     }
 
     /**

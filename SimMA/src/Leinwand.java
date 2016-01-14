@@ -129,7 +129,7 @@ class Leinwand
         drawImage(bufferedImage, 0, 0);
     }
 
-    public void rewdrawImage()
+    public void redrawImage()
     {
         drawImage(bufferedImage,0,0);
     }
