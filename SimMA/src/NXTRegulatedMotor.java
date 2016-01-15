@@ -9,6 +9,7 @@ public class NXTRegulatedMotor{
 
     protected int _speed;
     MotorPort _port;
+    boolean _isStopped = false;
 
     public NXTRegulatedMotor(MotorPort port){
 
@@ -31,24 +32,23 @@ public class NXTRegulatedMotor{
         public void forward()
         {
             Roboter robot = Roboter.gibRoboter();
-                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
+            while(!_isStopped)
+            {
+                if ((_port.equals(MotorPort.B) && (_port.equals(MotorPort.C))))
                 {
-                    for(int i=0;i < 36;i++)
+                    robot.forward(_speed);
+                }
+                else if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
                     {
                         robot.aendereAusrichtung(10); //eventuell andersrum
                         robot.forward(_speed);
                     }
-
-                }
-                else if(_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
-                 {
-                    for(int i=0; i<36;i++)
+                else if (_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
                     {
                         robot.aendereAusrichtung(-10);
                         robot.forward(_speed);
                     }
-                }
-
+            }
         }
 
         public void backward()
@@ -56,7 +56,7 @@ public class NXTRegulatedMotor{
             Roboter robot = Roboter.gibRoboter();
             if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
             {
-                for(int i=0;i < 36;i++)
+                while(!_isStopped)
                 {
                     robot.aendereAusrichtung(-10); //eventuell andersrum
                     robot.backward(_speed);
@@ -65,7 +65,7 @@ public class NXTRegulatedMotor{
             }
             else if(_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
             {
-                for(int i=0; i<36;i++)
+                while(!_isStopped)
                 {
                     robot.aendereAusrichtung(10);
                     robot.backward(_speed);
@@ -76,8 +76,9 @@ public class NXTRegulatedMotor{
 
         public void stop()
         {
+            _isStopped = true;
 
-        }//TODO Stop implementieren
+        }
 
 
         }

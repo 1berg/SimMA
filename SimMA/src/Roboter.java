@@ -1,3 +1,5 @@
+
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -17,25 +19,31 @@ public class Roboter
 
     /**
      * Kosntruktur für einen neuen Roboter an der Position (x, y)
+     *
      * @param x
      * @param y
      */
     public Roboter(int x, int y)
     {
 
-        try {
+        try
+        {
             File file = new File("SimMA/src/images/Roboter.gif");
             _roboter = ImageIO.read(file);
-        } catch (IOException e) {
-            System.out.println("Error im Einladen:" + e.toString());
+        } catch (IOException e)
+        {
+            System.out.println("Error beim Laden:" + e.toString());
         }
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.drawImage(_roboter, x, y);
         roboter = this;
+        _xPos = x;
+        _yPos = y;
     }
 
     /**
      * Gibt die Referenz auf das Roboterobjekt wieder
+     *
      * @return
      */
     public static Roboter gibRoboter()
@@ -43,41 +51,77 @@ public class Roboter
         return roboter;
     }
 
-    /**
-     * Bewegung im Koordinatensystem nach oben
-     */
-    public void forward(int entfernung) {
-        int delta = 1;
-        //int entfernung = 500;
-        double b = entfernung * Math.cos(_ausrichtung);
 
-        for (int i = 0; i < entfernung; i++) {
-            _yPos += delta;
-            _xPos +=  b / entfernung;
-            zeichnen((int) _xPos, (int) _yPos);
-        }
+    public void forward(int entfernung)
+    {
+        double radians = Math.toRadians(_ausrichtung);
+
+        // We round to the nearest integer, to allow moving one unit at an angle
+        // to actually move.
+        int dx = (int) Math.round(Math.cos(radians) * entfernung);
+        int dy = (int) Math.round(Math.sin(radians) * entfernung);
+        setzePosition((int) _xPos + dx, (int) _yPos + dy);
 
     }
 
+    public void backward(int entfernung)
+    {
+        double radians = Math.toRadians(_ausrichtung);
+
+        // We round to the nearest integer, to allow moving one unit at an angle
+        // to actually move.
+        int dx = (int) Math.round(Math.cos(radians) * (-entfernung));
+        int dy = (int) Math.round(Math.sin(radians) * (-entfernung));
+        setzePosition((int) _xPos + dx, (int) _yPos + dy);
+
+    }
+
+    public void setzePosition(int x, int y)
+    {
+        _xPos = x;
+        _yPos = y;
+        zeichnen((int) _xPos, (int) _yPos);
+
+    }
     /**
-     * Bewegung im Koordinatensystem nach unten
-     */
-    public void backward(int entfernung) {
-        int delta = -1;
-        //int entfernung = 500;
+     * Bewegung im Koordinatensystem nach oben
+     *//*
+    public void forward(int entfernung)
+    {
+        double a = entfernung * Math.sin(_ausrichtung);
         double b = entfernung * Math.cos(_ausrichtung);
 
         for (int i = 0; i < entfernung; i++)
         {
-            _yPos += delta;
-            _xPos -=  b / entfernung;
+            _yPos -= b*10;
+            System.out.println("y-Pos:" + _yPos);
+            _xPos += a*10;
+            System.out.println("x-Pos:" + _xPos);
             zeichnen((int) _xPos, (int) _yPos);
         }
 
     }
 
+    *//**
+     * Bewegung im Koordinatensystem nach unten
+     *//*
+    public void backward(int entfernung)
+    {
+        double a = entfernung * Math.sin(_ausrichtung);
+        double b = entfernung * Math.cos(_ausrichtung);
+
+        for (int i = 0; i < entfernung; i++)
+        {
+            _yPos += b*10;
+            _xPos -= a*10;
+            zeichnen((int) _xPos, (int) _yPos);
+        }
+
+    }*/
+
     /**
      * Zeichnet das Roboterobjekt an der Position (x, y) auf die Leinwand
+     *
      * @param x
      * @param y
      */
@@ -86,6 +130,7 @@ public class Roboter
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.redrawImage();
         leinwand.drawImage(_roboter, x, y);
+        leinwand.warte(50);
 
     }
 
@@ -95,8 +140,7 @@ public class Roboter
 
     public void aendereAusrichtung(int winkel)
     {
-        _ausrichtung += winkel;
-        //roboter.rotate(winkel); //TODO rotate aus der javaxt import klären
+        _ausrichtung = (_ausrichtung + winkel) % 360;
     }
 
     /**
@@ -120,7 +164,7 @@ public class Roboter
      */
     public double gibXLichtRechts()
     {
-        double beta = 1/ Math.tan(0.25);
+        double beta = 1 / Math.tan(0.25);
         double epsilon = 90 - (_ausrichtung + beta);
         double c = 5 / Math.sin(beta);
         return _xPos + (c * Math.sin(epsilon));
@@ -131,7 +175,7 @@ public class Roboter
      */
     public double gibYLichtRechts()
     {
-        double beta = 1/ Math.tan(0.25);
+        double beta = 1 / Math.tan(0.25);
         double epsilon = 90 - (_ausrichtung + beta);
         double c = 5 / Math.sin(beta);
         return _yPos + (c * Math.cos(epsilon));
@@ -142,7 +186,7 @@ public class Roboter
      */
     public double gibXLichtLinks()
     {
-        double beta = 1/ Math.tan(0.25);
+        double beta = 1 / Math.tan(0.25);
         double gamma = _ausrichtung - beta;
         double c = 5 / Math.sin(beta);
         return _xPos + (c * Math.cos(gamma));
@@ -153,10 +197,11 @@ public class Roboter
      */
     public double gibYLichtLinks()
     {
-        double beta = 1/ Math.tan(0.25);
+        double beta = 1 / Math.tan(0.25);
         double gamma = _ausrichtung - beta;
         double c = 5 / Math.sin(beta);
         return _yPos + (c * Math.sin(gamma));
     }
+
 
 }
