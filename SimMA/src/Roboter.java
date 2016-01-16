@@ -1,6 +1,6 @@
-
-
 import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -16,9 +16,10 @@ public class Roboter
     private double _ausrichtung = 0;
     BufferedImage _roboter = null;
     private static Roboter roboter;
+    private double _winkelVeraenderung = 0;
 
     /**
-     * Kosntruktur für einen neuen Roboter an der Position (x, y)
+     * Konstruktur für einen neuen Roboter an der Position (x, y)
      *
      * @param x
      * @param y
@@ -52,6 +53,11 @@ public class Roboter
     }
 
 
+    /**
+     * Bewegt das Roboterobjekt vorwärts.
+     *
+     * @param entfernung
+     */
     public void forward(int entfernung)
     {
         double radians = Math.toRadians(_ausrichtung);
@@ -60,64 +66,39 @@ public class Roboter
         // to actually move.
         int dx = (int) Math.round(Math.cos(radians) * entfernung);
         int dy = (int) Math.round(Math.sin(radians) * entfernung);
+        rotate(_winkelVeraenderung); //TODO Rotation aus dem Bild raus verhindern
         setzePosition((int) _xPos + dx, (int) _yPos + dy);
+
 
     }
 
+    /**
+     * Bewegt das Roboterobjekt rückwärts.
+     *
+     * @param entfernung
+     */
     public void backward(int entfernung)
     {
         double radians = Math.toRadians(_ausrichtung);
 
-        // We round to the nearest integer, to allow moving one unit at an angle
-        // to actually move.
-        int dx = (int) Math.round(Math.cos(radians) * (-entfernung));
-        int dy = (int) Math.round(Math.sin(radians) * (-entfernung));
+        int dx = (int) (Math.cos(radians) * (-entfernung));
+        int dy = (int) (Math.sin(radians) * (-entfernung));
         setzePosition((int) _xPos + dx, (int) _yPos + dy);
-
     }
 
+    /**
+     * Setzt das Roboterobjekt auf die vorgegebene Position
+     *
+     * @param x
+     * @param y
+     */
     public void setzePosition(int x, int y)
     {
         _xPos = x;
         _yPos = y;
         zeichnen((int) _xPos, (int) _yPos);
-
-    }
-    /**
-     * Bewegung im Koordinatensystem nach oben
-     *//*
-    public void forward(int entfernung)
-    {
-        double a = entfernung * Math.sin(_ausrichtung);
-        double b = entfernung * Math.cos(_ausrichtung);
-
-        for (int i = 0; i < entfernung; i++)
-        {
-            _yPos -= b*10;
-            System.out.println("y-Pos:" + _yPos);
-            _xPos += a*10;
-            System.out.println("x-Pos:" + _xPos);
-            zeichnen((int) _xPos, (int) _yPos);
-        }
-
     }
 
-    *//**
-     * Bewegung im Koordinatensystem nach unten
-     *//*
-    public void backward(int entfernung)
-    {
-        double a = entfernung * Math.sin(_ausrichtung);
-        double b = entfernung * Math.cos(_ausrichtung);
-
-        for (int i = 0; i < entfernung; i++)
-        {
-            _yPos += b*10;
-            _xPos -= a*10;
-            zeichnen((int) _xPos, (int) _yPos);
-        }
-
-    }*/
 
     /**
      * Zeichnet das Roboterobjekt an der Position (x, y) auf die Leinwand
@@ -130,7 +111,7 @@ public class Roboter
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.redrawImage();
         leinwand.drawImage(_roboter, x, y);
-        leinwand.warte(50);
+        leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der Leinwand
 
     }
 
@@ -138,9 +119,10 @@ public class Roboter
      * Die Ausrichtung des Roboters verändern
      */
 
-    public void aendereAusrichtung(int winkel)
+    public void aendereAusrichtung(double winkel)
     {
-        _ausrichtung = (_ausrichtung + winkel) % 360;
+        _ausrichtung = (_ausrichtung + winkel);
+        _winkelVeraenderung = winkel;
     }
 
     /**
@@ -203,5 +185,80 @@ public class Roboter
         return _yPos + (c * Math.sin(gamma));
     }
 
+    //**************************************************************************
+    //** Rotate-Method from package javaxt.io.Image
+    //**************************************************************************
+    /**  Used to rotate the image (clockwise). Rotation angle is specified in
+     *   degrees relative to the top of the image.
+     */
+    public void rotate(double Degrees){
+
+        //Define Image Center (Axis of Rotation)
+        int width = _roboter.getWidth();
+        int height = _roboter.getHeight();
+        int cx = width/2;
+        int cy = height/2;
+
+        //create an array containing the corners of the image (TL,TR,BR,BL)
+        int[] corners = { 0, 0, width, 0, width, height, 0, height };
+
+        //Define bounds of the image
+        int minX, minY, maxX, maxY;
+        minX = maxX = cx;
+        minY = maxY = cy;
+        double theta = Math.toRadians(Degrees);
+        for (int i=0; i<corners.length; i+=2){
+
+            //Rotates the given point theta radians around (cx,cy)
+            int x = (int) Math.round(
+                    Math.cos(theta)*(corners[i]-cx) -
+                            Math.sin(theta)*(corners[i+1]-cy)+cx
+            );
+
+            int y = (int) Math.round(
+                    Math.sin(theta)*(corners[i]-cx) +
+                            Math.cos(theta)*(corners[i+1]-cy)+cy
+            );
+
+            //Update our bounds
+            if(x>maxX) maxX = x;
+            if(x<minX) minX = x;
+            if(y>maxY) maxY = y;
+            if(y<minY) minY = y;
+        }
+
+
+        //Update Image Center Coordinates
+        cx = (int)(cx-minX);
+        cy = (int)(cy-minY);
+
+        //Create Buffered Image
+        BufferedImage result = new BufferedImage(maxX-minX, maxY-minY,
+                BufferedImage.TYPE_INT_ARGB);
+
+        //Create Graphics
+        Graphics2D g2d = result.createGraphics();
+
+        //Enable anti-alias and Cubic Resampling
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON);
+
+        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
+                RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+
+        //Rotate the image
+        AffineTransform xform = new AffineTransform();
+        xform.rotate(theta,cx,cy);
+        g2d.setTransform(xform);
+        g2d.drawImage(_roboter,-minX,-minY,null);
+        g2d.dispose();
+
+        //Update Class Variables
+        this._roboter = result;
+
+        //Delete Heavy Objects
+        result = null;
+        xform = null;
+    }
 
 }

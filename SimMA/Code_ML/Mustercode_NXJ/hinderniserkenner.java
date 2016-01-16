@@ -1,3 +1,5 @@
+package Mustercode_NXJ;
+
 import lejos.util.*;
 import lejos.nxt.*;
 

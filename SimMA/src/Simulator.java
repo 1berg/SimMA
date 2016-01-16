@@ -20,8 +20,9 @@ public class Simulator
         Motor.C.setSpeed(2); //Geschwindigkeit für beide Motoren festlegen.
         Motor.B.setSpeed(2);
 
-        Motor.C.forward();//Beide Motoren starten. Momentan kommt das Programm nicht weiter als bis hierher.
-        Motor.B.forward();
+        //Beide Motoren starten.
+        //Motor.C.forward(); //Linker Motor
+        Motor.B.forward(); //Rechter Motor
 
     }
 }
