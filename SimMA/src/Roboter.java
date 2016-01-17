@@ -57,19 +57,19 @@ public class Roboter
     /**
      * Bewegt das Roboterobjekt vorwärts.
      *
-     * @param entfernung
+     *
      */
     public void update()
     {
+        _ausrichtung +=_winkelVeraenderung;
         double radians = Math.toRadians(_ausrichtung);
 
         // We round to the nearest integer, to allow moving one unit at an angle
         // to actually move.
-        int dx = (int) Math.round(Math.cos(radians) * _geschwindigkeit);
-        int dy = (int) Math.round(Math.sin(radians) * _geschwindigkeit);
+        int dy = (int) Math.round(Math.cos(radians) * _geschwindigkeit);
+        int dx = (int) Math.round(Math.sin(radians) * _geschwindigkeit);
         rotate(_winkelVeraenderung); //TODO Rotation aus dem Bild raus verhindern
-        setzePosition((int) _xPos + dx, (int) _yPos + dy);
-
+        setzePosition((int) _xPos + dx, (int) _yPos - dy);
 
     }
 
@@ -117,13 +117,15 @@ public class Roboter
 
     /**
      * Die Ausrichtung des Roboters verändern
+     *
      */
-
-    public void aendereAusrichtung(double winkel, double geschwindigkeit)
+    public void aendereBewegung(double winkel, double geschwindigkeit)
     {
-        _geschwindigkeit += _geschwindigkeit;
-        _ausrichtung = (_ausrichtung + winkel);
-        _winkelVeraenderung = winkel;
+        System.out.println(winkel+" " + geschwindigkeit);
+        _geschwindigkeit += geschwindigkeit;
+
+        //sollte in Abhängigkeit zur Geschwindigkeit die Bewegung ändern
+        _winkelVeraenderung += winkel;
     }
 
     public void stop()
@@ -137,7 +139,7 @@ public class Roboter
      */
     public double gibXPosition()
     {
-        return _xPos;
+        return _xPos; //TODO Printen lassen
     }
 
     /**
@@ -167,7 +169,7 @@ public class Roboter
         double beta = 1 / Math.tan(0.25);
         double epsilon = 90 - (_ausrichtung + beta);
         double c = 5 / Math.sin(beta);
-        return _yPos + (c * Math.cos(epsilon));
+        return _yPos - (c * Math.cos(epsilon));
     }
 
     /**
@@ -189,7 +191,7 @@ public class Roboter
         double beta = 1 / Math.tan(0.25);
         double gamma = _ausrichtung - beta;
         double c = 5 / Math.sin(beta);
-        return _yPos + (c * Math.sin(gamma));
+        return _yPos - (c * Math.sin(gamma));
     }
 
     //**************************************************************************
