@@ -206,12 +206,27 @@ In Abbildung \ref{fig:Bsp Enchanting} ist nun ein simples Programm zum Fahren en
 
 \subsection{BlueJ}
 \label{sec:bluej}
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.35]{images/linienfinder_bluej.png} 
+\caption{BlueJ-Beispiel zum Finden einer Linie}
+\label{fig:Bsp BlueJ Linienfinder}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.35]{images/linienfolger_bluej.png} 
+\caption{Der Roboter soll einer schwarzen Linie folgen}
+\label{fig:Bsp BlueJ Linienfolger}
+\end{figure}
 
 \par \singlespacing
 \section{leJOS}
 \label{sec:lejos}
 \onehalfspacing
-leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer Lego Mindstorms NXT Roboter in Java programmiert werden können \cite{lejos}.
+leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer Lego Mindstorms NXT Roboter in Java programmiert werden können \cite{lejos}.\\
+Mithilfe von BlueJ oder einer anderen Entwicklungsumgebung können die SuS Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).\\
+Der Vorteil an der Arbeit mit leJOS besteht darin, dass die SuS direkt mit reinem Java-Code in Berührung kommen. Von Anfang an müssen sie auf syntaktische Korrektheit achten, damit ihr Programm überhaupt auf den NXT Roboter übertragen werden kann. Dabei stellen sich bereits mit wenigen zu lernenden Methoden schnell die ersten Erfolge ein: für das einfache Fahren eines Vierecks müssen die SuS lediglich die  Methoden \texttt{setSpeed(), forward()} und \texttt{backward()} an beiden Motoren, sowie eine Verzögerung mithilfe des Klasse \texttt{Delay} benutzen. 
 
 
 \par \singlespacing

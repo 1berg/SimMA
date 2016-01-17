@@ -1,8 +1,5 @@
-package Mustercode_NXJ;
-
 import lejos.util.*;
 import lejos.nxt.*;
-
 import static lejos.nxt.Button.ENTER;
 
 /**
@@ -15,8 +12,6 @@ public class hinderniserkenner
 {
     static TouchSensor Taster = new TouchSensor(SensorPort.S2); //Der Tastsensor.
     static UltrasonicSensor Augen = new UltrasonicSensor(SensorPort.S1); //Der Ultraschallsensor.
-    static LightSensor SeherR = new LightSensor(SensorPort.S4); //Die Lichtsensoren werden mit ihren
-    static LightSensor SeherL = new LightSensor(SensorPort.S3); //Ports deklariert/initialisiert.
 
     public static void main(String[] args)
     {

@@ -2,8 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Die Klasse Leinwand erlaubt einfache grafische Operationen auf einer Leinwand.
@@ -18,18 +16,8 @@ class Leinwand
     private Color _backgroundColour;
     private Image _canvasImage;
     private static Leinwand leinwand;
-    private static final Map<String, Color> farben;
     private BufferedImage bufferedImage;
 
-    static{
-        farben = new HashMap<String, Color>();
-        farben.put("rot", Color.red);
-        farben.put("blau", Color.blue);
-        farben.put("gelb", Color.yellow);
-        farben.put("gruen", Color.green);
-        farben.put("lila", Color.magenta);
-        farben.put("weiss", Color.white);
-    }
 
     /**
      * Erzeuge eine Leinwand mit einem (weissen) Standardhintergrund.
@@ -129,6 +117,9 @@ class Leinwand
         drawImage(bufferedImage, 0, 0);
     }
 
+    /**
+     * Redraws the Image
+     */
     public void redrawImage()
     {
         drawImage(bufferedImage,0,0);
@@ -153,24 +144,6 @@ class Leinwand
     }
 
     /**
-     * Zeichne fuer das gegebene Figur-Objekt eine Java-Figur (einen Shape) auf
-     * die Leinwand.
-     *
-     * @param figur
-     *            das Figur-Objekt, fuer das ein Shape gezeichnet werden soll
-     * @param farbe
-     *            die Farbe der Figur
-     * @param shape
-     *            ein Objekt der Klasse Shape, das tatsaechlich gezeichnet wird
-     */
-    public void zeichne(Object figur, String farbe, Shape shape)
-    {
-        ShapeMitFarbe shapeMitFarbe = new ShapeMitFarbe(shape, farbe);
-
-        shapeMitFarbe.draw(_graphic);
-    }
-
-    /**
      * Warte fuer die angegebenen Millisekunden. Mit dieser Operation wird eine
      * Verzoegerung definiert, die fuer animierte Zeichnungen benutzt werden
      * kann.
@@ -189,29 +162,6 @@ class Leinwand
             // Exception ignorieren
         }
     }
-
-    /**
-     * Interne Klasse ShapeMitFarbe - Da die Klasse Shape des JDK nicht auch
-     * eine Farbe mitverwalten kann, muss mit dieser Klasse die Verknuepfung
-     * modelliert werden.
-     */
-    private class ShapeMitFarbe
-    {
-        private Shape shape;
-        private String farbe;
-
-        public ShapeMitFarbe(Shape shape, String farbe)
-        {
-            this.shape = shape;
-            this.farbe = farbe;
-        }
-
-        public void draw(Graphics2D graphic)
-        {
-            graphic.fill(shape);
-        }
-    }
-
 
 
     /************************************************************************
