@@ -16,7 +16,8 @@ public class Roboter
     private double _ausrichtung = 0;
     BufferedImage _roboter = null;
     private static Roboter roboter;
-    private double _winkelVeraenderung = 0;
+    public double _winkelVeraenderung = 0;
+    private double _geschwindigkeit = 0;
 
     /**
      * Konstruktur für einen neuen Roboter an der Position (x, y)
@@ -58,14 +59,14 @@ public class Roboter
      *
      * @param entfernung
      */
-    public void forward(int entfernung)
+    public void update()
     {
         double radians = Math.toRadians(_ausrichtung);
 
         // We round to the nearest integer, to allow moving one unit at an angle
         // to actually move.
-        int dx = (int) Math.round(Math.cos(radians) * entfernung);
-        int dy = (int) Math.round(Math.sin(radians) * entfernung);
+        int dx = (int) Math.round(Math.cos(radians) * _geschwindigkeit);
+        int dy = (int) Math.round(Math.sin(radians) * _geschwindigkeit);
         rotate(_winkelVeraenderung); //TODO Rotation aus dem Bild raus verhindern
         setzePosition((int) _xPos + dx, (int) _yPos + dy);
 
@@ -76,7 +77,6 @@ public class Roboter
      * Bewegt das Roboterobjekt rückwärts.
      *
      * @param entfernung
-     */
     public void backward(int entfernung)
     {
         double radians = Math.toRadians(_ausrichtung);
@@ -85,7 +85,7 @@ public class Roboter
         int dy = (int) (Math.sin(radians) * (-entfernung));
         setzePosition((int) _xPos + dx, (int) _yPos + dy);
     }
-
+*/
     /**
      * Setzt das Roboterobjekt auf die vorgegebene Position
      *
@@ -119,10 +119,17 @@ public class Roboter
      * Die Ausrichtung des Roboters verändern
      */
 
-    public void aendereAusrichtung(double winkel)
+    public void aendereAusrichtung(double winkel, double geschwindigkeit)
     {
+        _geschwindigkeit += _geschwindigkeit;
         _ausrichtung = (_ausrichtung + winkel);
         _winkelVeraenderung = winkel;
+    }
+
+    public void stop()
+    {
+    _geschwindigkeit = 0;
+    _winkelVeraenderung = 0;
     }
 
     /**

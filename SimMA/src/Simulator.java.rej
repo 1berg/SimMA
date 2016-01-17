@@ -1,0 +1,35 @@
+diff a/SimMA/src/Simulator.java b/SimMA/src/Simulator.java	(rejected hunks)
+@@ -16,13 +17,29 @@ public class Simulator
+     {
+         _parcours = new Parcours(); //Macht die Leinwand sichtbar
+         _roboter = new Roboter(100, 200); //Erzeugt einen neuen Roboter an der vorgegebenen Position auf dem Parcours
++        new Thread( new Runnable() {@Override public void run() {
++        _roboter.updateOnce();
++        Delay.delay(100);
++          }}).start();
+ 
++        Motor.C.forward(); //Linker Motor
++        Motor.B.forward(); //Rechter Motor
++
++        while(True)
++        {
+         Motor.C.setSpeed(2); //Geschwindigkeit für beide Motoren festlegen.
+         Motor.B.setSpeed(2);
++        Delay.delay(1000);
++        Motor.C.setSpeed(-2); //Geschwindigkeit für beide Motoren festlegen.
++        Motor.B.setSpeed(-2);
++        Delay.delay(1000);
++        Motor.C.setSpeed(0); //Geschwindigkeit für beide Motoren festlegen.
++        Motor.B.setSpeed(0);
++        System.out.println("Eine Runde geschafft ;)");
+ 
+-        //Beide Motoren starten.
+-        //Motor.C.forward(); //Linker Motor
+-        Motor.B.forward(); //Rechter Motor
++            Delay.delay(2000);
++
++        }
+ 
+     }
+ }
+\ No newline at end of file
