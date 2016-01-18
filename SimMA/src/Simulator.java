@@ -17,7 +17,6 @@ public class Simulator
     {
         _parcours = new Parcours(); //Macht die Leinwand sichtbar
         _roboter = new Roboter(100, 500); //Erzeugt einen neuen Roboter an der vorgegebenen Position auf dem Parcours
-
         new Thread( new Runnable() {@Override public void run() {
             while(true)
             {
@@ -35,6 +34,7 @@ public class Simulator
         Motor.C.setSpeed(700);
         Delay.msDelay(2000);
         Motor.C.stop();
+
 
 
     }
