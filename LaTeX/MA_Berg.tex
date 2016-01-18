@@ -226,7 +226,7 @@ In Abbildung \ref{fig:Bsp Enchanting} ist nun ein simples Programm zum Fahren en
 \onehalfspacing
 leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer Lego Mindstorms NXT Roboter in Java programmiert werden können \cite{lejos}.\\
 Mithilfe von BlueJ oder einer anderen Entwicklungsumgebung können die SuS Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).\\
-Der Vorteil an der Arbeit mit leJOS besteht darin, dass die SuS direkt mit reinem Java-Code in Berührung kommen. Von Anfang an müssen sie auf syntaktische Korrektheit achten, damit ihr Programm überhaupt auf den NXT Roboter übertragen werden kann. Dabei stellen sich bereits mit wenigen zu lernenden Methoden schnell die ersten Erfolge ein: für das einfache Fahren eines Vierecks müssen die SuS lediglich die  Methoden \texttt{setSpeed(), forward()} und \texttt{backward()} an beiden Motoren, sowie eine Verzögerung mithilfe des Klasse \texttt{Delay} benutzen. 
+Der Vorteil an der Arbeit mit leJOS besteht darin, dass die SuS direkt mit reinem Java-Code in Berührung kommen. Von Anfang an müssen sie auf syntaktische Korrektheit achten, damit ihr Programm überhaupt auf den NXT Roboter übertragen werden kann. Dabei stellen sich bereits mit wenigen zu lernenden Methoden schnell die ersten Erfolge ein: für das einfache Fahren eines Vierecks müssen die SuS lediglich die  Methoden \texttt{setSpeed()}, \texttt{forward()} und \texttt{backward()} an beiden Motoren, sowie eine Verzögerung mithilfe des Klasse \texttt{Delay} benutzen. 
 
 
 \par \singlespacing
@@ -332,9 +332,14 @@ Die entwickelte Software besteht im derzeitigen Zustand als Prototyp aus insgesa
 \subsection{Klassen der API}
 \label{sec:API}
 \onehalfspacing
-In diesem Abschnitt werden nun die von leJOS vorgegebenen und an die Implementation des Simulators angepassten Klassen vorgestellt. Hierbei handelt es sich um eine kleine Auswahl der essentiell für den Unterricht erforderlichen Klassen, die im Rahmen dieser Arbeit für den Prototyp angepasst wurden. 
+In diesem Abschnitt werden nun die von leJOS vorgegebenen und an die Implementation des Simulators angepassten Klassen vorgestellt. Hierbei handelt es sich um eine kleine Auswahl der essentiell für den Unterricht erforderlichen Klassen, die im Rahmen dieser Arbeit für den Prototyp angepasst wurden. Die interne Struktur zwischen den einzelnen Klassen ist durch die leJOS API vorgegeben und musste somit realitätsgetreu nachgebildet werden.
+
 \subsubsection{Motoren}
-Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare von der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Diese Klasse bietet die Methoden \texttt{forward(), backward()} und \texttt{stop()} an, die die essentiellen Methoden für die Bewegung des Roboters darstellen. Ein an einen Motorport angeschlossener Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichen Klasse aus der leJOS API.
+Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare von der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor.Ein an einen Motorport angeschlossener Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichnamigen Klasse aus der leJOS API. 
+
+\subsubsection{NXTRegulatedMotor}
+Diese Klasse bietet die Methoden \texttt{forward(), backward()} und \texttt{stop()} an, die die essentiellen Methoden für die Bewegung des Roboters darstellen. Somit befindet sich hier die Implementation der aufzurufenden Bewegungen des Roboter-Objekts der Simulation.
+
 \subsubsection{Licht- und Farbsensoren}
 Die Lichtsensoren sind zwei von der leJOS-API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils im Abstand von fünf Pixeln links und rechts von der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.\\
 
@@ -357,13 +362,15 @@ Nun zu einer Beschreibung der Struktur der Simulationsumgebung selbst. Hierzu ge
 Der Simulator erzeugt beim Ausführen zunächst einen \texttt{BildEinleser}. Dieser lässt den Benutzer in einem Dialogfenster eine .gif-Datei als Parcours auswählen. Das ausgewählte Bild wird dann "`eingelesen"' und die einzelnen Bildpunkte in einem short-Array gespeichert.
 \subsubsection{Bildeinleser}
 Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hilfsklasse bestimmte Methoden zur Verfügung stellen muss. Durch den Aufruf der Methode\\
-\texttt{liesBilddaten()} eines Bildeinlesers wird ein JFileChooser erzeugt, mithilfe dessen der Benutzer eine Bilddatei auswählen kann, auf der der Roboter simuliert werden soll. Danach wird das Bild so umgewandelt, dass ein Array aus Bildpunkten entsteht.
+\texttt{liesBilddaten()} eines Bildeinlesers wird ein JFileChooser erzeugt, mithilfe dessen der Benutzer eine Bilddatei auswählen kann, auf der der Roboter simuliert werden soll. Danach wird das Bild so umgewandelt, dass ein Array aus Bildpunkten entsteht. Dies ist hilfreich für die spätere Arbeit mit Bewegungen und dem Einsatz von Sensoren auf dem Parcours, da auf jeden Datenpunkt des Parcours per Abruf der zugehörigen Array-Zelle zugegriffen werden kann.
 %In dem dieser Arbeit vorangegangenen Studium wurde bereits mit Projekten gearbeitet, in denen Bilddateien eingelesen und benutzt wurden, daher wurde diese Klasse aus einem alten Projekt importiert.\\
 \subsubsection{Parcours}
 Die Klasse Parcours ist dafür zuständig, dass eine Leinwand erzeugt und dann das Bild des Parcours angezeigt wird. Dies geschieht durch die Speicherung der Bilddaten des Bildes in der Feldvariable \texttt{{\_}bilddaten}, die dann an die Leinwand weitergegeben werden.\\
 
 Gleichzeitig ist sie die Schnittstelle zwischen Simulator und den API-Klassen, da sie dafür zuständig ist, Informationen über den Parcours an die Sensoren weiterzuleiten. Insbesondere die Abfrage des Helligkeitswerts eines Pixels aus dem Array ist in dieser Klasse implementiert.
 \subsubsection{Leinwand}
+
+\subsubsection{Roboter}
 
 \newpage
 \chapter{Zusammenfassung und Ausblick}
