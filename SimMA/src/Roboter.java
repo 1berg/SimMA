@@ -68,7 +68,7 @@ public class Roboter
         // to actually move.
         int dy = (int) Math.round(Math.cos(radians) * _geschwindigkeit);
         int dx = (int) Math.round(Math.sin(radians) * _geschwindigkeit);
-        rotate(_winkelVeraenderung); //TODO Rotation aus dem Bild raus verhindern
+        rotate(_winkelVeraenderung); //TODO Einfach Originalbild beim Zeichnen drehen
         setzePosition((int) _xPos + dx, (int) _yPos - dy);
 
     }

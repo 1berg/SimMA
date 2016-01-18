@@ -29,7 +29,7 @@ public class Simulator
         Motor.B.setSpeed(200);
         Motor.C.forward(); //Linker Motor
         Motor.B.forward();
-        System.out.println(_roboter._winkelVeraenderung);
+        //System.out.println(_roboter._winkelVeraenderung);
         Delay.msDelay(2000);
         Motor.C.setSpeed(700);
         Delay.msDelay(2000);
