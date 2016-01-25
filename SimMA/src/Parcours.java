@@ -52,7 +52,30 @@ public class Parcours {
             return _bilddaten[x][y];
         }
 
-        // ==== private Hilfsmethoden ====
+    /**
+     * Berechnet den Helligkeitwert in einem Bereich von einem Quadrat um den gegebenen Punkt
+     * @param x
+     * @param y
+     * @return den Durchschnitt der Helligkeitswerte um den gewählten Punkt
+     */
+    public int gibLichtmittelwert(int x, int y)
+    {
+        double pixel = 0;
+
+        pixel += gibHelligkeitswert(x, y);
+        pixel += gibHelligkeitswert(x-1, y-1);
+        pixel += gibHelligkeitswert(x, y-1);
+        pixel += gibHelligkeitswert(x+1, y-1);
+        pixel += gibHelligkeitswert(x-1, y);
+        pixel += gibHelligkeitswert(x+1, y);
+        pixel += gibHelligkeitswert(x-1, y+1);
+        pixel += gibHelligkeitswert(x, y+1);
+        pixel += gibHelligkeitswert(x+1, y+1);
+
+        return (int) pixel / 9;
+    }
+
+    // ==== private Hilfsmethoden ====
 
         /**
          * Zeichnet das Bild in _bilddaten neu

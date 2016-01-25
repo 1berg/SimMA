@@ -23,12 +23,11 @@ public class LightSensor
         Roboter roboter = Roboter.gibRoboter();
         if (_port.equals(SensorPort.S1))
         {
-            //TODO Bestimmten Pixelbereich anschauen und nicht nur ein einzelnen Pixel
-            return parcours.gibHelligkeitswert((int) roboter.gibXLichtLinks(),(int) roboter.gibYLichtLinks()); //Linker Sensor
+            return parcours.gibLichtmittelwert((int) roboter.gibXLichtLinks(),(int) roboter.gibYLichtLinks()); //Linker Sensor
         }
         else if (_port.equals(SensorPort.S2))
         {
-            return parcours.gibHelligkeitswert((int) roboter.gibXLichtRechts(), (int) roboter.gibYLichtRechts()); //Rechter Sensor
+            return parcours.gibLichtmittelwert((int) roboter.gibXLichtRechts(), (int) roboter.gibYLichtRechts()); //Rechter Sensor
         }
         else
         {
