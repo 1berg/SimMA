@@ -41,6 +41,8 @@ public class Roboter
         roboter = this;
         _xPos = x;
         _yPos = y;
+        System.out.println("Breite: " + _roboter.getWidth());
+        System.out.println("Höhe: " + _roboter.getHeight());
     }
 
     /**
@@ -139,7 +141,7 @@ public class Roboter
      */
     public double gibXPosition()
     {
-        return _xPos; //TODO Printen lassen
+        return _xPos;
     }
 
     /**
@@ -155,10 +157,10 @@ public class Roboter
      */
     public double gibXLichtRechts()
     {
-        double beta = 1 / Math.tan(0.25);
+        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
         double epsilon = 90 - (_ausrichtung + beta);
-        double c = 5 / Math.sin(beta);
-        return _xPos + (c * Math.sin(epsilon));
+        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        return _xPos + (c * Math.sin(Math.toRadians(epsilon)));
     }
 
     /**
@@ -166,10 +168,14 @@ public class Roboter
      */
     public double gibYLichtRechts()
     {
-        double beta = 1 / Math.tan(0.25);
+        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
+        System.out.println("beta" + beta);
         double epsilon = 90 - (_ausrichtung + beta);
-        double c = 5 / Math.sin(beta);
-        return _yPos - (c * Math.cos(epsilon));
+        System.out.println("epsilon" + epsilon);
+        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        System.out.println("c" + c);
+        System.out.println((c * Math.cos(epsilon)));
+        return _yPos - (c * Math.cos((epsilon)));
     }
 
     /**
@@ -177,10 +183,10 @@ public class Roboter
      */
     public double gibXLichtLinks()
     {
-        double beta = 1 / Math.tan(0.25);
+        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
         double gamma = _ausrichtung - beta;
-        double c = 5 / Math.sin(beta);
-        return _xPos + (c * Math.cos(gamma));
+        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        return _xPos - (c * Math.cos(Math.toRadians(gamma)));
     }
 
     /**
@@ -188,9 +194,9 @@ public class Roboter
      */
     public double gibYLichtLinks()
     {
-        double beta = 1 / Math.tan(0.25);
+        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
         double gamma = _ausrichtung - beta;
-        double c = 5 / Math.sin(beta);
+        double c = 47.75 * Math.asin(Math.toRadians(beta));
         return _yPos - (c * Math.sin(gamma));
     }
 
