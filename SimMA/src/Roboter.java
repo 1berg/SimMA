@@ -169,13 +169,9 @@ public class Roboter
     public double gibYLichtRechts()
     {
         double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
-        System.out.println("beta" + beta);
         double epsilon = 90 - (_ausrichtung + beta);
-        System.out.println("epsilon" + epsilon);
         double c = 47.75 * Math.asin(Math.toRadians(beta));
-        System.out.println("c" + c);
-        System.out.println((c * Math.cos(epsilon)));
-        return _yPos - (c * Math.cos((epsilon)));
+        return _yPos - (c * Math.cos((Math.toRadians(epsilon))));
     }
 
     /**
@@ -183,9 +179,9 @@ public class Roboter
      */
     public double gibXLichtLinks()
     {
-        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
+        double beta = Math.toDegrees(Math.atan((47.75 / 77.5))); //Ein Viertel der Breite durch die Hälfte der Höhe des Roboters
         double gamma = _ausrichtung - beta;
-        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        double c = 47.75 * Math.asin(Math.toRadians(beta)); //Die Hypothenuse des gedachten Dreiecks
         return _xPos - (c * Math.cos(Math.toRadians(gamma)));
     }
 
@@ -197,7 +193,7 @@ public class Roboter
         double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
         double gamma = _ausrichtung - beta;
         double c = 47.75 * Math.asin(Math.toRadians(beta));
-        return _yPos - (c * Math.sin(gamma));
+        return _yPos - (c * Math.sin(Math.toRadians(gamma)));
     }
 
 

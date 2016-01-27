@@ -21,6 +21,7 @@ public class LightSensor
     {
         Parcours parcours = Parcours.gibParcours();
         Roboter roboter = Roboter.gibRoboter();
+
         if (_port.equals(SensorPort.S1))
         {
             return parcours.gibLichtmittelwert((int) roboter.gibXLichtLinks(),(int) roboter.gibYLichtLinks()); //Linker Sensor
