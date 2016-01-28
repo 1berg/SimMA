@@ -38,8 +38,28 @@ public class Simulator
         System.out.println("xLichtRechts " + _roboter.gibXLichtRechts());
         System.out.println("yLichtRechts " + _roboter.gibYLichtRechts());
 
+        if(SeherL.readValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
+        {
+            Motor.A.setSpeed(200);
+            Motor.B.setSpeed(200);
 
-        Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
+            Motor.A.backward();
+            Motor.B.forward();//Eine Drehung auf der Stelle wird vollzogen.
+            Delay.msDelay(250);
+
+        }
+
+        if(SeherR.readValue()<400) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
+        {
+            Motor.A.setSpeed(200);
+            Motor.B.setSpeed(200);
+
+            Motor.A.forward();
+            Motor.B.backward();
+            Delay.msDelay(250);
+        }
+
+        /*Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
         Motor.B.setSpeed(200);
         Motor.C.forward(); //Linker Motor
         Motor.B.forward();
@@ -48,7 +68,7 @@ public class Simulator
         Motor.C.setSpeed(700);
         Delay.msDelay(2000);
         Motor.C.stop();
-        //Motor.B.stop();
+        //Motor.B.stop();*/
 
         System.out.println("xPos: " + _roboter.gibXPosition());
         System.out.println("yPos: " + _roboter.gibYPosition());
