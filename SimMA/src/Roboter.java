@@ -157,9 +157,9 @@ public class Roboter
      */
     public double gibXLichtRechts()
     {
-        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
+        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double epsilon = 90 - (_ausrichtung + beta);
-        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
         return _xPos + (c * Math.sin(Math.toRadians(epsilon)));
     }
 
@@ -168,9 +168,9 @@ public class Roboter
      */
     public double gibYLichtRechts()
     {
-        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
+        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double epsilon = 90 - (_ausrichtung + beta);
-        double c = 47.75 * Math.asin(Math.toRadians(beta));
+        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
         return _yPos - (c * Math.cos((Math.toRadians(epsilon))));
     }
 
@@ -179,9 +179,9 @@ public class Roboter
      */
     public double gibXLichtLinks()
     {
-        double beta = Math.toDegrees(Math.atan((47.75 / 77.5))); //Ein Viertel der Breite durch die Hälfte der Höhe des Roboters
+        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0)))); //Ein Viertel der Breite durch die Hälfte der Höhe des Roboters
         double gamma = _ausrichtung - beta;
-        double c = 47.75 * Math.asin(Math.toRadians(beta)); //Die Hypothenuse des gedachten Dreiecks
+        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta)); //Die Hypothenuse des gedachten Dreiecks
         return _xPos - (c * Math.cos(Math.toRadians(gamma)));
     }
 
@@ -190,10 +190,10 @@ public class Roboter
      */
     public double gibYLichtLinks()
     {
-        double beta = Math.toDegrees(Math.atan((47.75 / 77.5)));
+        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double gamma = _ausrichtung - beta;
-        double c = 47.75 * Math.asin(Math.toRadians(beta));
-        return _yPos - (c * Math.sin(Math.toRadians(gamma)));
+        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
+        return _yPos + (c * Math.sin(Math.toRadians(gamma)));
     }
 
 
