@@ -55,7 +55,9 @@ public class Parcours {
     /**
      * Berechnet den Helligkeitwert in einem Bereich von einem Quadrat um den gegebenen Punkt
      * @param x
+     *          Die x-Koordinate des Punkts
      * @param y
+     *          Die y-Koordinate des Punkte
      * @return den Durchschnitt der Helligkeitswerte um den gewählten Punkt
      */
     public int gibLichtmittelwert(int x, int y)

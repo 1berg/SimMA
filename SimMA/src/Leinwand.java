@@ -23,11 +23,11 @@ class Leinwand
      * Erzeuge eine Leinwand mit einem (weissen) Standardhintergrund.
      *
      * @param title
-     *            title to appear in Canvas Frame
+     *            Der Titel der Leinwand
      * @param width
-     *            the desired width for the canvas
+     *            Die Breite der Leinwand
      * @param height
-     *            the desired height for the canvas
+     *            Die Höhe der Leinwand
      */
     public Leinwand(String title, int width, int height)
     {
@@ -38,13 +38,13 @@ class Leinwand
      * Erzeuge eine Leinwand.
      *
      * @param title
-     *            title to appear in Canvas Frame
+     *            Der Titel der Leinwand
      * @param width
-     *            the desired width for the canvas
+     *            Die Breite der Leinwand
      * @param height
-     *            the desired height for the canvas
+     *            Die Höhe der Leinwand
      * @param bgColour
-     *            the desired background colour of the canvas
+     *            Die Hintergrundfarbe
      */
     public Leinwand(String title, int width, int height, Color bgColour)
     {
@@ -90,8 +90,8 @@ class Leinwand
     }
 
     /**
-     * Zeichne ein Bild, das in unserem internen Format angegeben ist (ein zweidimensionales Array
-     * von Grauwerten als short-Werte).
+     * Zeichne ein Bild als ein zweidimensionales Array
+     * von Grauwerten als short-Werte. Dies dient der Einfachheit zur Anfrage von Lichtwerten über die Sensoren.
      */
     public void zeichneBild(short[][] bild)
     {
@@ -118,7 +118,7 @@ class Leinwand
     }
 
     /**
-     * Redraws the Image
+     * Zeichnet das Bild erneut
      */
     public void redrawImage()
     {
@@ -126,15 +126,15 @@ class Leinwand
     }
 
     /**
-     * Draws an image onto the canvas.
+     * Zeichnet ein Image auf die Leinwand
      *
      * @param image
-     *            the Image object to be displayed
+     *            das Image Objekt
      * @param x
-     *            x co-ordinate for Image placement
+     *            x-Koordinate
      * @param y
-     *            y co-ordinate for Image placement
-     * @return returns boolean value representing whether the image was completely loaded
+     *            y-Koordinate
+     * @return Gibt true/false zurück als Status, ob das Bild vollständig geladen wurde
      */
     public boolean drawImage(Image image, int x, int y)
     {
@@ -145,7 +145,7 @@ class Leinwand
 
     /**
      * Warte fuer die angegebenen Millisekunden. Mit dieser Operation wird eine
-     * Verzoegerung definiert, die fuer animierte Zeichnungen benutzt werden
+     * Verzoegerung definiert, die für animierte Zeichnungen benutzt werden
      * kann.
      *
      * @param millisekunden

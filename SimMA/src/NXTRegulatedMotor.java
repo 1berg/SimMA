@@ -1,17 +1,25 @@
 
-
 /**
  * Ein NXT-Motor. Wird von der Motor-Klasse benutzt.
  */
 
 public class NXTRegulatedMotor{
 
-
+    // Variable für die Geschwindigkeit des Roboters
     protected double _speed;
+    // Der angesteuerte Port
     MotorPort _port;
+    // Die Richtung des Roboters (1 = vorwärts, -1 = rückwarts, 0 = stop)
     private int _richtung = 0;
+    // Faktor für die Skalierung der Motorbewegungen im Zusammenhang mit der Winkelveränderung am Roboterobjekt.
     private static double richtungsMultiplikator = 1./10;
 
+    /**
+     * Konstruktor für einen neuen NXTRegulated Motor
+     *
+     * @param port
+     *          Der Port, an dem der entsprechende Motor angeschlossen ist
+     */
     public NXTRegulatedMotor(MotorPort port){
 
         _speed = 1;
@@ -20,6 +28,7 @@ public class NXTRegulatedMotor{
 
     /**
      * Setzen der Geschwindigkeit
+     *
      * @param speed
      */
         public void setSpeed(int speed)
@@ -64,6 +73,10 @@ public class NXTRegulatedMotor{
 
         }
 
+    /**
+     * Rückwärtsbewegung für den jeweiligen Motor.
+     * Zweimal backward() soll nicht dazu führen, dass der Roboter doppelt so schnell fährt.
+     */
 
         public void backward()
         {
@@ -85,7 +98,8 @@ public class NXTRegulatedMotor{
         }
 
     /**
-     * Stoppt direkt den ganzen Roboter auf dem Parcours, nicht nur einen Motor.
+     * Stoppt den angesprochenen Motor.
+     * Damit das gesamte Roboter-Objekt auf dem Parcours anhält müssen beide Motoren im Code gestoppt werden.
      */
         public void stop()
         {
@@ -102,4 +116,4 @@ public class NXTRegulatedMotor{
         }
 
 
-        }
+}

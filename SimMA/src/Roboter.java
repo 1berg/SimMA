@@ -59,7 +59,6 @@ public class Roboter
     /**
      * Bewegt das Roboterobjekt vorwärts.
      *
-     *
      */
     public void update()
     {
@@ -75,19 +74,6 @@ public class Roboter
 
     }
 
-    /**
-     * Bewegt das Roboterobjekt rückwärts.
-     *
-     * @param entfernung
-    public void backward(int entfernung)
-    {
-        double radians = Math.toRadians(_ausrichtung);
-
-        int dx = (int) (Math.cos(radians) * (-entfernung));
-        int dy = (int) (Math.sin(radians) * (-entfernung));
-        setzePosition((int) _xPos + dx, (int) _yPos + dy);
-    }
-*/
     /**
      * Setzt das Roboterobjekt auf die vorgegebene Position
      *
@@ -114,7 +100,6 @@ public class Roboter
         leinwand.redrawImage();
         leinwand.drawImage(_roboter, x, y);
         leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der Leinwand
-
     }
 
     /**
@@ -125,16 +110,9 @@ public class Roboter
     {
         System.out.println(winkel+" " + geschwindigkeit);
         _geschwindigkeit += geschwindigkeit;
-
-        //sollte in Abhängigkeit zur Geschwindigkeit die Bewegung ändern
         _winkelVeraenderung += winkel;
     }
 
-    public void stop()
-    {
-    _geschwindigkeit = 0;
-    _winkelVeraenderung = 0;
-    }
 
     /**
      * Die Position des Roboters auf der x-Achse ausgeben
@@ -193,7 +171,7 @@ public class Roboter
         double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double gamma = _ausrichtung - beta;
         double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
-        return _yPos + (c * Math.sin(Math.toRadians(gamma)));
+        return _yPos + (c * Math.sin(Math.toRadians(gamma))); //TODO Eventuell müssen YLinks und YRechts vertauscht werden - Werte passen jeweils andersrum besser zur Ausrichtung
     }
 
 

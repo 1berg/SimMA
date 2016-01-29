@@ -4,11 +4,16 @@
 
 public class Simulator
 {
+    // Ein Parcours wird deklariert
     public static Parcours _parcours;
+    // Ein Roboter wird deklariert
     public static Roboter _roboter;
+    // Der zugehörige Thread wird deklariert
     public static Thread _thread;
-    static LightSensor SeherR; //Die Lichtsensoren werden mit ihren
-    static LightSensor SeherL; //Ports deklariert/initialisiert.
+    //Die Lichtsensoren werden mit ihren Ports deklariert
+    static LightSensor SeherR;
+    static LightSensor SeherL;
+
 
     public Simulator()
     {
@@ -17,8 +22,11 @@ public class Simulator
 
     public static void main(String[] args)
     {
-        _parcours = new Parcours(); //Macht die Leinwand sichtbar
-        _roboter = new Roboter(100, 500); //Erzeugt einen neuen Roboter an der vorgegebenen Position auf dem Parcours
+        // Die Leinwand sichtbar machen, indem ein neuer Parcours erzeugt wird.
+        _parcours = new Parcours();
+        // Den Roboter an der vorgegebenen Position auf dem Parcours erzeugen
+        _roboter = new Roboter(100, 500);
+        // Die Lichtsensoren initialisieren und die Ports zuweisen
         SeherR = new LightSensor(SensorPort.S2);
         SeherL = new LightSensor(SensorPort.S1);
 
