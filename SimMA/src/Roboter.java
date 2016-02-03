@@ -18,6 +18,8 @@ public class Roboter
     private static Roboter roboter;
     public double _winkelVeraenderung = 0;
     private double _geschwindigkeit = 0;
+    private int _xPosKorrektur = 96;
+    private  int _yPosKorrektur = 85;
 
     /**
      * Konstruktur für einen neuen Roboter an der Position (x, y)
@@ -39,8 +41,8 @@ public class Roboter
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.drawImage(_roboter, x, y);
         roboter = this;
-        _xPos = x;
-        _yPos = y;
+        _xPos = x - _xPosKorrektur;
+        _yPos = y - _yPosKorrektur;
         System.out.println("Breite: " + _roboter.getWidth());
         System.out.println("Höhe: " + _roboter.getHeight());
     }
@@ -82,8 +84,8 @@ public class Roboter
      */
     public void setzePosition(int x, int y)
     {
-        _xPos = x;
-        _yPos = y;
+        _xPos = x - _xPosKorrektur;
+        _yPos = y - _yPosKorrektur;
         zeichnen((int) _xPos, (int) _yPos);
     }
 

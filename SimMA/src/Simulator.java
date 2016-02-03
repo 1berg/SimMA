@@ -25,7 +25,7 @@ public class Simulator
         // Die Leinwand sichtbar machen, indem ein neuer Parcours erzeugt wird.
         _parcours = new Parcours();
         // Den Roboter an der vorgegebenen Position auf dem Parcours erzeugen
-        _roboter = new Roboter(100, 500);
+        _roboter = new Roboter(335, 500);
         // Die Lichtsensoren initialisieren und die Ports zuweisen
         SeherR = new LightSensor(SensorPort.S2);
         SeherL = new LightSensor(SensorPort.S1);
@@ -67,7 +67,7 @@ public class Simulator
             Delay.msDelay(250);
         }*/
 
-        Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
+        /*Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
         Motor.B.setSpeed(200);
         Motor.C.forward(); //Linker Motor
         Motor.B.forward();
@@ -77,7 +77,7 @@ public class Simulator
         Delay.msDelay(2000);
         Motor.C.stop();
         Delay.msDelay(1500);
-        Motor.B.stop();
+        Motor.B.stop();*/
 
         System.out.println("xPos: " + _roboter.gibXPosition());
         System.out.println("yPos: " + _roboter.gibYPosition());
