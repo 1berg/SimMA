@@ -71,16 +71,21 @@ Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmi
 \section{Das LEGO Mindstorms NXT System}
 \onehalfspacing
 Die ersten computergesteuerten LEGO Produkte wurden bereits 1986 veröffentlicht. In einer Zusammenarbeit von LEGO Education und dem Massachussettes Institute of Technology (MIT) wurde LEGO TC LOGO entwickelt. Dies war eine spezielle Abwandlung der Programmiersprache LOGO, mit der zusammengesetzte LEGO-Modelle gesteuert werden konnten \cite{rolling:14}.\\
-Die Entwicklung eines programmierbaren LEGO-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten MINDSTORMS Systems im Januar 1998, bei der der LEGO MINDSTORMS RCX Intelligent Brick, ein Microcomputer und somit das Kernstück des RCX-Systems, und das Robotics Invention System im Museum of Modern Art in London vorgestellt wurden.\\
+Die Entwicklung eines programmierbaren LEGO-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten Mindstorms Systems im Januar 1998, bei der der LEGO Mindstorms RCX Intelligent Brick, ein Microcomputer und somit das Kernstück des RCX-Systems, und das Robotics Invention System im Museum of Modern Art in London vorgestellt wurden.\\
 Bereits zwei Monate nach Verkaufsstart wurde die FIRST LEGO League (FLL) gegründet -- eine Zusammenarbeit zwischen LEGO und FIRST (For Inspiration and Recognition of Science and Technology), die den Grundstein für die heute noch bestehende Wettbewerbsliga legte \cite{rolling:14}.\\
-Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO MINDSTORMS NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.\\
-
-\todo{Beschreibung der technischen Aspekte}
+Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den LEGO Mindstorms NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.
 
 \par \singlespacing
-\section{Die Arbeit mit LEGO-Robotern im Unterricht}
+\subsection{Hardware}
 \onehalfspacing
-Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO MINDSTORMS} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.\\
+Zentraler Bestandteil der LEGO Mindstorms NXT Roboter ist der sogenannte NXT-Stein. Dieser besteht aus einem 32 Bit ARM-Prozessor und einem 8 Bit Co-Prozessor. Der Hauptprozessor ist für die Ausführung des Hauptprogramms zuständig, während sich der Co-Prozessor um die Auswertung etwaiger Sensordaten kümmert, die dann an den Hauptprozessor weitergeleitet werden. Für die Kommunikation mit dem NXT-Stein stehen zwei Komponenten zur Verfügung. Zum einen eine Kabelverbindung mit einer USB 2.0 Schnittstelle, zum anderen bietet der NXT-Stein wie schon der Vorgänger RCX die Möglichkeit einer Kommunikation über Bluetooth an. Das Softwaremenü wird auf dem 100 x 64 Pixel großen LCD-Bildschirm angezeigt und kann über die vier Kontrolltasten auf der Oberseite des NXT-Steins bedient werden. Für eine ausreichende Stromversorgung wird entweder mittels Batterien oder eines Akkus gesorgt \cite[S.42]{berns:10}.\\
+Der NXT-Stein verfügt standardmäßig über drei Motoranschlüsse (\emph{Motorports}) und vier Sensoranschlüsse (\emph{Sensorports}), die jeweils mit Buchstaben (\emph{A, B, C} bei den Motoren) bzw. Nummern (\emph{1, 2, 3, 4} als Sensoranschlüsse) bezeichnet sind \cite[S.43]{berns:10}. An zwei der drei verfügbaren Motorports ist jeweils ein Elektromotor angeschlossen. In diese Motoren sind Rotationssensoren und Regler eingebaut, die dafür sorgen, dass sowohl die Drehgeschwindigkeit als auch die Umdrehungszahl jeweils mithilfe des Programmcodes kontrolliert werden kann \cite[S.45--47]{berns:10}.\\
+Für die NXT Roboter sind eine Vielzahl von Sensoren verfügbar, damit die SuS ihren Roboter sein Umfeld erkunden lassen können. Eine umfassende Übersicht der einzelnen Sensoren und der spezifischen Funktionsweisen geben \textsc{Berns} und \textsc{Schmidt} (s. \cite[Kapitel 4.2]{berns:10}). 
+
+\par \singlespacing
+ \section{Die Arbeit mit LEGO-Robotern im Unterricht}
+\onehalfspacing
+Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO Mindstorms} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.\\
 
 In diesem Zusammenhang kann auch, wie bei \cite{wagner:05} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (Vgl. \cite[S.6f.]{wagner:05}).\\
 
@@ -161,7 +166,7 @@ Ein weitaus komplexerer Use Case bietet sich im Zusammenhang mit der RoboCup Wet
 
 \section{Bisher verfügbare Softwarelösungen}
 \label{sec:software bisher}
-In diesem Kapitel wird nun eine Auswahl von verfügbaren und im Unterricht getesteten Softwarelösungen zur Programmierung der NXT Roboter vorgestellt.
+In diesem Kapitel werden nun eine Auswahl von verfügbaren und im Unterricht getesteten Softwarelösungen zur Programmierung der NXT Roboter, sowie einige bereits verfügbare Simulationsumgebungen vorgestellt. 
 
 \subsection{LEGO Mindstorms NXT}
 \label{sec:LMNXT}
@@ -195,7 +200,7 @@ Enchanting ist eine an \emph{Scratch} anknüpfende Entwicklungsumgebung. Wie das
 \label{fig:Enchanting Start}
 \end{figure}
 
-Wird Enchanting von den SuS geöffnet, erscheint zunächst der Startbildschirm wie in Abb. \ref{fig:Enchanting Start}. Nun kann entweder ein neues Programm erstellt oder ein bestehendes geöffnet werden. Die verschiedenen Programmierelemente werden nach Kategorien in den oberen linken Ecke sortiert aufgeführt. Essentiell dabei sind die Kategorien \emph{Steuerung}, \emph{Fühlen}, \emph{Motoren} und \emph{Formeln}. Die SuS lernen beim Programmieren mit Enchanting, dass sie ihre Motoren und Sensoren zunächst über die verschiedenen Ports referenzieren müssen. Dies geschieht ganz einfach, indem z.B. man einen Motor-Block an einen Port "`setzt"' und ihm einen aussagekräftigen Namen gibt. Auf diese Weise kann nun -- anders als beim LEGO MINDSTORMS NXT-Programm -- bei if-Abfragen und anderen Steuerungselementen mithilfe des Namens auf den Motor oder Sensor zugegriffen werden.\\
+Wird Enchanting von den SuS geöffnet, erscheint zunächst der Startbildschirm wie in Abb. \ref{fig:Enchanting Start}. Nun kann entweder ein neues Programm erstellt oder ein bestehendes geöffnet werden. Die verschiedenen Programmierelemente werden nach Kategorien in den oberen linken Ecke sortiert aufgeführt. Essentiell dabei sind die Kategorien \emph{Steuerung}, \emph{Fühlen}, \emph{Motoren} und \emph{Formeln}. Die SuS lernen beim Programmieren mit Enchanting, dass sie ihre Motoren und Sensoren zunächst über die verschiedenen Ports referenzieren müssen. Dies geschieht ganz einfach, indem z.B. man einen Motor-Block an einen Port "`setzt"' und ihm einen aussagekräftigen Namen gibt. Auf diese Weise kann nun -- anders als beim LEGO Mindstorms NXT-Programm -- bei if-Abfragen und anderen Steuerungselementen mithilfe des Namens auf den Motor oder Sensor zugegriffen werden.\\
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.45]{images/Beispielprogramm_Enchanting.png} 
@@ -204,9 +209,18 @@ Wird Enchanting von den SuS geöffnet, erscheint zunächst der Startbildschirm w
 \end{figure}
 In Abbildung \ref{fig:Bsp Enchanting} ist nun ein simples Programm zum Fahren entlang einer schwarzen Linie mithilfe von zwei Lichtsensoren dargestellt. Hierbei ist zu erkennen, dass die Sensoren in den \texttt{falls...sonst...}-Blöcken mit \texttt{rechts} und \texttt{links}, die Motoren in den türkisfarbenen Elementen mit \texttt{NXT rechts 1} sowie \texttt{NXT links 2} bezeichnet sind. Es kann somit von den SuS direkt gesagt werden, welcher Sensor angesprochen wird, und welcher Motor an welchem Port angeschlossen ist.
 
-\subsection{BlueJ}
+\subsection{Schriftliche Programmierung von NXT-Robotern}
+Neben den grafischen Entwicklungsumgebungen in \textbf{\ref{sec:LMNXT}} und \textbf{\ref{sec:enchanting}} stehen natürlich auch Werkzeuge zur schriftlichen Programmierung der NXT-Roboter zur Verfügung. Nachfolgend wird eine der geläufigen Kombinationen aus Entwicklungsumgebung und virtueller Maschine für LEGO Mindstorms NXT vorgestellt. 
+
+\subsubsection*{BlueJ}
 \label{sec:bluej}
-\begin{figure}[htbp]
+Die Java-Entwicklungsumgebung BlueJ wurde an der Monash University in Australien entwickelt. Das Ziel von BlueJ war von Beginn an klar definiert: es sollte eine einfache Umgebung für den Einstieg in die objektorientierte Programmierung geschaffen werden \cite[S.14]{barnes:03}.\\
+Jedoch handelt es sich bei der Entwicklung objektorientierter Programme mit BlueJ keinesfalls um die Benutzung einer reduzierten Version von Java. BlueJ läuft wie andere Entwicklungsumgebungen auf dem aktuellen Java Development Kit (JDK) und auch als Compiler und virtuelle Maschine (JVM) wird Software der Firma Oracle (bis 2010 Sun Microsystems) verwendet (Vgl. \cite[S.15]{barnes:03}).\\
+
+Nicht nur in den Universitäten wird BlueJ inzwischen als Werkzeug zur Einführung in die Programmiersprache Java und die objektorientierte Programmierung genutzt, auch im Schulkontext hat die intuitive Bedienung und übersichtliche Gestaltung Anklang gefunden, da BlueJ "`eine einfache Entwurfssicht für die Analyse gegebener Lösungen und für die Planung neuer Lösungen"' \cite[S.6]{ehmann:09} zur Verfügung stellt.\\ \todo{noch etwas unvollständig}
+
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{images/linienfinder_bluej.png} 
 \caption{BlueJ-Beispiel zum Finden einer Linie}
@@ -221,13 +235,25 @@ In Abbildung \ref{fig:Bsp Enchanting} ist nun ein simples Programm zum Fahren en
 \end{figure}
 
 \par \singlespacing
-\section{leJOS}
+\subsubsection{leJOS}
 \label{sec:lejos}
 \onehalfspacing
 leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer Lego Mindstorms NXT Roboter in Java programmiert werden können \cite{lejos}.\\
-Mithilfe von BlueJ oder einer anderen Entwicklungsumgebung können die SuS Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).\\
+In der Kombination mit BlueJ ergibt sich somit für die SuS eine besonders einfache Softwarelösung. Durch eine eigens für BlueJ geschriebene sogenannte \textit{Extension} \todo{Quelle} und den Import der NXJ API stehen den SuS nicht nur die Klassen zur Steuerung ihres Roboters zur Verfügung, sondern auch eine Möglichkeit, über eine Erweiterung des Menüs, was allen in BlueJ geschriebenen Klassen zur Verfügung steht, um spezielle Befehle, die dazu dienen, das in BlueJ geschriebene Programm auf den NXT-Stein zu übertragen.\\ \todo{hier könnte noch eine Grafik eingefügt werden - evt. anstatt einer der anderen Grafiken}
+
+Mithilfe von BlueJ (oder einer anderen Entwicklungsumgebung) können die SuS insbesondere Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).\\
 Der Vorteil an der Arbeit mit leJOS besteht darin, dass die SuS direkt mit reinem Java-Code in Berührung kommen. Von Anfang an müssen sie auf syntaktische Korrektheit achten, damit ihr Programm überhaupt auf den NXT Roboter übertragen werden kann. Dabei stellen sich bereits mit wenigen zu lernenden Methoden schnell die ersten Erfolge ein: für das einfache Fahren eines Vierecks müssen die SuS lediglich die  Methoden \texttt{setSpeed()}, \texttt{forward()} und \texttt{backward()} an beiden Motoren, sowie eine Verzögerung mithilfe des Klasse \texttt{Delay} benutzen. 
 
+\par \singlespacing
+\subsection{Simulationsumgebungen}
+\label{sec:simulationsumgebungen}
+\onehalfspacing
+Für den virtuellen Umgang mit LEGO Mindstorms Roboter jeder Generation gibt es bereits einige Simulatoren, die frei verfügbar sind.\\
+Zunächst ist hier eine an der RWTH Aachen genutzte Simulationsumgebung, in der sich ein Roboter in einer virtuellen 3D-Umgebung bewegen kann, zu erwähnen (Vgl. \cite{rwth}). Diese ist für die Benutzung der Windows-Entwicklungsumgebung BricxCC, die unter anderem die an LEGO NXT Roboter angepasste Programmiersprache \emph{Not eXactly C (NXC)} (s. \cite{bricxcc}) unterstützt, konzipiert.\\
+
+Des weiteren existiert \emph{nxcEditor}, eine sowohl mit Windows, als auch mit Linux und MacOS nutzbare Entwicklungsumgebung, die einen Simulator, \emph{nxcSimulator} beinhaltet. Ähnlich wie BricxCC nutzt auch der nxcEditor die Programmiersprache NXC \cite{nxceditor}. Programmiert wurde die Entwicklungsumgebung von Frank Knefel und ist in Anlehnung an das vom Fraunhofer IAIS initiierte Lehr-/Lernkonzept \emph{Roberta -- Lernen mit Robotern} konzipiert, so dass diese inzwischen auch direkt von Roberta als Softwarelösung angeboten wird \cite{roberta}.\\
+
+Abschließend ist noch das umfassende Softwareangebot des Virtuellen Campus Projekts der PHBern zu erwähnen. Dies umfasst neben der Entwicklung von Programmen für LEGO Mindstorms NXT Roboter mithilfe einer eigens für NXT Roboter geschriebenen Klassenbibliothek \emph{NxtJLib} \cite{aegidius:16} die Möglichkeit, das Programm auf verschiedene Weisen auf den NXT-Stein zu übertragen, oder in einem Simulator auszuprobieren \cite{phbern}. 
 
 \par \singlespacing
 \chapter{Anforderungen an die Neuimplementierung}
@@ -263,9 +289,8 @@ Des weiteren ist es wichtig, dass sich Lehrerinnen und Lehrer schnell in die Sim
 \par \singlespacing
 \section{Erweiterbarkeit} \label{sec:erweiterbarkeit}
 \onehalfspacing
-Die Software sollte ausreichend kommentiert werden, damit auch nach Fertigstellung dieser Masterarbeit weitere Module hinzugefügt werden können. Dies betrifft sowohl die Fähigkeiten der Sensoren, sowie Änderungen, die im Rahmen von Veränderungen der leJOS NXJ API stattfinden, als auch die Möglichkeit, die geschriebene API an die Technologie der LEGO MINDSTORMS EV3, den Nachfolge-Robotern der NXT, anzupassen.
-\newpage
-\newpage
+Die Software sollte ausreichend kommentiert werden, damit auch nach Fertigstellung dieser Masterarbeit weitere Module hinzugefügt werden können. Dies betrifft sowohl die Fähigkeiten der Sensoren, sowie Änderungen, die im Rahmen von Veränderungen der leJOS NXJ API stattfinden, als auch die Möglichkeit, die geschriebene API an die Technologie der LEGO Mindstorms EV3, den Nachfolge-Robotern der NXT, anzupassen.\\
+Des weiteren sollte die Möglichkeit gegeben sein, dass Lehrkräfte unter bestimmten Voraussetzungen eigene, an ihren Unterricht angepasste Parcours in die Software einbinden können. Hierzu wird ein einheitlicher Startpunkt des Roboters im Parcours von der Software festgelegt und in einer Kurzanleitung niedergeschrieben.
 
 \par \singlespacing
 \chapter{Entwickelte Software}

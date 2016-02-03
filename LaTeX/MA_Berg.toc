@@ -1,40 +1,42 @@
 \select@language {german}
-\contentsline {chapter}{\numberline {1}Einleitung}{1}
-\contentsline {chapter}{\numberline {2}Ausgangssituation}{3}
-\contentsline {section}{\numberline {2.1}Das LEGO Mindstorms NXT System}{3}
-\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{4}
-\contentsline {subsection}{\numberline {2.2.1}Curriculare Einordnung}{5}
-\contentsline {subsubsection}{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}{6}
-\contentsline {subsubsection}{STS Sekundarstufe I (7 --11) Informatik}{7}
-\contentsline {subsubsection}{Gymnasiale Oberstufe -- Vorstufe}{7}
-\contentsline {subsubsection}{Gymnasiale Oberstufe -- Studienstufe}{8}
-\contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{8}
-\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{9}
-\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{9}
-\contentsline {subsection}{\numberline {2.3.2}Enchanting}{12}
-\contentsline {subsection}{\numberline {2.3.3}BlueJ}{14}
-\contentsline {section}{\numberline {2.4}leJOS}{14}
-\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{17}
-\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{18}
-\contentsline {section}{\numberline {3.2}Lehrkraft}{19}
-\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{19}
-\contentsline {chapter}{\numberline {4}Entwickelte Software}{20}
-\contentsline {section}{\numberline {4.1}Prozesse w\IeC {\"a}hrend der Implementation}{20}
-\contentsline {subsection}{\numberline {4.1.1}Mock-Ups}{20}
-\contentsline {subsection}{\numberline {4.1.2}Schritte w\IeC {\"a}hrend der Implementation}{23}
-\contentsline {subsection}{\numberline {4.1.3}Integration in BlueJ}{23}
-\contentsline {section}{\numberline {4.2}Beschreibung der Software}{23}
-\contentsline {section}{\numberline {4.3}Softwarearchitektur}{23}
-\contentsline {subsection}{\numberline {4.3.1}Klassen der API}{23}
-\contentsline {subsubsection}{Motoren}{24}
-\contentsline {subsubsection}{NXTRegulatedMotor}{24}
-\contentsline {subsubsection}{Licht- und Farbsensoren}{24}
-\contentsline {subsubsection}{Ultraschall- und Ber\IeC {\"u}hrungssensor}{25}
-\contentsline {subsubsection}{Sensorports}{25}
-\contentsline {subsection}{\numberline {4.3.2}Die Simulationsumgebung}{26}
-\contentsline {subsubsection}{Simulator}{26}
-\contentsline {subsubsection}{Bildeinleser}{26}
-\contentsline {subsubsection}{Parcours}{26}
-\contentsline {subsubsection}{Leinwand}{27}
-\contentsline {subsubsection}{Roboter}{27}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{28}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Ausgangssituation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Das LEGO Mindstorms NXT System}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Hardware}{4}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Curriculare Einordnung}{6}{subsection.2.2.1}
+\contentsline {subsubsection}{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}{7}{subsection.2.2.1}
+\contentsline {subsubsection}{STS Sekundarstufe I (7 --11) Informatik}{7}{section*.6}
+\contentsline {subsubsection}{Gymnasiale Oberstufe -- Vorstufe}{8}{section*.7}
+\contentsline {subsubsection}{Gymnasiale Oberstufe -- Studienstufe}{8}{section*.8}
+\contentsline {subsubsection}{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}{9}{section*.9}
+\contentsline {section}{\numberline {2.3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}LEGO Mindstorms NXT}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Enchanting}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Schriftliche Programmierung von NXT-Robotern}{15}{subsection.2.3.3}
+\contentsline {subsubsection}{leJOS}{16}{figure.2.6}
+\contentsline {subsection}{\numberline {2.3.4}Simulationsumgebungen}{18}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}Anforderungen an die Neuimplementierung}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sch\IeC {\"u}lerperspektive}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lehrkraft}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Erweiterbarkeit}{22}{section.3.3}
+\contentsline {chapter}{\numberline {4}Entwickelte Software}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prozesse w\IeC {\"a}hrend der Implementation}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Mock-Ups}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Schritte w\IeC {\"a}hrend der Implementation}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Integration in BlueJ}{26}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Beschreibung der Software}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Softwarearchitektur}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Klassen der API}{26}{subsection.4.3.1}
+\contentsline {subsubsection}{Motoren}{27}{subsection.4.3.1}
+\contentsline {subsubsection}{NXTRegulatedMotor}{27}{subsection.4.3.1}
+\contentsline {subsubsection}{Licht- und Farbsensoren}{27}{subsection.4.3.1}
+\contentsline {subsubsection}{Ultraschall- und Ber\IeC {\"u}hrungssensor}{28}{subsection.4.3.1}
+\contentsline {subsubsection}{Sensorports}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Die Simulationsumgebung}{29}{subsection.4.3.2}
+\contentsline {subsubsection}{Simulator}{29}{subsection.4.3.2}
+\contentsline {subsubsection}{Bildeinleser}{29}{subsection.4.3.2}
+\contentsline {subsubsection}{Parcours}{29}{subsection.4.3.2}
+\contentsline {subsubsection}{Leinwand}{30}{subsection.4.3.2}
+\contentsline {subsubsection}{Roboter}{30}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{31}{chapter.5}
