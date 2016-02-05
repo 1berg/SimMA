@@ -2,6 +2,7 @@
  *
  */
 
+
 public class Simulator
 {
     // Ein Parcours wird deklariert
@@ -16,11 +17,6 @@ public class Simulator
 
 
     public Simulator()
-    {
-
-    }
-
-    public static void main(String[] args)
     {
         // Die Leinwand sichtbar machen, indem ein neuer Parcours erzeugt wird.
         _parcours = new Parcours();
@@ -37,6 +33,11 @@ public class Simulator
                 Delay.msDelay(1);
             }
         }}).start();
+    }
+
+    public static void main()
+    {
+
 
 
         System.out.println("xPos: " + _roboter.gibXPosition());
@@ -66,8 +67,8 @@ public class Simulator
             Motor.B.backward();
             Delay.msDelay(250);
         }*/
-
-        /*Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
+ /*
+        Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
         Motor.B.setSpeed(200);
         Motor.C.forward(); //Linker Motor
         Motor.B.forward();
@@ -77,7 +78,7 @@ public class Simulator
         Delay.msDelay(2000);
         Motor.C.stop();
         Delay.msDelay(1500);
-        Motor.B.stop();*/
+        Motor.B.stop();
 
         System.out.println("xPos: " + _roboter.gibXPosition());
         System.out.println("yPos: " + _roboter.gibYPosition());
@@ -88,5 +89,6 @@ public class Simulator
 
         System.out.println("Lichtsensor Links " +  _parcours.gibLichtmittelwert((int) _roboter.gibXLichtLinks(),(int) _roboter.gibYLichtLinks()));
         System.out.println("Lichtsensor Rechts " + _parcours.gibLichtmittelwert((int) _roboter.gibXLichtRechts(), (int)_roboter.gibYLichtRechts()));
+        */
     }
 }

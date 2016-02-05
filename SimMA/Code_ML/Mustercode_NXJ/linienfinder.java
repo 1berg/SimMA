@@ -1,5 +1,8 @@
-import lejos.util.*;
-import lejos.nxt.*;
+//import lejos.util.*;
+//import lejos.nxt.*;
+
+//import simulator.util.*;
+//import simulator.nxt.*;
 
 /**
  * Musterlösung für den Linienfinder.

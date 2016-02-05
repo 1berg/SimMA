@@ -5,14 +5,11 @@
  */
 public class Button extends Object
 {
-    public static Button ENTER;
-    public static Button ESCAPE;
+    public static Button ENTER = new Button();
+    public static Button ESCAPE = new Button();
 
     public Button()
     {
-        ENTER = new Button();
-        ESCAPE = new Button();
-
     }
 
     /**

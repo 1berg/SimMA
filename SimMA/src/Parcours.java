@@ -47,9 +47,9 @@ public class Parcours {
      * @param y
      * @return Die Bilddaten am Punkt (x|y) normalisiert - die Helligkeit von "weiß" entspricht jetzt 100.
      */
-        public int gibHelligkeitswert(int x, int y)
+        public double gibHelligkeitswert(int x, int y)
         {
-            return (int) (_bilddaten[x][y]/255) *100;
+            return (_bilddaten[x][y]/255.0) *100;
         }
 
     /**
@@ -74,7 +74,7 @@ public class Parcours {
         pixel += gibHelligkeitswert(x, y+1);
         pixel += gibHelligkeitswert(x+1, y+1);
 
-        return (int) pixel / 9;
+        return (int) (pixel / 9);
     }
 
     // ==== private Hilfsmethoden ====

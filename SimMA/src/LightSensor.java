@@ -37,11 +37,11 @@ public class LightSensor
 
         if (_port.equals(SensorPort.S1))
         {
-            return parcours.gibLichtmittelwert((int) roboter.gibXLichtLinks(),(int) roboter.gibYLichtLinks()); //Linker Sensor
+            return parcours.gibLichtmittelwert(roboter.gibXLichtLinks(), roboter.gibYLichtLinks()); //Linker Sensor
         }
         else if (_port.equals(SensorPort.S2))
         {
-            return parcours.gibLichtmittelwert((int) roboter.gibXLichtRechts(), (int) roboter.gibYLichtRechts()); //Rechter Sensor
+            return parcours.gibLichtmittelwert(roboter.gibXLichtRechts(), roboter.gibYLichtRechts()); //Rechter Sensor
         }
         else
         {
