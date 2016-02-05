@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  2 FEB 2016 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  5 FEB 2016 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,7 +1336,25 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 47.
  [3
 
-] (./MA_Berg.toc
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 48.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 48.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 48.
+ [4
+
+
+]
+(./MA_Berg.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 )
@@ -1355,7 +1373,21 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 50.
- [4
+ [5]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 50.
+ [6
+
 
 ]
 Kapitel 1.
@@ -1405,7 +1437,6 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 61.
 [1
-
 
 
 ]
@@ -1460,6 +1491,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 77.
 [3
+
 
 ]
 Package babel Info: Redefining german shorthand "f
@@ -1635,7 +1667,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 171.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 171.
- <images/Startbildschirm_NXT.png, id=249, 775.39688pt x 552.56438pt>
+ <images/Startbildschirm_NXT.png, id=257, 775.39688pt x 552.56438pt>
 File: images/Startbildschirm_NXT.png Graphic file (type png)
 
 <use images/Startbildschirm_NXT.png>
@@ -1652,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-<images/Beispielprogramm_NXT.png, id=252, 1444.64719pt x 789.70032pt>
+<images/Beispielprogramm_NXT.png, id=260, 1444.64719pt x 789.70032pt>
 File: images/Beispielprogramm_NXT.png Graphic file (type png)
 
 <use images/Beispielprogramm_NXT.png>
@@ -1699,7 +1731,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 193.
 
-<images/Enchanting_Start.png, id=263, 849.92531pt x 651.18282pt>
+<images/Enchanting_Start.png, id=271, 849.92531pt x 651.18282pt>
 File: images/Enchanting_Start.png Graphic file (type png)
 
 <use images/Enchanting_Start.png>
@@ -1735,7 +1767,7 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 202.
 
 [12 <./images/Beispielprogramm_NXT.png>]
-<images/Beispielprogramm_Enchanting.png, id=269, 935.74594pt x 680.5425pt>
+<images/Beispielprogramm_Enchanting.png, id=277, 935.74594pt x 680.5425pt>
 File: images/Beispielprogramm_Enchanting.png Graphic file (type png)
 
 <use images/Beispielprogramm_Enchanting.png>
@@ -1811,14 +1843,14 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 221.
 
-[15] <images/linienfinder_bluej.png, id=291, 1146.2825pt x 962.59625pt>
+[15] <images/linienfinder_bluej.png, id=299, 1146.2825pt x 962.59625pt>
 File: images/linienfinder_bluej.png Graphic file (type png)
 
 <use images/linienfinder_bluej.png>
 Package pdftex.def Info: images/linienfinder_bluej.png used on input line 225.
 (pdftex.def)             Requested size: 401.20488pt x 336.91373pt.
 
-<images/linienfolger_bluej.png, id=293, 1141.26375pt x 1101.11375pt>
+<images/linienfolger_bluej.png, id=301, 1141.26375pt x 1101.11375pt>
 File: images/linienfolger_bluej.png Graphic file (type png)
 
 <use images/linienfolger_bluej.png>
@@ -1909,6 +1941,22 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 259.
  [19]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 259.
+ [20
+
+
+]
 Kapitel 3.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 259.
@@ -1928,9 +1976,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 268.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 268.
-[20
-
-]
+[21]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 274.
 Package babel Info: Redefining german shorthand "|
@@ -1968,7 +2014,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 282.
 
-[21]
+[22]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 283.
 Package babel Info: Redefining german shorthand "|
@@ -1993,7 +2039,23 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 296.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 296.
- [22]
+ [23]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 296.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 296.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 296.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 296.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 296.
+ [24
+
+
+]
 Kapitel 4.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 296.
@@ -2013,14 +2075,14 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 303.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 303.
-<images/axure_mockup.png, id=350, 2039.62pt x 1115.16624pt>
+<images/axure_mockup.png, id=366, 2039.62pt x 1115.16624pt>
 File: images/axure_mockup.png Graphic file (type png)
 
 <use images/axure_mockup.png>
 Package pdftex.def Info: images/axure_mockup.png used on input line 309.
 (pdftex.def)             Requested size: 407.91678pt x 223.0293pt.
 
-<images/mockup_linienfinder.png, id=354, 552.0625pt x 584.1825pt>
+<images/mockup_linienfinder.png, id=370, 552.0625pt x 584.1825pt>
 File: images/mockup_linienfinder.png Graphic file (type png)
 
 <use images/mockup_linienfinder.png>
@@ -2028,7 +2090,7 @@ Package pdftex.def Info: images/mockup_linienfinder.png used on input line 318.
 
 (pdftex.def)             Requested size: 220.82108pt x 233.66885pt.
 
-<images/mockup_linienfolger.png, id=355, 558.085pt x 583.17876pt>
+<images/mockup_linienfolger.png, id=371, 558.085pt x 583.17876pt>
 File: images/mockup_linienfolger.png Graphic file (type png)
 
 <use images/mockup_linienfolger.png>
@@ -2036,7 +2098,7 @@ Package pdftex.def Info: images/mockup_linienfolger.png used on input line 325.
 
 (pdftex.def)             Requested size: 223.23004pt x 233.26736pt.
 
-<images/mockup_hinderniserkenner.png, id=356, 569.12625pt x 595.22375pt>
+<images/mockup_hinderniserkenner.png, id=372, 569.12625pt x 595.22375pt>
 File: images/mockup_hinderniserkenner.png Graphic file (type png)
 
 <use images/mockup_hinderniserkenner.png>
@@ -2066,9 +2128,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 340.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 340.
-[23
-
-]
+[25]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining german shorthand "f
@@ -2084,7 +2144,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 340.
 
-[24 <./images/axure_mockup.png> <./images/mockup_linienfinder.png>]
+[26 <./images/axure_mockup.png> <./images/mockup_linienfinder.png>]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining german shorthand "f
@@ -2100,7 +2160,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 340.
 
-[25 <./images/mockup_linienfolger.png> <./images/mockup_hinderniserkenner.png>]
+[27 <./images/mockup_linienfolger.png> <./images/mockup_hinderniserkenner.png>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 344.
 Package babel Info: Redefining german shorthand "|
@@ -2146,7 +2206,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 361.
 
-[26]
+[28]
 Overfull \hbox (11.74062pt too wide) in paragraph at lines 363--364
 \T1/ptm/m/n/12 einen Mo-tor-port an-ge-schlos-se-ner Mo-tor wird über den Be-fe
 hl \T1/cmtt/m/n/12 Motor.[port].[Methode]
@@ -2178,7 +2238,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 373.
 
-[27]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
@@ -2205,7 +2265,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 386.
 
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
@@ -2226,7 +2286,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 396.
 
-[29]
+[31]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining german shorthand "f
@@ -2242,7 +2302,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 400.
 
-[30]
+[32]
 Kapitel 5.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 401.
@@ -2262,9 +2322,26 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 403.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 403.
-[31
+[33
+
 
 ] (./bibliography.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [34
+
+
+]
 Underfull \hbox (badness 1205) in paragraph at lines 15--16
 [][][]\T1/ptm/m/n/12 Karsten Berns, Da-niel Schmidt. \T1/ptm/m/it/12 Pro-gram-m
 ie-rung mit LE-GO MIND-
@@ -2288,9 +2365,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 28.
-[32
-
-]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 [][][]\T1/ptm/m/n/12 o.V. URL: []$[][]\T1/cmtt/m/n/12 http : / / nxceditor . so
 urceforge . net / index _ german .
@@ -2330,7 +2405,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 64.
 
-[33])
+[36])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining german shorthand "f
@@ -2346,7 +2421,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 405.
 
-[34]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
@@ -2363,7 +2438,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 412.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 412.
-[35]
+[38]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
  (./MA_Berg.aux (./titlepage.aux))
@@ -2371,12 +2446,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
 Package rerunfilecheck Info: File `MA_Berg.out' has not changed.
 (rerunfilecheck)             Checksum: 51D20CD87917460C89E426F18FF76C54;1769.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
  ) 
 Here is how much of TeX's memory you used:
- 20883 strings out of 493089
- 380032 string characters out of 6134841
- 528606 words of memory out of 5000000
+ 20888 strings out of 493089
+ 380072 string characters out of 6134841
+ 528614 words of memory out of 5000000
  23798 multiletter control sequences out of 15000+600000
  61973 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2389,10 +2468,10 @@ e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on MA_Berg.pdf (39 pages, 1609429 bytes).
+Output written on MA_Berg.pdf (44 pages, 1610164 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
