@@ -1,5 +1,7 @@
+package classes;
+
 /**
- * Die Klasse Button simuliert das Verhalten des Enter- und Escape-Buttons am NXT-Brick.
+ * Die Klasse classes.Button simuliert das Verhalten des Enter- und Escape-Buttons am NXT-Brick.
  *
  * Created by Pamina on 21.12.15.
  */
@@ -13,7 +15,7 @@ public class Button extends Object
     }
 
     /**
-     * Überprüft, ob der ausgewählte Button gedrückt wurde.
+     * Überprüft, ob der ausgewählte classes.Button gedrückt wurde.
      * @return
      */
     public final boolean isPressed()

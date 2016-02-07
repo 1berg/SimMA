@@ -1,11 +1,13 @@
+package classes;
+
 /**
- * Die Klasse Parcours, in der die ausgewählte Bilddatei in ein Array
+ * Die Klasse classes.Parcours, in der die ausgewählte Bilddatei in ein Array
  *
  * Created by Pamina on 07.12.15.
  */
 public class Parcours {
 
-        // Der Parcours
+        // Der classes.Parcours
         private static Parcours parcours;
         // die Bilddaten dieses Bildes
         private short[][] _bilddaten;
@@ -13,7 +15,7 @@ public class Parcours {
         private int _breite;
         // die Hoehe dieses Bildes
         private int _hoehe;
-        // Leinwand zur Anzeige
+        // classes.Leinwand zur Anzeige
         private Leinwand _leinwand;
 
         /**
@@ -34,7 +36,7 @@ public class Parcours {
     /**
      * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.
      *
-     * @return Parcours
+     * @return classes.Parcours
      */
     public static Parcours gibParcours()
     {
@@ -79,7 +81,7 @@ public class Parcours {
 
 
         /**
-         * Zeichnet das Bild aus den _bilddaten auf der Leinwand _leinwand
+         * Zeichnet das Bild aus den _bilddaten auf der classes.Leinwand _leinwand
          */
         private void zeichneBild()
         {
@@ -104,11 +106,11 @@ public class Parcours {
         }
 
         /**
-         * Erzeugt die Leinwand zur Darstellung und zeigt sie an.
+         * Erzeugt die classes.Leinwand zur Darstellung und zeigt sie an.
          */
         private void erzeugeLeinwand()
         {
-            _leinwand = new Leinwand("Parcours", _breite, _hoehe);
+            _leinwand = new Leinwand("classes.Parcours", _breite, _hoehe);
             _leinwand.sichtbarMachen();
 
             zeichneBild();

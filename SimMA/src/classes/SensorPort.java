@@ -1,5 +1,7 @@
+package classes;
+
 /**
- * Implementation der Klasse SensorPort, die die Ports S1,...,S4 zur Verfügung stellt.
+ * Implementation der Klasse classes.SensorPort, die die Ports S1,...,S4 zur Verfügung stellt.
  */
 public class SensorPort{
 
@@ -15,29 +17,29 @@ public class SensorPort{
     public static final int NUMBER_OF_PORTS = 3;
 
     /**
-     * SensorPort S1.
+     * classes.SensorPort S1.
      */
     public static final SensorPort S1 = new SensorPort (0);
 
     /**
-     * SensorPort S2.
+     * classes.SensorPort S2.
      */
     public static final SensorPort S2 = new SensorPort (1);
 
     /**
-     * SensorPort S3.
+     * classes.SensorPort S3.
      */
     public static final SensorPort S3 = new SensorPort (2);
 
     /**
-     * SensorPort S4.
+     * classes.SensorPort S4.
      */
     public static final SensorPort S4 = new SensorPort (3);
 
     /**
-     * Return the MotorPort with the given Id.
+     * Return the classes.MotorPort with the given Id.
      * @param id the Id, between 0 and {@link #NUMBER_OF_PORTS}-1.
-     * @return the MotorPort object
+     * @return the classes.MotorPort object
      */
     public static SensorPort getInstance(int id)
     {

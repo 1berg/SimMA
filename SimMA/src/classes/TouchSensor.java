@@ -1,5 +1,7 @@
+package classes;
+
 /**
- * Die Klasse TouchSensor, die einen Berührungssensor simuliert, der vorn am Roboter angeschlossen ist
+ * Die Klasse classes.TouchSensor, die einen Berührungssensor simuliert, der vorn am classes.Roboter angeschlossen ist
  */
 
 public class TouchSensor
@@ -7,7 +9,7 @@ public class TouchSensor
     SensorPort _port;
 
     /**
-     * Konstruktor für einen neuen TouchSensor
+     * Konstruktor für einen neuen classes.TouchSensor
      * @param port
      *          Der Port, an dem der Sensor angeschlossen ist.
      */

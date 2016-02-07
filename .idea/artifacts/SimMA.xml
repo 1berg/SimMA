@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SimMA">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="SimMA.jar">
+      <element id="module-output" name="SimMA" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Button.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/ColorSensor.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Delay.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Leinwand.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/LightSensor.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Motor.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/MotorPort.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/NXTRegulatedMotor.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Parcours.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Roboter.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/SensorPort.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/Simulator.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/TouchSensor.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/SimMA/src/classes/UltrasonicSensor.java" />
+    </root>
+  </artifact>
+</component>

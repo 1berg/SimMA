@@ -1,3 +1,5 @@
+package classes;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
@@ -23,7 +25,7 @@ public class Roboter
     private  int _yPosKorrektur = 85;
 
     /**
-     * Konstruktur für einen neuen Roboter an der Position (x, y)
+     * Konstruktur für einen neuen classes.Roboter an der Position (x, y)
      *
      * @param x
      * @param y
@@ -33,7 +35,7 @@ public class Roboter
 
         try
         {
-            File file = new File("SimMA/src/images/Roboter.gif");
+            File file = new File("SimMA/src/images/classes.Roboter.gif");
             _roboter = ImageIO.read(file);
             _roboterImage = _roboter;
         } catch (IOException e)
@@ -90,7 +92,7 @@ public class Roboter
 
 
     /**
-     * Zeichnet das Roboterobjekt an der Position (x, y) auf die Leinwand
+     * Zeichnet das Roboterobjekt an der Position (x, y) auf die classes.Leinwand
      *
      * @param x
      * @param y
@@ -100,7 +102,7 @@ public class Roboter
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.redrawImage();
         leinwand.drawImage(_roboter, x -  _xPosKorrektur, y - _yPosKorrektur);
-        leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der Leinwand
+        leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der classes.Leinwand
     }
 
     /**
@@ -226,7 +228,7 @@ public class Roboter
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
                 RenderingHints.VALUE_INTERPOLATION_BICUBIC); //TODO brauche ich das hier?
 
-        //Das Bild rotieren und auf die Leinwand bringen
+        //Das Bild rotieren und auf die classes.Leinwand bringen
         AffineTransform transform = new AffineTransform();
         transform.rotate(theta,cx,cy);
         g2d.setTransform(transform);

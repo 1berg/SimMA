@@ -1,13 +1,15 @@
-/** Die Klasse Simulator.
+package classes;
+
+/** Die Klasse classes.Simulator.
  *
  */
 
 
 public class Simulator
 {
-    // Ein Parcours wird deklariert
+    // Ein classes.Parcours wird deklariert
     public static Parcours _parcours;
-    // Ein Roboter wird deklariert
+    // Ein classes.Roboter wird deklariert
     public static Roboter _roboter;
     // Der zugehörige Thread wird deklariert
     public static Thread _thread;
@@ -18,16 +20,9 @@ public class Simulator
 
     public Simulator()
     {
-
-    }
-
-    public static void main(String[] args)
-    {
-
-
-        // Die Leinwand sichtbar machen, indem ein neuer Parcours erzeugt wird.
+        // Die classes.Leinwand sichtbar machen, indem ein neuer classes.Parcours erzeugt wird.
         _parcours = new Parcours();
-        // Den Roboter an der vorgegebenen Position auf dem Parcours erzeugen
+        // Den classes.Roboter an der vorgegebenen Position auf dem classes.Parcours erzeugen
         _roboter = new Roboter(335, 500);
         // Die Lichtsensoren initialisieren und die Ports zuweisen
         SeherR = new LightSensor(SensorPort.S2);
@@ -40,6 +35,12 @@ public class Simulator
                 Delay.msDelay(1);
             }
         }}).start();
+
+    }
+
+    public static void main()
+    {
+
 
         for(int i = 0; i < 400; i++)
         {
@@ -64,36 +65,36 @@ public class Simulator
 
         /*if(SeherL.readValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
         {
-            Motor.A.setSpeed(200);
-            Motor.B.setSpeed(200);
+            classes.Motor.A.setSpeed(200);
+            classes.Motor.B.setSpeed(200);
 
-            Motor.A.backward();
-            Motor.B.forward();//Eine Drehung auf der Stelle wird vollzogen.
-            Delay.msDelay(250);
+            classes.Motor.A.backward();
+            classes.Motor.B.forward();//Eine Drehung auf der Stelle wird vollzogen.
+            classes.Delay.msDelay(250);
 
         }
 
         if(SeherR.readValue()<400) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
         {
-            Motor.A.setSpeed(200);
-            Motor.B.setSpeed(200);
+            classes.Motor.A.setSpeed(200);
+            classes.Motor.B.setSpeed(200);
 
-            Motor.A.forward();
-            Motor.B.backward();
-            Delay.msDelay(250);
+            classes.Motor.A.forward();
+            classes.Motor.B.backward();
+            classes.Delay.msDelay(250);
         }*/
  /*
-        Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
-        Motor.B.setSpeed(200);
-        Motor.C.forward(); //Linker Motor
-        Motor.B.forward();
+        classes.Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
+        classes.Motor.B.setSpeed(200);
+        classes.Motor.C.forward(); //Linker classes.Motor
+        classes.Motor.B.forward();
         //System.out.println(_roboter._winkelVeraenderung);
-        Delay.msDelay(2000);
-        Motor.C.setSpeed(700);
-        Delay.msDelay(2000);
-        Motor.C.stop();
-        Delay.msDelay(1500);
-        Motor.B.stop();
+        classes.Delay.msDelay(2000);
+        classes.Motor.C.setSpeed(700);
+        classes.Delay.msDelay(2000);
+        classes.Motor.C.stop();
+        classes.Delay.msDelay(1500);
+        classes.Motor.B.stop();
 
         System.out.println("xPos: " + _roboter.gibXPosition());
         System.out.println("yPos: " + _roboter.gibYPosition());

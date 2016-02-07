@@ -1,110 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="classes" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BlueJ/SimMA/package.bluej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/ColorSensor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand$CanvasPane.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand$ShapeMitFarbe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Leinwand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/LightSensor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Motor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Motor.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Motor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/MotorPort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/MotorPort.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/MotorPort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/NXTRegulatedMotor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/NXTRegulatedMotor.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/NXTRegulatedMotor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Parcour.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/README.TXT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Roboter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Roboter.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Roboter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/SensorPort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/SimMA.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/SimpleExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/Simulator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/TouchSensor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/UltrasonicSensor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/images/Roboter.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/BlueJ/package.bluej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/README.TXT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/linienfolger.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/logfile.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/resources/inherit.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/doc/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/hinderniserkenner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/hinderniserkenner.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/hinderniserkenner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfinder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfinder.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfinder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfolger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfolger.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/linienfolger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_ML/Mustercode_NXJ/package.bluej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Code_SE1/SWBild.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/MockUp_NXT_Simulator.rp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Hindernis_mit_Linie.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Kurve_fahren.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Roboter_findet_Linie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Roboter_folgt_Linie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/leJOS_NXJ_0_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/leJOS_NXJ_0_91.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/src.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/src1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Roboter_umfährt_Hindernis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Roboter_umfährt_Hindernis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/S_Kurve_fahren.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Stop_auf_Linie.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/SimMA.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/SimpleExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java.rej" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/SWBild.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/SimMA.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator.java.rej" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/BildEinleser.class" afterPath="$PROJECT_DIR$/out/production/SimMA/BildEinleser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/NXTRegulatedMotor.class" afterPath="$PROJECT_DIR$/out/production/SimMA/NXTRegulatedMotor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Parcours.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Parcours.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Roboter.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Roboter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator$1.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Simulator$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator.class" afterPath="$PROJECT_DIR$/out/production/SimMA/Simulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/TouchSensor.class" afterPath="$PROJECT_DIR$/out/production/SimMA/TouchSensor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/linienfolger2.class" afterPath="$PROJECT_DIR$/out/production/SimMA/linienfolger2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Pamina.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Pamina.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/linienfolger2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/sim.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/BildEinleser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Button.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/ColorSensor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Delay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand$CanvasPane.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Leinwand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/LightSensor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Motor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/MotorPort.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/README.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/linienfolger.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/logfile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/resources/inherit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/doc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/hinderniserkenner.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/linienfinder.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/linienfolger.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/package.bluej" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/NXTRegulatedMotor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Parcours.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Roboter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/SensorPort.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/Simulator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/TouchSensor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/UltrasonicSensor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/hinderniserkenner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/awt/geom/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/awt/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/io/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/lang/annotation/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/lang/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/net/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/java/util/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/bluetooth/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/microedition/io/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/microedition/lcdui/game/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/microedition/lcdui/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/microedition/location/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/microedition/sensor/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/xml/namespace/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/xml/stream/events/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/javax/xml/stream/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/addon/gps/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/addon/keyboard/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/geom/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/internal/charset/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/internal/io/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/addon/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/addon/tetrix/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/comm/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/debug/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/rcxcomm/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/nxt/remote/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/kinematics/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/localization/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/mapping/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/navigation/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/objectdetection/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/pathfinding/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/robotics/subsumption/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/lejos/util/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/linienfinder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/linienfolger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/linienfolger2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/sim.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Button.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Button.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/ColorSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/ColorSensor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Delay.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Delay.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Leinwand.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Leinwand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/LightSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/LightSensor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Motor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Motor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/MotorPort.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/MotorPort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/NXTRegulatedMotor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Parcours.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Parcours.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Roboter.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Roboter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/SensorPort.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/SensorPort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/Simulator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/TouchSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/TouchSensor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SimMA/src/UltrasonicSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/classes/UltrasonicSensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.lof" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.lof" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdfsync" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/bibliography.tex" afterPath="$PROJECT_DIR$/LaTeX/bibliography.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" afterPath="$PROJECT_DIR$/SimMA/src/BildEinleser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Leinwand.java" afterPath="$PROJECT_DIR$/SimMA/src/Leinwand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" afterPath="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Parcours.java" afterPath="$PROJECT_DIR$/SimMA/src/Parcours.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Roboter.java" afterPath="$PROJECT_DIR$/SimMA/src/Roboter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/Simulator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/TouchSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/TouchSensor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/linienfolger2.java" afterPath="$PROJECT_DIR$/SimMA/src/linienfolger2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/package.bluej" afterPath="$PROJECT_DIR$/out/production/SimMA/Mustercode_NXJ/package.bluej" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/SimMA.iml" afterPath="$PROJECT_DIR$/SimMA/SimMA.iml" />
     </list>
     <ignored path="SimMA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,21 +134,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NXTRegulatedMotor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java">
+      <file leaf-file-name="LightSensor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimMA/src/classes/LightSensor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.35234898">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Roboter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/Roboter.java">
+      <file leaf-file-name="NXTRegulatedMotor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimMA/src/classes/NXTRegulatedMotor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="66" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Roboter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Roboter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.61529934">
+              <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,10 +167,10 @@
         </entry>
       </file>
       <file leaf-file-name="Simulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/Simulator.java">
+        <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="112" selection-start-line="75" selection-start-column="112" selection-end-line="75" selection-end-column="112" />
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -208,13 +221,15 @@
         <option value="$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java" />
         <option value="$PROJECT_DIR$/SimMA/src/linienfolger2.java" />
         <option value="$PROJECT_DIR$/SimMA/src/LightSensor.java" />
-        <option value="$PROJECT_DIR$/SimMA/src/Simulator.java" />
         <option value="$PROJECT_DIR$/SimMA/Code_SE1/SWBild.java" />
         <option value="$PROJECT_DIR$/SimMA/src/BildEinleser.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Parcours.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Leinwand.java" />
         <option value="$PROJECT_DIR$/SimMA/src/TouchSensor.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Roboter.java" />
+        <option value="$PROJECT_DIR$/SimMA/src/Simulator.java" />
+        <option value="$PROJECT_DIR$/SimMA/src/TestKlasse.java" />
+        <option value="$PROJECT_DIR$/SimMA/src/classes/Simulator.java" />
       </list>
     </option>
   </component>
@@ -267,6 +282,10 @@
               <option name="myItemId" value="SimMA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -292,6 +311,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimMA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimMA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -309,10 +346,10 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Library/javaxt-core_v1/src/javaxt/io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SimMA/src/classes/UltrasonicSensor.java" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -320,6 +357,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="simma" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -332,10 +373,10 @@
       <recent name="$PROJECT_DIR$/SimMA/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Simulator">
+  <component name="RunManager" selected="Application.TestKlasse">
     <configuration default="false" name="Simulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Simulator" />
+      <option name="MAIN_CLASS_NAME" value="classes.Simulator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -366,6 +407,21 @@
     <configuration default="false" name="linienfolger2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="linienfolger2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SimMA" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestKlasse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestKlasse" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -635,16 +691,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Simulator" />
       <item index="1" class="java.lang.String" itemvalue="Application.hinderniserkenner" />
       <item index="2" class="java.lang.String" itemvalue="Application.linienfolger2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestKlasse" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Simulator" />
-        <item index="1" class="java.lang.String" itemvalue="Application.linienfolger2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.hinderniserkenner" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestKlasse" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Simulator" />
+        <item index="2" class="java.lang.String" itemvalue="Application.linienfolger2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.hinderniserkenner" />
       </list>
     </recent_temporary>
   </component>
@@ -696,7 +754,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -738,14 +796,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Motor.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Motor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Roboter.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Roboter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -755,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Leinwand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
@@ -763,35 +821,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/BildEinleser.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/BildEinleser.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/BildEinleser.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/UltrasonicSensor.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/UltrasonicSensor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/ColorSensor.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/ColorSensor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
@@ -833,7 +891,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Delay.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Delay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4787234">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
@@ -847,7 +905,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/MotorPort.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/MotorPort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0782747">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
@@ -871,7 +929,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/SensorPort.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/SensorPort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -879,18 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Button.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Button.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/sim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -903,26 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/linienfolger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Motor.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Motor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/LightSensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -935,15 +969,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Parcours.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Parcours.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
           <folding>
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#2596#2597#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,33 +998,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Leinwand.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Leinwand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1743#1744#0" expanded="true" />
-            <element signature="e#3262#3263#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#4644#4645#0" expanded="true" />
-            <element signature="e#4705#4706#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+            <element signature="e#3384#3385#0" expanded="true" />
+            <element signature="e#3428#3429#0" expanded="true" />
+            <element signature="e#4774#4775#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="112" selection-start-line="75" selection-start-column="112" selection-end-line="75" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/BildEinleser.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/BildEinleser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
@@ -998,32 +1024,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/TouchSensor.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/TouchSensor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="162" selection-start-line="27" selection-start-column="162" selection-end-line="27" selection-end-column="162" />
           <folding>
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/Roboter.java">
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/NXTRegulatedMotor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="66" selection-start-line="106" selection-start-column="66" selection-end-line="106" selection-end-column="66" />
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/LightSensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimMA/src/classes/Roboter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61529934">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/NXTRegulatedMotor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35234898">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,10 +1075,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>SimMA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

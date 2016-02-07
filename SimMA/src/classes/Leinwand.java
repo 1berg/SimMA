@@ -1,10 +1,12 @@
+package classes;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
 /**
- * Die Klasse Leinwand zum Erzeugen eines aus Pixel bestehenden Bildes
+ * Die Klasse classes.Leinwand zum Erzeugen eines aus Pixel bestehenden Bildes
  */
 class Leinwand
 {
@@ -19,14 +21,14 @@ class Leinwand
 
 
     /**
-     * Erzeuge eine Leinwand mit einem (weißen) Standardhintergrund.
+     * Erzeuge eine classes.Leinwand mit einem (weißen) Standardhintergrund.
      *
      * @param title
-     *            Der Titel der Leinwand
+     *            Der Titel der classes.Leinwand
      * @param width
-     *            Die Breite der Leinwand
+     *            Die Breite der classes.Leinwand
      * @param height
-     *            Die Höhe der Leinwand
+     *            Die Höhe der classes.Leinwand
      */
     public Leinwand(String title, int width, int height)
     {
@@ -34,14 +36,14 @@ class Leinwand
     }
 
     /**
-     * Erzeuge eine Leinwand.
+     * Erzeuge eine classes.Leinwand.
      *
      * @param title
-     *            Der Titel der Leinwand
+     *            Der Titel der classes.Leinwand
      * @param width
-     *            Die Breite der Leinwand
+     *            Die Breite der classes.Leinwand
      * @param height
-     *            Die Höhe der Leinwand
+     *            Die Höhe der classes.Leinwand
      * @param bgColour
      *            Die Hintergrundfarbe
      */
@@ -60,7 +62,7 @@ class Leinwand
     /**
      * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.
      *
-     * @return Leinwand
+     * @return classes.Leinwand
      */
     public static Leinwand gibLeinwand()
     {
@@ -68,8 +70,8 @@ class Leinwand
     }
 
     /**
-     * Diese Leinwand sichtbar machen. Diese Methode kann auch benutzt werden, um eine sichtbare
-     * Leinwand wieder vor andere Fenster zu holen.
+     * Diese classes.Leinwand sichtbar machen. Diese Methode kann auch benutzt werden, um eine sichtbare
+     * classes.Leinwand wieder vor andere Fenster zu holen.
      */
     public void sichtbarMachen()
     {
@@ -86,7 +88,7 @@ class Leinwand
     }
 
     /**
-     * Zeichne ein als zweidimensionales short-Array übergebenes Bild auf die Leinwand
+     * Zeichne ein als zweidimensionales short-Array übergebenes Bild auf die classes.Leinwand
      *
      */
     public void zeichneBild(short[][] bild)
@@ -122,7 +124,7 @@ class Leinwand
     }
 
     /**
-     * Zeichnet ein Image auf die Leinwand
+     * Zeichnet ein Image auf die classes.Leinwand
      *
      * @param image
      *            das Image Objekt

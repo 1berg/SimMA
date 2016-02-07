@@ -1,3 +1,5 @@
+package classes;
+
 /**
  * Ein Lichtsensor, der Helligkeitswerte liest.
  * Diese soll die Farbe der Pixel im Bildarray abtasten und die "Lichtwert" zurückgeben.
@@ -25,10 +27,10 @@ public class LightSensor
     }
 
     /**
-     * Sondierende Methode, die dafür sorgt, dass der ausgewählte Lichtsensor die Helligkeit auf dem Parcours liest und ausgibt.
+     * Sondierende Methode, die dafür sorgt, dass der ausgewählte Lichtsensor die Helligkeit auf dem classes.Parcours liest und ausgibt.
      *
      * @return
-     *      Den Helligkeitswert des Bereichs auf dem Parcours unter dem ausgewählten Lichtsensor
+     *      Den Helligkeitswert des Bereichs auf dem classes.Parcours unter dem ausgewählten Lichtsensor
      */
     public int readValue()
     {

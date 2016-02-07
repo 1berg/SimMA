@@ -1,6 +1,7 @@
+package classes;
 
 /**
- * Ein NXT-Motor. Wird von der Motor-Klasse benutzt.
+ * Ein NXT-classes.Motor. Wird von der classes.Motor-Klasse benutzt.
  */
 
 public class NXTRegulatedMotor{
@@ -15,10 +16,10 @@ public class NXTRegulatedMotor{
     private static double richtungsMultiplikator = 1./9;
 
     /**
-     * Konstruktor für einen neuen NXTRegulated Motor
+     * Konstruktor für einen neuen NXTRegulated classes.Motor
      *
      * @param port
-     *          Der Port, an dem der entsprechende Motor angeschlossen ist
+     *          Der Port, an dem der entsprechende classes.Motor angeschlossen ist
      */
     public NXTRegulatedMotor(MotorPort port){
 
@@ -36,7 +37,7 @@ public class NXTRegulatedMotor{
             if (_richtung == 1)
             {
                 stop();
-                _speed =  (speed / 100.0); //Wenn der Motor bereits an ist, dann muss die veränderte Geschwindigkeit an den Roboter weitergegeben werden.
+                _speed =  (speed / 100.0); //Wenn der classes.Motor bereits an ist, dann muss die veränderte Geschwindigkeit an den classes.Roboter weitergegeben werden.
                 forward();
             }
             else if (_richtung == -1)
@@ -52,19 +53,19 @@ public class NXTRegulatedMotor{
         }
 
     /**
-     * Vorwärtsbewegung für den jeweiligen Motor.
-     * Zweimal forward() soll nicht dazu führen, dass der Roboter doppelt so schnell fährt.
+     * Vorwärtsbewegung für den jeweiligen classes.Motor.
+     * Zweimal forward() soll nicht dazu führen, dass der classes.Roboter doppelt so schnell fährt.
      */
         public void forward()
         {
             Roboter robot = Roboter.gibRoboter();
             if (_richtung != 1)
             {
-                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
+                if (_port.equals(MotorPort.C)) //linker classes.Motor wird angesteuert
                 {
                     robot.aendereBewegung((_speed)* richtungsMultiplikator, _speed); //eventuell andersrum
                 }
-                else if (_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
+                else if (_port.equals(MotorPort.B)) //rechter classes.Motor wird angesteuert
                 {
                     robot.aendereBewegung(-(_speed)* richtungsMultiplikator, _speed);
                 }
@@ -74,8 +75,8 @@ public class NXTRegulatedMotor{
         }
 
     /**
-     * Rückwärtsbewegung für den jeweiligen Motor.
-     * Zweimal backward() soll nicht dazu führen, dass der Roboter doppelt so schnell fährt.
+     * Rückwärtsbewegung für den jeweiligen classes.Motor.
+     * Zweimal backward() soll nicht dazu führen, dass der classes.Roboter doppelt so schnell fährt.
      */
 
         public void backward()
@@ -83,11 +84,11 @@ public class NXTRegulatedMotor{
             Roboter robot = Roboter.gibRoboter();
             if (_richtung != -1)
             {
-                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
+                if (_port.equals(MotorPort.C)) //linker classes.Motor wird angesteuert
                 {
                     robot.aendereBewegung(-(_speed)* richtungsMultiplikator, -_speed); //eventuell andersrum
                 }
-                else if (_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
+                else if (_port.equals(MotorPort.B)) //rechter classes.Motor wird angesteuert
                 {
                     robot.aendereBewegung((_speed)* richtungsMultiplikator, -_speed);
 
@@ -98,8 +99,8 @@ public class NXTRegulatedMotor{
         }
 
     /**
-     * Stoppt den angesprochenen Motor.
-     * Damit das gesamte Roboter-Objekt auf dem Parcours anhält müssen beide Motoren im Code gestoppt werden.
+     * Stoppt den angesprochenen classes.Motor.
+     * Damit das gesamte classes.Roboter-Objekt auf dem classes.Parcours anhält müssen beide Motoren im Code gestoppt werden.
      */
         public void stop()
         {

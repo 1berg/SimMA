@@ -1,3 +1,5 @@
+package classes;
+
 /**
  * Ein Ultraschallsensor.
  */
