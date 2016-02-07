@@ -1,11 +1,11 @@
 /**
- * Eine Kopie der Klasse SWBild aus dem Bildbearbeitungsprojekt aus SE1
+ * Die Klasse Parcours, in der die ausgewählte Bilddatei in ein Array
  *
  * Created by Pamina on 07.12.15.
  */
 public class Parcours {
 
-
+        // Der Parcours
         private static Parcours parcours;
         // die Bilddaten dieses Bildes
         private short[][] _bilddaten;
@@ -74,21 +74,21 @@ public class Parcours {
         pixel += gibHelligkeitswert(x, y+1);
         pixel += gibHelligkeitswert(x+1, y+1);
 
-        return (int) (pixel / 9);
+        return (int) (pixel / 9.0);
     }
 
-    // ==== private Hilfsmethoden ====
 
         /**
-         * Zeichnet das Bild in _bilddaten neu
+         * Zeichnet das Bild aus den _bilddaten auf der Leinwand _leinwand
          */
         private void zeichneBild()
         {
             _leinwand.zeichneBild(_bilddaten);
         }
 
+
         /**
-         * Hoehe und Breite neu berechnen, nachdem die Bilddaten veraendert worden sind.
+         * Hoehe und Breite neu berechnen, nachdem die Bilddaten verändert worden sind.
          */
         private void aktualisiereBildgroesse(short[][] bilddaten)
         {
@@ -104,7 +104,7 @@ public class Parcours {
         }
 
         /**
-         * Erzeuge die Leinwand zur Darstellung und zeige sie an.
+         * Erzeugt die Leinwand zur Darstellung und zeigt sie an.
          */
         private void erzeugeLeinwand()
         {
@@ -114,24 +114,5 @@ public class Parcours {
             zeichneBild();
         }
 
-    /**
-     * Gibt die Breite des Bilds zurück
-     *
-     * @return _bilddaten.length
-     */
-        public int gibBildhoehe()
-        {
-           return _bilddaten.length;
-        }
-
-    /**
-     * Gibt die Breite des Bilds zurück
-     *
-     * @return _bilddaten[0].length
-     */
-        public int gibBildbreite()
-        {
-            return _bilddaten[0].length;
-        }
     }
 

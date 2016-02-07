@@ -12,7 +12,7 @@ public class NXTRegulatedMotor{
     // Die Richtung des Roboters (1 = vorwärts, -1 = rückwarts, 0 = stop)
     private int _richtung = 0;
     // Faktor für die Skalierung der Motorbewegungen im Zusammenhang mit der Winkelveränderung am Roboterobjekt.
-    private static double richtungsMultiplikator = 1./10;
+    private static double richtungsMultiplikator = 1./9;
 
     /**
      * Konstruktor für einen neuen NXTRegulated Motor

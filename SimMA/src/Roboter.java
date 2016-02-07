@@ -68,12 +68,9 @@ public class Roboter
     {
         _ausrichtung +=_winkelVeraenderung;
         double radians = Math.toRadians(_ausrichtung);
-
-        // We round to the nearest integer, to allow moving one unit at an angle
-        // to actually move.
         int dy = (int) Math.round(Math.cos(radians) * _geschwindigkeit);
         int dx = (int) Math.round(Math.sin(radians) * _geschwindigkeit);
-        rotate(_ausrichtung); //TODO Einfach Originalbild beim Zeichnen drehen
+        rotate(_ausrichtung);
         setzePosition((int) _xPos + dx, (int) _yPos - dy);
 
     }
@@ -107,7 +104,7 @@ public class Roboter
     }
 
     /**
-     * Die Ausrichtung des Roboters verändern
+     * Die Ausrichtung und die Geschwindigkeit des Roboters ändern
      *
      */
     public void aendereBewegung(double winkel, double geschwindigkeit)
@@ -177,48 +174,67 @@ public class Roboter
         return  (int) (_yPos + (c * Math.sin(Math.toRadians(gamma)))); //TODO Eventuell müssen YLinks und YRechts vertauscht werden - Werte passen jeweils andersrum besser zur Ausrichtung
     }
 
+    /**
+     * Gibt die x-Position des Touch-Sensors wieder
+     */
+
+    public int gibXTouch()
+    {
+        double radians = Math.toRadians(_ausrichtung);
+        int dx = (int) Math.round(Math.sin(radians) * (_roboter.getWidth()/2.0));
+        return (int) (_xPos + dx);
+
+    }
+
+    /**
+     * Gibt die y-Position des Touch-Sensors wieder
+     * @return
+     */
+    public int gibYTouch()
+    {
+        double radians = Math.toRadians(_ausrichtung);
+        int dy = (int) Math.round(Math.cos(radians) * (_roboter.getHeight()/2.0));
+        return (int) (_yPos - dy);
+    }
 
 
-    //**************************************************************************
-    //** Rotate-Method from package javaxt.io.Image
-    //**************************************************************************
-    /**  Used to rotate the image (clockwise). Rotation angle is specified in
-     *   degrees relative to the top of the image.
+    /**
+     * Rotiert das Bild des Roboters
      */
     public void rotate(double Degrees){
 
-        //Define Image Center (Axis of Rotation)
+        //Den Bildmittelpunkt bestimmen
         int width = _roboter.getWidth();
         int height = _roboter.getHeight();
         int cx = width/2;
         int cy = height/2;
 
-
+        //Den Rotationsradius umrechnen
         double theta = Math.toRadians(Degrees);
 
-        //Create Buffered Image
+        //Eine Kopie des Originalbilds erstellen, die rotiert werden soll
         _roboter = new BufferedImage(_roboterImage.getWidth(), _roboterImage.getHeight(),
                 BufferedImage.TYPE_INT_ARGB);
 
-        //Create Graphics
+        //Graphics2D erstellen, um die Rotation zu ermöglichen, da BufferedImage nicht mit einer AffineTransform zusammenarbeitet
         Graphics2D g2d = _roboter.createGraphics();
-
 
         //Enable anti-alias and Cubic Resampling
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
 
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-                RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+                RenderingHints.VALUE_INTERPOLATION_BICUBIC); //TODO brauche ich das hier?
 
-        //Rotate the image
-        AffineTransform xform = new AffineTransform();
-        xform.rotate(theta,cx,cy);
-        g2d.setTransform(xform);
+        //Das Bild rotieren und auf die Leinwand bringen
+        AffineTransform transform = new AffineTransform();
+        transform.rotate(theta,cx,cy);
+        g2d.setTransform(transform);
         g2d.drawImage(_roboterImage,0,0,null);
         g2d.dispose();
 
-        xform = null;
+        //Transformation verwerfen für die nächste Rotation
+        transform = null;
     }
 
 }

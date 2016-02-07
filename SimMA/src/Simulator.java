@@ -18,6 +18,13 @@ public class Simulator
 
     public Simulator()
     {
+
+    }
+
+    public static void main(String[] args)
+    {
+
+
         // Die Leinwand sichtbar machen, indem ein neuer Parcours erzeugt wird.
         _parcours = new Parcours();
         // Den Roboter an der vorgegebenen Position auf dem Parcours erzeugen
@@ -33,19 +40,27 @@ public class Simulator
                 Delay.msDelay(1);
             }
         }}).start();
-    }
 
-    public static void main()
-    {
+        for(int i = 0; i < 400; i++)
+        {
+            System.out.println("xPos: " + _roboter.gibXPosition());
+            System.out.println("yPos: " + _roboter.gibYPosition());
+            System.out.println("xLichtLinks " + _roboter.gibXLichtLinks());
+            System.out.println("yLichtLinks " + _roboter.gibYLichtLinks());
+            System.out.println("xLichtRechts " + _roboter.gibXLichtRechts());
+            System.out.println("yLichtRechts " + _roboter.gibYLichtRechts());
+            System.out.println("Lichtwert links " + SeherL.readValue());
+            System.out.println("Lichtwert rechts " + SeherR.readValue());
+            Motor.B.setSpeed(100);
+            Motor.C.setSpeed(100);
+            Motor.B.forward();
+            Motor.C.forward();
+            Delay.msDelay(200);
+            i += 1;
+        }
 
-
-
-        System.out.println("xPos: " + _roboter.gibXPosition());
-        System.out.println("yPos: " + _roboter.gibYPosition());
-        System.out.println("xLichtLinks " + _roboter.gibXLichtLinks());
-        System.out.println("yLichtLinks " + _roboter.gibYLichtLinks());
-        System.out.println("xLichtRechts " + _roboter.gibXLichtRechts());
-        System.out.println("yLichtRechts " + _roboter.gibYLichtRechts());
+        Motor.B.stop();
+        Motor.C.stop();
 
         /*if(SeherL.readValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
         {

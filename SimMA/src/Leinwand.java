@@ -4,8 +4,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
 /**
- * Die Klasse Leinwand erlaubt einfache grafische Operationen auf einer Leinwand.
- *
+ * Die Klasse Leinwand zum Erzeugen eines aus Pixel bestehenden Bildes
  */
 class Leinwand
 {
@@ -20,7 +19,7 @@ class Leinwand
 
 
     /**
-     * Erzeuge eine Leinwand mit einem (weissen) Standardhintergrund.
+     * Erzeuge eine Leinwand mit einem (weißen) Standardhintergrund.
      *
      * @param title
      *            Der Titel der Leinwand
@@ -68,7 +67,6 @@ class Leinwand
         return leinwand;
     }
 
-
     /**
      * Diese Leinwand sichtbar machen. Diese Methode kann auch benutzt werden, um eine sichtbare
      * Leinwand wieder vor andere Fenster zu holen.
@@ -77,8 +75,6 @@ class Leinwand
     {
         if (_graphic == null)
         {
-            // first time: instantiate the offscreen image and fill it with
-            // the background colour
             Dimension size = _canvas.getSize();
             _canvasImage = _canvas.createImage(size.width, size.height);
             _graphic = (Graphics2D) _canvasImage.getGraphics();
@@ -90,8 +86,8 @@ class Leinwand
     }
 
     /**
-     * Zeichne ein Bild als ein zweidimensionales Array
-     * von Grauwerten als short-Werte. Dies dient der Einfachheit zur Anfrage von Lichtwerten über die Sensoren.
+     * Zeichne ein als zweidimensionales short-Array übergebenes Bild auf die Leinwand
+     *
      */
     public void zeichneBild(short[][] bild)
     {
@@ -145,7 +141,7 @@ class Leinwand
 
     /**
      * Warte fuer die angegebenen Millisekunden. Mit dieser Operation wird eine
-     * Verzoegerung definiert, die für animierte Zeichnungen benutzt werden
+     * Verzögerung definiert, die für animierte Zeichnungen benutzt werden
      * kann.
      *
      * @param millisekunden
@@ -159,7 +155,7 @@ class Leinwand
         }
         catch (Exception e)
         {
-            // Exception ignorieren
+            //Exception wird ignoriert
         }
     }
 
