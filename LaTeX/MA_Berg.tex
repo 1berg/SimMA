@@ -348,6 +348,7 @@ Außerdem konnte bestehender Code aus anderen Projekten in dieses Projekt import
 
 \par \singlespacing
 \subsection{Integration in BlueJ}
+\label{sec:integration}
 \onehalfspacing
 Die Frage nach einer Integration in BlueJ kann auf vielfältige Art beantwortet werden. Die einfachste und zu diesem Zeitpunkt praktikabelste Lösung ist, die Integration der Simulationsumgebung über einen Import der Klassenbibliothek zu realisieren.\\
 Für die SuS bedeutet dies, dass sie, neben der Import-Anweisung für die leJOS-Bibliothek einen weiteren Import in ihren geschriebenen Code einfügen müssen. Außerdem muss ein Exemplar der Simulator-Klasse erzeugt werden. Da dies aber ein überschaubarer Aufwand für SuS und Lehrkraft ist, der auch als "`Schablone"' für die ersten Versuche von der Lehrkraft zur Verfügung gestellt werden kann, sehe ich diese Lösung als geeignet.\\
@@ -358,6 +359,20 @@ Der Vorteil an BlueJ besteht jedoch klar darin, dass diese Umgebung, wie in \tex
 \par \singlespacing
 \section{Beschreibung der Software}
 \onehalfspacing
+
+Nun zu einer kurzen Beschreibung des Prototyps, in der zudem Einzelheiten zur Benutzung der Software dargestellt werden.\\
+
+Beginnt man mit dem Programmieren einer Klasse, die den NXT Roboter beispielsweise einer Kurve auf dem Boden folgen lassen soll, so muss neben des Imports für die leJOS API ein weiterer Import für den Simulator eingebunden werden. Zu beachten ist, dass immer einer der Imports auskommentiert sein muss, da sonst weder der Simulator noch der reale NXT Roboter weiß, auf welche Bibliothek zugegriffen werden soll.\\
+
+Um nun mit dem Simulator zu arbeiten, erzeugt man innerhalb der main-Methode der Klasse ein neues Exemplar der Klasse \texttt{Simulator}. Nachdem man die Klasse fehlerfrei kompiliert hat, kann man in BlueJ über einen Rechtsklick ein neues Exemplar dieser Klasse aufrufen, und an diesem die main-Methode ausführen lassen. Dies führt dazu, dass mit der Erzeugung eines Simulators der Auswahldialog für den Parcours angezeigt wird, wie in Abbildung \ref{fig:auswahldialog} beispielhaft dargestellt ist.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.45]{images/dialog_szenarien.png} 
+\caption{Auswahldialog für den Parcours}
+\label{fig:auswahldialog}
+\end{figure}
+
 
 \begin{figure}[htbp]
 \centering
