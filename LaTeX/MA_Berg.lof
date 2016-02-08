@@ -5,14 +5,18 @@
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Fahren eines Roboters auf einer schwarzen Linie}}{11}{figure.2.2}
 \contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Der Startbildschirm von Enchanting}}{12}{figure.2.3}
 \contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Beispiel eines Enchanting Programms}}{13}{figure.2.4}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{15}{figure.2.5}
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{16}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Die Benutzeroberfl\IeC {\"a}che von BlueJ}}{15}{figure.2.5}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{16}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Das Kontextmen\IeC {\"u} mit Auswahlm\IeC {\"o}glichkeiten der NXJ-Extension}}{17}{figure.2.7}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{18}{figure.2.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Die Bedieneroberfl\IeC {\"a}che von Axure RP Pro}}{24}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Anhalten auf einer schwarzen Linie}}{24}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Fahren einer S-Kurve}}{25}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Erkennen eines Hindernisses auf der Fahrbahn}}{25}{figure.4.4}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{28}{figure.4.5}
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Eine beispielhafte Darstellung von Parcours und Roboter}}{29}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Die Bedieneroberfl\IeC {\"a}che von Axure RP Pro}}{26}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Anhalten auf einer schwarzen Linie}}{26}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Fahren einer S-Kurve}}{27}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Erkennen eines Hindernisses auf der Fahrbahn}}{27}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{29}{figure.4.5}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Eine beispielhafte Darstellung von Parcours und Roboter}}{30}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces UML-Diagramm der wichtigsten von leJOS NXJ vorgegebenen Klassen}}{35}{figure.4.7}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces UML-Diagramm der essentiellen Klassen f\IeC {\"u}r die Simulationsumgebung}}{39}{figure.4.8}
 \addvspace {10\p@ }

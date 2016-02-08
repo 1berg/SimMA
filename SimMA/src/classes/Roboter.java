@@ -83,7 +83,7 @@ public class Roboter
      * @param x
      * @param y
      */
-    public void setzePosition(int x, int y)
+    private void setzePosition(int x, int y)
     {
         _xPos = x;
         _yPos = y;
@@ -97,7 +97,7 @@ public class Roboter
      * @param x
      * @param y
      */
-    public void zeichnen(int x, int y)
+    private void zeichnen(int x, int y)
     {
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.redrawImage();
@@ -203,7 +203,7 @@ public class Roboter
     /**
      * Rotiert das Bild des Roboters
      */
-    public void rotate(double Degrees){
+    private void rotate(double Degrees){
 
         //Den Bildmittelpunkt bestimmen
         int width = _roboter.getWidth();

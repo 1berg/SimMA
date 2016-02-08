@@ -20,6 +20,6 @@ public class Button extends Object
      */
     public final boolean isPressed()
     {
-        return false; //TODO Implementation des Buttons als Listener im Extension-Interface muss hier noch eingefügt werden
+        return false;
     }
 }

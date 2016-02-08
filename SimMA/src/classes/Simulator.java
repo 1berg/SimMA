@@ -14,8 +14,8 @@ public class Simulator
     // Der zugehörige Thread wird deklariert
     public static Thread _thread;
     //Die Lichtsensoren werden mit ihren Ports deklariert
-    static LightSensor SeherR;
-    static LightSensor SeherL;
+    //static LightSensor SeherR;
+    //static LightSensor SeherL;
 
 
     public Simulator()
@@ -24,9 +24,6 @@ public class Simulator
         _parcours = new Parcours();
         // Den classes.Roboter an der vorgegebenen Position auf dem classes.Parcours erzeugen
         _roboter = new Roboter(335, 500);
-        // Die Lichtsensoren initialisieren und die Ports zuweisen
-        SeherR = new LightSensor(SensorPort.S2);
-        SeherL = new LightSensor(SensorPort.S1);
 
         new Thread( new Runnable() {@Override public void run() {
             while(true)
@@ -38,11 +35,11 @@ public class Simulator
 
     }
 
-    public static void main()
+    private static void main()
     {
 
 
-        for(int i = 0; i < 400; i++)
+        /*for(int i = 0; i < 400; i++)
         {
             System.out.println("xPos: " + _roboter.gibXPosition());
             System.out.println("yPos: " + _roboter.gibYPosition());
@@ -61,7 +58,7 @@ public class Simulator
         }
 
         Motor.B.stop();
-        Motor.C.stop();
+        Motor.C.stop();*/
 
         /*if(SeherL.readValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
         {
