@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="simma" default="all">
+  
+  
+  <property file="simma.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+      <include name="lib/ant-javafx.jar"/>
+      <include name="lib/dt.jar"/>
+      <include name="lib/javafx-mx.jar"/>
+      <include name="lib/jconsole.jar"/>
+      <include name="lib/packager.jar"/>
+      <include name="lib/sa-jdi.jar"/>
+      <include name="lib/tools.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module SimMA -->
+  
+  <dirname property="module.simma.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.simma" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.simma" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.simma" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.simma" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="simma.output.dir" value="${module.simma.basedir}/out/production/SimMA"/>
+  <property name="simma.testoutput.dir" value="${module.simma.basedir}/out/test/SimMA"/>
+  
+  <path id="simma.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="simma.module.production.classpath">
+    <path refid="${module.jdk.classpath.simma}"/>
+  </path>
+  
+  <path id="simma.runtime.production.module.classpath">
+    <pathelement location="${simma.output.dir}"/>
+  </path>
+  
+  <path id="simma.module.classpath">
+    <path refid="${module.jdk.classpath.simma}"/>
+    <pathelement location="${simma.output.dir}"/>
+  </path>
+  
+  <path id="simma.runtime.module.classpath">
+    <pathelement location="${simma.testoutput.dir}"/>
+    <pathelement location="${simma.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.simma">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.simma">
+    <patternset refid="excluded.from.module.simma"/>
+  </patternset>
+  
+  <path id="simma.module.sourcepath">
+    <dirset dir="${module.simma.basedir}/SimMA">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.simma" depends="compile.module.simma.production,compile.module.simma.tests" description="Compile module SimMA"/>
+  
+  <target name="compile.module.simma.production" depends="register.custom.compilers" description="Compile module SimMA; production classes">
+    <mkdir dir="${simma.output.dir}"/>
+    <javac2 destdir="${simma.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.simma}/javac">
+      <compilerarg line="${compiler.args.simma}"/>
+      <bootclasspath refid="simma.module.bootclasspath"/>
+      <classpath refid="simma.module.production.classpath"/>
+      <src refid="simma.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.simma"/>
+    </javac2>
+    
+    <copy todir="${simma.output.dir}">
+      <fileset dir="${module.simma.basedir}/SimMA/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.simma.tests" depends="register.custom.compilers,compile.module.simma.production" description="compile module SimMA; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.simma" description="cleanup module">
+    <delete dir="${simma.output.dir}"/>
+    <delete dir="${simma.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.simma" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.simma" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.classes" value="${basedir}/out/artifacts/classes"/>
+    <property name="artifact.output.simma" value="${basedir}/SimMA"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.classes.jar" value="${artifacts.temp.dir}/classes.jar"/>
+    <property name="temp.jar.path.SimMA.jar" value="${artifacts.temp.dir}/SimMA.jar"/>
+  </target>
+  
+  <target name="artifact.classes" depends="init.artifacts, compile.module.simma" description="Build &#39;classes&#39; artifact">
+    <property name="artifact.temp.output.classes" value="${artifacts.temp.dir}/classes"/>
+    <mkdir dir="${artifact.temp.output.classes}"/>
+    <jar destfile="${temp.jar.path.classes.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${simma.output.dir}"/>
+    </jar>
+    <copy file="${temp.jar.path.classes.jar}" tofile="${artifact.temp.output.classes}/classes.jar"/>
+  </target>
+  
+  <target name="artifact.simma" depends="init.artifacts, compile.module.simma, artifact.classes" description="Build &#39;SimMA&#39; artifact">
+    <property name="artifact.temp.output.simma" value="${artifacts.temp.dir}/SimMA"/>
+    <mkdir dir="${artifact.temp.output.simma}"/>
+    <jar destfile="${temp.jar.path.SimMA.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${simma.output.dir}"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/BildEinleser.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Button.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/ColorSensor.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Delay.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Leinwand.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/LightSensor.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Motor.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/MotorPort.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/NXTRegulatedMotor.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Parcours.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Roboter.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/SensorPort.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/Simulator.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/TouchSensor.java"/>
+      <zipfileset file="${basedir}/SimMA/src/classes/UltrasonicSensor.java"/>
+      <zipfileset dir="${artifact.temp.output.classes}"/>
+    </jar>
+    <copy file="${temp.jar.path.SimMA.jar}" tofile="${artifact.temp.output.simma}/SimMA.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.classes, artifact.simma" description="Build all artifacts">
+    <mkdir dir="${artifact.output.classes}"/>
+    <copy todir="${artifact.output.classes}">
+      <fileset dir="${artifact.temp.output.classes}"/>
+    </copy>
+    <mkdir dir="${artifact.output.simma}"/>
+    <copy todir="${artifact.output.simma}">
+      <fileset dir="${artifact.temp.output.simma}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>

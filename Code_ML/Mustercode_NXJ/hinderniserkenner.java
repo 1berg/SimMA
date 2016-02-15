@@ -1,6 +1,5 @@
-import lejos.util.*;
-import lejos.nxt.*;
-import static lejos.nxt.Button.ENTER;
+import simma.sim.*;
+import simma.nxt.*;
 
 /**
  * Musterlösung für den Linienfinder.
@@ -15,7 +14,7 @@ public class hinderniserkenner
 
     public static void main(String[] args)
     {
-        while(!ENTER.isPressed()){
+        while(!Button.ENTER.isPressed()){
             Motor.A.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
             Motor.B.setSpeed(200);
 
