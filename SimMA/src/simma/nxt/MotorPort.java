@@ -24,19 +24,19 @@ public class MotorPort {
     public static final int NUMBER_OF_PORTS = 3;
 
     /**
-     * simma.nxt.MotorPort A.
+     * MotorPort A.
      */
-    public static final MotorPort A = new MotorPort (0);
+    public static final MotorPort A = new MotorPort(0);
 
     /**
-     * simma.nxt.MotorPort B.
+     * MotorPort B.
      */
-    public static final MotorPort B = new MotorPort (1);
+    public static final MotorPort B = new MotorPort(1);
 
     /**
-     * simma.nxt.MotorPort C.
+     * MotorPort C.
      */
-    public static final MotorPort C = new MotorPort (2);
+    public static final MotorPort C = new MotorPort(2);
 
     /**
      * Return the MotorPort with the given Id.

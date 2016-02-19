@@ -442,7 +442,10 @@ Möchte man eine ganze Reihe von Klassen eines Pakets importieren, so besteht di
 In diesem Abschnitt werden nun die von leJOS vorgegebenen und für die Implementation des Simulators angepassten Klassen vorgestellt. Hierbei handelt es sich um eine kleine Auswahl der essentiell für den Unterricht erforderlichen Klassen, die im Rahmen dieser Arbeit für den Prototyp angepasst wurden. Die interne Struktur zwischen den einzelnen Klassen ist durch die leJOS API vorgegeben und musste somit realitätsgetreu nachgebildet werden (Vgl. Abbildung \ref{fig:api_uml}).
 
 \subsubsection{Motoren}
-Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Ein an einen Motorport angeschlossener Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichnamigen Klasse aus der leJOS API. 
+Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Ein solcher Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. 
+
+\subsubsection{MotorPort}
+Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichnamigen Klasse aus der leJOS API. In ihr sind die statischen Variablen \texttt{A, B} und \texttt{C} enthalten, die die zur Verfügung stehenden MotorPorts am Roboter darstellen. Intern ist jedem Port eine \texttt{id} in Form eines Integer zugeordnet. Über die Methode \texttt{getInstance(int id)} kann über die private Variable \texttt{id} der öffentliche Port (\texttt{A, B} und \texttt{C}) abgefragt werden.
 
 \subsubsection{NXTRegulatedMotor}
 In der Klasse \texttt{NXTRegulatedMotor} befindet sich die Implementation der aufzurufenden Bewegungen des Roboter-Objekts der Simulation.
@@ -461,14 +464,14 @@ Die Herausforderung bei diesem Prototyp bestand nun darin, dass die Motoren, auc
 Die Lichtsensoren sind zwei von der leJOS API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils  links und rechts neben der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.
 
 Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
-\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In diesem steht die Methode \texttt{gibHelligkeitswert(int x, int y)} zu Verfügung, die auf das Bilddaten-Array zugreift.
+\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In der zugehörigen Klasse steht die Methode \texttt{gibLichtmittelwert(int x, int y)} zur Verfügung, die auf das Bilddaten-Array zugreift. Da die realen Sensoren auch nicht nur einen einzelnen Punkt auf dem Boden, sondern einen Bereich abtasten, berechnet die Methode den Mittelwert aus neun Pixeln um die Position des Lichtsensors. Hierzu wird in der Methode \texttt{gibHelligkeitswert(int x, int y)} der Helligkeitswert jedes einzelnen der neun Pixel aus dem Bilddaten-Array abgefragt und der Mittelwert gebildet. Die Sensoren, die dann mit \texttt{gibLichtmittelwert(int x, int y)} die Helligkeit des ausgewählten Bereichs abfragen, bekommen das genormte Ergebnis (der Wert 0 entspricht schwarz, 100 entspricht weiß) des Mittelwerts ausgegeben.
 
-Da sich die Farbsensoren in der Realität ähnlich verhalten wie die Lichtsensoren ist die Implementation der Farbsensoren im Simulator code-identisch. Daher wird in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet.
+Da sich die Farbsensoren in der Realität ähnlich verhalten wie die Lichtsensoren, ist die Implementation der Farbsensoren im Simulator code-identisch. Daher wird in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet.
 
 \subsubsection{Ultraschall- und Berührungssensor}
 Der Berührungssensor, oder wie von leJOS TouchSensor genannt, ist im Simulator an der vordersten Spitze des Roboter-Objekts platziert. Da Hindernisse im Simulator schwerlich als mehrdimensionale Objekte dargestellt werden können, wird in diesem Prototyp zunächst mit einer Farbunterscheidung gearbeitet. Dies funktioniert wiederum über den Helligkeitswert der Pixel, die sich gerade unter der Spitze des Roboter-Objekts befindet.
 
-Für die Implementation des Ultraschallsensors wird eine Implementation des Hindernisses als Objekt auf dem Parcours benötigt. Dies ist nicht essentiell für die Implementation eine ersten Prototypen des Simulators, da die für SuS relevanten Aufgaben auch mit einem Berührungssensor gelöst werden können. Daher verzichtet dieser Prototyp zunächst auf die Implementation eines Ultraschallsensors.
+Für die Implementation des Ultraschallsensors wird eine Implementation des Hindernisses als Objekt auf dem Parcours benötigt. Dies ist für die Implementation eine ersten Prototypen des Simulators nicht essentiell, da die für SuS relevanten Aufgaben auch mit einem Berührungssensor gelöst werden können. Daher verzichtet dieser Prototyp zunächst auf die Implementation eines Ultraschallsensors.
 
 \subsubsection{Sensorports}
 Jeder der eben genannten Sensoren ist an einen so genannten Sensorport angeschlossen. Die Klasse \texttt{SensorPort} enthält Felder, die die einzelnen Ports darstellen. Ein Exemplar einer Sensoren-Klasse wird bei der Initialisierung stets an einen Sensorport gekoppelt. 
@@ -481,12 +484,12 @@ Jeder der eben genannten Sensoren ist an einen so genannten Sensorport angeschlo
 \end{figure}
 
 \par \singlespacing
-\subsection{Die Klassen des \texttt{sim}-Package}
+\subsection{Die Klassen des \texttt{sim}-Pakets}
 \onehalfspacing
-Nun zu einer Beschreibung der Struktur der Simulationsumgebung selbst. Hierzu gehört die grafische Repräsentation des Parcours, des Roboters, der Auswahldialog für den Parcours, sowie die Leinwand, auf der der simulierte Roboter fahren soll. Eine Gesamtübersicht der wichtigsten Klassen ist in \ref{fig:simulator_uml} abgebildet.
+Nun zu einer Beschreibung der Struktur der Klassen, die für die Simulation zuständig sind. Hierzu gehört die grafische Repräsentation des Parcours, des Roboters, der Auswahldialog für den Parcours, sowie die Leinwand, auf der der simulierte Roboter fahren soll. Eine Gesamtübersicht der wichtigsten Klassen ist in \ref{fig:simulator_uml} abgebildet.
 
 \subsubsection{Simulator}
-Der Simulator erzeugt beim Ausführen zunächst einen \texttt{BildEinleser}. Dieser lässt den Benutzer in einem Dialogfenster eine .gif-Datei als Parcours auswählen. Das ausgewählte Bild wird dann "`eingelesen"' und die einzelnen Bildpunkte in einem short-Array gespeichert.
+
 
 \subsubsection{Bildeinleser}
 Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hilfsklasse bestimmte Methoden zur Verfügung stellen muss. Durch den Aufruf der Methode\\

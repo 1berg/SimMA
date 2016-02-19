@@ -25,7 +25,7 @@ public class Roboter
     private  int _yPosKorrektur = 85;
 
     /**
-     * Konstruktur für einen neuen simma.sim.Roboter an der Position (x, y)
+     * Konstruktur für einen neuen Roboter an der Position (x, y)
      *
      * @param x
      * @param y
@@ -92,7 +92,7 @@ public class Roboter
 
 
     /**
-     * Zeichnet das Roboterobjekt an der Position (x, y) auf die simma.sim.Leinwand
+     * Zeichnet das Roboterobjekt an der Position (x, y) auf die Leinwand
      *
      * @param x
      * @param y
@@ -228,7 +228,7 @@ public class Roboter
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
                 RenderingHints.VALUE_INTERPOLATION_BICUBIC); //TODO brauche ich das hier?
 
-        //Das Bild rotieren und auf die simma.sim.Leinwand bringen
+        //Das Bild rotieren und auf die Leinwand bringen
         AffineTransform transform = new AffineTransform();
         transform.rotate(theta,cx,cy);
         g2d.setTransform(transform);
