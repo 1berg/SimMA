@@ -1,6 +1,6 @@
- \documentclass[paper=a4, pagesize, DIV=calc, BCOR=15mm, twoside=on, onecolumn=on, open = right, titlepage =on, parskip =half-, headsepline = on, footsepline = on, chapterprefix = on, appendixprefix = off, fontsize = 12pt, numbers = noenddot, abstract = on]{scrbook}
+ \documentclass[paper=a4, DIV=14, BCOR=15mm, twoside=on, onecolumn=on, open = right, titlepage =on, parskip =half, headsepline = on, footsepline = on, chapterprefix = on, appendixprefix = off, fontsize = 12pt, numbers = noenddot, abstract = on]{scrbook}
 \input{preamble}
-\numberwithin{equation}{chapter}
+
 
 \usepackage{blindtext}
 \usepackage{todonotes}
@@ -8,33 +8,19 @@
 
 \usepackage[german]{babel}
 \usepackage{setspace}
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\theoremstyle{plain}
-\newtheorem{beispiel}{Example}
-\theoremstyle{plain}
-\newtheorem{satz}{Theorem}
-\theoremstyle{remark}
-\newtheorem{bemerkung}{Remark}
-\theoremstyle{plain}
-\newtheorem{cor}{Corollary}
-\theoremstyle{plain}
-\newtheorem{prop}{Proposition}
+%\usepackage[linkbordercolor={1 1 1}]{hyperref}\urlstyle{rm}
 
 \begin{document}
 \newpage
 \thispagestyle{plain}
 
-\pagenumbering{Roman}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}
+%\pagenumbering{Roman}
+
 
 \include{titlepage}
 
 \thispagestyle{empty}
 \cleardoublepage
-
-
-
 \newpage
 \listoffigures
 \newpage
@@ -42,18 +28,18 @@
 \thispagestyle{empty}
 \cleardoublepage
 \newpage
-\pagenumbering{arabic}
+%\pagenumbering{arabic}
 \par \singlespacing
 \chapter{Einleitung}
 \onehalfspacing
-"`Informatik in der Schule"' ist ein bildungspolitisch umfassend diskutiertes Thema der letzten Jahre. Gerade die Fragen, ob es sinnvoll sei, ein Unterrichtsfach \emph{Programmieren} ab der Grundschule einzuführen, oder aber ob es reicht, dass die Schülerinnen und Schüler dazu ausgebildet werden, einen Computer bedienen zu können, nehmen dabei eine zentrale Rolle ein. Dabei klaffen die Grundgedanken der beiden Extreme, nämlich die Schülerinnen und Schüler als kompetente Computer-Nutzer mit einem Verständnis der logischen Strukturen hinter der Benutzeroberfläche auf der einen und das Heranziehen einer Generation von Schülerinnen und Schülern, die auf die Verwendung der gängigen Office-Anwendungen geschult wurde, auf der anderen Seite.
+"`Informatik in der Schule"' ist ein bildungspolitisch umfassend diskutiertes Thema der letzten Jahre. Eine zentrale Rolle nimmt dabei die Frage ein, ob es sinnvoll sei, ein Unterrichtsfach "`Programmieren"' ab der Grundschule einzuführen, oder ob es reicht, dass die Schülerinnen und Schüler dazu ausgebildet werden, einen Computer bedienen zu können. Dabei stehen sich die Grundgedanken der beiden Extreme, nämlich die Schülerinnen und Schüler als kompetente Computer-Nutzer mit einem Verständnis der logischen Strukturen hinter der Benutzeroberfläche auf der einen und das Heranziehen einer Generation von Schülerinnen und Schülern, die auf die Verwendung der gängigen Office-Anwendungen geschult wurde, auf der anderen Seite, gegenüber.
 
 In der gymnasialen Oberstufe ist das Erlernen einer Programmiersprache derzeit schon vorgesehen. Doch auch ab der fünften Klasse kann bereits mit dem Erlernen von objektorientierten Programmierparadigmen begonnen werden. Eine wertvolle Ergänzung des klassischen Unterrichts hat sich in den letzten Jahren aus der Entwicklung der Ganztagsschulprogramme herauskristallisiert -- im Nachmittagsbereich wurden nun neben sportlichen und musisch-künstlerischen Angeboten sowie klassischer Nachhilfe Roboter-AGs gegründet, in denen Schülerinnen und Schüler an die Technik von verschiedensten programmierbaren Robotern herangeführt werden.\\
-Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Der Grundgedanke hinter diesem Konzept reicht bis in die Siebzigerjahre des letzten Jahrhunderts: Der Mathematiker, Informatiker und Psychologe Seymour Papert hat schon damals herausgefunden, dass das Ziel, Kinder zum Programmieren zu bringen, mithilfe einer spielerischen Herangehensweise erreicht werden könnte. Hierdurch entstand das bis heute bekannte Konzept der \emph{Turtle} \cite[S.365]{nievergelt:99}.\\
+Auf spielerische Art und Weise sollen Schülerinnen und Schüler (im Folgenden SuS abgekürzt) mit einfachen Konstrukten der objektorientierten Programmierung umzugehen lernen. Der Grundgedanke hinter diesem Konzept reicht bis in die Siebzigerjahre des letzten Jahrhunderts: Der Mathematiker, Informatiker und Psychologe Seymour Papert hat schon damals herausgefunden, dass das Ziel, Kinder zum Programmieren zu bringen, mithilfe einer spielerischen Herangehensweise erreicht werden könnte. Hierdurch entstand das bis heute bekannte Konzept der \emph{Turtle} (vgl. \cite[S.365]{nievergelt:99}).\\
 Heutzutage wird der spielerische Aspekt beim Programmieren im Zusammenhang mit \textsc{LEGO Mindstorms} Robotern zum einen mit Drag-and-Drop Softwareangeboten wie das standardmäßig mit ausgelieferte \emph{NXT Mindstorms Tool} (s.  \textbf{\ref{sec:LMNXT}}), oder auch \emph{Enchanting} (s. \textbf{\ref{sec:enchanting}}) realisiert. Zum anderen bietet sich ab der Mittelstufe (Klasse 7 -- 10) die Arbeit mit BlueJ zur Erstellung erster selbstgeschriebener Programme an. Hierzu kann eine BlueJ Extension genutzt werden, die mit der Java Virtual Machine \emph{leJOS NXJ} für NXT Roboter (s. \textbf{\ref{sec:lejos}}) arbeitet.
 
 Immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher Art, wie zum Beispiel eine unzureichende Anzahl an Robotern im Unterricht oder auch fehlende Firmwareupdates oder defekte Sensoren.\\
-Auch das Zusammen- und wieder Auseinanderbauen der Roboter ist ein Aufwand, der für den alltäglichen Unterricht nicht geeignet ist. Um kleine Aufgaben -- wie zum Beispiel das Fahren einer Kurve oder das Anhalten auf einem bestimmten Punkt -- mit Java zu lösen, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst, auf den Roboter übertragen werden. Schließlich muss der Roboter noch zu einem geeigeneten Parcours gebracht werden, um die Lösung testen zu können.
+Auch das Zusammen- und wieder Auseinanderbauen der Roboter ist ein Aufwand, der für den alltäglichen Unterricht nicht geeignet ist. Um kleine Aufgaben -- wie zum Beispiel das Fahren einer Kurve oder das Anhalten auf einem bestimmten Punkt -- mit Java zu lösen, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst und auf den Roboter übertragen werden. Schließlich muss der Roboter noch zu einem geeigeneten Parcours gebracht werden, um die Lösung testen zu können.
 
 Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von \textsc{LEGO Mindstorms} Robotern zu optimieren, soll im Rahmen dieser Masterarbeit der Protoyp einer Simulationsumgebung für die Arbeit mit \textsc{LEGO Mindstorms} NXT Roboter entwickelt werden.
 \newpage
@@ -63,16 +49,16 @@ Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmi
 \par\singlespacing
 \section{Das LEGO Mindstorms NXT System}
 \onehalfspacing
-Die ersten computergesteuerten \textsc{LEGO} Produkte wurden bereits 1986 veröffentlicht. In einer Zusammenarbeit von \textsc{LEGO} Education und dem Massachussettes Institute of Technology (MIT) wurde \textsc{LEGO TC LOGO} entwickelt. Dies war eine spezielle Abwandlung der Programmiersprache LOGO, mit der zusammengesetzte \textsc{LEGO}-Modelle gesteuert werden konnten \cite{rolling:14}.\\
-Die Entwicklung eines programmierbaren \textsc{LEGO}-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten Mindstorms Systems im Januar 1998, bei der der \textsc{LEGO Mindstorms RCX Intelligent Brick}, ein Microcomputer und somit das Kernstück des RCX-Systems, und das \emph{Robotics Invention System} im Museum of Modern Art in London vorgestellt wurden.\\
-Bereits zwei Monate nach Verkaufsstart wurde die FIRST LEGO League (FLL) gegründet -- eine Zusammenarbeit zwischen \textsc{LEGO} und FIRST (For Inspiration and Recognition of Science and Technology), die den Grundstein für die heute noch bestehende Wettbewerbsliga legte \cite{rolling:14}.\\
-Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den \textsc{LEGO Mindstorms} NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind auch, dank eines Updates in 2009, fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen \cite{lego}.
+Die ersten computergesteuerten \textsc{LEGO} Produkte wurden bereits 1986 veröffentlicht. In einer Zusammenarbeit von \textsc{LEGO} Education und dem Massachussettes Institute of Technology (MIT) wurde \textsc{LEGO TC LOGO} entwickelt. Dies war eine spezielle Abwandlung der Programmiersprache LOGO, mit der zusammengesetzte \textsc{LEGO}-Modelle gesteuert werden konnten (vgl. \cite{rolling:14}).\\
+Die Entwicklung eines programmierbaren \textsc{LEGO}-Steins begann 1988 und erreichte ihren Höhepunkt mit der Vorstellung des ersten Mindstorms Systems im Januar 1998, bei der der \textsc{LEGO Mindstorms RCX Intelligent Brick} -- ein Microcomputer und somit das Kernstück des RCX-Systems -- und das \emph{Robotics Invention System} im Museum of Modern Art in London vorgestellt wurden.\\
+Bereits zwei Monate nach Verkaufsstart wurde die FIRST LEGO League (FLL) gegründet -- eine Zusammenarbeit zwischen \textsc{LEGO} und FIRST (For Inspiration and Recognition of Science and Technology), die den Grundstein für die heute noch bestehende Wettbewerbsliga legte (vgl. \cite{rolling:14}).\\
+Die Vorstellung und der Verkaufsstart der Nachfolge-Roboter des RCX-Systems, den \textsc{LEGO Mindstorms} NXT Robotern, fand im August 2006 statt. Diese damals neu entwickelten Roboter sind dank eines Updates in 2009 fast zehn Jahre später noch in den Schulen und Universitäten zu finden. Im April 2005 fand die erste FLL Weltmeisterschaft in Atlanta, Georgia, statt und bis heute bieten die Weltmeisterschaften einen Anlaufpunkt für Jugendliche auf der ganzen Welt, die ihr Können und ihre Roboter auf die Probe stellen wollen (s. \cite{lego}).
 
 \par \singlespacing
 \subsection{Hardware}
 \onehalfspacing
-Zentraler Bestandteil der \textsc{LEGO Mindstorms} NXT Roboter ist der sogenannte NXT-Stein. Dieser besteht aus einem 32 Bit ARM-Prozessor und einem 8 Bit Co-Prozessor. Der Hauptprozessor ist für die Ausführung des Hauptprogramms zuständig, während sich der Co-Prozessor um die Auswertung etwaiger Sensordaten kümmert, die dann an den Hauptprozessor weitergeleitet werden. Für die Kommunikation mit dem NXT-Stein stehen zwei Komponenten zur Verfügung. Zum einen eine Kabelverbindung mit einer USB 2.0 Schnittstelle, zum anderen bietet der NXT-Stein wie schon der Vorgänger RCX die Möglichkeit einer Kommunikation über Bluetooth an. Das Softwaremenü wird auf dem 100 x 64 Pixel großen LCD-Bildschirm angezeigt und kann über die vier Kontrolltasten auf der Oberseite des NXT-Steins bedient werden. Für eine ausreichende Stromversorgung wird entweder mittels Batterien oder eines Akkus gesorgt \cite[S.42]{berns:10}.\\
-Der NXT-Stein verfügt standardmäßig über drei Motoranschlüsse (\emph{Motorports}) und vier Sensoranschlüsse (\emph{Sensorports}), die jeweils mit Buchstaben (\emph{A, B, C} bei den Motoren) bzw. Nummern (\emph{1, 2, 3, 4} als Sensoranschlüsse) bezeichnet sind \cite[S.43]{berns:10}. An zwei der drei verfügbaren Motorports ist jeweils ein Elektromotor angeschlossen. In diese Motoren sind Rotationssensoren und Regler eingebaut, die dafür sorgen, dass sowohl die Drehgeschwindigkeit als auch die Umdrehungszahl jeweils mithilfe des Programmcodes kontrolliert werden kann \cite[S.45--47]{berns:10}.\\
+Zentraler Bestandteil der \textsc{LEGO Mindstorms} NXT Roboter ist der sogenannte NXT-Stein. Dieser besteht aus einem 32 Bit RAM-Prozessor und einem 8 Bit Co-Prozessor. Der Hauptprozessor ist für die Ausführung des Hauptprogramms zuständig, während sich der Co-Prozessor um die Auswertung etwaiger Sensordaten kümmert, die dann an den Hauptprozessor weitergeleitet werden. Für die Kommunikation mit dem NXT-Stein stehen zwei Komponenten zur Verfügung. Zum einen eine Kabelverbindung mit einer USB 2.0 Schnittstelle, zum anderen bietet der NXT-Stein -- wie schon der Vorgänger RCX -- die Möglichkeit einer Kommunikation über Bluetooth an. Das Softwaremenü wird auf dem 100 x 64 Pixel großen LCD-Bildschirm angezeigt und kann über die vier Kontrolltasten auf der Oberseite des NXT-Steins bedient werden. Für eine ausreichende Stromversorgung wird entweder mittels Batterien oder eines Akkus gesorgt (vgl. \cite[S.42]{berns:10}).\\
+Der NXT-Stein verfügt standardmäßig über drei Motoranschlüsse (\emph{Motorports}) und vier Sensoranschlüsse (\emph{Sensorports}), die jeweils mit Buchstaben (\emph{A, B, C} bei den Motoren) bzw. Nummern (\emph{1, 2, 3, 4} als Sensoranschlüsse) bezeichnet sind(vgl.  \cite[S.43]{berns:10}). An zwei der drei verfügbaren Motorports ist jeweils ein Elektromotor angeschlossen. In diese Motoren sind Rotationssensoren und Regler eingebaut, die dafür sorgen, dass sowohl die Drehgeschwindigkeit als auch die Umdrehungszahl mithilfe des Programmcodes kontrolliert werden kann (vgl. \cite[S.45--47]{berns:10}).\\
 Für die NXT Roboter sind eine Vielzahl von Sensoren verfügbar, damit die SuS ihren Roboter sein Umfeld erkunden lassen können. Eine umfassende Übersicht der einzelnen Sensoren und deren spezifischen Funktionsweisen geben \textsc{Berns} und \textsc{Schmidt} (s. \cite[Kapitel 4.2]{berns:10}). 
 
 \par \singlespacing
@@ -80,26 +66,27 @@ Für die NXT Roboter sind eine Vielzahl von Sensoren verfügbar, damit die SuS i
 \onehalfspacing
 Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO Mindstorms} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.
 
-In diesem Zusammenhang kann auch, wie bei \cite{wagner:05} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (Vgl. \cite[S.6f.]{wagner:05}).
+In diesem Zusammenhang kann auch, wie von \textsc{Wagner} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (vgl. \cite[S.6f.]{wagner:05}).
 
 \textsc{Schreiber} fasst in seiner Examensarbeit den Einsatz von \textsc{LEGO Mindstorms} Robotern wie folgt zusammen
 \begin{quote}
-Als herausragende Qualität des Materials LEGO-Mindstorms erwies sich die damit erzielbare \textbf{Motivation}, welche ein hohes Maß an Selbsttätigkeit auch über einen längeren Zeitraum möglich machte. Diese Selbsttätigkeit ist die Form des idealen Lernen im Sinne der Handlungsorientierung und hat sich auch in dem durchgeführten Unterricht bewährt. [...] Die \textbf{Sozialform} der Partnerarbeit erwies sich als weit gehend produktiv, zum einen, weil inhaltlich miteinander beraten werden konnte und wurde [...], zum anderen, weil ein LEGO-Mindstorms-Roboter auch für zwei gleichzeitig tätige Personen genug Handlungsmöglichkeiten bietet \cite[S.47f.]{schreiber:04}.
+"`Als herausragende Qualität des Materials LEGO-Mindstorms erwies sich die damit erzielbare \textbf{Motivation}, welche ein hohes Maß an Selbsttätigkeit auch über einen längeren Zeitraum möglich machte. Diese Selbsttätigkeit ist die Form des idealen Lernen im Sinne der Handlungsorientierung und hat sich auch in dem durchgeführten Unterricht bewährt. [...] Die \textbf{Sozialform} der Partnerarbeit erwies sich als weit gehend produktiv, zum einen, weil inhaltlich miteinander beraten werden konnte und wurde [...], zum anderen, weil ein LEGO-Mindstorms-Roboter auch für zwei gleichzeitig tätige Personen genug Handlungsmöglichkeiten bietet"' \cite[S.47f.]{schreiber:04}.
 \end{quote}
 Ähnlich beschreibt es auch \textsc{Stolt} in seiner Ausarbeitung:
 \begin{quote}
-Ein großer Punkt, der für das Roboterlabor spricht, ist das starke Motivationspotential für die Teilnehmer sich mit Informatikthemenstellungen zu befassen. Die Entwicklung einer eigenen Lösung einer Aufgabe, mit anschliessendem Wettbewerb besitzt trotz – oder vielleicht gerade wegen – der möglichen Komplexität einen sehr großen Unterhaltungswert und stelle eine spannende Herausforderung dar. Pädagogisch ist das Roboterlabor durch seine teamorientierte Arbeitsweise und die Möglichkeit zum explorativen Lernen interessant. Didaktisch steht hier das Erlernen und Erfahren von Programmier- und Designmethoden im Vordergrund \cite[S.5f.]{stolt:01}.
+"`Ein großer Punkt, der für das Roboterlabor spricht, ist das starke Motivationspotential für die Teilnehmer sich mit Informatikthemenstellungen zu befassen. Die Entwicklung einer eigenen Lösung einer Aufgabe, mit anschliessendem Wettbewerb besitzt trotz – oder vielleicht gerade wegen – der möglichen Komplexität einen sehr großen Unterhaltungswert und stelle eine spannende Herausforderung dar. Pädagogisch ist das Roboterlabor durch seine teamorientierte Arbeitsweise und die Möglichkeit zum explorativen Lernen interessant. Didaktisch steht hier das Erlernen und Erfahren von Programmier- und Designmethoden im Vordergrund"' \cite[S.5f.]{stolt:01}.
 \end{quote}
 
-Grundsätzlich ist also zu sagen, dass der Einsatz von Robotern im Unterricht als sowohl didaktisch sinnvoll gesehen wird, also auch die Motivation der SuS in diesem Zusammenhang einen starken Einfluss auf den Lernerfolg und die Selbstständigkeit haben können.%\\
+Grundsätzlich ist also zu sagen, dass der Einsatz von Robotern im Unterricht als sowohl didaktisch sinnvoll gesehen wird, also auch die Motivation der SuS in diesem Zusammenhang einen starken Einfluss auf den Lernerfolg und die Selbstständigkeit haben können.\\
 
 Es erfolgt nun zunächst die curriculare Einordnung des Themas Roboter im Unterricht in die Bildungspläne aus Hamburg. Danach werden verschiedene Arbeitsmethoden im Zusammenhang mit dieser Art von Unterricht vorgestellt.
 
 \subsection{Curriculare Einordnung}
-Die fachlichen Inhalte, die mithilfe des Einsatzes von Robotern im Unterricht vermittelt werden können, sind sowohl im Bildungsplan der Sekundarstufe I für das Gymnasium (Klasse 7 -- 10) und die Stadtteilschule (Klasse 7 -- 11), als auch im Bildungs- bzw. Rahmenplan für die Gymnasiale Oberstufe, der Sekundarstufe II, verankert.
+Die fachlichen Inhalte, die mithilfe des Einsatzes von Robotern im Unterricht vermittelt werden können, sind sowohl im Bildungsplan der Sekundarstufe I für das Gymnasium (Klasse 7 -- 10) und die Stadtteilschule (Klasse 7 -- 11), als auch im Bildungs- bzw. Rahmenplan für die Gymnasiale Oberstufe, der Sekundarstufe II, verankert. Der folgende Abschnitt gibt eine Übersicht über die verschiedenen Module im Zusammenhang mit den Unterscheidungen zur Schulform und Klassenstufe. 
 
 \subsubsection{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}
 Der Einsatz von Robotern kann auf die Module 2 und 3 des Bildungsplanes für die Sekundarstufe I des Gymnasiums bezogen werden. Hier heißt es\\
+
  \begin{quote}
 Modul 2
 \begin{itemize}
@@ -137,7 +124,7 @@ unterrichtet werden \cite{stsmittel:14}.
 
 \subsubsection{Gymnasiale Oberstufe -- Vorstufe}
 
-In der Vorstufe sollen sich die SuS mit den Inhalten des Moduls \emph{Daten und Prozesse} beschäftigen. Diese beinhalten das Analysieren und umgangssprachliche Bescheiben von Abläufen, das Strukturieren von Daten sowie die Verwendung von Variablen und Parametern, das Formalisieren von Abläufen, die Grundlagen der prozeduralen Programmierung, die Implementation von Algorithmen mit einer formalen Sprache, das Testen und das Interpretieren und Bewerten von Ergebnissen \cite{oberstufe:09}. 
+In der Vorstufe sollen sich die SuS mit den Inhalten des Moduls \emph{Daten und Prozesse} beschäftigen. Diese beinhalten das Analysieren und umgangssprachliche Bescheiben von Abläufen, das Strukturieren von Daten sowie die Verwendung von Variablen und Parametern, das Formalisieren von Abläufen, die Grundlagen der prozeduralen Programmierung, die Implementation von Algorithmen mit einer formalen Sprache, das Testen, Interpretieren und Bewerten von Ergebnissen \cite{oberstufe:09}. 
 
 \subsubsection{Gymnasiale Oberstufe -- Studienstufe}
 
@@ -154,11 +141,11 @@ In der Studienstufe gibt es den verbindlichen Inhalt \emph{Objektorientierte Mod
 \subsubsection{Genereller Einsatz von Robotern als Hilfsmittel im Unterricht}
 Da laut Bildungsplan die projektorientierte Arbeit in Informatik in der Studienstufe einen bedeutenden Stellenwert hat, bietet es sich natürlich an, eine Projektarbeit zum Thema \emph{Einsatz von Robotern} mit Bezug auf verschiedene Ligen (schulisch und universitär) zu gestalten, bei der als Produkt eine bestimmte Aufgabe mit den Robotern erledigt werden soll.  Diese projektorientierte Arbeit hat den Vorteil, dass sie an einen realen Kontext geknüpft oder in ihn eingebettet werden kann. Wie \textsc{Hubwieser} in seinem Werk \emph{Didaktik der Informatik} verdeutlicht, kann dies einen positiven Einfluss auf die innere Einstellung der SuS gegenüber diesem teilweise recht anspruchsvollen Thema haben.
 \begin{quote}
-Nach den Erfahrungen mit der Umsetzung abstrakter Konzepte [...] im Mathematikunterricht des Gymnasiums scheint eine Vermittlung der naturgemäß abstrakten informatischen Lerninhalte nur dann erfolgversprechend, wenn durch konkrete, anschauliche Problemstellungen eine erhöhte Aufnahmebereitschaft der Schüler geschaffen wird. \cite[S.68]{hubwieser:07}
+"`Nach den Erfahrungen mit der Umsetzung abstrakter Konzepte [...] im Mathematikunterricht des Gymnasiums scheint eine Vermittlung der naturgemäß abstrakten informatischen Lerninhalte nur dann erfolgversprechend, wenn durch konkrete, anschauliche Problemstellungen eine erhöhte Aufnahmebereitschaft der Schüler geschaffen wird "' \cite[S.68]{hubwieser:07}.
 \end{quote}
 
-Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von so genannten \emph{Use Cases}. Hierbei handelt es sich um aus der Realwelt gegriffene Umgebungen, die in unserem Fall mithilfe des Roboters erkundet werden sollen. Ein klassischer Use Case für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.\\
-Ein weitaus komplexerer Use Case bietet sich im Zusammenhang mit der RoboCup Wettbewerbsliga \emph{Rescue} an, in der ein in einem Labyrinth verstecktes Opfer gerettet werden soll. Hierbei würden sich nun die SuS damit beschäftigen, wie sie durch das Labyrinth navigieren, wie sie Hindernissen ausweichen, und welche bautechnischen Spezifikationen ihr Roboter haben muss, um das Opfer an einen sicheren Ort zu transportieren.
+Die einfachste Methode, um SuS an die problemorientierte Arbeitsweise im Rahmen der Programmierung mit Robotern heranzuführen ist der Einsatz von Fallbeispielen. Hierbei handelt es sich um aus der Realwelt gegriffene Umgebungen, die in unserem Fall mithilfe des Roboters erkundet werden sollen. Ein klassisches Fallbeispiel für den Einstieg wäre die Situation, dass der Roboter vor einem Hindernis steht, um das er herumfahren soll. Hierbei kann man den SuS vorgeben, dass sie z.B. im Viereck um das Hindernis herum navigieren sollen.\\
+Ein weitaus komplexerer Beispiele bietet sich im Zusammenhang mit der RoboCup Wettbewerbsliga \emph{Rescue} an, in der ein in einem Labyrinth verstecktes Opfer gerettet werden soll. Hierbei würden sich nun die SuS damit beschäftigen, wie sie durch das Labyrinth navigieren, wie sie Hindernissen ausweichen, und welche bautechnischen Spezifikationen ihr Roboter haben muss, um das Opfer an einen sicheren Ort zu transportieren.
 
 \chapter{Bisher verfügbare Softwarelösungen}
 \label{sec:software bisher}
@@ -216,8 +203,8 @@ Neben den grafischen Entwicklungsumgebungen in \textbf{\ref{sec:LMNXT}} und \tex
 
 \subsection{BlueJ}
 \label{sec:bluej}
-Die Java-Entwicklungsumgebung BlueJ wurde an der Monash University in Australien entwickelt. Das Ziel von BlueJ war von Beginn an klar definiert: es sollte eine einfache Umgebung für den Einstieg in die objektorientierte Programmierung geschaffen werden \cite[S.14]{barnes:03}.\\
-Jedoch handelt es sich bei der Entwicklung objektorientierter Programme mit BlueJ keinesfalls um die Benutzung einer reduzierten Version von Java. BlueJ läuft wie andere Entwicklungsumgebungen auf dem aktuellen Java Development Kit (JDK) und auch als Compiler und virtuelle Maschine (JVM) wird Software der Firma Oracle (bis 2010 Sun Microsystems) verwendet (Vgl. \cite[S.15]{barnes:03}).
+Die Java-Entwicklungsumgebung BlueJ wurde an der Monash University in Australien entwickelt. Das Ziel von BlueJ war von Beginn an klar definiert: es sollte eine einfache Umgebung für den Einstieg in die objektorientierte Programmierung geschaffen werden (vgl. \cite[S.14]{barnes:03}).\\
+Jedoch handelt es sich bei der Entwicklung objektorientierter Programme mit BlueJ keinesfalls um die Benutzung einer reduzierten Version von Java. BlueJ läuft wie andere Entwicklungsumgebungen auf dem aktuellen Java Development Kit (JDK) und auch als Compiler und virtuelle Maschine (JVM) wird Software der Firma Oracle (bis 2010 Sun Microsystems) verwendet (vgl. \cite[S.15]{barnes:03}).
 
 
 \begin{figure}[htbp]
@@ -242,7 +229,7 @@ Nicht nur in den Universitäten wird BlueJ inzwischen als Werkzeug zur Einführu
 \subsection{leJOS}
 \label{sec:lejos}
 \onehalfspacing
-leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer \textsc{Lego Mindstorms} NXT Roboter in Java programmiert werden können \cite{lejos}.\\
+leJOS ist eine kleine Java Virtual Machine und stellt alle Klassen der NXJ API zu Verfügung, mithilfe derer \textsc{Lego Mindstorms} NXT Roboter in Java programmiert werden können (vgl. \cite{lejos}).\\
 In der Kombination mit BlueJ ergibt sich somit für die SuS eine besonders einfache Softwarelösung. Durch eine eigens für BlueJ und NXT Roboter geschriebene sogenannte \textit{Extension} (siehe hierzu \cite{bowes:12}) und den Import der NXJ API stehen den SuS nicht nur die Klassen zur Steuerung ihres Roboters zur Verfügung, sondern auch eine Möglichkeit, über eine Erweiterung des Kontextmenüs, was allen in BlueJ geschriebenen Klassen zur Verfügung steht, um spezielle Befehle, die dazu dienen, das in BlueJ geschriebene Programm auf den NXT-Stein zu übertragen, wie Abbildung \ref{fig:extension} zeigt.
 
 \begin{figure}[htbp]
@@ -252,7 +239,7 @@ In der Kombination mit BlueJ ergibt sich somit für die SuS eine besonders einfa
 \label{fig:extension}
 \end{figure}
 
-Mithilfe von BlueJ (oder einer anderen Entwicklungsumgebung) können die SuS insbesondere Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (Vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).
+Mithilfe von BlueJ (oder einer anderen Entwicklungsumgebung) können die SuS insbesondere Aufgaben lösen, wie zum Beispiel das Anhalten auf einer Linie (vgl. Abb. \ref{fig:Bsp BlueJ Linienfinder}) oder auch den Roboter einer schwarzen Linie folgen zu lassen, was eine der Grundaufgaben im RoboCup Junior Rescue Wettbewerb darstellt (vgl. Abb. \ref{fig:Bsp BlueJ Linienfolger}).
 
 \begin{figure}[htbp]
 \centering
@@ -270,11 +257,11 @@ Der Vorteil an der Arbeit mit leJOS besteht darin, dass die SuS direkt mit reine
 \label{sec:simulationsumgebungen}
 \onehalfspacing
 Für den virtuellen Umgang mit \textsc{LEGO Mindstorms} Roboter jeder Generation gibt es bereits einige Simulatoren, die frei verfügbar sind.\\
-Zunächst ist hier eine an der RWTH Aachen genutzte Simulationsumgebung, in der sich ein Roboter in einer virtuellen 3D-Umgebung bewegen kann, zu erwähnen (Vgl. \cite{rwth}). Diese ist für die Benutzung der Windows-Entwicklungsumgebung BricxCC, die unter anderem die an \textsc{LEGO} NXT Roboter angepasste Programmiersprache \emph{Not eXactly C (NXC)} (s. \cite{bricxcc}) unterstützt, konzipiert.
+Zunächst ist hier eine an der RWTH Aachen genutzte Simulationsumgebung, in der sich ein Roboter in einer virtuellen 3D-Umgebung bewegen kann, zu erwähnen (vgl. \cite{rwth}). Diese ist für die Benutzung der Windows-Entwicklungsumgebung BricxCC, die unter anderem die an \textsc{LEGO} NXT Roboter angepasste Programmiersprache \emph{Not eXactly C (NXC)} (s. \cite{bricxcc}) unterstützt, konzipiert.
 
-Des weiteren existiert \emph{nxcEditor}, eine sowohl mit Windows, als auch mit Linux und MacOS nutzbare Entwicklungsumgebung, die einen Simulator, \emph{nxcSimulator} beinhaltet. Ähnlich wie BricxCC nutzt auch der nxcEditor die Programmiersprache NXC \cite{nxceditor}. Programmiert wurde die Entwicklungsumgebung von Frank Knefel und ist in Anlehnung an das vom Fraunhofer IAIS initiierte Lehr-/Lernkonzept \emph{Roberta -- Lernen mit Robotern} konzipiert, so dass diese inzwischen auch direkt von Roberta als Softwarelösung angeboten wird \cite{roberta}.
+Des weiteren existiert \emph{nxcEditor}, eine sowohl mit Windows, als auch mit Linux und \mbox{MacOS} nutzbare Entwicklungsumgebung, die einen Simulator, \emph{nxcSimulator} beinhaltet. Ähnlich wie BricxCC nutzt auch der nxcEditor die Programmiersprache NXC (s. \cite{nxceditor}). Programmiert wurde die Entwicklungsumgebung von Frank Knefel und ist in Anlehnung an das vom Fraunhofer IAIS initiierte Lehr-/Lernkonzept \emph{Roberta -- Lernen mit Robotern} konzipiert, so dass diese inzwischen auch direkt von Roberta als Softwarelösung angeboten wird (vgl. \cite{roberta}).
 
-Abschließend ist noch das umfassende Softwareangebot des Virtuellen Campus Projekts der PHBern zu erwähnen. Dies umfasst neben der Entwicklung von Programmen für \textsc{LEGO Mindstorms} NXT Roboter mithilfe einer eigens für NXT Roboter geschriebenen Klassenbibliothek \emph{NxtJLib} \cite{aegidius:16} die Möglichkeit, das Programm auf verschiedene Weisen auf den NXT-Stein zu übertragen, oder in einem Simulator auszuprobieren \cite{phbern}. 
+Abschließend ist noch das umfassende Softwareangebot des Virtuellen Campus Projekts der PHBern zu erwähnen. Dies umfasst neben der Entwicklung von Programmen für \textsc{LEGO Mindstorms} NXT Roboter mithilfe einer eigens für NXT Roboter geschriebenen Klassenbibliothek \emph{NxtJLib} (s. \cite{aegidius:16}) die Möglichkeit, das Programm auf verschiedene Weisen auf den NXT-Stein zu übertragen, oder in einem Simulator auszuprobieren (s. \cite{phbern}). 
 
 \par \singlespacing
 \chapter{Anforderungen an die Neuimplementierung}
@@ -305,9 +292,9 @@ In den folgenden beiden Unterkapiteln werden nun die Anforderungen an die Neuimp
 
 Da es sich bei der Simulationsumgebung um einen Prototypen handelt, der möglicherweise schon ab der fünften, regelmäßig aber ab der siebten Klasse eingesetzt werden soll, steht ein Augenmerk ganz besonders im Fokus: die Einfachheit. Sowohl in der Bedienung des Simulators als auch im Aussehen sollten klare und leicht erkennbare Strukturen vorherrschen.
 
-Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen. Dies entspricht dem zweiten Aspekt nach \textsc{Hertzberg/Lingemann/Nüchter}, da der simulierte Roboter alle für die Arbeit mit SuS zentralen Funktionen anbieten und sich hinreichend ähnlich wie ein Roboter in der Realwelt verhalten soll. Des weiteren wird hiermit auch der Aspekt der code-identischen Roboterkontrollsoftware erfüllt, da die SuS das selbe Programm für den Simulator, wie auch für die Steuerung des Roboters selbst benutzen können sollten.
+Des weiteren sollte darauf geachtet werden, dass die SuS für die Programmierung des Roboters und die Benutzung des Simulators eine einheitliche Syntax verwenden können. Hierzu muss die Simulationsumgebung genau die Methoden anbieten, die auch bei dem realen Roboter die Steuerung der Motoren und den Zugriff auf Sensordaten ermöglichen. Dies entspricht dem zweiten Aspekt nach \textsc{Hertz\-berg\-/\-Lin\-ge\-mann\-/Nüch\-ter}, da der simulierte Roboter alle für die Arbeit mit SuS zentralen Funktionen anbieten und sich hinreichend ähnlich wie ein Roboter in der Realwelt verhalten soll. Des weiteren wird hiermit auch der Aspekt der code-identischen Roboterkontrollsoftware erfüllt, da die SuS das selbe Programm für den Simulator, wie auch für die Steuerung des Roboters selbst benutzen können sollten.
 
-Ein weiterer Aspekt, den \textsc{Hertzberg et al.} beschreiben sind die Parcours. Diese sollten möglichst realitätsgetreu umgesetzt werden. Das heißt, dass Ausschnitte eines bestehenden realen Wettbewerbsparcours genutzt werden könnten, um für die SuS eine möglichst realitätsnahe Testumgebung anzubieten. Der Vorteil darin besteht auch in der Vergleichbarkeit der Ergebnisse. Die SuS lernen gleich zu Beginn einen wichtigen Aspekt bei der Entwicklung von Code für Roboter: nur weil der Roboter im Simulator an einer schwarzen Linie entlangfahren kann, bedeutet dies nicht, dass auch der reale Roboter diese Herausforderung problemlos meistert.
+Ein weiterer Aspekt, den \textsc{Hertz\-berg\-/\-Lin\-ge\-mann\-/Nüch\-ter} beschreiben sind die Parcours. Diese sollten möglichst realitätsgetreu umgesetzt werden. Das heißt, dass Ausschnitte eines bestehenden realen Wettbewerbsparcours genutzt werden könnten, um für die SuS eine möglichst realitätsnahe Testumgebung anzubieten. Der Vorteil darin besteht auch in der Vergleichbarkeit der Ergebnisse. Die SuS lernen gleich zu Beginn einen wichtigen Aspekt bei der Entwicklung von Code für Roboter: nur weil der Roboter im Simulator an einer schwarzen Linie entlangfahren kann, bedeutet dies nicht, dass auch der reale Roboter diese Herausforderung problemlos meistert.
 
 
 \par \singlespacing
@@ -342,7 +329,7 @@ Die Entwicklung des Prototyps der Simulationsumgebung umfasste mehrere Schritte,
 \par \singlespacing
 \subsection{Mock-Ups} 
 \onehalfspacing
-Um einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation der vollständigen Simulationssoftware zu erfassen wurden zunächst Skizzen angefertigt, die einen groben Überblick über die Benutzeroberfläche geben sollten. Diese enthielten eine beispielhafte Darstellung eines Parcours und eines Roboters, sowie eine Menüzeile am oberen Rand. Als nächstes wurden eine spezielle Art von Interaktionsprototypen hergestellt, so genannte \emph{interaktive Mock-Ups}, die eine Subkategorie interaktiver Wireframes darstellen. Interaktive Wireframes sind eine vereinfachte, digitale Darstellung von Benutzerschnittstellen, die einen gewissen Grad an Interaktionslogik umfassen (Vgl. \cite[S.162ff.]{moser:12}).\\
+Um einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation der vollständigen Simulationssoftware zu erfassen wurden zunächst Skizzen angefertigt, die einen groben Überblick über die Benutzeroberfläche geben sollten. Diese enthielten eine beispielhafte Darstellung eines Parcours und eines Roboters, sowie eine Menüzeile am oberen Rand. Als nächstes wurden eine spezielle Art von Interaktionsprototypen hergestellt, so genannte \emph{interaktive Mock-Ups}, die eine Subkategorie interaktiver Wireframes darstellen. Interaktive Wireframes sind eine vereinfachte, digitale Darstellung von Benutzerschnittstellen, die einen gewissen Grad an Interaktionslogik umfassen (vgl. \cite[S.162ff.]{moser:12}).\\
  Hierzu wurde mit der Software \emph{Axure RP Pro} gearbeitet, mit der sich sowohl einfache als auch komplex verschachtelte Mock-Ups erstellen lassen (s. Abb.\ref{fig:axure}).
 
 \begin{figure}[htbp]
@@ -390,7 +377,7 @@ Die Frage nach einer Integration in BlueJ kann auf vielfältige Art beantwortet 
 Für die SuS bedeutet dies, dass diese, neben der Import-Anweisung für die leJOS-Bibliothek zwei weitere Import-Anweisungen in ihren geschriebenen Code einfügen müssen. Außerdem muss ein Exemplar der Simulator-Klasse erzeugt werden. Da dies aber ein überschaubarer Aufwand für SuS und Lehrkraft ist, der auch als "`Schablone"' für die ersten Versuche von der Lehrkraft zur Verfügung gestellt werden kann, sehe ich diese Lösung als geeignet an.
 
 Nun kann man sich die Frage stellen, wieso überhaupt mit BlueJ gearbeitet werden soll, da es doch ausreichend andere Entwicklungsumgebungen gibt, in die solche Bibliotheken importiert werden können.\\
-Der Vorteil an BlueJ besteht darin, dass diese Entwicklungsumgebung, wie in \textbf{\ref{sec:bluejetc}} beschrieben, eine klar strukturierte und übersichtliche Benutzeroberfläche bietet. Die SuS müssen sich nicht in für ihre Ansprüche überdimensional umfangreiche Programmierumgebungen einarbeiten und können per Mausklick ihren Code per USB-Kabel auf den Roboter übertragen. Dies wird von einer speziell für BlueJ entwickelten NXT-Extension  (Vgl. \cite{bowes:12}), die eine Erweiterung des Kontextmenüs jeder Klasse zur Verfügung stellt, realisiert.
+Der Vorteil an BlueJ besteht darin, dass diese Entwicklungsumgebung, wie in \textbf{\ref{sec:bluejetc}} beschrieben, eine klar strukturierte und übersichtliche Benutzeroberfläche bietet. Die SuS müssen sich nicht in für ihre Ansprüche überdimensional umfangreiche Programmierumgebungen einarbeiten und können per Mausklick ihren Code per USB-Kabel auf den Roboter übertragen. Dies wird von einer speziell für BlueJ entwickelten NXT-Extension  (vgl. \cite{bowes:12}), die eine Erweiterung des Kontextmenüs jeder Klasse zur Verfügung stellt, realisiert.
 
 \par \singlespacing
 \section{Beschreibung der Software}
@@ -409,7 +396,7 @@ Nun zu einer kurzen Beschreibung des Prototyps, in der zudem Einzelheiten zur Be
 Beginnt man mit dem Programmieren einer Klasse, die den NXT Roboter beispielsweise einer Kurve auf dem Boden folgen lassen soll, so müssen neben des Imports für die leJOS API zwei weitere Import-Anweisungen für den Simulator eingebunden werden. Diese Klasse sei im Folgenden mit \texttt{linienfolger} bezeichnet.\\
 Zu beachten ist, dass immer entweder der leJOS-Import oder die Simulator-Importe auskommentiert sein müssen, da sonst weder der Simulator noch der reale NXT Roboter weiß, auf welche Bibliothek zugegriffen werden soll.
 
-Um nun mit dem Simulator zu arbeiten, erzeugt man innerhalb der main-Methode der Klasse \texttt{linienfolger} ein neues Exemplar der Klasse \texttt{Simulator}. Nachdem man die Klasse \texttt{linienfolger} fehlerfrei kompiliert hat, kann man in BlueJ über einen Rechtsklick ein neues Exemplar dieser Klasse aufrufen, und an diesem die main-Methode ausführen lassen. Dies führt dazu, dass mit der Erzeugung eines Simulators der Auswahldialog für den Parcours angezeigt wird, wie in Abbildung \ref{fig:auswahldialog} beispielhaft dargestellt ist.\\
+Um nun mit dem Simulator zu arbeiten, erzeugt man innerhalb der main-Methode der Klasse \texttt{linienfolger} ein neues Exemplar der Klasse \texttt{Simulator}. Nachdem man die Klasse \texttt{linienfolger} fehlerfrei kompiliert hat, kann man in BlueJ über einen Rechtsklick ein neues Exemplar dieser Klasse aufrufen, und an diesem die main-Me\-tho\-de ausführen lassen. Dies führt dazu, dass mit der Erzeugung eines Simulators der Auswahldialog für den Parcours angezeigt wird, wie in Abbildung \ref{fig:auswahldialog} beispielhaft dargestellt ist.\\
 Sobald der Parcours ausgewählt wurde, wird dieser in einem neuen Fenster geöffnet. Nun sehen die SuS den Roboter, der auf dem von ihnen ausgewählten Parcours fährt (Vgl. Abb.\ref{fig:simparcours_kurve}).
 
 \begin{figure}[htbp]
@@ -430,10 +417,26 @@ Zum besseren Verständnis nun eine kurze Zusammenfassung der in dieser Implement
 
 \subsubsection*{Pakete}
 
-Pakete in Java, auch \emph{packages} genannt, fassen Gruppen von Typen zusammen. Ein Beispiel hierfür sind die Standardbibliotheken von Java, die in den Paketen \texttt{java} und \texttt{javax} zu finden sind. Diese enthalten Unterpakete, wie zum Beispiel die Bibliotheken zur Entwicklung grafischer Benutzeroberflächen \emph{Swing} oder auch \emph{AWT} (Vgl. \cite[S. 265]{ullenboom:12}).
-Der Zugriff auf diese Bibliotheks-Klassen erfolgt entweder über eine Pfadangabe bei der Variablendeklaration und -initialisierung oder über eine \texttt{import}-Anweisung. Will man beispielsweise ein Exemplar der Klasse \texttt{Point} aus der Java-Klassenbibliothek \texttt{AWT} erzeugen, so kann dies entweder durch den Befehl \texttt{java.awt.Point Punkt = new java.awt.Point();} statt der "'normalen"` Deklaration und Initialisierung, oder aber durch die Anweisung \texttt{import java.awt.Point;} zu Beginn des Quelltexts geschehen \cite[S. 266]{ullenboom:12}.
-Möchte man eine ganze Reihe von Klassen eines Pakets importieren, so besteht die Möglichkeit, dies mithilfe eines * am Ende der Import-Deklaration zu tun. Im obigen Beispiel wäre dies \texttt{import java.awt.*;}. Anhand dieser Deklaration ist auch direkt zu erkennen, dass das Paket \texttt{awt} ein Unterpaket des Pakets \texttt{java} ist. Der "`Paketpfad"' bzw. die hierarchische Struktur der Pakete und Unterpakete wird mithilfe von Punkten angegeben (Vgl. \cite[S. 265ff.]{ullenboom:12}).
-% 
+Pakete in Java, auch \emph{packages} genannt, fassen Gruppen von Typen zusammen. Ein Beispiel hierfür sind die Standardbibliotheken von Java, die in den Paketen \texttt{java} und \texttt{javax} zu finden sind. Diese enthalten Unterpakete, wie zum Beispiel die Bibliotheken zur Entwicklung grafischer Benutzeroberflächen \emph{Swing} oder auch \emph{AWT} (vgl. \cite[S.265]{ullenboom:12}).
+Der Zugriff auf diese Bibliotheks-Klassen erfolgt entweder über eine Pfadangabe bei der Variablendeklaration und -initialisierung oder über eine \texttt{import}-Anweisung. Will man beispielsweise ein Exemplar der Klasse \texttt{Point} aus der Java-Klassenbibliothek \texttt{AWT} erzeugen, so kann dies entweder durch den Befehl \texttt{java.awt.Point Punkt = new java.awt.Point();} statt der "`normalen"' Deklaration und Initialisierung, oder aber durch die Anweisung \texttt{import java.awt.Point;} zu Beginn des Quelltexts geschehen (vgl. \cite[S.266]{ullenboom:12}).
+Möchte man eine ganze Reihe von Klassen eines Pakets importieren, so besteht die Möglichkeit, dies mithilfe eines * am Ende der Import-Deklaration zu tun. Im obigen Beispiel wäre dies \texttt{import java.awt.*;}. Anhand dieser Deklaration ist auch direkt zu erkennen, dass das Paket \texttt{awt} ein Unterpaket des Pakets \texttt{java} ist. Der "`Paketpfad"' bzw. die hierarchische Struktur der Pakete und Unterpakete wird mithilfe von Punkten angegeben (vgl. \cite[S.265ff.]{ullenboom:12}, \cite[S.84ff.]{abts:15}).
+
+\subsection{Externe Frameworks}
+
+\subsubsection*{AWT}
+
+Die Klassenbibliothek AWT (\emph{Abstract Window Toolkit}) stellt die grundlegenden Bausteine zur Erstellung grafischer Benutzeroberflächen zur Verfügung. Die Darstellung von AWT-Komponenten ist an die Darstellungoptionen des jeweiligen Betriebssystems gekoppelt, wodurch eine Eingrenzung der Möglichkeiten auf diejenigen, die auf alle Betriebssysteme zutreffen, vorhanden ist. Vorteilhaft dabei ist, dass das Erscheinungsbild von Menüleisten und Schaltflächen dem Benutzeroberflächendesign des Betriebssystems entspricht (vgl. \cite[S.279]{abts:15})\\
+Auf einem anderen Konzept bauen die Klassen des Pakets \emph{Swing} auf. 
+
+\subsubsection*{Swing}
+
+Das Paket \texttt{javax.swing} basiert fast vollständig auf Java und ersetzt alle Grundkomponenten des AWT-Frameworks. Im Gegensatz zu AWT wird hier auf die Designkonsistenz zum Betriebssystem verzichtet. Im Gegenzug bekommt man ein einheitliches und plattformunabhängiges \emph{Look \& Feel} (vgl. \cite[S.279]{abts:15}). Dies ist darin begründet, dass die Swing-Komponenten mit "`primitiven Zeichenoperationen gemalt"' werden \cite[S.1018]{ullenboom:12}.
+
+
+\subsubsection*{File}
+
+Die Klasse \texttt{java.io.File} repräsentiert Dateien und Verzeichnisse als Objekte. Über einen Konstruktoraufruf kann ein Exemplar der Klasse \texttt{File} erzeugt werden, welches beispielsweise den Pfadnamen einer Datei übergeben bekommt. Daraus ergibt sich die Möglichkeit, unter anderem Bilder als Objekte in ein Projekt einzubinden (vgl. \cite[S.205]{abts:15}).
+
 
 \par \singlespacing
 \subsection{Die Klassen des \texttt{nxt}-Package}
@@ -445,26 +448,25 @@ In diesem Abschnitt werden nun die von leJOS vorgegebenen und für die Implement
 Zunächst wurde die Klasse \texttt{Motor} implementiert. Diese besteht lediglich aus den Feldern \texttt{A, B} und \texttt{C}, die Exemplare der Klasse \texttt{NXTRegulatedMotor} darstellen. Ein NXTRegulatedMotor ist ein an einen Motorport angeschlossener NXT-Motor. Ein solcher Motor wird über den Befehl \texttt{Motor.[port].[Methode]} angesteuert. 
 
 \subsubsection{MotorPort}
-Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichnamigen Klasse aus der leJOS API. In ihr sind die statischen Variablen \texttt{A, B} und \texttt{C} enthalten, die die zur Verfügung stehenden MotorPorts am Roboter darstellen. Intern ist jedem Port eine \texttt{id} in Form eines Integer zugeordnet. Über die Methode \texttt{getInstance(int id)} kann über die private Variable \texttt{id} der öffentliche Port (\texttt{A, B} und \texttt{C}) abgefragt werden.
+Die Klasse \texttt{MotorPort} ist in diesem Projekt eine verkleinerte Version der gleichnamigen Klasse aus der leJOS API. In ihr sind die statischen Variablen \texttt{A, B} und \texttt{C} enthalten, die die zur Verfügung stehenden MotorPorts am Roboter darstellen. Intern ist jedem Port eine \texttt{id} in Form eines Integer zugeordnet. Über die Methode \texttt{get\-In\-stance(int id)} kann über die private Variable \texttt{id} der öffentliche Port (\texttt{A, B} und \texttt{C}) abgefragt werden.
 
 \subsubsection{NXTRegulatedMotor}
-In der Klasse \texttt{NXTRegulatedMotor} befindet sich die Implementation der aufzurufenden Bewegungen des Roboter-Objekts der Simulation.
+In der Klasse \texttt{NXTRegulatedMotor} befindet sich die auf die Simulationsumgebung angepasste Implementation der NXT-spezifischen Motoren. Den größten Anteil haben hierbei Bewegungen der beiden Motoren über die Methoden \texttt{for\-ward()} und \texttt{back\-ward()}, sowie die Geschwindigkeitsregulierung über die Methode \texttt{set\-Speed()}. 
 
-Jeder NXTRegulatedMotor ist an einen Port angeschlossen, durch welchen eindeutig zuzuordnen ist, welcher Motor gerade angesprochen werden soll. Dies wird im Prototyp durch eine Feldvariable \texttt{{\_}port} gelöst, über die dann abgefragt werden kann, an welchem Motor gerade eine Methode aufgerufen wird. Folglich ist jedes NXTRegulatedMotor-Objekt ein Exemplar der Klasse NXTRegulatedMotor, welches vom Benutzer einen Port zugeordnet bekommt.\\
-Zudem bekommt jeder Motor eine Feldvariable \texttt{{\_}richtung}, die die Information enthält, ob der Motor sich bewegt (vorwärts oder rückwärts), oder ob er gerade in Ruheposition ist. Dabei entspricht "`vorwärts"' der Zahl 1, "`rückwärts"' dem Wert -1 und mit 0 wird der Ruhezustand signalisiert.
+Jeder NXTRegulatedMotor ist an einen MotorPort angeschlossen, durch welchen eindeutig zuzuordnen ist, welcher Motor gerade angesprochen werden soll. Dies wird im Prototyp durch eine Feldvariable \texttt{{\_}port} gelöst, über die dann abgefragt werden kann, an welchem Motor gerade eine Methode aufgerufen wird. Folglich ist jedes NXT\-Regulated\-Motor\--Objekt ein Exemplar der Klasse NXTRegulatedMotor, welches vom Benutzer einen Port zugeordnet bekommt.\\
+Zudem bekommt jeder Motor eine Feldvariable \texttt{{\_}richtung}, die die Information enthält, ob der Motor sich bewegt (vorwärts oder rückwärts), oder ob er gerade in Ruheposition ist. Dabei entspricht "`vorwärts"' der Zahl 1, "`rückwärts"' dem Wert -1 und mit 0 wird der Ruhezustand bezeichnet.
 
-Die SuS werden ihrem geschriebenen Code meist damit beginnen, den beiden Motoren jeweils eine Geschwindigkeit zuzuweisen. Dies geschieht mithilfe der Methode \texttt{setSpeed(int speed)}.\\
+Die SuS werden ihren geschriebenen Code meist damit beginnen, den beiden Motoren jeweils eine Geschwindigkeit zuzuweisen. Dies geschieht mithilfe der Methode \texttt{setSpeed(int speed)}. Da sich der Roboter auf dem Parcours pixelweise bewegt, wird an dieser Stelle die Geschwindigkeit von den für reale NXT-Roboter geeigneten Geschwindigkeiten durch den Faktor 100 geteilt, um eine angemessene Bewegungsgeschwindigkeit auf dem Bildschirm zu sichern.\\
 Danach werden die Motoren in Bewegung versetzt. Hierzu werden die Methoden\\
-\texttt{forward()} und \texttt{backward()} benutzt. In der Implementation des Prototyps wird nun diese Bewegung als Veränderung der Position und der Ausrichtung der Roboter-Grafik auf der Leinwand realisiert. Je nachdem, welcher Port (\emph{C} entspricht dem linken Motor, \emph{B} dem rechten) angesteuert wird, ruft die Klasse NXTRegulatedMotor die Methode \texttt{aendereBewegung} am Roboter, in Abhängigkeit zur Geschwindigkeit und eines Richtungsmultiplikators, auf. Der Richtungsmultiplikator sorgt hierbei für eine möglichst realitätsnahe Approximation der tatsächlichen Veränderung der Ausrichtung des Roboters.
+\texttt{forward()} und \texttt{backward()} benutzt. In der Implementation des Prototyps wird nun diese Bewegung als Veränderung der Position und der Ausrichtung der Roboter-Grafik auf der Leinwand realisiert. Je nachdem, welcher Port (\emph{C} entspricht dem linken Motor, \emph{B} dem rechten) angesteuert wird, ruft die Klasse NXTRegulatedMotor die Methode \texttt{aendereBewegung(double winkel, double geschwindigkeit)} am Roboter, in Abhängigkeit zur Geschwindigkeit und eines Richtungsmultiplikators, auf. Der Richtungsmultiplikator sorgt hierbei für eine möglichst realitätsnahe Approximation der tatsächlichen Veränderung der Ausrichtung des Roboters. Die Verwendung einer Variablen für diesen Faktor bringt den Vorteil mit sich, dass bei Verbesserungen innerhalb der Bewegungsimplementation der Motoren eine Konsistenz in allen involvierten Methoden sichergestellt ist. Soll beispielsweise die Vorwärtsbewegung der Motoren neu skaliert werden, so kann dies über die Veränderung des Richtungsmultiplikators geschehen und es werden in der Konsequenz alle relevanten Werte in den Methoden gleichzeitig und gleichmäßig verändert. 
 
-Die Herausforderung bei diesem Prototyp bestand nun darin, dass die Motoren, auch wenn sie sich schon bewegen, eine neue Geschwindigkeit weitergegeben bekommen und die zuvor bestimmte Bewegung mit der neuen Geschwindigkeit ausführen. Außerdem sollte ein zweimaliges Aufrufen der Methoden \texttt{forward()} und \texttt{backward()} nicht dazu führen, dass der Roboter sich doppelt so schnell bewegt. Hierzu konnte nun die Information, die in  \texttt{{\_}richtung} enthalten ist, genutzt werden. Mit einfachen if-Abfragen wird zu Beginn des Methodenrumpfs festgestellt, in welcher Bewegung sich der Motor am angeschlossenen Port gerade befindet. 
+Die Herausforderung bei diesem Prototyp bestand nun darin, dass die Motoren, auch wenn sie sich schon bewegen, eine neue Geschwindigkeit weitergegeben bekommen und die zuvor bestimmte Bewegung mit der neuen Geschwindigkeit ausführen. Außerdem sollte ein zweimaliges Aufrufen der Methoden \texttt{forward()} und \texttt{backward()} nicht dazu führen, dass der Roboter sich doppelt so schnell bewegt. Hierzu konnte nun die Information, die in  \texttt{{\_}richtung} enthalten ist, genutzt werden. Mit einfachen if-Abfragen wird zu Beginn des Methodenrumpfs festgestellt, in welcher Bewegung sich der angesprochene Motor gerade befindet. 
 
 
 \subsubsection{Licht- und Farbsensoren}
-Die Lichtsensoren sind zwei von der leJOS API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils  links und rechts neben der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter.
+Die Lichtsensoren sind zwei von der leJOS API vorgegebene Exemplare der Klasse \texttt{LightSensor}. Diese sind im Prototyp der Simulation jeweils  links und rechts neben der Spitze des Roboter-Dreiecks angebracht. Da es sich bei der Implementation um einen Prototyp handelt, gibt es noch keine optische Repräsentation der beiden Sensoren am Roboter. \todo{Schaubild Position der Lichtsensoren}
 
-Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gibXLichtRechts()}, \texttt{gibYLichtRechts()},\\
-\texttt{gibXLichtLinks()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In der zugehörigen Klasse steht die Methode \texttt{gibLichtmittelwert(int x, int y)} zur Verfügung, die auf das Bilddaten-Array zugreift. Da die realen Sensoren auch nicht nur einen einzelnen Punkt auf dem Boden, sondern einen Bereich abtasten, berechnet die Methode den Mittelwert aus neun Pixeln um die Position des Lichtsensors. Hierzu wird in der Methode \texttt{gibHelligkeitswert(int x, int y)} der Helligkeitswert jedes einzelnen der neun Pixel aus dem Bilddaten-Array abgefragt und der Mittelwert gebildet. Die Sensoren, die dann mit \texttt{gibLichtmittelwert(int x, int y)} die Helligkeit des ausgewählten Bereichs abfragen, bekommen das genormte Ergebnis (der Wert 0 entspricht schwarz, 100 entspricht weiß) des Mittelwerts ausgegeben.
+Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der Sensoren im Bezug auf die x- und y-Achse: \texttt{gib\-X\-Licht\-Rechts()}, \texttt{gib\-Y\-Licht\-Rechts()}, \texttt{gib\-X\-Licht\-Links()} und \texttt{gibYLichtsLinks()}. Diese werden benötigt, um das Auslesen des Farbwerts des Pixels unter dem jeweiligen Sensor zu ermöglichen. Die eigentliche Abfrage des Helligkeitswertes passiert jedoch am Parcours-Objekt. In der zugehörigen Klasse steht die Methode \texttt{gibLichtmittelwert(int x, int y)} zur Verfügung, die auf das Bilddaten-Array zugreift. Da die realen Sensoren auch nicht nur einen einzelnen Punkt auf dem Boden, sondern einen Bereich abtasten, berechnet die Methode den Mittelwert aus neun Pixeln um die Position des Lichtsensors. Hierzu wird in der Methode \texttt{gib\-Hellig\-keits\-wert(int x, int y)} der Helligkeitswert jedes einzelnen der neun Pixel aus dem Bilddaten-Array abgefragt und der Mittelwert gebildet. Die Sensoren, die dann mit \texttt{gib\-Licht\-mittel\-wert(int x, int y)} die Helligkeit des ausgewählten Bereichs abfragen, bekommen das genormte Ergebnis (der Wert 0 entspricht schwarz, 100 entspricht weiß) des Mittelwerts ausgegeben.
 
 Da sich die Farbsensoren in der Realität ähnlich verhalten wie die Lichtsensoren, ist die Implementation der Farbsensoren im Simulator code-identisch. Daher wird in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet.
 
@@ -490,6 +492,10 @@ Nun zu einer Beschreibung der Struktur der Klassen, die für die Simulation zust
 
 \subsubsection{Simulator}
 
+Um die Simulationsumgebung aufzurufen, erzeugt man ein Exemplar der Klasse \texttt{Si\-mu\-la\-tor}. Der Konstruktor dieser Klasse ist so konzipiert, dass zunächst ein Parcours erzeugt und in diesem Zusammenhang eine Bilddatei mit dem gewünschten Parcours ausgewählt wird.\\
+Als nächstes wird der Roboter über den Konstruktoraufruf \texttt{Roboter(335, 500)} auf den ausgewählten Parcours projiziert.\\
+Die Klasse \texttt{Simulator} ist nicht nur für die Erzeugung der einzelnen Elemente der Simulationsumgebung zuständig, sondern auch für die Verwaltung des Prozessablaufs. Hierzu wird mit dem Aufrufen eines Simulators ein sogenannter \emph{Thread} erzeugt. Im Rumpf des Threads sind wiederum zwei Anweisungen innerhalb einer Endlosschleife zu finden. Zum einen der Befehl \emph{{\_}roboter.update();}, der dafür sorgt, dass der Status des Roboter-Objekts aktualisiert wird, zum anderen eine Verzögerung, ein \emph{Delay}, wodurch die Anweisungen in der Schleife alle Millisekunde neu durchlaufen werden. 
+
 
 \subsubsection{Bildeinleser}
 Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hilfsklasse bestimmte Methoden zur Verfügung stellen muss. Durch den Aufruf der Methode\\
@@ -497,18 +503,18 @@ Die Klasse \texttt{BildEinleser} besitzt keinen Konstruktor, da diese nur als Hi
 %In dem dieser Arbeit vorangegangenen Studium wurde bereits mit Projekten gearbeitet, in denen Bilddateien eingelesen und benutzt wurden, daher wurde diese Klasse aus einem alten Projekt importiert.\\
 
 \subsubsection{Parcours}
-Der Parcours ist die Schnittstelle zwischen Simulator und den API-Klassen, da sie dafür zuständig ist, durch den Aufruf von \texttt{liesBilddaten()} am BildEinleser den Dialog für die Auswahl der Parcours-Grafikdatei zu erzeugen, die Bilddaten an die an dieser Stelle erzeugten Leinwand zu übergeben und Informationen über den Parcours an die Sensoren weiterzuleiten.
+Der Parcours ist die Schnittstelle zwischen Simulator und den Klassen des \texttt{nxt-}Pakets. Sie ist unter anderem dafür zuständig, durch den Aufruf von \texttt{liesBilddaten()} am BildEinleser den Dialog für die Auswahl der Parcours-Grafikdatei zu erzeugen und die Bilddaten an die an dieser Stelle erzeugten Leinwand zu übergeben. Hierfür sind die implementierten Methoden \texttt{aktualisiere\-Bildgroes\-se(short[][] bild\-daten)}, \texttt{er\-zeu\-ge\-Lein\-wand()} und \texttt{zeichneBild()} zuständig. Insbesondere letztere übergibt die Bildpunkte in Form eines short-Arrays an die Leinwand.
 
-Insbesondere die Abfrage des Helligkeitswerts eines Pixels aus dem Array ist in dieser Klasse implementiert, sowie die Ausgabe der realitätsgetreueren Werte für die Lichtsensoren.
+Des Weiteren befindet sich in dieser Klasse die Implementation der Abfrage der Helligkeitswerte des Parcours, auf dem sich der Roboter befindet. Diese wurde mithilfe der beiden Methoden \texttt{gib\-Hellig\-keits\-wert(int x, int y)} und \texttt{gib\-Licht\-mittel\-wert(int x, int y)} realisiert. Die genauere Beschreibung der Funktionalität dieser Methoden ist im vorangegangenen Abschnitt über die Licht- und Farbsensoren zu finden.
 
 \subsubsection{Leinwand}
 Wie eben beschrieben, wird die Leinwand von dem Parcours erzeugt. Die Klasse Leinwand sorgt nun dafür, dass die als Array übergebenen Bildpunkte in einem JFrame, also vereinfacht einem neuen Fenster, angezeigt werden. \\
-Des weiteren bietet die Leinwand eine Methode \texttt{warte()} an, die dafür genutzt wird, dass sich die Objekte auf der Leinwand tatsächlich animiert über den Hintergrund bewegen.
+Des weiteren bietet die Leinwand eine Methode \texttt{warte()} an, die dafür genutzt wird, dass sich die Objekte auf der Leinwand tatsächlich animiert über den Hintergrund bewegen. \todo{genauere Beschreibung}
 
 \subsubsection{Roboter}
-Nun zum Kernstück des Prototyps, der Klasse \texttt{Roboter}. Diese enthält alle relevanten Informationen des Roboter-Objekts, wie die Position, die Ausrichtung, die Geschwindigkeit und das Aussehen.
+Nun zum Kernstück der Simulationsumgebung, der Klasse \texttt{Roboter}. Diese enthält alle relevanten Informationen des Roboter-Objekts, wie die Position, die Ausrichtung, die Geschwindigkeit -- in Form von Variablen \texttt{{\_}xPos}, \texttt{{\_}yPos}, \texttt{{\_}aus\-rich\-tung},  \texttt{{\_}ge\-schwin\-dig\-keit} -- und das Aussehen. 
 
-Sobald ein neuer Roboter erzeugt wird (\texttt{Roboter(int x, int y)}) wird das Bild des Roboters, welches zur Zeit noch ein einfaches Dreieck ist, eingelesen, auf die Leinwand gezeichnet und auf die übergebene Position gesetzt. Hierbei anzumerken ist, dass die Bilddatei einen imaginären Rahmen besitzt, so dass zwei Feldvariablen zur Positionskorrektur existieren, die für das Zeichnen auf der Leinwand benutzt werden. So ist sichergestellt, dass der Roboter auch tatsächlich an der übergebenen Position gezeichnet wird.
+Sobald ein neuer Roboter erzeugt wird (\texttt{Roboter(int x, int y)}) wird das Bild des Roboters, welches zur Zeit noch ein einfaches Dreieck ist, eingelesen, auf die Leinwand gezeichnet und auf die übergebene Position gesetzt. Hierbei anzumerken ist, dass die Bilddatei einen imaginären Rahmen besitzt, so dass zwei Feldvariablen zur Positionskorrektur existieren, die für das Zeichnen auf der Leinwand benutzt werden. So ist sichergestellt, dass der Roboter auch tatsächlich an der übergebenen Position gezeichnet wird. Beim Konstruktoraufruf übergibt der Benutzer demnach den Mittelpunkt des Roboters.
 
 Weiterer Bestandteil der Klasse ist die Methode \texttt{update()}. Diese ist dafür zuständig, dass der Roboter auf der Leinwand Bewegungen ausführen kann. Dies geschieht zunächst über die Veränderung der Ausrichtung des Roboters, wodurch natürlich eine Rotation der optischen Repräsentation des Roboters, also des Bildes, nötig ist. Die Methode \texttt{rotate(double Degrees)} erstellt in diesem Zusammenhang eine Kopie der ursprünglichen Robotergrafik, dreht diese um den angegebenen Winkel und ersetzt die bisher bestehende Grafik durch die gedrehte Kopie. Dieses Verfahren sorgt dafür, dass keine Pixelfehler und optischen Verwischungen an der Robotergrafik auf dem Parcours entstehen, da für jede Veränderung eine "`frische"' Kopie der Originalgrafik verwendet wird.\\
 Abschließend wird nun der Roboter mithilfe der Methoden \texttt{setzePosition(int x, int y) und \texttt{zeichnen(int x, int y)}} auf der neuen Position auf dem Parcours gezeichnet .\\
@@ -557,7 +563,7 @@ Des weiteren kann die Roboter-Grafik im Simulator, die bisher erst einmal zu Tes
 
 Eine weitere Möglichkeit wäre auch, eine ähnlich wie bei \emph{Greenfoot} aufgebaute Steuerung der Simulation anbieten. Konkret würde dies bedeuten, dass der JFrame, in dem der Parcours angezeigt wird, um einen Bereich mit Buttons erweitert würde. Diese wären dann in der Lage, die Simulation zu starten, pausieren und anzuhalten.
 
-Etwas umfassender, dafür aber eine schönere Integration in BlueJ mit sich bringend, wäre noch das Schreiben einer eigenen BlueJ Extension. Hierdurch würde die Möglichkeit entstehen, gegebenenfalls direkt am Kontextmenü den Simulator aufzurufen.
+Etwas umfassender, dafür aber eine schönere Integration in BlueJ mit sich bringend, wäre noch das Schreiben einer eigenen BlueJ Extension. Hierdurch würde die Möglichkeit entstehen, den Simulator gegebenenfalls direkt am Kontextmenü aufzurufen.
 
 \newpage
 \input{bibliography}

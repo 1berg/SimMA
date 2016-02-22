@@ -7,7 +7,7 @@ package simma.sim;
  */
 public class Parcours {
 
-        // Der simma.simma.sim.Parcours
+        // Der Parcours
         private static Parcours parcours;
         // die Bilddaten dieses Bildes
         private short[][] _bilddaten;
@@ -110,7 +110,7 @@ public class Parcours {
          */
         private void erzeugeLeinwand()
         {
-            _leinwand = new Leinwand("simma.simma.sim.Parcours", _breite, _hoehe);
+            _leinwand = new Leinwand("Parcours", _breite, _hoehe);
             _leinwand.sichtbarMachen();
 
             zeichneBild();
