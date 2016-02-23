@@ -173,7 +173,7 @@ public class Roboter
         double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double gamma = _ausrichtung - beta;
         double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
-        return  (int) (_yPos + (c * Math.sin(Math.toRadians(gamma)))); //TODO Eventuell müssen YLinks und YRechts vertauscht werden - Werte passen jeweils andersrum besser zur Ausrichtung
+        return  (int) (_yPos + (c * Math.sin(Math.toRadians(gamma))));
     }
 
     /**
