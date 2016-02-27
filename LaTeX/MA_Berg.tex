@@ -22,6 +22,10 @@
 \thispagestyle{empty}
 \cleardoublepage
 \newpage
+\addchap*{Abstract}
+Hier der Text des Abstracts
+
+\newpage
 \listoffigures
 \newpage
 \tableofcontents
@@ -70,7 +74,7 @@ Für die NXT Roboter sind eine Vielzahl von Sensoren verfügbar, damit die SuS i
 \onehalfspacing
 Die Robotik als Teilgebiet der Informatik in der Schule gewinnt zunehmend an Bedeutung. Nicht nur die Programmierung steht im Vordergrund, sondern auch die Kompetenz, Probleme unter bestimmten Aufgabenstellungen zu lösen. \textsc{Berns} und \textsc{Schmidt}, die Verfasser eines der Kernwerke für den Unterricht mit dem \textsc{LEGO Mindstorms} System, schreiben, dass bei der Arbeit mit Robotern im Unterricht "`durch eine konkrete Aufgabenstellung, das problemspezifische Konstruieren und Programmieren eines Roboters sowie durch das letztendliche Testen der gesamte Ablauf eines Problemlösungsprozesses kennen gelernt"' \cite[S.2]{berns:10} wird.
 
-In diesem Zusammenhang kann auch, wie von \textsc{Wagner} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (vgl. \cite[S.6f.]{wagner:05}).
+In diesem Zusammenhang können auch, wie von \textsc{Wagner} ausführlich begründet, die Kooperationsfähigkeiten der SuS im besonderen Maße gefördert werden. Gründe hierfür bestehen unter anderem in der Vielzahl der Möglichkeiten, ein Problem mit Robotern zu lösen, die alle unterschiedliche gut geeignet sind, und durch die die SuS zur Kommunikation und dem Verständlichmachen ihrer Ideen im Team angeregt werden. Hierbei ist das Augenmerk auch auf die Kontrollinstanz zu legen -- nimmt sonst die Lehrkraft diese Rolle für sich ein, so ist der Roboter bei dieser Art von Unterricht eine neutrale, unbestechliche und jederzeit verfügbare Möglichkeit, die geleistete Arbeit zu bewerten (vgl. \cite[S.6f.]{wagner:05}).
 
 \textsc{Schreiber} fasst in seiner Examensarbeit den Einsatz von \textsc{LEGO Mindstorms} Robotern wie folgt zusammen
 \begin{quote}
@@ -86,9 +90,11 @@ Grundsätzlich ist also zu sagen, dass der Einsatz von Robotern im Unterricht al
 Es erfolgt nun zunächst die curriculare Einordnung des Themas Roboter im Unterricht in die Bildungspläne aus Hamburg. Danach werden verschiedene Arbeitsmethoden im Zusammenhang mit dieser Art von Unterricht vorgestellt.
 
 \subsection{Curriculare Einordnung}
-Die fachlichen Inhalte, die mithilfe des Einsatzes von Robotern im Unterricht vermittelt werden können, sind sowohl im Bildungsplan der Sekundarstufe I für das Gymnasium (Klasse 7 -- 10) und die Stadtteilschule (Klasse 7 -- 11), als auch im Bildungs- bzw. Rahmenplan für die Gymnasiale Oberstufe, der Sekundarstufe II, verankert. Der folgende Abschnitt gibt eine Übersicht über die verschiedenen Module im Zusammenhang mit den Unterscheidungen zur Schulform und Klassenstufe. 
+Die fachlichen Inhalte, die mithilfe des Einsatzes von Robotern im Unterricht vermittelt werden können, sind sowohl im Bildungsplan der Sekundarstufe I für das Gymnasium (Klasse 7 -- 10) und die Stadtteilschule (Klasse 7 -- 11), als auch im Bildungs- bzw. Rahmenplan für die Gymnasiale Oberstufe, der Sekundarstufe II, verankert. Der folgende Abschnitt gibt eine Übersicht über die verschiedenen Module im Zusammenhang mit den Unterscheidungen zur Schulform und Klassenstufe.
 
-\subsubsection{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflicht}
+Grundsätzlich ist vorab zu erwähnen, dass die im Folgenden vorgestellten Bildungspläne ausschließlich für die Hansestadt Hamburg gelten. Des Weiteren existiert jeweils ein Bildungsplan für die Sekundarstufe I der weiterführenden Schulen (Stadtteilschule und Gymnasium) sowie ein einheitlicher Bildungsplan für die Gymnasiale Oberstufe, wobei der elfte Jahrgang sowohl im Bildungsplan der Stadtteilschule, als auch im Bildungsplan für die Vorstufe der Gymnasialen Oberstufe auftaucht. 
+
+\subsubsection{Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflichtfach}
 Der Einsatz von Robotern kann auf die Module 2 und 3 des Bildungsplanes für die Sekundarstufe I des Gymnasiums bezogen werden. Hier heißt es\\
 
  \begin{quote}
@@ -111,19 +117,21 @@ Modul 3 -- Kontext Daten und Prozesse
 
 
 
-\subsubsection{STS Sekundarstufe I (7 --11) Informatik}
+\subsubsection{STS Jahrgangsstufen 7 --11 Informatik Wahlpflichtfach}
 Ähnlich ist es im Bildungsplan für die Stadtteilschulen. Hierbei werden allerdings innerhalb der Module verbindliche Inhalte formuliert.
 
 So sind im Modul 2 die Inhalte \emph{Algorithmen} und \emph{prozedurale Programmierung: Sequenz, Alternative, Wiederholung, Funktion} zu finden, die, wie der Bildungsplan vorschlägt, in das Unterrichtsvorhaben \emph{"Wir lassen Roboter arbeiten"} integriert werden können.
 
 Im Modul 3 sollen im zweiten Halbjahr die verbindlichen Inhalte
+\begin{quote}
 \begin{itemize}
-\item \emph{Grundlagen der prozeduralen Programmierung}
-\item \emph{Abläufe formalisieren}
-\item \emph{Algorithmen mit einer formalen Sprache implementieren}
-\item \emph{Testen, Ergebnisse interpretieren und bewerten}
+\item Grundlagen der prozeduralen Programmierung
+\item Abläufe formalisieren
+\item Algorithmen mit einer formalen Sprache implementieren
+\item Testen, Ergebnisse interpretieren und bewerten \hfill \cite{stsmittel:14}
 \end{itemize}
-unterrichtet werden \cite{stsmittel:14}. 
+\end{quote}
+unterrichtet werden.  
 
 
 \subsubsection{Gymnasiale Oberstufe -- Vorstufe}
@@ -610,7 +618,7 @@ Programmierung erster Software mit NXT Robotern essentiellen Klassen und deren M
 
 \section{Umsetzung der Anforderungen}
 
-Die Simulationsumgebung bietet den SuS die Möglichkeit, mit der von ihnen kennengelernten Sytax (auf Basis der leJOS NXJ API) ihre individuellen Lösungen direkt am Computer auszuprobieren. Hierbei müssen sie sich nicht mit einer neuen, zusätzlichen Benutzeroberfläche vertraut machen, sondern einfach nur zwei zusätzliche Anweisungen im Quellcode einfügen. Die Steuerung des NXT Roboters und des Roboters in der Simulation ist damit also nahezu code-identisch.
+Die Simulationsumgebung bietet den SuS die Möglichkeit, mit der von ihnen kennengelernten Syntax (auf Basis der leJOS NXJ API) ihre individuellen Lösungen direkt am Computer auszuprobieren. Hierbei müssen sie sich nicht mit einer neuen, zusätzlichen Benutzeroberfläche vertraut machen, sondern einfach nur zwei zusätzliche Anweisungen im Quellcode einfügen. Die Steuerung des NXT Roboters und des Roboters in der Simulation ist damit also nahezu code-identisch.
 
 Bezüglich der realitätstreue der Parcours lässt sich zunächst sagen, dass die beispielhaft im Projekt mit enthaltenen Parcours Ausschnitte eines realen Parcours sein könnten. Dies stellt sicher, dass die SuS ihre Roboter in Testumgebungen fahren lassen können, die einen Bezug zu den Realbedingungen haben.
 
@@ -655,7 +663,9 @@ Insgesamt lässt sich demnach feststellen, dass die Simulationsumgebung das Pote
 
 \section{Zusammenfassung}
 
+Der in dieser Masterarbeit entwickelte Prototyp einer Java-Simulationsumgebung für \textsc{LEGO Mindstorms} NXT Roboter liefert ein stabiles Tool für den Einstieg in die schriftliche objektorientierte Programmierung anhand von Robotern. Der Simulator ist in der Lage, einfache, auf Basis der NXJ API von leJOS in Java geschriebene Programme auf einem digitalen Parcours auszuführen und den SuS somit eine optische Rückmeldung zu ihrem Code zu geben.
 
+Des Weiteren stellt dieser Prototyp eine Basis für Erweiterungen bezüglich UI-spezifischer Anpassungen oder auch für ein Upgrade auf die nächste Generation von \textsc{LEGO Mindstorms} Robotern -- den EV3 -- dar und lässt sich durch den objektorientierten Ansatz in der Programmierung und die Nutzung von Paketen, die in sinnvolle Kategorien unterteilt wurden, relativ einfach umgestalten und erweitern.
 
 \newpage
 \input{bibliography}
