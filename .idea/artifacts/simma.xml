@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="simma">
+    <output-path>$PROJECT_DIR$/out/artifacts/simma</output-path>
+    <root id="archive" name="simma.jar">
+      <element id="module-output" name="SimMA" />
+      <element id="dir-copy" path="$PROJECT_DIR$/SimMA/src/images" />
+    </root>
+  </artifact>
+</component>

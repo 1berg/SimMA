@@ -1,6 +1,6 @@
 package simma.sim;
 
-import simma.nxt.Delay;
+import simma.nxt.*;
 
 /** Die Klasse Simulator.
  *
@@ -32,6 +32,7 @@ public class Simulator
                 Delay.msDelay(1);
             }
         }}).start();
+
 
     }
 

@@ -23,7 +23,7 @@ public class TouchSensor
 
 
     /**
-     * Gibt Rückmeldung zum Zustand des Sensors (gedrückt/nicht gedrück).
+     * Gibt Rückmeldung zum Zustand des Sensors (gedrückt/nicht gedrückt).
      */
     public boolean isPressed()
     {

@@ -15,7 +15,7 @@ public class NXTRegulatedMotor{
     // Die Richtung des Roboters (1 = vorwärts, -1 = rückwarts, 0 = stop)
     private int _richtung = 0;
     // Faktor für die Skalierung der Motorbewegungen im Zusammenhang mit der Winkelveränderung am Roboterobjekt.
-    private static double richtungsMultiplikator = 1./9;
+    private static double richtungsMultiplikator = 2;
 
     /**
      * Konstruktor für einen neuen NXTRegulatedMotor
@@ -63,11 +63,11 @@ public class NXTRegulatedMotor{
             Roboter robot = Roboter.gibRoboter();
             if (_richtung != 1)
             {
-                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
+                if (_port.equals(MotorPort.B)) //linker Motor wird angesteuert
                 {
-                    robot.aendereBewegung((_speed)* richtungsMultiplikator, _speed); //eventuell andersrum
+                    robot.aendereBewegung((_speed)* richtungsMultiplikator, _speed);
                 }
-                else if (_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
+                else if (_port.equals(MotorPort.C)) //rechter Motor wird angesteuert
                 {
                     robot.aendereBewegung(-(_speed)* richtungsMultiplikator, _speed);
                 }
@@ -86,11 +86,11 @@ public class NXTRegulatedMotor{
             Roboter robot = Roboter.gibRoboter();
             if (_richtung != -1)
             {
-                if (_port.equals(MotorPort.C)) //linker Motor wird angesteuert
+                if (_port.equals(MotorPort.B)) //linker Motor wird angesteuert
                 {
-                    robot.aendereBewegung(-(_speed)* richtungsMultiplikator, -_speed); //eventuell andersrum
+                    robot.aendereBewegung(-(_speed)* richtungsMultiplikator, -_speed);
                 }
-                else if (_port.equals(MotorPort.B)) //rechter Motor wird angesteuert
+                else if (_port.equals(MotorPort.C)) //rechter Motor wird angesteuert
                 {
                     robot.aendereBewegung((_speed)* richtungsMultiplikator, -_speed);
 

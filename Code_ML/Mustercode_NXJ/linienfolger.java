@@ -1,48 +1,51 @@
-import lejos.util.*;
-import lejos.nxt.*;
+//import lejos.util.*;
+//import lejos.nxt.*;
 
+import simma.sim.*;
+import simma.nxt.*;
 /**
 * Musterlösung für den Linienfolger.
 *
 */
 public class linienfolger 
 {
-	static LightSensor SeherR = new LightSensor(SensorPort.S4); //Die Lichtsensoren werden mit ihren
-    static LightSensor SeherL = new LightSensor(SensorPort.S3); //Ports deklariert/initialisiert.
+	static LightSensor SeherR = new LightSensor(SensorPort.S2); //Die Lichtsensoren werden mit ihren
+    static LightSensor SeherL = new LightSensor(SensorPort.S1); //Ports deklariert/initialisiert.
 
 	/**
 	 * Die Main-Methode der Klasse
 	 */
-	public static void main(String[] args)
+	public static void start()
 	{
+	    Simulator sim = new Simulator();
 		while(!Button.ENTER.isPressed()){
-			Motor.A.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
+			Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
 			Motor.B.setSpeed(200);
 			
-			Motor.A.forward();//Beide Motoren starten.
+			Motor.C.forward();//Beide Motoren starten.
 			Motor.B.forward();
-			Delay.msDelay(150);
+			Delay.msDelay(1500);
 			
 			
-			if(SeherL.readValue()<400) //if-Anweisung für den Fall, dass der linke Sensor die schwarze Linie sieht.
+			if(SeherR.readValue()<50 )//if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
 			{
-				Motor.A.setSpeed(200);
+				Motor.C.setSpeed(200);
 				Motor.B.setSpeed(200);
 				
-				Motor.A.backward();
+				Motor.C.backward();
 				Motor.B.forward();//Eine Drehung auf der Stelle wird vollzogen.
-				Delay.msDelay(250);
+				Delay.msDelay(2500);
 
 			}
 			
-			if(SeherR.readValue()<400) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
+			if(SeherL.readValue()<50) //if-Anweisung für den Fall, dass der rechte Sensor die schwarze Linie sieht.
 			{
-				Motor.A.setSpeed(200);
+				Motor.C.setSpeed(200);
 				Motor.B.setSpeed(200);
 				
-				Motor.A.forward();
+				Motor.C.forward();
 				Motor.B.backward();
-				Delay.msDelay(250);
+				Delay.msDelay(2500);
 			}
 			
 			// Das Problem kann natürlich auch mit einer Boolschen Anweisung in einer einzigen

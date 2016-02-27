@@ -4,8 +4,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 
 /**
@@ -35,8 +34,9 @@ public class Roboter
 
         try
         {
-            File file = new File("SimMA/src/images/simma.sim.Roboter.gif");
-            _roboter = ImageIO.read(file);
+            //InputStream file = new BufferedInputStream(new FileInputStream("SimMA/src/images/Roboter.gif"));
+            //File file = new File("SimMA/src/images/Roboter.gif");
+            _roboter = ImageIO.read(this.getClass().getResource("/images/Roboter.gif"));
             _roboterImage = _roboter;
         } catch (IOException e)
         {
@@ -47,8 +47,6 @@ public class Roboter
         roboter = this;
         _xPos = x;
         _yPos = y;
-        System.out.println("Breite: " + _roboter.getWidth());
-        System.out.println("Höhe: " + _roboter.getHeight());
     }
 
     /**
@@ -102,7 +100,7 @@ public class Roboter
         Leinwand leinwand = Leinwand.gibLeinwand();
         leinwand.redrawImage();
         leinwand.drawImage(_roboter, x -  _xPosKorrektur, y - _yPosKorrektur);
-        leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der simma.sim.Leinwand
+        leinwand.warte(150); //Bestimmt die Geschwindigkeit des Roboters auf der Leinwand
     }
 
     /**
@@ -226,7 +224,7 @@ public class Roboter
                 RenderingHints.VALUE_ANTIALIAS_ON);
 
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-                RenderingHints.VALUE_INTERPOLATION_BICUBIC); //TODO brauche ich das hier?
+                RenderingHints.VALUE_INTERPOLATION_BICUBIC);
 
         //Das Bild rotieren und auf die Leinwand bringen
         AffineTransform transform = new AffineTransform();

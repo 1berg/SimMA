@@ -1,3 +1,5 @@
+package Testklassen;
+
 import simma.sim.*;
 import simma.nxt.*;
 
@@ -7,13 +9,14 @@ import simma.nxt.*;
  * benutzt werden.
  * Implementiert sind hier beide Varianten.
  */
-public class hinderniserkenner
+public class hindernisTest
 {
+
     static TouchSensor Taster = new TouchSensor(SensorPort.S2); //Der Tastsensor.
     static UltrasonicSensor Augen = new UltrasonicSensor(SensorPort.S1); //Der Ultraschallsensor.
 
-    
-    public void start()
+
+    public static void main(String[] args)
     {
         Simulator sim = new Simulator();
         while(!Button.ENTER.isPressed()){
@@ -41,7 +44,7 @@ public class hinderniserkenner
                 Motor.B.backward();
                 Delay.msDelay(250);
 
-            }   
+            }
 
             if(Augen.getDistance() < 10) // Lösung mit dem Ultraschallsensor
             {
