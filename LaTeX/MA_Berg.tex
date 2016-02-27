@@ -42,6 +42,10 @@ Immer wieder stoßen Lehrkräfte in den Schulen auf Hardwareprobleme jeglicher A
 Auch das Zusammen- und wieder Auseinanderbauen der Roboter ist ein Aufwand, der für den alltäglichen Unterricht nicht geeignet ist. Um kleine Aufgaben -- wie zum Beispiel das Fahren einer Kurve oder das Anhalten auf einem bestimmten Punkt -- mit Java zu lösen, muss bisher immer erst der Roboter gestartet, der Code in BlueJ verfasst und auf den Roboter übertragen werden. Schließlich muss der Roboter noch zu einem geeigeneten Parcours gebracht werden, um die Lösung testen zu können.
 
 Um diese Probleme zu umgehen und den Einstieg in die objektorientierte Programmierung über die Benutzung von \textsc{LEGO Mindstorms} Robotern zu optimieren, soll im Rahmen dieser Masterarbeit der Protoyp einer Simulationsumgebung für die Arbeit mit \textsc{LEGO Mindstorms} NXT Roboter entwickelt werden.
+
+Hierzu wird zunächst die Ausgangssituation im schulischen Kontext beschrieben, sowie ein Einblick in die Arbeit mit \textsc{LEGO Mindstorms} Robotern im Unterricht gegeben. Anschließend werden die bisher verfügbaren Softwarelösungen zur Programmierung von \textsc{LEGO Mindstorms} NXT Robotern vorgestellt, insbesondere die bisherigen Versuche, Simulationsumgebungen zu realisieren.\\
+Vor der Beschreibung der entwickelten Software werden zudem die an die Neuplemenation gestellten Anforderungen vorgestellt, die dann im letzten Kapitel -- nach der Vorstellung der Software -- mit der tatsächlichen Funktionalität des entwickelten Prototyps verwoben werden.\\
+Abschließend werden weitere, von aktiven Lehrkräften gestellte Anforderungen an den Prototyp der Simulationsumgebung, sowie Verbesserungen und Erweiterungsmöglichkeiten, die sich im Laufe der Implementation entwickelt haben, erläutert.
 \newpage
 \par\singlespacing
 \chapter{Ausgangssituation}
@@ -335,18 +339,20 @@ Die Entwicklung des Prototyps der Simulationsumgebung umfasste mehrere Schritte,
 \par \singlespacing
 \subsection{Mock-Ups} 
 \onehalfspacing
-Um einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation der vollständigen Simulationssoftware zu erfassen wurden zunächst Skizzen angefertigt, die einen groben Überblick über die Benutzeroberfläche geben sollten. Diese enthielten eine beispielhafte Darstellung eines Parcours und eines Roboters, sowie eine Menüzeile am oberen Rand. Als nächstes wurden eine spezielle Art von Interaktionsprototypen hergestellt, so genannte \emph{interaktive Mock-Ups}, die eine Subkategorie interaktiver Wireframes darstellen. Interaktive Wireframes sind eine vereinfachte, digitale Darstellung von Benutzerschnittstellen, die einen gewissen Grad an Interaktionslogik umfassen (vgl. \cite[S.162ff.]{moser:12}).\\
- Hierzu wurde mit der Software \emph{Axure RP Pro} gearbeitet, mit der sich sowohl einfache als auch komplex verschachtelte Mock-Ups erstellen lassen (s. Abb.\ref{fig:axure}).
+Um einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation der vollständigen Simulationssoftware zu erfassen wurden zunächst Skizzen angefertigt, die einen groben Überblick über die Benutzeroberfläche geben sollten. Diese enthielten eine beispielhafte Darstellung eines Parcours und eines Roboters, sowie eine Menüzeile am oberen Rand. Als nächstes wurden eine spezielle Art von Interaktionsprototypen hergestellt, so genannte \emph{interaktive Mock-Ups}, die eine Subkategorie interaktiver Wireframes darstellen. Interaktive Wireframes sind eine vereinfachte, digitale Darstellung von Benutzerschnittstellen, die einen gewissen Grad an Interaktionslogik umfassen (vgl. \cite[S.162ff.]{moser:12}).
 
-\begin{figure}[htbp]
+Zur Erstellung der Mock-Ups wurde mit der Software \emph{Axure RP Pro} gearbeitet, mit der sich sowohl einfache als auch komplex verschachtelte Mock-Ups erstellen lassen (s. Abb.\ref{fig:axure}).
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.2]{images/axure_mockup.png} 
 \caption{Die Bedieneroberfläche von Axure RP Pro}
 \label{fig:axure}
 \end{figure}
 
+Da die zu schreibende API auch mehrere Sensoren umfasst, sollten die in den Mock-Ups dargestellten Szenarien den für den Schulkontext erforderlichen Funktionsumfang repräsentieren. Hierzu gehörte das Anhalten auf einer schwarzen Linie wie in Abbildung \ref{fig:linienfinder}, das Fahren entlang einer schwarzen Linie (s. Abb. \ref{fig:linienfolger}) und das Finden und Umfahren eines Hindernisses auf der Fahrbahn (s. Abb. \ref{fig:hinderniserkenner}).
+\vfill
 
-%Da die zu schreibende API auch mehrere Sensoren umfasst, sollten die in den Mock-Ups dargestellten Szenarien den für den Schulkontext erforderlichen Funktionsumfang repräsentieren. Hierzu gehörte das Anhalten auf einer schwarzen Linie wie in Abbildung \ref{fig:linienfinder}, das Fahren entlang einer schwarzen Linie (s. Abb. \ref{fig:linienfolger}) und das Finden und Umfahren eines Hindernisses auf der Fahrbahn (s. Abb. \ref{fig:hinderniserkenner}).
 
 \begin{figure}[htbp]
 \centering
@@ -362,12 +368,14 @@ Um einen visuellen Grundgedanken festzuhalten und das Ziel der Implementation de
 \label{fig:linienfolger}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{images/mockup_hinderniserkenner.png}
 \caption{Erkennen eines Hindernisses auf der Fahrbahn}
 \label{fig:hinderniserkenner}
 \end{figure}
+
+
 \par \singlespacing
 \subsection{Schritte während der Implementation}
 \onehalfspacing
@@ -382,7 +390,7 @@ Außerdem konnte bestehender Code aus anderen Projekten in dieses Projekt import
 Die Frage nach einer Integration in BlueJ kann auf vielfältige Art beantwortet werden. Die einfachste und zu diesem Zeitpunkt praktikabelste Lösung ist, die Integration der Simulationsumgebung über einen Import der Klassenbibliothek zu realisieren.\\
 Für die SuS bedeutet dies, dass diese, neben der Import-Anweisung für die leJOS-Bibliothek zwei weitere Import-Anweisungen in ihren geschriebenen Code einfügen müssen. Außerdem muss ein Exemplar der Simulator-Klasse erzeugt werden. Da dies aber ein überschaubarer Aufwand für SuS und Lehrkraft ist, der auch als "`Schablone"' für die ersten Versuche von der Lehrkraft zur Verfügung gestellt werden kann, sehe ich diese Lösung als geeignet an.
 
-Nun kann man sich die Frage stellen, wieso überhaupt mit BlueJ gearbeitet werden soll, da es doch ausreichend andere Entwicklungsumgebungen gibt, in die solche Bibliotheken importiert werden können.\\
+Nun stellt sich die Frage, wieso überhaupt mit BlueJ gearbeitet werden soll, da es doch ausreichend andere Entwicklungsumgebungen gibt, in die solche Bibliotheken importiert werden können.\\
 Der Vorteil an BlueJ besteht darin, dass diese Entwicklungsumgebung, wie in \textbf{\ref{sec:bluejetc}} beschrieben, eine klar strukturierte und übersichtliche Benutzeroberfläche bietet. Die SuS müssen sich nicht in für ihre Ansprüche überdimensional umfangreiche Programmierumgebungen einarbeiten und können per Mausklick ihren Code per USB-Kabel auf den Roboter übertragen. Dies wird von einer speziell für BlueJ entwickelten NXT-Extension  (vgl. \cite{bowes:12}), die eine Erweiterung des Kontextmenüs jeder Klasse zur Verfügung stellt, realisiert.
 
 \par \singlespacing
@@ -393,7 +401,7 @@ Nun zu einer kurzen Beschreibung des Prototyps, in der zudem Einzelheiten zur Be
 
 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.45]{images/dialog_szenarien.png} 
 \caption{Auswahldialog für den Parcours}
@@ -402,8 +410,6 @@ Nun zu einer kurzen Beschreibung des Prototyps, in der zudem Einzelheiten zur Be
 Beginnt man mit dem Programmieren einer Klasse, die den NXT Roboter beispielsweise einer Kurve auf dem Boden folgen lassen soll, so müssen neben des Imports für die leJOS API zwei weitere Import-Anweisungen für den Simulator eingebunden werden. Diese Klasse sei im Folgenden mit \texttt{linienfolger} bezeichnet.\\
 Zu beachten ist, dass immer entweder der leJOS-Import oder die Simulator-Importe auskommentiert sein müssen, da sonst weder der Simulator noch der reale NXT Roboter weiß, auf welche Bibliothek zugegriffen werden soll.
 
-Um nun mit dem Simulator zu arbeiten, erzeugt man innerhalb der main-Methode der Klasse \texttt{linienfolger} ein neues Exemplar der Klasse \texttt{Simulator}. Nachdem man die Klasse \texttt{linienfolger} fehlerfrei kompiliert hat, kann man in BlueJ über einen Rechtsklick ein neues Exemplar dieser Klasse aufrufen, und an diesem die main-Me\-tho\-de ausführen lassen. Dies führt dazu, dass mit der Erzeugung eines Simulators der Auswahldialog für den Parcours angezeigt wird, wie in Abbildung \ref{fig:auswahldialog} beispielhaft dargestellt ist.\\
-Sobald der Parcours ausgewählt wurde, wird dieser in einem neuen Fenster geöffnet. Nun sehen die SuS den Roboter, der auf dem von ihnen ausgewählten Parcours fährt (Vgl. Abb.\ref{fig:simparcours_kurve}).
 
 \begin{figure}[htbp]
 \centering
@@ -412,6 +418,9 @@ Sobald der Parcours ausgewählt wurde, wird dieser in einem neuen Fenster geöff
 \label{fig:simparcours_kurve}
 \end{figure}
 
+Um nun mit dem Simulator zu arbeiten, erzeugt man innerhalb der main-Methode der Klasse \texttt{linienfolger} ein neues Exemplar der Klasse \texttt{Simulator}. Nachdem man die Klasse \texttt{linienfolger} fehlerfrei kompiliert hat, kann man in BlueJ über einen Rechtsklick ein neues Exemplar dieser Klasse aufrufen, und an diesem die main-Me\-tho\-de ausführen lassen. Dies führt dazu, dass mit der Erzeugung eines Simulators der Auswahldialog für den Parcours angezeigt wird, wie in Abbildung \ref{fig:auswahldialog} beispielhaft dargestellt ist.\\
+Sobald der Parcours ausgewählt wurde, wird dieser in einem neuen Fenster geöffnet. Nun sehen die SuS den Roboter, der auf dem von ihnen ausgewählten Parcours fährt (Vgl. Abb.\ref{fig:simparcours_kurve}).
+\vfill
 
 \par \singlespacing
 \section{Softwarearchitektur}
@@ -510,7 +519,8 @@ Die Klasse \texttt{Roboter} enthält die Methoden zur Abfrage der Positionen der
 Da sich die Farbsensoren in der Realität ähnlich verhalten wie die Lichtsensoren, ist die Implementation der Farbsensoren im Simulator code-identisch. Daher wird in dieser Ausarbeitung auf eine explizite Beschreibung verzichtet.
 
 \subsubsection{Ultraschall- und Berührungssensor}
-Der Berührungssensor, oder wie von leJOS TouchSensor genannt, ist im Simulator an der vordersten Spitze des Roboter-Objekts platziert. Da Hindernisse im Simulator schwerlich als mehrdimensionale Objekte dargestellt werden können, wird in diesem Prototyp zunächst mit einer Farbunterscheidung gearbeitet. Dies funktioniert wiederum über den Helligkeitswert der Pixel, die sich gerade unter der Spitze des Roboter-Objekts befindet. Die Position des Sonsors ergibt sich dabei in Anhängigkeit von der Größe des Roboters und seiner Ausrichtung. Sei $B$ die Breite des Roboters und $\alpha$ der Wert aus der Variablen \texttt{{\_}ausrichtung} des Roboters. Weiter entspreche $xPos$ der x-Position und $yPos$ der y-Position des Roboters. Dann folgt für die Koordinaten $\left( x \vert y \right)$ des Berührungssensors
+Der Berührungssensor, oder wie von leJOS TouchSensor genannt, ist im Simulator an der vordersten Spitze des Roboter-Objekts platziert. Da Hindernisse im Simulator schwerlich als mehrdimensionale Objekte dargestellt werden können, wird in diesem Prototyp zunächst mit einer Farbunterscheidung gearbeitet. Dies funktioniert wiederum über den Helligkeitswert der Pixel, die sich gerade unter der Spitze des Roboter-Objekts befindet. Die Position des Sensors ergibt sich dabei in Anhängigkeit von der Größe des Roboters und seiner Ausrichtung. Sei $B$ die Breite des Roboters und $\alpha$ der Wert aus der Variablen \texttt{{\_}ausrichtung} des Roboters. Weiter entspreche $xPos$ der x-Position und $yPos$ der y-Position des Roboters.\\
+Dann folgt für die Koordinaten $\left( x \vert y \right)$ des Berührungssensors
 \begin{align*}
 dx & = \left( \sin \alpha \right) \cdot \left( \frac{B}{2} \right)\\
 dy & = \left( \cos \alpha \right) \cdot \left( \frac{B}{2} \right)\\
@@ -620,6 +630,32 @@ Des weiteren kann die Roboter-Grafik im Simulator, die bisher erst einmal zu Tes
 Eine weitere Möglichkeit wäre auch, eine ähnlich wie bei \emph{Greenfoot} aufgebaute Steuerung der Simulation anbieten. Konkret würde dies bedeuten, dass der JFrame, in dem der Parcours angezeigt wird, um einen Bereich mit Buttons erweitert würde. Diese wären dann in der Lage, die Simulation zu starten, pausieren und anzuhalten.
 
 Etwas umfassender, dafür aber eine schönere Integration in BlueJ mit sich bringend, wäre noch das Schreiben einer eigenen BlueJ Extension. Hierdurch würde die Möglichkeit entstehen, den Simulator gegebenenfalls direkt am Kontextmenü aufzurufen.
+
+\section{Rückmeldung von Lehrkräften nach Vorstellung des Prototyps}
+
+Im Rahmen dieser Arbeit wurde der entwickelte Prototyp der Simulationsumgebung aktiv im \textsc{LEGO}-Roboter-Bereich tätigen Lehrkräften vorgestellt.\\
+Hierdurch ergaben sich mehrere Anmerkungen und Wünsche, sowie weitere Anforderungen, die für den Einsatz unter Realbedingungen an die Simulationsumgebung gestellt werden könnten. Diese werden im Folgenden vorgestellt und gegebenenfalls mit Lösungsansätzen für den Prototyp angereichert. \todo{anderes Wort}
+
+Auf der Ebene der Benutzerfreundlichkeit wurde der Wunsch geäußert, den Simulator direkt starten zu können. Hierzu solle in einem Dialogfenster die gewünschte Parcours-Grafik, sowie die auszuführende Klasse ausgewählt werden können. Da die Übertragung des von den SuS geschriebenen Programmcodes auf die NXT-Roboter ähnlich stattfindet -- nämlich durch die Übertragung der ausgewählten Java-Klasse, und somit der \texttt{.class}-Datei -- könnte hier eine noch deutlichere Verzahnung der Abläufe von der Simulationsumgebung und des realen Roboers stattfinden.
+
+Des Weiteren wurden Anmerkungen zur Robotergrafik gegeben. Zunächst sollte die grafische Repräsentation des Roboter-Objekts auf dem Parcours die Positionen der Sensoren beinhalten. Hierzu wurde der Vorschlag unterbreitet, die drei Standardbauarten der NXT-Roboter als auswählbare Grafiken mit fest positionierten Sensoren anzubieten.\\
+In der Implementation ließe sich dies realtiv gut über eine Veränderung des Konstruktors der Klasse \texttt{Roboter} lösen. Dieser würde dann, statt eine vorgegebene Image-Datei zu laden, wie die Parcours-Klasse einen Auswahldialog erzeugen, mit dem dann die gewünschte Robotergrafik ausgewählt werden könnte.
+
+Im Hinblick auf eine weiterführende Arbeit mit der Simulationsumgebung spielen die Positionen der Sensoren und anderer Bauteile am NXT-Roboter eine bedeutende Rolle. Beispielsweise können minimale Positionsänderungen darüber entscheiden, ob eine Kurve gefahren werden kann.\\
+Aufgrund dieser Feinheiten wurde der Wunsch geäußert, eine zusätzliche Bearbeitung des Roboter-Objekts im Simulator zu ermöglichen.\\
+Im Idealfall würde der Roboter dann modular aus den relevanten Einzelteilen als Objekte zusammengesetzt, so dass für jeden Motor und jeden Sensor die genaue Position vorgegeben werden könnte, die dann dem Simulator übergeben würde.
+
+Ein weiterer programmierspezifischer Aspekt ist, dass die befragten Lehrkräfte ihren SuS beibringen, sich bestimmte Sensordaten auf dem LCD-Display des NXT-Roboters anzeigen zu lassen.\\
+Die hierzu benötigten Klassen wurden bisher im Simulator nicht umgesetzt. Jedoch könnte das Display als weiteres Fenster während der Simulation hinzugefügt werden, sodass auch die Messdaten der Sensoren auf dem ausgewählten Parcours angezeigt würden. 
+
+Abschließend wurde noch das Problem der Lichtverhältnisse in unterschiedlichen Situationen angeführt. Meist stehen die realen Trainingsparcours und die Wettbewerbparcours in unterschiedlichen Ausrichtungen zu den verschiedenen räumlich bedingten Lichtquellen. So liefert ein weißer Untergrund beispielsweise bei Tageslicht andere Sensordaten als derselbe Untergrund bei künstlichem Lichteinfall.\\
+Um auch diese Gegebenheiten möglichst realitätsgetreu simulieren zu können, gäbe es die Möglichkeit, eine Bildbearbeiter-Klasse hinzuzufügen, mit der man dem ausgewählten Parcours in der Simulationsumgebung unterschiedliche Helligkeiten, die durch verschiedene Lichtquellen hervorgerufen werden, übergeben könnte.
+
+Insgesamt lässt sich demnach feststellen, dass die Simulationsumgebung das Potential aufweist, sich durch weitere Verfeinerungen als nützliches Softwareentwicklungstool für \textsc{LEGO Mindstorms} NXT Roboter zu etablieren.
+
+\section{Zusammenfassung}
+
+
 
 \newpage
 \input{bibliography}
