@@ -8,26 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="51bb9beb-a821-4079-b5f0-e1b7f2bad95f" name="Default" comment="Update Szenarien">
       <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/Szenarien/Roboter_umfährt_Hindernis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimMA/src/images/Roboter.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SimMA/SimMA.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.class" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.class" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/simma/simma.jar" afterPath="$PROJECT_DIR$/out/artifacts/simma/simma.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/simma/nxt/NXTRegulatedMotor.class" afterPath="$PROJECT_DIR$/out/production/SimMA/simma/nxt/NXTRegulatedMotor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Parcours.class" afterPath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Parcours.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Roboter.class" afterPath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Roboter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Simulator.class" afterPath="$PROJECT_DIR$/out/production/SimMA/simma/sim/Simulator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.ctxt" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.java" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/hinderniserkenner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfinder.java" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.ctxt" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.java" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/linienfolger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/package.bluej" afterPath="$PROJECT_DIR$/Code_ML/Mustercode_NXJ/package.bluej" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/simma/nxt/NXTRegulatedMotor.java" afterPath="$PROJECT_DIR$/SimMA/src/simma/nxt/NXTRegulatedMotor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/simma/nxt/TouchSensor.java" afterPath="$PROJECT_DIR$/SimMA/src/simma/nxt/TouchSensor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.log" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" afterPath="$PROJECT_DIR$/LaTeX/MA_Berg.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java" afterPath="$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimMA/src/simma/sim/Simulator.java" afterPath="$PROJECT_DIR$/SimMA/src/simma/sim/Simulator.java" />
     </list>
     <ignored path="SimMA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quadratTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quadratTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SimMA/src/Testklassen/quadratTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0563381">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,42 +75,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TouchSensor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/simma/nxt/TouchSensor.java">
+      <file leaf-file-name="Roboter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2994#2995#0" expanded="true" />
+                <element signature="e#3022#3023#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parcours.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/simma/sim/Parcours.java">
+      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Class.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="65" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
+              <caret line="2259" column="24" selection-start-line="2259" selection-start-column="24" selection-end-line="2259" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Roboter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java">
+      <file leaf-file-name="ImageIO.java" pinned="false" current-in-tab="true">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1528#1529#0" expanded="true" />
-                <element signature="e#3031#3032#0" expanded="true" />
-                <element signature="e#3059#3060#0" expanded="true" />
-                <element signature="e#3173#3174#0" expanded="true" />
-                <element signature="e#3201#3202#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.7816901">
+              <caret line="1402" column="13" selection-start-line="1402" selection-start-column="13" selection-end-line="1402" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,10 +222,10 @@
         <option value="$PROJECT_DIR$/SimMA/src/simma/sim/Simulator.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Testklassen/hindernisTest.java" />
         <option value="$PROJECT_DIR$/SimMA/src/simma/nxt/TouchSensor.java" />
-        <option value="$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Testklassen/linienfolgerTest.java" />
         <option value="$PROJECT_DIR$/SimMA/src/simma/nxt/NXTRegulatedMotor.java" />
         <option value="$PROJECT_DIR$/SimMA/src/Testklassen/quadratTest.java" />
+        <option value="$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java" />
       </list>
     </option>
   </component>
@@ -809,7 +789,7 @@
       <workItem from="1456129632964" duration="2749000" />
       <workItem from="1456227848599" duration="1459000" />
       <workItem from="1456484122450" duration="8779000" />
-      <workItem from="1456560626355" duration="327000" />
+      <workItem from="1456560626355" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="Update Szenarien">
       <created>1445602243119</created>
@@ -827,7 +807,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39502000" />
+    <option name="totallyTimeSpent" value="39904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="999" extended-state="6" />
@@ -895,14 +875,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimMA/src/simma/nxt/LightSensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimMA/src/simma/nxt/NXTRegulatedMotor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -917,12 +889,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -957,12 +925,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -988,12 +952,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1406,13 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1347" column="0" selection-start-line="1347" selection-start-column="0" selection-end-line="1347" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33274648">
@@ -1480,29 +1433,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimMA/src/Testklassen/quadratTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0563381">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2259" column="24" selection-start-line="2259" selection-start-column="24" selection-end-line="2259" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimMA/src/simma/sim/Roboter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7816901">
+          <caret line="1402" column="13" selection-start-line="1402" selection-start-column="13" selection-end-line="1402" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

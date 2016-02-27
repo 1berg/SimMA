@@ -34,8 +34,6 @@ public class Roboter
 
         try
         {
-            //InputStream file = new BufferedInputStream(new FileInputStream("SimMA/src/images/Roboter.gif"));
-            //File file = new File("SimMA/src/images/Roboter.gif");
             _roboter = ImageIO.read(this.getClass().getResource("/images/Roboter.gif"));
             _roboterImage = _roboter;
         } catch (IOException e)
