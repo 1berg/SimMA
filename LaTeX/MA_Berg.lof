@@ -1,24 +1,24 @@
-\select@language {german}
+\select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Startbildschirm des \textsc {LEGO Mindstorms} NXT-Programms}}{22}{figure.3.1}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Fahren eines Roboters auf einer schwarzen Linie}}{23}{figure.3.2}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Der Startbildschirm von Enchanting}}{24}{figure.3.3}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Beispiel eines Enchanting Programms}}{25}{figure.3.4}
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Die Benutzeroberfl\IeC {\"a}che von BlueJ}}{27}{figure.3.5}
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{28}{figure.3.6}
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Das Kontextmen\IeC {\"u} mit Auswahlm\IeC {\"o}glichkeiten der NXJ-Extension}}{29}{figure.3.7}
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{30}{figure.3.8}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Startbildschirm des \textsc {LEGO} NXT-Programms}}{16}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Fahren eines Roboters auf einer schwarzen Linie}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Der Startbildschirm von Enchanting}}{19}{figure.3.3}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Beispiel eines Enchanting Programms}}{21}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Die Benutzeroberfl\IeC {\"a}che von BlueJ}}{23}{figure.3.5}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{25}{figure.3.6}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Das Kontextmen\IeC {\"u} mit Auswahlm\IeC {\"o}glichkeiten der NXJ-Extension}}{26}{figure.3.7}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{27}{figure.3.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Die Bedieneroberfl\IeC {\"a}che von Axure RP Pro}}{38}{figure.5.1}
 \contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Anhalten auf einer schwarzen Linie}}{39}{figure.5.2}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Fahren einer S-Kurve}}{39}{figure.5.3}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Erkennen eines Hindernisses auf der Fahrbahn}}{40}{figure.5.4}
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{42}{figure.5.5}
-\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Eine beispielhafte Darstellung von Parcours und Roboter}}{43}{figure.5.6}
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Die Abstraktion des Roboters zur Berechnung der Sensorpositionen}}{49}{figure.5.7}
-\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces UML-Diagramm der wichtigsten von leJOS NXJ vorgegebenen Klassen}}{52}{figure.5.8}
-\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces UML-Diagramm der essentiellen Klassen f\IeC {\"u}r die Simulationsumgebung}}{57}{figure.5.9}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Fahren einer S-Kurve}}{40}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Erkennen eines Hindernisses auf der Fahrbahn}}{41}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{44}{figure.5.5}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Eine beispielhafte Darstellung von Parcours und Roboter}}{45}{figure.5.6}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Die Abstraktion des Roboters zur Berechnung der Sensorpositionen}}{54}{figure.5.7}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces UML-Diagramm der wichtigsten von leJOS NXJ vorgegebenen Klassen}}{57}{figure.5.8}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces UML-Diagramm der essentiellen Klassen f\IeC {\"u}r die Simulationsumgebung}}{64}{figure.5.9}
 \addvspace {10\p@ }

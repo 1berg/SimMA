@@ -1,21 +1,24 @@
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{makeidx}
+%\usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{wrapfig}
-\usepackage{geometry}
+%\usepackage{geometry}
 \usepackage{parallel}
 \usepackage{todonotes}
  \usepackage{mathptmx}
  \usepackage{pdfsync}
  \usepackage{url}
  \usepackage{float}
- \usepackage{hyperref}
+ \usepackage[linkbordercolor={1 1 1},urlbordercolor={1 1 1}] { hyperref}\urlstyle{rm}
+ \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true]{microtype}
+ \usepackage[section]{placeins}
+ 
 
 
 
@@ -28,11 +31,20 @@
 \usepackage{cutwin}
 \usepackage[raggedleft]{titlesec}
 \titlelabel{\thetitle.\quad}
-\titleformat*{\chapter}{\scshape\bfseries\large}
+\titleformat*{\chapter}{\bfseries\large}%\scshape?
 \titleformat*{\section}{\bfseries\large}
 \titleformat*{\subsection}{\bfseries \normalsize}
 \titleformat*{\subsubsection}{\bfseries \normalsize}
 
+
+\hypersetup{
+	pdftitle    = {Entwicklung einer Java Simulationsumgebung für LEGO Mindstorms NXT Roboter},
+	pdfsubject  = {Masterarbeit},
+	pdfauthor   = {Pamina Maria Berg},
+	pdfkeywords = {} ,
+	pdfcreator  = {pdfLatex},
+	pdfproducer = {LaTeX with hyperref}
+}
 
 
 
