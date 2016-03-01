@@ -1,6 +1,7 @@
 //import lejos.util.*;
 //import lejos.nxt.*;
-
+ import simma.sim.*;
+ import simma.nxt.*;
 
 
 /**

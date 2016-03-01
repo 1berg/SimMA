@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  28 FEB 2016 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  1 MAR 2016 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,95 +752,114 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 
-Overfull \hbox (15.84433pt too wide) in paragraph at lines 15--16
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 Ob-
  []
 
 
-Overfull \hbox (15.84431pt too wide) in paragraph at lines 15--16
+Overfull \hbox (15.84431pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 jek-
  []
 
 
-Overfull \hbox (12.01102pt too wide) in paragraph at lines 15--16
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 to-
  []
 
 
-Overfull \hbox (10.86102pt too wide) in paragraph at lines 15--16
+Overfull \hbox (10.86102pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 ri-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 15--16
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (23.12758pt too wide) in paragraph at lines 15--16
+Overfull \hbox (23.12758pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 tierte
  []
 
 
-Overfull \hbox (19.17763pt too wide) in paragraph at lines 15--16
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 Pro-
  []
 
 
-Overfull \hbox (25.17203pt too wide) in paragraph at lines 15--16
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 gram-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 15--16
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 mierung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--16
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (23.13873pt too wide) in paragraph at lines 15--16
+Overfull \hbox (23.13873pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 Java.
  []
 
 
-Overfull \hbox (20.0721pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.0721pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 Eine
  []
 
 
-Overfull \hbox (22.14429pt too wide) in paragraph at lines 15--16
+Overfull \hbox (22.14429pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 prax-
  []
 
 
-Overfull \hbox (10.73326pt too wide) in paragraph at lines 15--16
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 is-
  []
 
 
-Overfull \hbox (20.44432pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.44432pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 nahe
  []
 
 
-Overfull \hbox (43.45529pt too wide) in paragraph at lines 15--16
+Overfull \hbox (43.45529pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 Einfhrung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--16
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (24.81094pt too wide) in paragraph at lines 15--16
+Overfull \hbox (24.81094pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/it/10 BlueJ
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \bibitem[Ber10]{berns:10}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -2045,21 +2064,6 @@ Overfull \hbox (10.22217pt too wide) in paragraph at lines 39--40
 \OT1/cmr/m/it/10 11
  []
 
-
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -4340,9 +4344,9 @@ my insertion and my current dilemma will both disappear.
 Here is how much of TeX's memory you used:
  14 strings out of 493089
  254 string characters out of 6134841
- 58199 words of memory out of 5000000
+ 61199 words of memory out of 5000000
  3597 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,4n,14p,414b,134s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 20i,4n,17p,414b,136s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

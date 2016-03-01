@@ -1,5 +1,8 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ start()
-comment0.text=\n\ Die\ Main-Methode\ der\ Klasse\n
-numComments=1
+comment0.target=linienfolger()
+comment0.text=\n\ Der\ Konstruktor\ f\u00FCr\ einen\ neuen\ linienfolger.\n
+comment1.params=
+comment1.target=void\ start()
+comment1.text=\n\ Die\ Methode\ start\ der\ Klasse\ linienfolger.\ \n
+numComments=2

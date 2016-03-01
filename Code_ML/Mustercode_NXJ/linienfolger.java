@@ -3,6 +3,8 @@
 
 import simma.sim.*;
 import simma.nxt.*;
+
+
 /**
 * Musterlösung für den Linienfolger.
 *
@@ -12,12 +14,20 @@ public class linienfolger
 	static LightSensor SeherR = new LightSensor(SensorPort.S2); //Die Lichtsensoren werden mit ihren
     static LightSensor SeherL = new LightSensor(SensorPort.S1); //Ports deklariert/initialisiert.
 
+    /**
+     * Der Konstruktor für einen neuen linienfolger.
+     */
+    public linienfolger()
+    {
+        Simulator sim = new Simulator();
+    }
+    
 	/**
-	 * Die Main-Methode der Klasse
+	 * Die Methode start der Klasse linienfolger. 
 	 */
 	public static void start()
 	{
-	    Simulator sim = new Simulator();
+	    
 		while(!Button.ENTER.isPressed()){
 			Motor.C.setSpeed(200); //Geschwindigkeit für beide Motoren festlegen.
 			Motor.B.setSpeed(200);
