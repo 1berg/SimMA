@@ -18,13 +18,14 @@
 \contentsline {subsection}{\numberline {3.3.2}leJOS}{27}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Simulationsumgebungen}{30}{section.3.4}
 \contentsline {chapter}{\numberline {4}Anforderungen an die Neu\discretionary {-}{}{}im\discretionary {-}{}{}ple\discretionary {-}{}{}men\discretionary {-}{}{}tie\discretionary {-}{}{}rung}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Sch\IeC {\"u}lerperspektive}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Lehrkraft}{34}{section.4.2}
-\contentsline {section}{\numberline {4.3}Erweiterbarkeit}{35}{section.4.3}
+\contentsline {section}{\numberline {4.1}Theoretische Verankerung}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sch\IeC {\"u}lerperspektive}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lehrkraft}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}Erweiterbarkeit aus Entwicklerperspektive}{35}{section.4.4}
 \contentsline {chapter}{\numberline {5}Entwickelte Software}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Prozesse w\IeC {\"a}hrend der Implementation}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Mock-Ups}{37}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Schritte w\IeC {\"a}hrend der Implementation}{42}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.1}Skizzen und Mock-Ups}{37}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Weitere Schritte vor Beginn der Implementation}{42}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Integration in BlueJ}{42}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}Beschreibung der Software}{43}{section.5.2}
 \contentsline {section}{\numberline {5.3}Softwarearchitektur}{46}{section.5.3}
