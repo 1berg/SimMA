@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  1 MAR 2016 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.24)  5 MAR 2016 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,92 +752,92 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 
-Overfull \hbox (15.84433pt too wide) in paragraph at lines 15--17
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 Ob-
  []
 
 
-Overfull \hbox (15.84431pt too wide) in paragraph at lines 15--17
+Overfull \hbox (15.84431pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 jek-
  []
 
 
-Overfull \hbox (12.01102pt too wide) in paragraph at lines 15--17
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 to-
  []
 
 
-Overfull \hbox (10.86102pt too wide) in paragraph at lines 15--17
+Overfull \hbox (10.86102pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 ri-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 15--17
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (23.12758pt too wide) in paragraph at lines 15--17
+Overfull \hbox (23.12758pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 tierte
  []
 
 
-Overfull \hbox (19.17763pt too wide) in paragraph at lines 15--17
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 Pro-
  []
 
 
-Overfull \hbox (25.17203pt too wide) in paragraph at lines 15--17
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 gram-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 15--17
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 mierung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--17
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (23.13873pt too wide) in paragraph at lines 15--17
+Overfull \hbox (23.13873pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 Java.
  []
 
 
-Overfull \hbox (20.0721pt too wide) in paragraph at lines 15--17
+Overfull \hbox (20.0721pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 Eine
  []
 
 
-Overfull \hbox (22.14429pt too wide) in paragraph at lines 15--17
+Overfull \hbox (22.14429pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 prax-
  []
 
 
-Overfull \hbox (10.73326pt too wide) in paragraph at lines 15--17
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 is-
  []
 
 
-Overfull \hbox (20.44432pt too wide) in paragraph at lines 15--17
+Overfull \hbox (20.44432pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 nahe
  []
 
 
-Overfull \hbox (43.45529pt too wide) in paragraph at lines 15--17
+Overfull \hbox (43.45529pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 Einfhrung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--17
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (24.81094pt too wide) in paragraph at lines 15--17
+Overfull \hbox (24.81094pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/it/10 BlueJ
  []
 
@@ -853,8 +853,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \bibitem[Ber10]{berns:10}
-                              
+l.18 
+     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -867,7 +867,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \bibitem[Ber10]{berns:10}
+l.19 \bibitem[Ber10]{berns:10}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -947,102 +947,102 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 
-Overfull \hbox (19.17763pt too wide) in paragraph at lines 18--19
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 Pro-
  []
 
 
-Overfull \hbox (25.17203pt too wide) in paragraph at lines 18--19
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 gram-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 18--19
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 mierung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 18--19
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (28.45816pt too wide) in paragraph at lines 18--19
+Overfull \hbox (28.45816pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 LEGO
  []
 
 
-Overfull \hbox (31.38312pt too wide) in paragraph at lines 18--19
+Overfull \hbox (31.38312pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 MIND-
  []
 
 
-Overfull \hbox (42.32753pt too wide) in paragraph at lines 18--19
+Overfull \hbox (42.32753pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 STORMS
  []
 
 
-Overfull \hbox (25.08873pt too wide) in paragraph at lines 18--19
+Overfull \hbox (25.08873pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 NXT.
  []
 
 
-Overfull \hbox (27.99422pt too wide) in paragraph at lines 18--19
+Overfull \hbox (27.99422pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 Robot-
  []
 
 
-Overfull \hbox (12.39433pt too wide) in paragraph at lines 18--19
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 er-
  []
 
 
-Overfull \hbox (16.611pt too wide) in paragraph at lines 18--19
+Overfull \hbox (16.611pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 sys-
  []
 
 
-Overfull \hbox (23.7665pt too wide) in paragraph at lines 18--19
+Overfull \hbox (23.7665pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 teme,
  []
 
 
-Overfull \hbox (15.98323pt too wide) in paragraph at lines 18--19
+Overfull \hbox (15.98323pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 En-
  []
 
 
-Overfull \hbox (26.19426pt too wide) in paragraph at lines 18--19
+Overfull \hbox (26.19426pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 twurf-
  []
 
 
-Overfull \hbox (7.66661pt too wide) in paragraph at lines 18--19
+Overfull \hbox (7.66661pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 s-
  []
 
 
-Overfull \hbox (41.65527pt too wide) in paragraph at lines 18--19
+Overfull \hbox (41.65527pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 methodik,
  []
 
 
-Overfull \hbox (13.311pt too wide) in paragraph at lines 18--19
+Overfull \hbox (13.311pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 18--19
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (19.2943pt too wide) in paragraph at lines 18--19
+Overfull \hbox (19.2943pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 rith-
  []
 
 
-Overfull \hbox (18.39989pt too wide) in paragraph at lines 18--19
+Overfull \hbox (18.39989pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/it/10 men
  []
 
@@ -1053,7 +1053,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \bibitem[Bow12]{bowes:12}
+l.22 \bibitem[Bow12]{bowes:12}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1071,7 +1071,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.21 David Bowes. \url
+l.23 David Bowes. \url
                       {http://homepages.herts.ac.uk/~comqdhb/lego/bluej.php}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1203,7 +1203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 \bibitem[BricxCC]{bricxcc}
+l.25 \bibitem[BricxCC]{bricxcc}
                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1218,7 +1218,7 @@ Missing character: There is no R in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.24 o.V. URL: \url
+l.26 o.V. URL: \url
                    {http://bricxcc.sourceforge.net/}, Abgerufen am 02.02.2016
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1286,7 +1286,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 \bibitem[Ehm09]{ehmann:09}
+l.28 \bibitem[Ehm09]{ehmann:09}
                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1352,127 +1352,127 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 
-Overfull \hbox (16.49432pt too wide) in paragraph at lines 27--28
+Overfull \hbox (16.49432pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Du-
  []
 
 
-Overfull \hbox (15.33324pt too wide) in paragraph at lines 27--28
+Overfull \hbox (15.33324pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 den
  []
 
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 27--28
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 27--28
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 27--28
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 matik
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (29.38869pt too wide) in paragraph at lines 27--28
+Overfull \hbox (29.38869pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Sekun-
  []
 
 
-Overfull \hbox (34.8831pt too wide) in paragraph at lines 27--28
+Overfull \hbox (34.8831pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 darstufe
  []
 
 
-Overfull \hbox (3.85553pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.85553pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 I
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 27--28
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 /
  []
 
 
-Overfull \hbox (26.57764pt too wide) in paragraph at lines 27--28
+Overfull \hbox (26.57764pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 9./10.
  []
 
 
-Overfull \hbox (26.83316pt too wide) in paragraph at lines 27--28
+Overfull \hbox (26.83316pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Schul-
  []
 
 
-Overfull \hbox (17.50545pt too wide) in paragraph at lines 27--28
+Overfull \hbox (17.50545pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 jahr
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (15.84433pt too wide) in paragraph at lines 27--28
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Ob-
  []
 
 
-Overfull \hbox (15.84431pt too wide) in paragraph at lines 27--28
+Overfull \hbox (15.84431pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 jek-
  []
 
 
-Overfull \hbox (12.01102pt too wide) in paragraph at lines 27--28
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 to-
  []
 
 
-Overfull \hbox (10.86102pt too wide) in paragraph at lines 27--28
+Overfull \hbox (10.86102pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 ri-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 27--28
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (23.12758pt too wide) in paragraph at lines 27--28
+Overfull \hbox (23.12758pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 tierte
  []
 
 
-Overfull \hbox (19.17763pt too wide) in paragraph at lines 27--28
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Pro-
  []
 
 
-Overfull \hbox (25.17203pt too wide) in paragraph at lines 27--28
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 gram-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 27--28
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 mierung
  []
 
 
-Overfull \hbox (14.56657pt too wide) in paragraph at lines 27--28
+Overfull \hbox (14.56657pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 mit
  []
 
 
-Overfull \hbox (24.81094pt too wide) in paragraph at lines 27--28
+Overfull \hbox (24.81094pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 BlueJ
  []
 
@@ -1483,7 +1483,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \bibitem[Her12]{hertzberg:12}
+l.31 \bibitem[Her12]{hertzberg:12}
                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1575,57 +1575,57 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
-Overfull \hbox (17.65544pt too wide) in paragraph at lines 30--31
+Overfull \hbox (17.65544pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 Mo-
  []
 
 
-Overfull \hbox (14.82211pt too wide) in paragraph at lines 30--31
+Overfull \hbox (14.82211pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 bile
  []
 
 
-Overfull \hbox (36.29971pt too wide) in paragraph at lines 30--31
+Overfull \hbox (36.29971pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 Roboter.
  []
 
 
-Overfull \hbox (20.0721pt too wide) in paragraph at lines 30--31
+Overfull \hbox (20.0721pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 Eine
  []
 
 
-Overfull \hbox (43.45529pt too wide) in paragraph at lines 30--31
+Overfull \hbox (43.45529pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 Einfhrung
  []
 
 
-Overfull \hbox (14.56659pt too wide) in paragraph at lines 30--31
+Overfull \hbox (14.56659pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 aus
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 30--31
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 Sicht
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 30--31
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 30--31
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 30--31
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 30--31
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/it/10 matik
  []
 
@@ -1636,7 +1636,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \bibitem[HH09]{oberstufe:09}
+l.34 \bibitem[HH09]{oberstufe:09}
                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1705,57 +1705,57 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 33--34
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 33--34
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 33--34
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 matik
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 33--34
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 --
  []
 
 
-Overfull \hbox (16.23878pt too wide) in paragraph at lines 33--34
+Overfull \hbox (16.23878pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 Bil-
  []
 
 
-Overfull \hbox (28.36649pt too wide) in paragraph at lines 33--34
+Overfull \hbox (28.36649pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 dungs-
  []
 
 
-Overfull \hbox (18.3999pt too wide) in paragraph at lines 33--34
+Overfull \hbox (18.3999pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 plan
  []
 
 
-Overfull \hbox (24.34706pt too wide) in paragraph at lines 33--34
+Overfull \hbox (24.34706pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 Gym-
  []
 
 
-Overfull \hbox (30.15538pt too wide) in paragraph at lines 33--34
+Overfull \hbox (30.15538pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 nasiale
  []
 
 
-Overfull \hbox (24.1498pt too wide) in paragraph at lines 33--34
+Overfull \hbox (24.1498pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 Ober-
  []
 
 
-Overfull \hbox (20.4443pt too wide) in paragraph at lines 33--34
+Overfull \hbox (20.4443pt too wide) in paragraph at lines 35--36
 \OT1/cmr/m/it/10 stufe
  []
 
@@ -1766,7 +1766,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \bibitem[HH11]{gymsek1:11}
+l.37 \bibitem[HH11]{gymsek1:11}
                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1835,82 +1835,82 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 36--37
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 36--37
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 36--37
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 matik
  []
 
 
-Overfull \hbox (29.41093pt too wide) in paragraph at lines 36--37
+Overfull \hbox (29.41093pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 Wahlf-
  []
 
 
-Overfull \hbox (27.34425pt too wide) in paragraph at lines 36--37
+Overfull \hbox (27.34425pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 plicht-
  []
 
 
-Overfull \hbox (17.88878pt too wide) in paragraph at lines 36--37
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 fach
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 36--37
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 --
  []
 
 
-Overfull \hbox (16.23878pt too wide) in paragraph at lines 36--37
+Overfull \hbox (16.23878pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 Bil-
  []
 
 
-Overfull \hbox (28.36649pt too wide) in paragraph at lines 36--37
+Overfull \hbox (28.36649pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 dungs-
  []
 
 
-Overfull \hbox (18.3999pt too wide) in paragraph at lines 36--37
+Overfull \hbox (18.3999pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 plan
  []
 
 
-Overfull \hbox (24.34706pt too wide) in paragraph at lines 36--37
+Overfull \hbox (24.34706pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 Gym-
  []
 
 
-Overfull \hbox (14.31102pt too wide) in paragraph at lines 36--37
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 na-
  []
 
 
-Overfull \hbox (20.69989pt too wide) in paragraph at lines 36--37
+Overfull \hbox (20.69989pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 sium
  []
 
 
-Overfull \hbox (29.38869pt too wide) in paragraph at lines 36--37
+Overfull \hbox (29.38869pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 Sekun-
  []
 
 
-Overfull \hbox (34.8831pt too wide) in paragraph at lines 36--37
+Overfull \hbox (34.8831pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 darstufe
  []
 
 
-Overfull \hbox (3.85553pt too wide) in paragraph at lines 36--37
+Overfull \hbox (3.85553pt too wide) in paragraph at lines 38--39
 \OT1/cmr/m/it/10 I
  []
 
@@ -1921,7 +1921,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 \bibitem[HH14]{stsmittel:14}
+l.40 \bibitem[HH14]{stsmittel:14}
                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1990,77 +1990,77 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 39--40
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 39--40
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 39--40
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 matik
  []
 
 
-Overfull \hbox (53.43298pt too wide) in paragraph at lines 39--40
+Overfull \hbox (53.43298pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 Wahlpflicht-
  []
 
 
-Overfull \hbox (17.88878pt too wide) in paragraph at lines 39--40
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 fach
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 --
  []
 
 
-Overfull \hbox (16.23878pt too wide) in paragraph at lines 39--40
+Overfull \hbox (16.23878pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 Bil-
  []
 
 
-Overfull \hbox (28.36649pt too wide) in paragraph at lines 39--40
+Overfull \hbox (28.36649pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 dungs-
  []
 
 
-Overfull \hbox (18.3999pt too wide) in paragraph at lines 39--40
+Overfull \hbox (18.3999pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 plan
  []
 
 
-Overfull \hbox (26.06648pt too wide) in paragraph at lines 39--40
+Overfull \hbox (26.06648pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 Stadt-
  []
 
 
-Overfull \hbox (39.8664pt too wide) in paragraph at lines 39--40
+Overfull \hbox (39.8664pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 teilschule
  []
 
 
-Overfull \hbox (69.26619pt too wide) in paragraph at lines 39--40
+Overfull \hbox (69.26619pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 Jahrgangsstufen
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 7
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 --
  []
 
 
-Overfull \hbox (10.22217pt too wide) in paragraph at lines 39--40
+Overfull \hbox (10.22217pt too wide) in paragraph at lines 41--42
 \OT1/cmr/m/it/10 11
  []
 
@@ -2071,7 +2071,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 \bibitem[Hub07]{hubwieser:07}
+l.43 \bibitem[Hub07]{hubwieser:07}
                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2140,37 +2140,37 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 
-Overfull \hbox (14.19434pt too wide) in paragraph at lines 42--43
+Overfull \hbox (14.19434pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 Di-
  []
 
 
-Overfull \hbox (18.39987pt too wide) in paragraph at lines 42--43
+Overfull \hbox (18.39987pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 dak-
  []
 
 
-Overfull \hbox (10.9888pt too wide) in paragraph at lines 42--43
+Overfull \hbox (10.9888pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 tik
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 42--43
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 42--43
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 42--43
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (24.27762pt too wide) in paragraph at lines 42--43
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/it/10 matik
  []
 
@@ -2399,7 +2399,198 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \bibitem[Mos12]{moser:12}
+l.53 \bibitem[Lil08]{lilienthal:08}
+                                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\bibcite{lilienthal:08}{Lil08}
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no § in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no √ in font cmti10!
+Missing character: There is no § in font cmti10!
+Missing character: There is no , in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+
+Overfull \hbox (18.2832pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 Dis-
+ []
+
+
+Overfull \hbox (16.4832pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 ser-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 ta-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (11.24438pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 im
+ []
+
+
+Overfull \hbox (24.16093pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 Fach-
+ []
+
+
+Overfull \hbox (20.572pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 bere-
+ []
+
+
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 ich
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 for-
+ []
+
+
+Overfull \hbox (24.27762pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 matik
+ []
+
+
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 der
+ []
+
+
+Overfull \hbox (19.69987pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 Uni-
+ []
+
+
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 ver-
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 sitt
+ []
+
+
+Overfull \hbox (24.29985pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 Ham-
+ []
+
+
+Overfull \hbox (18.27206pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/it/10 burg
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \bibitem[Mos12]{moser:12}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2458,127 +2649,127 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
-Overfull \hbox (20.33875pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.33875pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 User
  []
 
 
-Overfull \hbox (14.99991pt too wide) in paragraph at lines 54--55
+Overfull \hbox (14.99991pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 Ex-
  []
 
 
-Overfull \hbox (12.77766pt too wide) in paragraph at lines 54--55
+Overfull \hbox (12.77766pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 pe-
  []
 
 
-Overfull \hbox (10.86102pt too wide) in paragraph at lines 54--55
+Overfull \hbox (10.86102pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 ri-
  []
 
 
-Overfull \hbox (18.91095pt too wide) in paragraph at lines 54--55
+Overfull \hbox (18.91095pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 ence
  []
 
 
-Overfull \hbox (15.72765pt too wide) in paragraph at lines 54--55
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 De-
  []
 
 
-Overfull \hbox (20.44432pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.44432pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 sign:
  []
 
 
-Overfull \hbox (15.35545pt too wide) in paragraph at lines 54--55
+Overfull \hbox (15.35545pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 Mit
  []
 
 
-Overfull \hbox (12.39433pt too wide) in paragraph at lines 54--55
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 er-
  []
 
 
-Overfull \hbox (15.3332pt too wide) in paragraph at lines 54--55
+Overfull \hbox (15.3332pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 leb-
  []
 
 
-Overfull \hbox (30.66647pt too wide) in paragraph at lines 54--55
+Overfull \hbox (30.66647pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 niszen-
  []
 
 
-Overfull \hbox (14.18321pt too wide) in paragraph at lines 54--55
+Overfull \hbox (14.18321pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 tri-
  []
 
 
-Overfull \hbox (20.95537pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.95537pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 erter
  []
 
 
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 Soft-
  []
 
 
-Overfull \hbox (15.33324pt too wide) in paragraph at lines 54--55
+Overfull \hbox (15.33324pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 wa-
  []
 
 
-Overfull \hbox (21.59424pt too wide) in paragraph at lines 54--55
+Overfull \hbox (21.59424pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 reen-
  []
 
 
-Overfull \hbox (25.81091pt too wide) in paragraph at lines 54--55
+Overfull \hbox (25.81091pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 twick-
  []
 
 
-Overfull \hbox (18.14433pt too wide) in paragraph at lines 54--55
+Overfull \hbox (18.14433pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 lung
  []
 
 
-Overfull \hbox (9.4555pt too wide) in paragraph at lines 54--55
+Overfull \hbox (9.4555pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 zu
  []
 
 
-Overfull \hbox (19.17763pt too wide) in paragraph at lines 54--55
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 Pro-
  []
 
 
-Overfull \hbox (18.65543pt too wide) in paragraph at lines 54--55
+Overfull \hbox (18.65543pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 duk-
  []
 
 
-Overfull \hbox (16.611pt too wide) in paragraph at lines 54--55
+Overfull \hbox (16.611pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 ten,
  []
 
 
-Overfull \hbox (12.7777pt too wide) in paragraph at lines 54--55
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 die
  []
 
 
-Overfull \hbox (28.11086pt too wide) in paragraph at lines 54--55
+Overfull \hbox (28.11086pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 begeis-
  []
 
 
-Overfull \hbox (17.76097pt too wide) in paragraph at lines 54--55
+Overfull \hbox (17.76097pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/it/10 tern
  []
 
@@ -2589,7 +2780,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \bibitem[Nie99]{nievergelt:99}
+l.59 \bibitem[Nie99]{nievergelt:99}
                                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2652,107 +2843,107 @@ Missing character: There is no 9 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 9 in font nullfont!
 
-Overfull \hbox (38.37749pt too wide) in paragraph at lines 57--58
+Overfull \hbox (38.37749pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 "Roboter
  []
 
 
-Overfull \hbox (17.50542pt too wide) in paragraph at lines 57--58
+Overfull \hbox (17.50542pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 pro-
  []
 
 
-Overfull \hbox (25.17203pt too wide) in paragraph at lines 57--58
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 gram-
  []
 
 
-Overfull \hbox (34.91643pt too wide) in paragraph at lines 57--58
+Overfull \hbox (34.91643pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 mieren"
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 57--58
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 57--58
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 ein
  []
 
 
-Overfull \hbox (33.8831pt too wide) in paragraph at lines 57--58
+Overfull \hbox (33.8831pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 Kinder-
  []
 
 
-Overfull \hbox (22.48875pt too wide) in paragraph at lines 57--58
+Overfull \hbox (22.48875pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 spiel.
  []
 
 
-Overfull \hbox (15.21655pt too wide) in paragraph at lines 57--58
+Overfull \hbox (15.21655pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 Be-
  []
 
 
-Overfull \hbox (18.6554pt too wide) in paragraph at lines 57--58
+Overfull \hbox (18.6554pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 wegt
  []
 
 
-Overfull \hbox (16.86656pt too wide) in paragraph at lines 57--58
+Overfull \hbox (16.86656pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 sich
  []
 
 
-Overfull \hbox (20.18877pt too wide) in paragraph at lines 57--58
+Overfull \hbox (20.18877pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 auch
  []
 
 
-Overfull \hbox (11.4999pt too wide) in paragraph at lines 57--58
+Overfull \hbox (11.4999pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 et-
  []
 
 
-Overfull \hbox (15.84436pt too wide) in paragraph at lines 57--58
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 was
  []
 
 
-Overfull \hbox (8.68884pt too wide) in paragraph at lines 57--58
+Overfull \hbox (8.68884pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 in
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 57--58
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (16.37766pt too wide) in paragraph at lines 57--58
+Overfull \hbox (16.37766pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 All-
  []
 
 
-Overfull \hbox (12.77766pt too wide) in paragraph at lines 57--58
+Overfull \hbox (12.77766pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 ge-
  []
 
 
-Overfull \hbox (25.04428pt too wide) in paragraph at lines 57--58
+Overfull \hbox (25.04428pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 mein-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 57--58
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 bil-
  []
 
 
-Overfull \hbox (25.81096pt too wide) in paragraph at lines 57--58
+Overfull \hbox (25.81096pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/it/10 dung?
  []
 
@@ -2763,7 +2954,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \bibitem[nxcEditor]{nxceditor}
+l.62 \bibitem[nxcEditor]{nxceditor}
                                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2778,7 +2969,7 @@ Missing character: There is no R in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.60 o.V. URL: \url
+l.63 o.V. URL: \url
                    {http://nxceditor.sourceforge.net/index_german.html}, Abg...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2827,17 +3018,17 @@ Missing character: There is no x in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.60 ...rl{http://nxceditor.sourceforge.net/index_
+l.63 ...rl{http://nxceditor.sourceforge.net/index_
                                                   german.html}, Abgerufen am...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 60.
+(Font)              <5> on input line 63.
 ! Extra }, or forgotten $.
-l.60 ...ceditor.sourceforge.net/index_german.html}
+l.63 ...ceditor.sourceforge.net/index_german.html}
                                                   , Abgerufen am 02.02.2016,...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2848,13 +3039,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.61 
+l.64 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (221.41061pt too wide) in paragraph at lines 60--61
+Overfull \hbox (221.41061pt too wide) in paragraph at lines 63--64
 []\OML/cmm/m/it/10 erman:html; Abgerufenam\OT1/cmr/m/n/10 02\OML/cmm/m/it/10 :\
 OT1/cmr/m/n/10 02\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2016\OML/cmm/m/it/10 ; nxcEd
 itor$ 
@@ -2867,7 +3058,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.62 \bibitem[PHBern]{phbern}
+l.65 \bibitem[PHBern]{phbern}
                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2882,7 +3073,7 @@ Missing character: There is no R in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.63 o.V. URL: \url
+l.66 o.V. URL: \url
                    {http://www.java-online.ch/lego/index.php?inhalt_links=ho...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2940,13 +3131,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.63 .../www.java-online.ch/lego/index.php?inhalt_
+l.66 .../www.java-online.ch/lego/index.php?inhalt_
                                                   links=home/nav_home.inc.ph...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.63 ...ex.php?inhalt_links=home/nav_home.inc.php&
+l.66 ...ex.php?inhalt_links=home/nav_home.inc.php&
                                                   inhalt_mitte=home/home.inc...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2956,7 +3147,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Extra }, or forgotten $.
-l.63 ...me.inc.php&inhalt_mitte=home/home.inc.php}
+l.66 ...me.inc.php&inhalt_mitte=home/home.inc.php}
                                                   , Abgerufen am 02.02.2016,...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2967,30 +3158,30 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.64 
+l.67 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (33.28079pt too wide) in paragraph at lines 63--64
+Overfull \hbox (33.28079pt too wide) in paragraph at lines 66--67
 []\OML/cmm/m/it/10 inks \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (164.56265pt too wide) in paragraph at lines 63--64
+Overfull \hbox (164.56265pt too wide) in paragraph at lines 66--67
 \OML/cmm/m/it/10 home=nav[]ome:inc:phpinhalt[]itte \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (234.69223pt too wide) in paragraph at lines 63--64
+Overfull \hbox (234.69223pt too wide) in paragraph at lines 66--67
 \OML/cmm/m/it/10 home=home:inc:php; Abgerufenam\OT1/cmr/m/n/10 02\OML/cmm/m/it/
 10 :\OT1/cmr/m/n/10 02\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2016\OML/cmm/m/it/10 ; 
 Lego \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (72.35446pt too wide) in paragraph at lines 63--64
+Overfull \hbox (72.35446pt too wide) in paragraph at lines 66--67
 \OML/cmm/m/it/10 RobotikmitJava$ 
  []
 
@@ -3001,7 +3192,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 \bibitem[Roberta]{roberta}
+l.68 \bibitem[Roberta]{roberta}
                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3016,7 +3207,7 @@ Missing character: There is no R in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.66 o.V. URL: \url
+l.69 o.V. URL: \url
                    {http://roberta-home.de/de/aktuelles/simulator-und-editor...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3220,7 +3411,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \bibitem[Rol14]{rolling:14}
+l.71 \bibitem[Rol14]{rolling:14}
                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3263,37 +3454,37 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-Overfull \hbox (15.21655pt too wide) in paragraph at lines 69--70
+Overfull \hbox (15.21655pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 Be-
  []
 
 
-Overfull \hbox (16.86655pt too wide) in paragraph at lines 69--70
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 gin-
  []
 
 
-Overfull \hbox (18.911pt too wide) in paragraph at lines 69--70
+Overfull \hbox (18.911pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 ning
  []
 
 
-Overfull \hbox (28.45816pt too wide) in paragraph at lines 69--70
+Overfull \hbox (28.45816pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 LEGO
  []
 
 
-Overfull \hbox (31.38312pt too wide) in paragraph at lines 69--70
+Overfull \hbox (31.38312pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 MIND-
  []
 
 
-Overfull \hbox (42.32753pt too wide) in paragraph at lines 69--70
+Overfull \hbox (42.32753pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 STORMS
  []
 
 
-Overfull \hbox (19.32767pt too wide) in paragraph at lines 69--70
+Overfull \hbox (19.32767pt too wide) in paragraph at lines 72--73
 \OT1/cmr/m/it/10 EV3
  []
 
@@ -3304,7 +3495,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \bibitem[Sch04]{schreiber:04}
+l.74 \bibitem[Sch04]{schreiber:04}
                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3506,102 +3697,102 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-Overfull \hbox (48.93855pt too wide) in paragraph at lines 72--73
+Overfull \hbox (48.93855pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Schriftliche
  []
 
 
-Overfull \hbox (14.57767pt too wide) in paragraph at lines 72--73
+Overfull \hbox (14.57767pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Pr-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 72--73
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 fungsar-
  []
 
 
-Overfull \hbox (15.07764pt too wide) in paragraph at lines 72--73
+Overfull \hbox (15.07764pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 beit
  []
 
 
-Overfull \hbox (11.24438pt too wide) in paragraph at lines 72--73
+Overfull \hbox (11.24438pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 im
  []
 
 
-Overfull \hbox (20.58319pt too wide) in paragraph at lines 72--73
+Overfull \hbox (20.58319pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Rah-
  []
 
 
-Overfull \hbox (18.39989pt too wide) in paragraph at lines 72--73
+Overfull \hbox (18.39989pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 men
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 72--73
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (31.94423pt too wide) in paragraph at lines 72--73
+Overfull \hbox (31.94423pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 zweiten
  []
 
 
-Overfull \hbox (26.06648pt too wide) in paragraph at lines 72--73
+Overfull \hbox (26.06648pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Staat-
  []
 
 
-Overfull \hbox (16.99432pt too wide) in paragraph at lines 72--73
+Overfull \hbox (16.99432pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 spr-
  []
 
 
-Overfull \hbox (18.65544pt too wide) in paragraph at lines 72--73
+Overfull \hbox (18.65544pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 fung
  []
 
 
-Overfull \hbox (7.28328pt too wide) in paragraph at lines 72--73
+Overfull \hbox (7.28328pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 fr
  []
 
 
-Overfull \hbox (14.31104pt too wide) in paragraph at lines 72--73
+Overfull \hbox (14.31104pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 das
  []
 
 
-Overfull \hbox (18.67764pt too wide) in paragraph at lines 72--73
+Overfull \hbox (18.67764pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Amt
  []
 
 
-Overfull \hbox (13.79991pt too wide) in paragraph at lines 72--73
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 des
  []
 
 
-Overfull \hbox (17.88876pt too wide) in paragraph at lines 72--73
+Overfull \hbox (17.88876pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 Stu-
  []
 
 
-Overfull \hbox (11.75548pt too wide) in paragraph at lines 72--73
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 di-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 72--73
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (16.22765pt too wide) in paragraph at lines 72--73
+Overfull \hbox (16.22765pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/it/10 rats
  []
 
@@ -3612,7 +3803,216 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \bibitem[RWTH]{rwth}
+l.77 \bibitem[Schwa07]{schwarzer:07}
+                                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\bibcite{schwarzer:07}{Schwa07}
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no √ in font cmti10!
+Missing character: There is no § in font cmti10!
+Missing character: There is no , in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+
+Overfull \hbox (20.5832pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 Pda-
+ []
+
+
+Overfull \hbox (24.53314pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 gogis-
+ []
+
+
+Overfull \hbox (14.311pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 che
+ []
+
+
+Overfull \hbox (20.44429pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 The-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 o-
+ []
+
+
+Overfull \hbox (17.50543pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 rien
+ []
+
+
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 des
+ []
+
+
+Overfull \hbox (18.15538pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 Ler-
+ []
+
+
+Overfull \hbox (19.93321pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/it/10 nens
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \bibitem[RWTH]{rwth}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3749,7 +4149,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \bibitem[Sto01]{stolt:01}
+l.84 \bibitem[Sto01]{stolt:01}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3812,7 +4212,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \bibitem[Ull12]{ullenboom:12}
+l.87 \bibitem[Ull12]{ullenboom:12}
                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3872,62 +4272,62 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 
-Overfull \hbox (20.07208pt too wide) in paragraph at lines 81--82
+Overfull \hbox (20.07208pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 Java
  []
 
 
-Overfull \hbox (10.4777pt too wide) in paragraph at lines 81--82
+Overfull \hbox (10.4777pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 ist
  []
 
 
-Overfull \hbox (20.18877pt too wide) in paragraph at lines 81--82
+Overfull \hbox (20.18877pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 auch
  []
 
 
-Overfull \hbox (17.88876pt too wide) in paragraph at lines 81--82
+Overfull \hbox (17.88876pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 eine
  []
 
 
-Overfull \hbox (13.05547pt too wide) in paragraph at lines 81--82
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 In-
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 81--82
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 sel
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 81--82
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 --
  []
 
 
-Overfull \hbox (16.7499pt too wide) in paragraph at lines 81--82
+Overfull \hbox (16.7499pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 Das
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 81--82
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 um-
  []
 
 
-Overfull \hbox (36.28867pt too wide) in paragraph at lines 81--82
+Overfull \hbox (36.28867pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 fassende
  []
 
 
-Overfull \hbox (26.8554pt too wide) in paragraph at lines 81--82
+Overfull \hbox (26.8554pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 Hand-
  []
 
 
-Overfull \hbox (19.67764pt too wide) in paragraph at lines 81--82
+Overfull \hbox (19.67764pt too wide) in paragraph at lines 88--89
 \OT1/cmr/m/it/10 buch
  []
 
@@ -3938,7 +4338,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 \bibitem[Wag05]{wagner:05}
+l.90 \bibitem[Wag05]{wagner:05}
                                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4200,105 +4600,183 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 
-Overfull \hbox (48.93855pt too wide) in paragraph at lines 84--85
+Overfull \hbox (48.93855pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Schriftliche
  []
 
 
-Overfull \hbox (14.57767pt too wide) in paragraph at lines 84--85
+Overfull \hbox (14.57767pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Pr-
  []
 
 
-Overfull \hbox (35.64977pt too wide) in paragraph at lines 84--85
+Overfull \hbox (35.64977pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 fungsar-
  []
 
 
-Overfull \hbox (15.07764pt too wide) in paragraph at lines 84--85
+Overfull \hbox (15.07764pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 beit
  []
 
 
-Overfull \hbox (11.24438pt too wide) in paragraph at lines 84--85
+Overfull \hbox (11.24438pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 im
  []
 
 
-Overfull \hbox (20.58319pt too wide) in paragraph at lines 84--85
+Overfull \hbox (20.58319pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Rah-
  []
 
 
-Overfull \hbox (18.39989pt too wide) in paragraph at lines 84--85
+Overfull \hbox (18.39989pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 men
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 84--85
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (31.94423pt too wide) in paragraph at lines 84--85
+Overfull \hbox (31.94423pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 zweiten
  []
 
 
-Overfull \hbox (26.06648pt too wide) in paragraph at lines 84--85
+Overfull \hbox (26.06648pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Staat-
  []
 
 
-Overfull \hbox (16.99432pt too wide) in paragraph at lines 84--85
+Overfull \hbox (16.99432pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 spr-
  []
 
 
-Overfull \hbox (18.65544pt too wide) in paragraph at lines 84--85
+Overfull \hbox (18.65544pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 fung
  []
 
 
-Overfull \hbox (7.28328pt too wide) in paragraph at lines 84--85
+Overfull \hbox (7.28328pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 fr
  []
 
 
-Overfull \hbox (14.31104pt too wide) in paragraph at lines 84--85
+Overfull \hbox (14.31104pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 das
  []
 
 
-Overfull \hbox (18.67764pt too wide) in paragraph at lines 84--85
+Overfull \hbox (18.67764pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Amt
  []
 
 
-Overfull \hbox (13.79991pt too wide) in paragraph at lines 84--85
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 des
  []
 
 
-Overfull \hbox (17.88876pt too wide) in paragraph at lines 84--85
+Overfull \hbox (17.88876pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 Stu-
  []
 
 
-Overfull \hbox (11.75548pt too wide) in paragraph at lines 84--85
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 di-
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 84--85
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (16.22765pt too wide) in paragraph at lines 84--85
+Overfull \hbox (16.22765pt too wide) in paragraph at lines 91--92
 \OT1/cmr/m/it/10 rats
  []
 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \bibitem[Z√ºl90]{z√ºllighoven:90}
+                                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\bibcite{z√ºllighoven:90}{Z√ºl90}
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no √ in font cmti10!
+Missing character: There is no § in font cmti10!
+Missing character: There is no , in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{thebibliography}.
 
@@ -4306,7 +4784,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \end{thebibliography}
+l.95 \end{thebibliography}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4315,7 +4793,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 \end{thebibliography}
+l.95 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4326,7 +4804,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.86 \end{thebibliography}
+l.95 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4348,5 +4826,5 @@ Here is how much of TeX's memory you used:
  3597 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,4n,17p,414b,136s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 21i,4n,17p,414b,134s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

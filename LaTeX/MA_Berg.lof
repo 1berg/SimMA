@@ -3,25 +3,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Startbildschirm des \textsc {LEGO} NXT-Programms}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Fahren eines Roboters auf einer schwarzen Linie}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Der Startbildschirm von Enchanting}}{21}{figure.3.3}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Beispiel eines Enchanting Programms}}{23}{figure.3.4}
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Die Benutzeroberfl\IeC {\"a}che von BlueJ}}{25}{figure.3.5}
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{26}{figure.3.6}
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Die Kontextmen\IeC {\"u}-Erweiterung der NXJ-Extension}}{28}{figure.3.7}
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{29}{figure.3.8}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Fahren eines Roboters auf einer schwarzen Linie}}{19}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Der Startbildschirm von Enchanting}}{20}{figure.3.3}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Beispiel eines Enchanting Programms}}{22}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Die Benutzeroberfl\IeC {\"a}che von BlueJ}}{24}{figure.3.5}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces BlueJ-Beispiel zum Finden einer Linie}}{25}{figure.3.6}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Die Kontextmen\IeC {\"u}-Erweiterung der NXJ-Extension}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Der Roboter soll einer schwarzen Linie folgen}}{28}{figure.3.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Die Bedieneroberfl\IeC {\"a}che von Axure RP Pro}}{38}{figure.5.1}
 \contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Anhalten auf einer schwarzen Linie}}{39}{figure.5.2}
 \contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Fahren einer S-Kurve}}{40}{figure.5.3}
 \contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Erkennen eines Hindernisses auf der Fahrbahn}}{41}{figure.5.4}
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{44}{figure.5.5}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Auswahldialog f\IeC {\"u}r den Parcours}}{43}{figure.5.5}
 \contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Eine beispielhafte Darstellung von Parcours und Roboter}}{45}{figure.5.6}
 \contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Die Abstraktion des Roboters und der Sensorpositionen}}{54}{figure.5.7}
 \contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces UML-Diagramm der Klassen im \texttt {nxt}-Paket}}{57}{figure.5.8}
 \contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces UML-Diagramm der Klassen des Simulators}}{64}{figure.5.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Die in BlueJ geladenen Klassenbibliotheken}}{78}{figure.6.1}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Die Import-Anweisungen im Quellcode}}{79}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Auswahldialog der Szenarien}}{80}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Die in BlueJ geladenen Klassenbibliotheken}}{80}{figure.6.1}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Die Import-Anweisungen im Quellcode}}{81}{figure.6.2}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Auswahldialog der Szenarien}}{82}{figure.6.3}
