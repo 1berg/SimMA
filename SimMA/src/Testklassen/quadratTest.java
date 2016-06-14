@@ -1,10 +1,11 @@
 package Testklassen;
 
-import simma.nxt.*;
-import simma.sim.*;
+import simulator.nxt.*;
+import simulator.sim.*;
 
 /**
- * Created by Pamina on 26.02.16.
+ * Testklasse zur Vorführung des Simulators.
+ * Der Roboter fährt ein Quadrat auf dem ausgewählten Parcours.
  */
 public class quadratTest {
 
@@ -42,6 +43,8 @@ public class quadratTest {
         Motor.B.forward();
         Motor.C.forward();
         Delay.msDelay(2000);
+        Motor.B.stop();
+        Motor.C.stop();
 
     }
 }

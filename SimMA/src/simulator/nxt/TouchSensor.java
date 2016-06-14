@@ -1,7 +1,7 @@
-package simma.nxt;
+package simulator.nxt;
 
-import simma.sim.Parcours;
-import simma.sim.Roboter;
+import simulator.sim.Parcours;
+import simulator.sim.Roboter;
 
 /**
  * Die Klasse TouchSensor, die einen Berührungssensor simuliert, der vorn am Roboter angeschlossen ist

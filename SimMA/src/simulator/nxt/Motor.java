@@ -1,21 +1,21 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
- * simma.nxt.Motor class contains 3 instances of regulated motors.
+ * simulator.nxt.Motor class contains 3 instances of regulated motors.
  * <p>
  * Example:<p>
  * <code><pre>
- *   simma.nxt.Motor.A.setSpeed(720);// 2 RPM
- *   simma.nxt.Motor.C.setSpeed(720);
- *   simma.nxt.Motor.A.forward();
- *   simma.nxt.Motor.C.forward();
+ *   simulator.nxt.Motor.A.setSpeed(720);// 2 RPM
+ *   simulator.nxt.Motor.C.setSpeed(720);
+ *   simulator.nxt.Motor.A.forward();
+ *   simulator.nxt.Motor.C.forward();
  *   Thread.sleep (1000);
- *   simma.nxt.Motor.A.stop();
- *   simma.nxt.Motor.C.stop();
- *   simma.nxt.Motor.A.rotateTo( 360);
- *   simma.nxt.Motor.A.rotate(-720,true);
- *   while(simma.nxt.Motor.A.isMoving() :Thread.yield();
- *   int angle = simma.nxt.Motor.A.getTachoCount(); // should be -360
+ *   simulator.nxt.Motor.A.stop();
+ *   simulator.nxt.Motor.C.stop();
+ *   simulator.nxt.Motor.A.rotateTo( 360);
+ *   simulator.nxt.Motor.A.rotate(-720,true);
+ *   while(simulator.nxt.Motor.A.isMoving() :Thread.yield();
+ *   int angle = simulator.nxt.Motor.A.getTachoCount(); // should be -360
  *   LCD.drawInt(angle,0,0);
  * </pre></code>
  * @author Roger Glassey/Andy Shaw
@@ -23,26 +23,26 @@ package simma.nxt;
 public class Motor
 {
     /**
-     * simma.nxt.Motor A.
+     * simulator.nxt.Motor A.
      */
     public static final NXTRegulatedMotor A = new NXTRegulatedMotor(MotorPort.A);
     /**
-     * simma.nxt.Motor B.
+     * simulator.nxt.Motor B.
      */
     public static final NXTRegulatedMotor B = new NXTRegulatedMotor(MotorPort.B);
     /**
-     * simma.nxt.Motor C.
+     * simulator.nxt.Motor C.
      */
     public static final NXTRegulatedMotor C = new NXTRegulatedMotor(MotorPort.C);
 
     private Motor() {
-       // simma.nxt.Motor class cannot be instantiated
+       // simulator.nxt.Motor class cannot be instantiated
     }
 
     /**
-     * Return the simma.nxt.Motor with the given Id.
+     * Return the simulator.nxt.Motor with the given Id.
      * @param id the Id, between 0 and {@link MotorPort#NUMBER_OF_PORTS}-1.
-     * @return the simma.nxt.MotorPort object
+     * @return the simulator.nxt.MotorPort object
      */
     public static NXTRegulatedMotor getInstance(int id)
     {

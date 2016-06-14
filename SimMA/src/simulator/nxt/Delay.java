@@ -1,4 +1,4 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
  * Created by Pamina on 16.01.16.

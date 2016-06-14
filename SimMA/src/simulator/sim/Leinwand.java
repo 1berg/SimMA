@@ -1,4 +1,4 @@
-package simma.sim;
+package simulator.sim;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,11 +24,11 @@ class Leinwand
      * Erzeuge eine Leinwand mit einem (weißen) Standardhintergrund.
      *
      * @param title
-     *            Der Titel der simma.sim.Leinwand
+     *            Der Titel der simulator.sim.Leinwand
      * @param width
-     *            Die Breite der simma.sim.Leinwand
+     *            Die Breite der simulator.sim.Leinwand
      * @param height
-     *            Die Höhe der simma.sim.Leinwand
+     *            Die Höhe der simulator.sim.Leinwand
      */
     public Leinwand(String title, int width, int height)
     {
@@ -39,11 +39,11 @@ class Leinwand
      * Erzeuge eine Leinwand.
      *
      * @param title
-     *            Der Titel der simma.sim.Leinwand
+     *            Der Titel der simulator.sim.Leinwand
      * @param width
-     *            Die Breite der simma.sim.Leinwand
+     *            Die Breite der simulator.sim.Leinwand
      * @param height
-     *            Die Höhe der simma.sim.Leinwand
+     *            Die Höhe der simulator.sim.Leinwand
      * @param bgColour
      *            Die Hintergrundfarbe
      */
@@ -62,7 +62,7 @@ class Leinwand
     /**
      * Liefert eine Referenz auf das einzige Exemplar dieser Klasse.
      *
-     * @return simma.sim.Leinwand
+     * @return simulator.sim.Leinwand
      */
     public static Leinwand gibLeinwand()
     {

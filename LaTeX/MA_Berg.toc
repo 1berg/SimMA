@@ -4,13 +4,13 @@
 \contentsline {section}{\numberline {2.1}Das LEGO Mindstorms NXT System}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Geschichte der \textsc {LEGO} Robotik}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Hardware}{6}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Curriculare Einordnung}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflichtfach}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}STS Jahrgangsstufen 7 --11 Informatik Wahlpflichtfach}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Gymnasiale Oberstufe -- Vorstufe}{12}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Gymnasiale Oberstufe -- Studienstufe}{12}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Einsatz von Robotern als Hilfsmittel im Unterricht}{13}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.2}Die Arbeit mit LEGO-Robotern im Unterricht}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Curriculare Einordnung}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Gymnasium Sekundarstufe I (7 -- 10) Informatik Wahlpflichtfach}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}STS Jahrgangsstufen 7 --11 Informatik Wahlpflichtfach}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Gymnasiale Oberstufe -- Vorstufe}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Gymnasiale Oberstufe -- Studienstufe}{13}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Einsatz von Robotern als Hilfsmittel im Unterricht}{14}{subsection.2.3.5}
 \contentsline {chapter}{\numberline {3}Bisher verf\IeC {\"u}gbare Softwarel\IeC {\"o}sungen}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}LEGO Mindstorms NXT}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Enchanting}{19}{section.3.2}
@@ -46,6 +46,6 @@
 \contentsline {subsubsection}{Roboter}{60}{subsection.5.3.3}
 \contentsline {chapter}{\numberline {6}Fazit und Ausblick}{65}{chapter.6}
 \contentsline {section}{\numberline {6.1}Umsetzung der Anforderungen}{65}{section.6.1}
-\contentsline {section}{\numberline {6.2}Verbesserungen und Erweiterungen}{67}{section.6.2}
-\contentsline {section}{\numberline {6.3}R\IeC {\"u}ckmeldung von Lehrkr\IeC {\"a}ften zum Simulator}{68}{section.6.3}
+\contentsline {section}{\numberline {6.2}R\IeC {\"u}ckmeldung von Lehrkr\IeC {\"a}ften zum Simulator}{67}{section.6.2}
+\contentsline {section}{\numberline {6.3}Verbesserungen und Erweiterungen}{69}{section.6.3}
 \contentsline {section}{\numberline {6.4}Zusammenfassung}{70}{section.6.4}

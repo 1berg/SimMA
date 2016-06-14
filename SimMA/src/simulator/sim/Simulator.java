@@ -1,8 +1,9 @@
-package simma.sim;
+package simulator.sim;
 
-import simma.nxt.*;
+import simulator.nxt.*;
 
-/** Die Klasse Simulator.
+/**
+ * Die Klasse Simulator.
  *
  */
 
@@ -36,8 +37,4 @@ public class Simulator
 
     }
 
-    private static void main()
-    {
-
-    }
 }

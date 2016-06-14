@@ -1,7 +1,7 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
- * Implementation der Klasse simma.nxt.SensorPort, die die Ports S1,...,S4 zur Verfügung stellt.
+ * Implementation der Klasse simulator.nxt.SensorPort, die die Ports S1,...,S4 zur Verfügung stellt.
  */
 public class SensorPort{
 
@@ -17,29 +17,29 @@ public class SensorPort{
     public static final int NUMBER_OF_PORTS = 3;
 
     /**
-     * simma.nxt.SensorPort S1.
+     * simulator.nxt.SensorPort S1.
      */
     public static final SensorPort S1 = new SensorPort (0);
 
     /**
-     * simma.nxt.SensorPort S2.
+     * simulator.nxt.SensorPort S2.
      */
     public static final SensorPort S2 = new SensorPort (1);
 
     /**
-     * simma.nxt.SensorPort S3.
+     * simulator.nxt.SensorPort S3.
      */
     public static final SensorPort S3 = new SensorPort (2);
 
     /**
-     * simma.nxt.SensorPort S4.
+     * simulator.nxt.SensorPort S4.
      */
     public static final SensorPort S4 = new SensorPort (3);
 
     /**
-     * Return the simma.nxt.MotorPort with the given Id.
+     * Return the simulator.nxt.MotorPort with the given Id.
      * @param id the Id, between 0 and {@link #NUMBER_OF_PORTS}-1.
-     * @return the simma.nxt.MotorPort object
+     * @return the simulator.nxt.MotorPort object
      */
     public static SensorPort getInstance(int id)
     {

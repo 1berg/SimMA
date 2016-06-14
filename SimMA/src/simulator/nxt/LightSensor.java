@@ -1,7 +1,7 @@
-package simma.nxt;
+package simulator.nxt;
 
-import simma.sim.Parcours;
-import simma.sim.Roboter;
+import simulator.sim.Parcours;
+import simulator.sim.Roboter;
 
 /**
  * Ein Lichtsensor, der Helligkeitswerte liest.
@@ -30,10 +30,10 @@ public class LightSensor
     }
 
     /**
-     * Sondierende Methode, die dafür sorgt, dass der ausgewählte Lichtsensor die Helligkeit auf dem simma.simma.sim.Parcours liest und ausgibt.
+     * Sondierende Methode, die dafür sorgt, dass der ausgewählte Lichtsensor die Helligkeit auf dem simulator.simulator.sim.Parcours liest und ausgibt.
      *
      * @return
-     *      Den Helligkeitswert des Bereichs auf dem simma.simma.sim.Parcours unter dem ausgewählten Lichtsensor
+     *      Den Helligkeitswert des Bereichs auf dem simulator.simulator.sim.Parcours unter dem ausgewählten Lichtsensor
      */
     public int readValue()
     {

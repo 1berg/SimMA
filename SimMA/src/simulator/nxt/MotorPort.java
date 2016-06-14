@@ -1,4 +1,4 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
  * Die Klasse MotorPort, mit der die Anschlüsse für die Motoren am NXT-Stein simuliert werden.
@@ -64,7 +64,7 @@ public class MotorPort {
     /**
      * Sondierende Methode für die ID
      * @return
-     *       Die ID des zugehörigen Ports am ausgewählten simma.nxt.Motor.
+     *       Die ID des zugehörigen Ports am ausgewählten simulator.nxt.Motor.
      */
     public int getId()
     {

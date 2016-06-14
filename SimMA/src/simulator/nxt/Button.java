@@ -1,4 +1,4 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
  * Die Klasse Button simuliert das Verhalten des Enter- und Escape-Buttons am NXT-Brick.

@@ -1,4 +1,4 @@
-package simma.nxt;
+package simulator.nxt;
 
 /**
  * Ein Ultraschallsensor.

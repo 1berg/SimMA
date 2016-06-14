@@ -1,4 +1,4 @@
-package simma.sim;
+package simulator.sim;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +14,7 @@ class BildEinleser
     private static JFileChooser _fileChooser = null;
 
     /**
-     * Lies eine GIF-Datei ein und liefere die Bilddaten als Array. Die Datei wird interaktiv vom
+     * Liest eine GIF-Datei ein und liefert die Bilddaten als Array. Die Datei wird mithilfe eines Auswahldialogs vom
      * Benutzer gewählt.
      */
     public static short[][] liesBilddaten()
@@ -86,7 +86,7 @@ class BildEinleser
 
         short[][] bytes = new short[hoehe][breite];
 
-        int[] intarr = new int[3]; // rgb values
+        int[] intarr = new int[3];
         for (int y = 0; y < hoehe; y++)
         {
             for (int x = 0; x < breite; x++)

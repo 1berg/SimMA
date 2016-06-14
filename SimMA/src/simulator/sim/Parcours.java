@@ -1,4 +1,4 @@
-package simma.sim;
+package simulator.sim;
 
 /**
  * Die Klasse Parcours, in der die ausgewählte Bilddatei in ein Array

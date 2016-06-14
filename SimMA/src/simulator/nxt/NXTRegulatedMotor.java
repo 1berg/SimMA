@@ -1,9 +1,9 @@
-package simma.nxt;
+package simulator.nxt;
 
-import simma.sim.Roboter;
+import simulator.sim.Roboter;
 
 /**
- * Ein NXT-Motor. Wird von der Motor-Klasse benutzt.
+ * Ein NXT-Motor. Dieser wird von der Motor-Klasse benutzt.
  */
 
 public class NXTRegulatedMotor{
@@ -21,7 +21,7 @@ public class NXTRegulatedMotor{
      * Konstruktor für einen neuen NXTRegulatedMotor
      *
      * @param port
-     *          Der Port, an dem der entsprechende simma.nxt.Motor angeschlossen ist
+     *          Der Port, an dem der entsprechende simulator.nxt.Motor angeschlossen ist
      */
     public NXTRegulatedMotor(MotorPort port){
 
@@ -56,7 +56,7 @@ public class NXTRegulatedMotor{
 
     /**
      * Vorwärtsbewegung für den jeweiligen Motor.
-     * Zweimal forward() soll nicht dazu führen, dass der Roboter doppelt so schnell fährt.
+     * Zweimal forward() führt nicht dazu, dass der Roboter doppelt so schnell fährt.
      */
         public void forward()
         {

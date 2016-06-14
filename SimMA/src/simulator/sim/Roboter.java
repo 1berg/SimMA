@@ -1,4 +1,4 @@
-package simma.sim;
+package simulator.sim;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -8,7 +8,7 @@ import java.io.*;
 
 
 /**
- * Created by Pamina on 08.01.16.
+ * Die Klasse Roboter.
  */
 public class Roboter
 {
@@ -50,7 +50,7 @@ public class Roboter
     /**
      * Gibt die Referenz auf das Roboterobjekt wieder
      *
-     * @return
+     * @return das statische Roboterobjekt dieser Klasse
      */
     public static Roboter gibRoboter()
     {
@@ -114,6 +114,7 @@ public class Roboter
 
     /**
      * Die Position des Roboters auf der x-Achse ausgeben
+     * @return den Wert des Feldes _xPos
      */
     public double gibXPosition()
     {
@@ -122,6 +123,7 @@ public class Roboter
 
     /**
      * Die Position des Roboters auf der y-Achse ausgeben
+     * @return den Wert des Feldes _yPos
      */
     public double gibYPosition()
     {
@@ -129,7 +131,8 @@ public class Roboter
     }
 
     /**
-     * Die x-Position des rechten Lichtsensors
+     * Diese Methode berechnet die Position des rechten Lichtsensors auf der x-Achse
+     * @return die x-Position des rechten Lichtsensors
      */
     public int gibXLichtRechts()
     {
@@ -140,7 +143,8 @@ public class Roboter
     }
 
     /**
-     * Die y-Position des rechten Lichtsensors
+     * Diese Methode berechnet die Position des rechten Lichtsensors auf der y-Achse
+     * @return die y-Position des rechten Lichtsensors
      */
     public int gibYLichtRechts()
     {
@@ -151,18 +155,20 @@ public class Roboter
     }
 
     /**
-     * Die x-Position des linken Lichtsensors
+     * Diese Methode berechnet die Position des linken Lichtsensors auf der x-Achse
+     * @return die x-Position des linken Lichtsensors
      */
     public int gibXLichtLinks()
     {
-        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0)))); //Ein Viertel der Breite durch die Hälfte der Höhe des Roboters
+        double beta = Math.toDegrees(Math.atan(((_roboter.getWidth()/4.0) / (_roboter.getHeight()/2.0))));
         double gamma = _ausrichtung - beta;
-        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta)); //Die Hypothenuse des gedachten Dreiecks
+        double c = (_roboter.getWidth()/4.0) * Math.asin(Math.toRadians(beta));
         return  (int) (_xPos - (c * Math.cos(Math.toRadians(gamma))));
     }
 
     /**
-     * Die y-Position des linken Lichtsensors
+     * Diese Methode berechnet die Position des linken Lichtsensors auf der y-Achse
+     * @return die y-Position des linken Lichtsensors
      */
     public int gibYLichtLinks()
     {
@@ -174,6 +180,7 @@ public class Roboter
 
     /**
      * Gibt die x-Position des Touch-Sensors wieder
+     *  @return die x-Position des Berührungssensors am Roboter
      */
 
     public int gibXTouch()
@@ -186,7 +193,7 @@ public class Roboter
 
     /**
      * Gibt die y-Position des Touch-Sensors wieder
-     * @return
+     * @return die y-Position des Berührungssensors am Roboter
      */
     public int gibYTouch()
     {
@@ -198,6 +205,9 @@ public class Roboter
 
     /**
      * Rotiert das Bild des Roboters
+     *
+     * @param Degrees
+     *          der Rotationswinkel in Grad
      */
     private void rotate(double Degrees){
 
@@ -217,7 +227,7 @@ public class Roboter
         //Graphics2D erstellen, um die Rotation zu ermöglichen, da BufferedImage nicht mit einer AffineTransform zusammenarbeitet
         Graphics2D g2d = _roboter.createGraphics();
 
-        //Enable anti-alias and Cubic Resampling
+        //Hilfsmethodenaufrufe für die Grafik
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
 
